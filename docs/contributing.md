@@ -10,9 +10,13 @@
 
 ## 提交前检查
 
-运行 `python scripts/verify_notebooks.py`、`python -m mkdocs build --strict` 和 `python scripts/verify_site.py`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
+运行 `node --test scripts/test_topology.mjs`、`python scripts/verify_notebooks.py`、`python -m mkdocs build --strict`、`python scripts/verify_site.py` 和 `git diff --check`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
 
 修改现有项目时先检查冲突，保留原文件；提交数学修正时附具体位置、问题说明和论证。不要用占位文本增加章节数量。
+
+使用[数学问题反馈表单](https://github.com/Kevin20041008/topology-from-zero/issues/new?template=math-issue.yml)报告缺失假设、证明漏洞或实验计算错误。请注明 URL、命题编号、版本、反例或复现步骤；实验还需注明系数域及 $r=2\varepsilon$ 的尺度约定。未完成的审查任务见[数学审查台账](math-review.md)。
+
+所有修改通过 Pull Request，等待自动化检查通过与数学审阅后再合并。新增章节使用新路径；不得改动 `scripts/legacy_urls.json` 来掩盖旧 URL 或锚点回归。该清单记录 v0.2 发布时的页面及正文锚点。
 
 ## 原创与许可
 

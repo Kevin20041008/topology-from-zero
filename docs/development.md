@@ -9,6 +9,7 @@
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+node --test scripts/test_topology.mjs
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
 python scripts/verify_site.py
@@ -21,10 +22,10 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 
 ## GitHub Pages
 
-1. 创建自己的 `topology-from-zero` GitHub 仓库，把本项目内容置于仓库根目录。
-2. 使用 `main` 分支；若使用其他默认分支，需同步修改工作流中的分支条件。
-3. 仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
-4. 推送至 `main`，或手动运行 **Build textbook and deploy Pages**。
+1. 主仓库已经上线，维护时从现有 `main` 创建工作分支，不重新初始化项目。
+2. 提交 Pull Request；自动化检查通过后，核对数学证明和[未完成审查项](math-review.md)。
+3. 完成审阅后合并到 `main`，由 **Build textbook and deploy Pages** 工作流发布。PR 自身不会部署。
+4. 若发布 Fork，才需要在自己的仓库 **Settings → Pages → Source** 选择 **GitHub Actions**；默认分支变化时同步修改工作流条件。
 
 构建任务执行 JavaScript 算法测试、Notebook、严格构建并校验站点。PR 只做构建检查，部署任务仅对 `main` 的非 PR 事件运行。工作流从 `actions/configure-pages` 获取实际站点地址，通过 `SITE_URL` 注入配置。
 
@@ -37,8 +38,8 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 - 修改 Notebook 后从新内核完整执行，保留与源码一致的输出。
 - `python scripts/verify_notebooks.py` 在临时目录检查，不改写源 Notebook。
 - `python -m mkdocs build --strict` 将警告视为错误。
-- `python scripts/verify_site.py` 检查本地链接、搜索索引、数学标记和本地 MathJax。
-- `node --test scripts/test_topology.mjs` 检查三角形、持续区间、坐标缩放、顶点重编号，以及 Barcode 与直接同调计算的一致性；需要 Node.js 22 或更新版本。
+- `python scripts/verify_site.py` 检查本地链接与片段、旧 URL/锚点、六篇章节、搜索索引、数学标记和本地 MathJax。
+- `node --test scripts/test_topology.mjs` 检查三角形、退化点云、持续区间、等距/尺度变换、边界平方为零及曲面网格不变量；需要 Node.js 22 或更新版本。
 - 三个交互页面位于 `docs/labs/`，浏览器算法位于 `docs/javascripts/topology-core.mjs`，Three.js 的版本和许可见 `THIRD_PARTY_NOTICES.md`。
 - 浏览器中访问[公式检查页](math-check.md)，验证最终 SVG 排版、搜索与明暗主题。
 

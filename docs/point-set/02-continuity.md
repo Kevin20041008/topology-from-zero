@@ -2,6 +2,8 @@
 
 <div class="chapter-meta">模块：点集拓扑 · 先修：第一章、函数的像与逆像 · 建议：阅读 35 分钟，练习 40 分钟<br>本章目标：用开集定义连续，并完整证明紧致性的连续像定理。</div>
 
+**先修桥梁。** [基础 A](bases-subbases.md)证明了子空间拓扑公理及逆像的基判据。本章连续像证明只需该章的子空间部分；海涅–博雷尔定理仍作为注明来源的引用结论，不作为已证明前提隐藏使用。
+
 ## 1. 直观解释：用输出的邻近约束输入
 
 微积分中，连续意味着输入足够接近时，输出也能足够接近。拓扑学没有预设距离，所以改问：如果输出落在一个开集里，那么对应的输入点是否也组成开集？这就是连续映射（continuous map）的逆像定义。
@@ -91,5 +93,7 @@ $$
 
 ---
 
-[← 上一章：从距离到拓扑](../introduction/01-spaces.md){ .md-button }
-[下一章：环、边界与同调 →](../algebraic/03-homology.md){ .md-button .md-button--primary }
+[← 基础 A：拓扑基与子基](bases-subbases.md){ .md-button }
+[下一步：基础 B · 连通性 →](connectedness.md){ .md-button .md-button--primary }
+
+已有线性代数基础的读者，也可直接进入[第三章的有限同调计算](../algebraic/03-homology.md)。

@@ -16,5 +16,14 @@
 | $H_k$，同调 | homology | $Z_k/B_k$ |
 | $\beta_k$，Betti 数 | Betti number | $\dim H_k$，依赖所选系数域 |
 | 滤过 | filtration | 随尺度增长而嵌套的复形族 |
+| $\mathcal B$，拓扑基 | basis | 覆盖全空间，交点处可细化；开集为基元素的任意并 |
+| $\mathcal S$，子基 | subbasis | 先取有限交再取任意并；空交约定为 $X$ |
+| $\overline A$，闭包 | closure | 每个开邻域都遇到 $A$ 的点组成的集合 |
+| 连通、道路连通 | connected, path connected | 本书均允许空空间满足定义 |
+| $I=[0,1]$ | unit interval | 同伦中的时间参数空间，使用通常拓扑 |
+| $\simeq_{\partial I}$ | homotopy relative to endpoints | 整个变形过程中两个端点分别固定 |
+| $\pi_1(X,x_0)$，基本群 | fundamental group | 基于 $x_0$ 的环路的端点固定同伦类 |
+| $\alpha*\beta$，拼接 | concatenation | 先走 $\alpha$ 再走 $\beta$ |
+| 可缩 | contractible | 非空空间的恒等映射同伦于常值映射 |
 
 若未另行说明，实数子集使用通常拓扑诱导的子空间拓扑；有限同调计算使用 $\mathbb F_2$。第一章的空集、全空间允许既开又闭。

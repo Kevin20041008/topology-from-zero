@@ -1,6 +1,6 @@
 import * as THREE from '../assets/vendor/three/three.module.js';
 
-const surfaces = {
+export const surfaces = {
   sphere: {title: '球面 S²', description: '把球的表面想象成一张没有边缘的薄膜。任何闭合的一维环都能在球面上收缩，但整个球面本身代表一个非零的二维同调类。',
     boundary: '0 条', orientation: '可定向', betti: '(1, 0, 1)', euler: '2'},
   torus: {title: '环面 T²', description: '沿管身绕行与沿环孔绕行，给出两个独立的一维同调类。旋转观察它们所在的不同方向；投影中看到的孔数不能代替同调计算。',
@@ -9,13 +9,13 @@ const surfaces = {
     boundary: '1 条（黄色）', orientation: '不可定向', betti: '(1, 1, 0)', euler: '0'},
 };
 
-function mobiusPoint(u, v) {
+export function mobiusPoint(u, v) {
   return new THREE.Vector3((1.5 + v * Math.cos(u / 2)) * Math.cos(u),
     (1.5 + v * Math.cos(u / 2)) * Math.sin(u), v * Math.sin(u / 2));
 }
 
-function mobiusGeometry() {
-  const along = 112, across = 20, positions = [], indices = [];
+function mobiusGeometry(along = 112, across = 20) {
+  const positions = [], indices = [];
   for (let i = 0; i <= along; i++) for (let j = 0; j <= across; j++) {
     positions.push(...mobiusPoint(i / along * 2 * Math.PI, (j / across - .5) * 1.1).toArray());
   }
@@ -28,6 +28,15 @@ function mobiusGeometry() {
   geometry.setIndex(indices);
   geometry.computeVertexNormals();
   return geometry;
+}
+
+// Geometry construction is independent of WebGL, so seam identifications and
+// topological invariants can be checked on coarser meshes in the Node tests.
+export function createSurfaceGeometry(name, {width = 48, height = 30, radial = 24, tubular = 72, along = 112, across = 20} = {}) {
+  if (name === 'sphere') return new THREE.SphereGeometry(1.55, width, height);
+  if (name === 'torus') return new THREE.TorusGeometry(1.4, .5, radial, tubular);
+  if (name === 'mobius') return mobiusGeometry(along, across);
+  throw new Error('Unknown surface');
 }
 
 export function surfaceLab(lab) {
@@ -71,8 +80,7 @@ export function surfaceLab(lab) {
       child.geometry.dispose();
       child.material.dispose();
     }
-    const geometry = name === 'sphere' ? new THREE.SphereGeometry(1.55, 48, 30) :
-      name === 'torus' ? new THREE.TorusGeometry(1.4, .5, 24, 72) : mobiusGeometry();
+    const geometry = createSurfaceGeometry(name);
     const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({
       color: name === 'mobius' ? 0x75aeaf : 0x70b297, side: THREE.DoubleSide, roughness: .5, metalness: .08,
       polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1,

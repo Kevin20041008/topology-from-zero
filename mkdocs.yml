@@ -4,7 +4,7 @@ site_url: !ENV [SITE_URL, 'http://127.0.0.1:8000/']
 repo_url: https://github.com/Kevin20041008/topology-from-zero
 repo_name: Kevin20041008/topology-from-zero
 edit_uri: edit/main/docs/
-copyright: 原创教材 CC BY 4.0 · 代码 MIT · v0.2 交互版
+copyright: 原创教材 CC BY 4.0 · 代码 MIT · v0.3 Foundations Expansion
 theme:
   name: material
   language: zh
@@ -42,9 +42,12 @@ nav:
       - '01 · 从距离到拓扑': introduction/01-spaces.md
   - 点集拓扑:
       - 模块导读: point-set/index.md
+      - '基础 A · 拓扑基与子基': point-set/bases-subbases.md
       - '02 · 连续映射与紧致性': point-set/02-continuity.md
+      - '基础 B · 连通性': point-set/connectedness.md
   - 代数拓扑:
       - 模块导读: algebraic/index.md
+      - '基础 C · 同伦与基本群': algebraic/homotopy-fundamental-group.md
       - '03 · 环、边界与同调': algebraic/03-homology.md
   - 计算拓扑: computational/index.md
   - 持续同调: persistence/index.md
@@ -55,6 +58,7 @@ nav:
       - '实验 2 · 点云与持续同调': labs/point-cloud.md
       - '实验 3 · 三维拓扑曲面': labs/surfaces.md
       - 教材进度: progress.md
+      - 先修依赖与数学审查: math-review.md
       - 符号与术语: notation.md
       - 公式渲染检查: math-check.md
       - 本地运行与部署: development.md

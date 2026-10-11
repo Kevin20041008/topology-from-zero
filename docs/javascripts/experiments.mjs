@@ -105,7 +105,7 @@ function persistenceLab(lab) {
     const counts = [0, 1, 2].map(d => active.filter(s => s.dimension === d).length);
     lab.querySelector('[data-simplex-counts]').textContent = `${counts[0]} 个点 · ${counts[1]} 条边 · ${counts[2]} 个三角面`;
     lab.querySelector('[data-persistence-status]').textContent = `ε = ${number(radius)}，对应距离阈值 r = ${number(2 * radius)}。当前 ${b0} 个连通分支，${b1} 个独立一维同调类。`;
-    lab.querySelector('[data-next-event]').disabled = !events.some(event => event > radius + 1e-12);
+    lab.querySelector('[data-next-event]').disabled = !events.some(event => event > radius);
     drawCloud(active);
     drawBarcode();
   }
@@ -129,7 +129,7 @@ function persistenceLab(lab) {
   select.addEventListener('change', loadPreset);
   lab.querySelector('[data-reset-radius]').addEventListener('click', () => update(0));
   lab.querySelector('[data-next-event]').addEventListener('click', () => {
-    const next = events.find(event => event > radius + 1e-12);
+    const next = events.find(event => event > radius);
     if (next !== undefined) update(next);
   });
   loadPreset();
