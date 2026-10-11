@@ -11,7 +11,7 @@ hide:
 
 <p class="lead">一条不断裂的路径，一个不能填满的环。<br>从这些朴素问题走向拓扑的语言，再用代码检验有限的例子。</p>
 
-[开始第一章 →](introduction/01-spaces.md){ .md-button .md-button--primary }
+[从预备知识开始 →](preliminaries/sets-maps-relations.md){ .md-button .md-button--primary }
 [进入实验室](labs/index.md){ .md-button }
 
 </div>
@@ -20,7 +20,7 @@ hide:
 </div>
 </div>
 
-<div class="book-stats"><span><strong>06</strong> 课程模块</span><span><strong>08</strong> 实质章节</span><span><strong>03</strong> 浏览器交互实验</span><span><strong>02</strong> Python Notebook</span></div>
+<div class="book-stats"><span><strong>11</strong> 规划部分</span><span><strong>45</strong> 已有正文</span><span><strong>04</strong> 浏览器交互实验</span><span><strong>04</strong> Python Notebook</span></div>
 
 ## 动手改变一个空间
 
@@ -64,7 +64,7 @@ hide:
 
 ## 学习路线图
 
-六个模块按下方顺序展开；当前章节的建议路线为 **第一章 → 基础 A → 第二章 → 基础 B → 基础 C**。第三章的有限同调可在补足线性代数后独立进入，不要求先学基本群。旧章号与 URL 保留，基础 A/B/C 插入原路线而不重编号。详细先修条件与引用结论见[依赖审查](math-review.md)。
+按[研究生课程地图](curriculum.md)学习八个方向。点集拓扑构成通用基础；代数拓扑拆分为基本群、覆盖、同调、上同调；微分与几何拓扑建立流形路线；计算 → 持续同调 → AI 构成独立实验路径。旧章节号与 URL 全部保留。
 
 | 新增基础 | 解决的问题 | 读前准备 |
 | --- | --- | --- |
@@ -76,48 +76,64 @@ hide:
 
 <div class="route-grid" markdown>
 <div class="route-step" markdown>
-<small>01 / 建立语言 · 已有示范</small>
+<small>01 / 建立语言 · 正文与证明</small>
 
 ### [拓扑学导论](introduction/index.md)
 从开集与邻域开始。目标：辨认一个集合族是否构成拓扑。
 </div>
 <div class="route-step" markdown>
-<small>02 / 研究空间 · 已有示范</small>
+<small>02 / 研究空间 · 正文与证明</small>
 
 ### [点集拓扑](point-set/index.md)
 连续、紧致、连通与分离。目标：把直观陈述变成可证明的命题。
 </div>
 <div class="route-step" markdown>
-<small>03 / 提取不变量 · 已有示范</small>
+<small>03 / 提取不变量 · 正文与证明</small>
 
 ### [代数拓扑](algebraic/index.md)
 同伦、基本群与同调。目标：理解代数怎样区分空间。
 </div>
 <div class="route-step" markdown>
-<small>04 / 把定义变成算法 · 实验先行</small>
+<small>04 / 把定义变成算法 · 理论与实验</small>
 
 ### [计算拓扑](computational/index.md)
 复形、边界矩阵与消元。目标：计算小型复形的 Betti 数。
 </div>
 <div class="route-step" markdown>
-<small>05 / 在尺度间追踪 · 实验先行</small>
+<small>05 / 在尺度间追踪 · 理论与实验</small>
 
 ### [持续同调](persistence/index.md)
 滤过、区间与稳定性。目标：理解一个洞何时出生、何时死亡。
 </div>
 <div class="route-step" markdown>
-<small>06 / 连接数据学习 · 规划中</small>
+<small>06 / 连接数据学习 · 基线实验</small>
 
 ### [拓扑与人工智能](ai/index.md)
 拓扑特征、模型与评估。目标：判断拓扑信息何时对学习任务有帮助。
+</div>
+<div class="route-step" markdown>
+<small>07 / 光滑结构与映射</small>
+
+### [微分拓扑](differential/index.md)
+流形、横截、微分形式、Morse 理论与向量丛。
+</div>
+<div class="route-step" markdown>
+<small>08 / 流形、结与粘合</small>
+
+### [几何拓扑](geometric/index.md)
+PL 范畴、紧曲面、结补空间与三维填充。
 </div>
 </div>
 
 ## 怎样使用这本书
 
-每篇示范章都按照“直观解释 → 严格定义 → 定理与证明 → 正例与反例 → 练习 → 参考书目”展开。建议先独立完成习题，再展开提示。Notebook 中的计算只验证具体有限例子；证明负责一般结论。
+原42篇正文按照“直观解释 → 严格定义 → 定理与证明 → 正例与反例 → 练习 → 参考书目”展开。PRE1–PRE3采用十二项完整模板，并提供独立题解。建议先独立完成习题，再展开提示。Notebook 中的计算只验证具体有限例子；证明负责一般结论。
 
-八篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
+45 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
 
-!!! info "教材进度 · 2026-10-12"
-    v0.3 Foundations Expansion 在原三篇示范章上新增五篇基础与预备章，保留三个浏览器实验与两份 Notebook。计算保留全部正长度持续区间，不再把距离固定舍入到 12 位小数。尚未完成整本教材，也未经过独立同行审阅。详见[进度说明](progress.md)、[未完成数学审查项](math-review.md)和[贡献约定](contributing.md)。
+!!! info "教材进度 · M1基础批次1审阅候选"
+    已有 45 篇正文、四份已执行 Notebook；新增内容按研究生层次组织。深定理的引用边界及尚待独立复核的证明逐项列出，不将课程目录等同于全部自包含证明。当前分支需经 PR 审阅与检查后发布，详见[进度](progress.md)与[数学审查台账](graduate-review.md)。
+
+
+!!! info "M1 基础批次 1：持续建设中"
+    新增PRE1–PRE3三章、24题完整答案与基础实验台。当前候选合计45章；旧42章仍待按新标准升级。11部分82单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。

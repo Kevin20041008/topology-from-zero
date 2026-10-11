@@ -1,6 +1,7 @@
 """Validate and execute every source notebook without modifying it."""
 from pathlib import Path
 from tempfile import TemporaryDirectory
+import json
 import sys
 
 import nbformat
@@ -35,6 +36,9 @@ def execute_notebook(path: Path, directory: str):
 def main():
     paths = sorted((ROOT / "docs/labs/notebooks").glob("*.ipynb"))
     assert len(paths) >= 2, "Expected the two teaching notebooks"
+    expected = json.loads((ROOT / 'scripts/curriculum.json').read_text(encoding='utf-8'))['notebooks']
+    assert {p.name for p in paths} == set(expected), 'Notebook inventory mismatch'
+    assert len(paths) >= 4, 'Expected the graduate experiments too'
     for path in paths:
         with TemporaryDirectory(prefix="topology-notebook-") as directory:
             notebook = execute_notebook(path, directory)

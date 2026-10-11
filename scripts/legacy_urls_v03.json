@@ -1,0 +1,191 @@
+{
+  "baseline_commit": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
+  "pages": {
+    "ai/": [
+      "_1",
+      "_2"
+    ],
+    "algebraic/03-homology/": [
+      "03",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "algebraic/homotopy-fundamental-group/": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "c"
+    ],
+    "algebraic/": [
+      "_1"
+    ],
+    "algebraic/linear-algebra-primer/": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "_1"
+    ],
+    "computational/": [
+      "_1",
+      "_2"
+    ],
+    "contributing/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4"
+    ],
+    "development/": [
+      "_1",
+      "_2",
+      "_3",
+      "__codelineno-0-1",
+      "__codelineno-0-10",
+      "__codelineno-0-2",
+      "__codelineno-0-3",
+      "__codelineno-0-4",
+      "__codelineno-0-5",
+      "__codelineno-0-6",
+      "__codelineno-0-7",
+      "__codelineno-0-8",
+      "__codelineno-0-9",
+      "github-pages"
+    ],
+    "./": [
+      "_1",
+      "_10",
+      "_11",
+      "_12",
+      "_13",
+      "_14",
+      "_2",
+      "_3",
+      "_4",
+      "_5",
+      "_6",
+      "_7",
+      "_8",
+      "_9"
+    ],
+    "introduction/01-spaces/": [
+      "01",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "introduction/": [
+      "_1"
+    ],
+    "labs/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4",
+      "_5",
+      "_6",
+      "__codelineno-0-1",
+      "__codelineno-1-1",
+      "finite",
+      "homology",
+      "python-notebook"
+    ],
+    "labs/point-cloud/": [
+      "2",
+      "_1",
+      "_2",
+      "point-preset",
+      "point-radius"
+    ],
+    "labs/surfaces/": [
+      "3",
+      "_1",
+      "_2"
+    ],
+    "labs/triangle/": [
+      "1",
+      "_1",
+      "_2"
+    ],
+    "math-check/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4",
+      "_5"
+    ],
+    "math-review/": [
+      "2026-10-12",
+      "_1",
+      "_2",
+      "_3",
+      "_4",
+      "_5",
+      "p1"
+    ],
+    "notation/": [
+      "_1"
+    ],
+    "persistence/": [
+      "_1",
+      "_2",
+      "_3"
+    ],
+    "point-set/02-continuity/": [
+      "02",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "point-set/bases-subbases/": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "a"
+    ],
+    "point-set/connectedness/": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "b"
+    ],
+    "point-set/": [
+      "_1"
+    ],
+    "point-set/quotient-spaces/": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "d"
+    ],
+    "progress/": [
+      "_1",
+      "_2",
+      "_3"
+    ]
+  }
+}

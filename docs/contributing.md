@@ -10,7 +10,7 @@
 
 ## 提交前检查
 
-先用 `python -m pip install -r requirements-validation.txt` 安装验证依赖，再运行 `node --test scripts/test_topology.mjs`、`python scripts/verify_independent.py`、`python scripts/verify_notebooks.py`、`python -m mkdocs build --strict`、`python scripts/verify_site.py` 和 `git diff --check`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
+先用 `python -m pip install -r requirements-validation.txt` 安装验证依赖，再运行 `node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs`、`python scripts/verify_independent.py`、`python scripts/verify_notebooks.py`、`python -m mkdocs build --strict`、`python scripts/verify_site.py` 和 `git diff --check`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
 
 新增或修改自检题时，逐个核对选项的数学理由，并实测空提交、错答、正确答案、分步提示和重置；题库位于 `docs/javascripts/exercise-bank.mjs`。不得通过缩短、舍弃正持续区间或放宽断言来消除测试差异。
 
@@ -27,3 +27,8 @@
 不复制受版权保护的教材正文、解答或插图。数学事实可以用自己的文字推导，并注明参考来源。引用书目不等于获得复制内容的许可。本版插图由项目内 SVG 源码原创绘制。
 
 第三方 MathJax 保留其 Apache-2.0 许可文件；MkDocs Material、Jupyter 等依赖保留各自许可，见 `THIRD_PARTY_NOTICES.md`。
+
+
+## 完整教材新章规范
+
+新增章遵循[十二项模板与审查协议](project/MATH_REVIEW_PROTOCOL.md)，每章6–12题及完整答案、独立审查记录。现有章渐进升级，保留旧URL/锚点与正确内容。加入`scripts/curriculum.json`并注明template=2、题解与审查路径；长期未写节点只入master-plan.json，不创建空页。先修必须无环且真实可达。

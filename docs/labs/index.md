@@ -1,6 +1,8 @@
 # 拓扑实验室
 
-先在浏览器中改变一个条件、观察拓扑变化，再用 Notebook 复现与扩展计算。理论推导位于示范章节，实验不代替一般性证明。
+先在浏览器中改变一个条件、观察拓扑变化，再用 Notebook 复现与扩展计算。理论推导位于课程正文，实验不代替一般性证明。
+
+[新增基础实验台：像与逆像、最小拓扑生成、精确距离矩阵](foundations.md)。对应PRE1–PRE3，保留下面三项原实验。
 
 ## 无需安装的交互实验
 
@@ -41,7 +43,7 @@
 python -m jupyterlab docs/labs/notebooks
 ```
 
-选择 Python 3 内核，使用 **Restart Kernel and Run All Cells** 从头运行。文件已经附带一次完整执行的输出，也可以下载后本地打开。实验无网络请求、无外部数据下载、无随机抽样。
+选择 Python 3 内核，使用 **Restart Kernel and Run All Cells** 从头运行。文件已经附带一次完整执行的输出，也可以下载后本地打开。实验无网络请求或外部数据下载。Notebook 04 使用明确记录的固定随机种子；其他 Notebook 不使用随机抽样。完整运行需安装 requirements-validation.txt，其中含 GUDHI。
 
 ## 01 · 有限拓扑与连续映射 {#finite}
 
@@ -64,7 +66,24 @@ python -m jupyterlab docs/labs/notebooks
 - **依赖：** NumPy 用于数组，Matplotlib 用于图形；矩阵秩自行在 $\mathbb F_2$ 上计算。
 
 !!! warning "尺度约定"
-    本项目用距离 $d(x_i,x_j)\le r$ 连边。部分文献以球半径定义尺度，可能使用 $2r$。比较数值前应先核对约定。二维骨架足以计算 $H_0,H_1$；不要直接把它的 $H_2$ 当成完整 Rips 复形的 $H_2$。
+    Notebook 02 用边长阈值 $r$：$d(x_i,x_j)\le r$。浏览器与 Notebook 04 用球半径 $\epsilon$：$d(x_i,x_j)\le2\epsilon$，故 $r=2\epsilon$。比较数值前应先核对约定。二维骨架足以计算 $H_0,H_1$；不要直接把它的 $H_2$ 当成完整 Rips 复形的 $H_2$。
+
+## 03 · 同调相同，上同调环不同 {#cohomology}
+
+[下载 Notebook 03](notebooks/03-cohomology-cup-products.ipynb){ .md-button .md-button--primary }
+
+- **对应：** Q1–Q2、K1。有限周期环面与两个圆和球面的楔和均有 Betti 数 (1,2,1)。
+- **可运行：** 整数边界复合为零、模 2 上链核/像、基本二循环上的杯积配对。环面配对矩阵为 `[[0,1],[1,0]]`，楔和全零。
+- **理论边界：** 指定复形的精确代数验证，不替代一般杯积与同伦不变性证明。依赖 NumPy。
+
+## 04 · 拓扑学习与几何基线 {#learning}
+
+[下载 Notebook 04](notebooks/04-topology-learning-baselines.ipynb){ .md-button .md-button--primary }
+
+- **对应：** R1–R2、A1–A2。固定种子 `20261012`，96 个独立点云，64/32 训练测试划分。
+- **可运行：** GUDHI 在模 2 上求完整有限 H₁ 区间，转换为半径参数；相同最近质心分类器比较几何、拓扑、联合特征，标准化只拟合训练集。
+- **实际结果：** 准确率分别为 30/32、31/32、31/32。全部正长度条参与计算，没有以容差删除短条。
+- **理论边界：** 一次合成数据划分，没有真实任务、多种子或显著性优势结论。依赖 NumPy、Matplotlib、GUDHI 3.11.0。
 
 ## 复现检查
 

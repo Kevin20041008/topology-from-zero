@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify interactive topology algorithms
-        run: node --test scripts/test_topology.mjs
+        run: node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
       - run: python -m pip install -r requirements-validation.txt
       - name: Compare with independent GUDHI persistence
         run: python scripts/verify_independent.py
@@ -44,6 +44,8 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.base_url || 'http://127.0.0.1:8000/' }}
         run: python -m mkdocs build --strict
       - name: Verify generated links, search, and math markup
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url || 'http://127.0.0.1:8000/' }}
         run: python scripts/verify_site.py
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
