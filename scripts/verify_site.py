@@ -59,6 +59,22 @@ def main():
             ids = {element["id"] for element in parsed[old_path].select("[id]")}
             assert set(anchors) <= ids, f"Removed legacy anchors at {url}: {set(anchors) - ids}"
 
+    # Candidate chapters have incoming links too. Keep the six original
+    # semantic destinations, not merely arbitrary elements with the same IDs.
+    differential = json.loads((ROOT / 'scripts/differential-baseline.json').read_text(encoding='utf-8'))
+    semantic_headings = {
+        '1': ('直观解释',), '2': ('严格定义',), '3': ('定理与证明',),
+        '4': ('正例与反例',), '5': ('课后习题', '练习'), '6': ('参考书目',),
+    }
+    for url, anchors in differential['pages'].items():
+        page = parsed[(SITE / url / 'index.html').resolve()]
+        for anchor, original_title in anchors.items():
+            heading = page.find(id=anchor)
+            assert heading is not None, f'Removed differential anchor: {url}#{anchor}'
+            assert heading.name in ('h1', 'h2'), f'Anchor is no longer a heading: {url}#{anchor}'
+            expected = semantic_headings.get(anchor, (original_title,))
+            assert any(term in heading.get_text() for term in expected), f'Anchor meaning changed: {url}#{anchor}'
+
     index = json.loads((SITE / "search/search_index.json").read_text(encoding="utf-8"))
     # Material inserts zero-width word separators for Chinese tokenization.
     indexed = " ".join(item["text"] for item in index["docs"]).replace("\u200b", "")
@@ -105,6 +121,14 @@ def main():
         for node in prose.select('.arithmatex, code, pre'):
             node.decompose()
         assert '$' not in prose.get_text(), f'Unparsed math delimiter in {chapter}'
+        if record.get('solutions'):
+            solution_url = record['solutions'].removesuffix('.md')
+            solution_page = parsed[(SITE / solution_url / 'index.html').resolve()]
+            assert solution_page.select('.arithmatex'), f'Missing solution math: {solution_url}'
+            solution_prose = BeautifulSoup(str(solution_page.select_one('.md-content__inner')), 'html.parser')
+            for node in solution_prose.select('.arithmatex, code, pre'):
+                node.decompose()
+            assert '$' not in solution_prose.get_text(), f'Unparsed solution math delimiter: {solution_url}'
         assert page.select_one(f'[data-exercise="{exercise}"]'), f"Missing exercise in {chapter}"
         assert len(page.select('[data-exercise]')) == 1, f"Ambiguous exercise mount in {chapter}"
         assert page.select_one('.md-content__inner details'), f"Missing written hints in {chapter}"

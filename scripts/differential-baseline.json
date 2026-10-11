@@ -1,0 +1,24 @@
+{
+  "source_commit": "78c0a2e917c4ca76b9a79fc6883d36c48657e9b2",
+  "scope": "Previously reviewed candidate D1/D2 headings; never regenerate to hide broken anchors",
+  "pages": {
+    "differential/manifolds-rank": {
+      "d1": "D1 · 光滑流形、切空间与秩定理",
+      "1": "1. 直观解释",
+      "2": "2. 严格定义",
+      "3": "3. 定理与证明",
+      "4": "4. 正例与反例",
+      "5": "5. 练习",
+      "6": "6. 参考书目"
+    },
+    "differential/transversality-degree": {
+      "d2": "D2 · 横截性、交叉与映射度",
+      "1": "1. 直观解释",
+      "2": "2. 严格定义",
+      "3": "3. 定理与证明",
+      "4": "4. 正例与反例",
+      "5": "5. 练习",
+      "6": "6. 参考书目"
+    }
+  }
+}

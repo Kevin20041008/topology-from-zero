@@ -58,7 +58,7 @@ test('the 82-unit master plan covers eleven parts without missing or cyclic prer
 
 test('new formal chapters have twelve sections, eight exercises, complete solution pages and review records',()=>{
   const additions=chapters.filter(c=>c.template===2);
-  assert.equal(additions.length,3);
+  assert.deepEqual(new Set(additions.map(c=>c.code)),new Set(['PRE1','PRE2','PRE3','D1','D2']));
   for(const chapter of additions) {
     const source=readFileSync(new URL(`../docs/${chapter.path}`,import.meta.url),'utf8');
     assert.deepEqual([...source.matchAll(/^## (\d+)\./gm)].map(x=>Number(x[1])),Array.from({length:12},(_,i)=>i+1));

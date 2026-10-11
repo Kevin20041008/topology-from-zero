@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" role="img" aria-labelledby="d2-title d2-desc">
+  <title id="d2-title">横截、相切与相反符号交点</title>
+  <desc id="d2-desc">左上斜线与水平线有独立切方向，横截相交。左下抛物线在顶点与水平线相切。右侧函数x平方减a的抛物线与零线有两个交点，左点导数负记负一，右点导数正记正一，有符号和为零。</desc>
+  <rect width="940" height="430" rx="16" fill="#f6f8f4"/>
+  <g font-family="sans-serif" fill="#173e39">
+    <text x="28" y="35" font-size="20" font-weight="600">切方向决定是否横截</text>
+    <text x="480" y="35" font-size="20" font-weight="600">两个正则根，符号相反</text>
+    <line x1="450" y1="20" x2="450" y2="407" stroke="#bacbc0"/>
+    <text x="28" y="74" font-size="16">横截：两条切线张成平面</text>
+    <line x1="55" y1="146" x2="390" y2="146" stroke="#425f57" stroke-width="2"/>
+    <line x1="130" y1="194" x2="285" y2="98" stroke="#21715f" stroke-width="3"/>
+    <circle cx="207.5" cy="146" r="4.5" fill="#173e39"/>
+    <path d="M207.5 146H257.5L249.5 141M257.5 146L249.5 151" fill="none" stroke="#a4772a" stroke-width="2"/>
+    <path d="M207.5 146L250 119.7L240.5 120M250 119.7L245.3 128" fill="none" stroke="#21715f" stroke-width="2"/>
+    <text x="291" y="116" font-size="15">独立方向</text>
+    <text x="28" y="239" font-size="16">相切：原点的两条切线重合</text>
+    <line x1="55" y1="342" x2="390" y2="342" stroke="#425f57" stroke-width="2"/>
+    <path d="M90 267Q220 417 350 267" fill="none" stroke="#21715f" stroke-width="3"/>
+    <line x1="162" y1="342" x2="278" y2="342" stroke="#a4772a" stroke-width="3" stroke-dasharray="6 4"/>
+    <circle cx="220" cy="342" r="4.5" fill="#173e39"/>
+    <text x="105" y="392" font-size="15">交集为一个点，但不横截</text>
+    <text x="486" y="83" font-size="17">f(x) = x² − a，a &gt; 0</text>
+    <line x1="495" y1="235" x2="892" y2="235" stroke="#425f57" stroke-width="2"/>
+    <line x1="695" y1="113" x2="695" y2="324" stroke="#aabcb2" stroke-width="1.5"/>
+    <path d="M515 111Q695 471 875 111" fill="none" stroke="#21715f" stroke-width="3"/>
+    <circle cx="594.6" cy="235" r="5" fill="#a66d28"/>
+    <circle cx="795.4" cy="235" r="5" fill="#21715f"/>
+    <line x1="571" y1="208.5" x2="618.2" y2="261.5" stroke="#a66d28" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="771.8" y1="261.5" x2="819" y2="208.5" stroke="#21715f" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="568" y="194" font-size="21" fill="#986322">−1</text>
+    <text x="781" y="194" font-size="21" fill="#21715f">+1</text>
+    <text x="563" y="287" font-size="15">−√a</text>
+    <text x="781" y="287" font-size="15">+√a</text>
+    <text x="489" y="357" font-size="16">左根：f′ &lt; 0；右根：f′ &gt; 0</text>
+    <text x="489" y="388" font-size="16">有符号和 (−1) + (+1) = 0</text>
+    <text x="489" y="412" font-size="13">局部示意，不把非紧定义域误称为闭流形</text>
+  </g>
+</svg>
