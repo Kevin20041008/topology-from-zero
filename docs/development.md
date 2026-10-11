@@ -9,7 +9,7 @@
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements-validation.txt
-node --test scripts/test_topology.mjs scripts/test_curriculum.mjs
+node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
 python scripts/verify_independent.py
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
@@ -41,7 +41,7 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 - `python -m mkdocs build --strict` 将警告视为错误。
 - `python scripts/verify_site.py` 检查本地链接与片段、v0.2 与 v0.3 的旧 URL/锚点、课程清单中的全部正文和自检挂载、搜索索引、数学标记和本地 MathJax。
 - `python scripts/verify_independent.py` 在同一双精度边出生值上，使用 GUDHI 独立构造和约化，严格比较区间；另对照三个曲面抽象复形。它不用于证明一般数学定理。
-- `node --test scripts/test_topology.mjs scripts/test_curriculum.mjs` 检查三角形、退化点云、持续区间、等距/尺度变换、边界平方为零及曲面网格不变量；需要 Node.js 22 或更新版本。
+- `node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs` 检查三角形、退化点云、持续区间、等距/尺度变换、边界平方为零及曲面网格不变量；需要 Node.js 22 或更新版本。
 - 三个交互页面位于 `docs/labs/`，浏览器算法位于 `docs/javascripts/topology-core.mjs`，Three.js 的版本和许可见 `THIRD_PARTY_NOTICES.md`。
 - 浏览器中访问[公式检查页](math-check.md)，验证最终 SVG 排版、搜索与明暗主题。
 

@@ -1,10 +1,10 @@
 # 研究生课程地图
 
-本版按研究生层次组织八个方向、42 篇正文与 42 个分步自检，保留三项浏览器实验并提供四份已执行 Notebook。研究生深度体现为定理假设、证明结构、反例和系数/范畴边界；不意味着已自包含证明拓扑学的全部深定理。
+当前候选含45篇正文与45个分步自检、4个浏览器实验和4份Notebook。原八方向加数学预备形成现有课程，11部分长期体系见总计划；只有PRE1–PRE3在本批完成十二项模板与24题完整答案。研究生深度体现为定理假设、证明结构、反例和系数/范畴边界；不意味着已自包含证明拓扑学的全部深定理。
 
 ## 建议学习顺序
 
-1. **通用基础：** 导论 → 点集拓扑基础 A、第二章 → P1–P3 → 连通与商空间 → P4–P10。P5 用 ZFC，P7 与 P8 可作为并行支线。
+1. **通用基础：** PRE1集合 → PRE2证明 → PRE3度量 → 导论 → 点集拓扑基础 A、第二章 → P1–P3 → 连通与商空间 → P4–P10。P5 用 ZFC，P7 与 P8 可作为并行支线。
 2. **代数拓扑四单元：** 基本群基础 → F1 → 覆盖 C1 → F2 → C2；代数预备 → 第三章 → H1–H3 → Q1–Q2。G1 连接高阶同伦与谱序列。
 3. **微分拓扑：** 先具备多元微积分、逆函数定理和 ODE，再从 D1 到 D5；D2 起需要 H3/Q2。
 4. **几何拓扑：** 商空间、基本群与同调 → T1–T4；D4 为三维柄与配边的背景。
@@ -16,7 +16,10 @@
 
 | 代码 | 正文 | 本站先修 |
 | --- | --- | --- |
-| spaces | [01 · 从距离到拓扑](introduction/01-spaces.md) | 集合、函数与实数 |
+| PRE1 | [集合、映射与商集](preliminaries/sets-maps-relations.md) | 初等代数 |
+| PRE2 | [证明与反例](preliminaries/proofs-counterexamples.md) | PRE1 |
+| PRE3 | [度量空间](preliminaries/metric-spaces.md) | PRE1、PRE2、外部实分析 |
+| spaces | [01 · 从距离到拓扑](introduction/01-spaces.md) | PRE3 |
 | bases | [基础 A · 拓扑基与子基](point-set/bases-subbases.md) | spaces |
 | continuity | [02 · 连续映射与紧致性](point-set/02-continuity.md) | spaces、bases |
 | P1 | [P1 · 闭包、内部、边界与网](point-set/closure-nets.md) | bases、continuity |
@@ -36,7 +39,7 @@
 | F2 | [F2 · van Kampen、图与胞腔表示](algebraic/fundamental-group/van-kampen.md) | F1、C1、quotient |
 | C1 | [C1 · 覆盖映射、提升与圆周基本群](algebraic/covering/lifting-circle.md) | F1、P4 |
 | C2 | [C2 · 提升判据、万有覆盖与覆盖分类](algebraic/covering/classification.md) | C1、connectedness |
-| linear-quotient | [代数预备 · 链群与线性商空间](algebraic/linear-algebra-primer.md) | spaces |
+| linear-quotient | [代数预备 · 链群与线性商空间](algebraic/linear-algebra-primer.md) | spaces、PRE1、PRE2 |
 | homology | [03 · 环、边界与同调](algebraic/03-homology.md) | linear-quotient |
 | H1 | [H1 · 整数奇异链与同伦不变性](algebraic/homology/singular-chains.md) | F1、linear-quotient |
 | H2 | [H2 · 相对同调、切除与 Mayer–Vietoris](algebraic/homology/exact-excision.md) | H1、P4 |
@@ -64,9 +67,13 @@
 | 范围 | 本版证明与计算 | 明确引用或后续深化 |
 | --- | --- | --- |
 | 点集 | 网、紧致等价、Tychonoff、Urysohn、完备化、Baire、单位分解、Arzelà–Ascoli | Zorn 等集合/分析先修；Stone；更广集合拓扑专题 |
-| 代数 | 覆盖分类、van Kampen、奇异链、切除、有限胞腔、有限自由系数、杯积、有限 PL 对偶机制 | Eilenberg–Zilber、杯积分次交换性、一般流形对偶、Hurewicz/Serre 几何构造 |
+| 代数 | 覆盖分类、van Kampen、奇异链、切除、有限胞腔与系数的条件推导、杯积、PL对偶概要 | Eilenberg–Zilber、杯积分次交换性、一般流形对偶、Hurewicz/Serre 几何构造 |
 | 微分 | 常秩与正则原像、参数横截推导、Stokes、同伦算子、Morse 不等式、球面线丛计算 | Sard、Whitney、de Rham 全局比较、Morse 引理/柄附加、一般特征类 |
 | 几何 | 链接充分判据、曲面不变量、三叶结非平凡、Dehn 填充群与同调 | 曲面分类的边词规约、Wirtinger 几何证明、三维分解/几何化与高维手术 |
 | 计算/AI | 有限边界证书、精确端点语义、半径交错界、景观稳定性、固定测试误差界、两份新计算实验 | 完整持续分解/配对与代数稳定性证明、大规模性能及真实任务泛化 |
 
 所有这些“引用”都在正文使用处再次标记。[研究生审查台账](graduate-review.md)记录尚未完成的独立复核；[实验室](labs/index.md)区分浏览器探索、Notebook 计算与一般定理证明。
+
+
+!!! info "M1 基础批次 1：持续建设中"
+    新增PRE1–PRE3三章、24题完整答案与基础实验台。当前候选合计45章；旧42章仍待按新标准升级。11部分82单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。

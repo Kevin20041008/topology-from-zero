@@ -1,0 +1,215 @@
+{
+  "commit": "2ef21556cce4f614e6ddd0f572a9fb9b5d4ce4ba",
+  "chapters": [
+    {
+      "code": "spaces",
+      "path": "introduction/01-spaces.md",
+      "exercise": "spaces"
+    },
+    {
+      "code": "bases",
+      "path": "point-set/bases-subbases.md",
+      "exercise": "bases"
+    },
+    {
+      "code": "continuity",
+      "path": "point-set/02-continuity.md",
+      "exercise": "continuity"
+    },
+    {
+      "code": "P1",
+      "path": "point-set/closure-nets.md",
+      "exercise": "point-set-closure-nets"
+    },
+    {
+      "code": "P2",
+      "path": "point-set/separation-countability.md",
+      "exercise": "point-set-separation-countability"
+    },
+    {
+      "code": "P3",
+      "path": "point-set/products-sums.md",
+      "exercise": "point-set-products-sums"
+    },
+    {
+      "code": "connectedness",
+      "path": "point-set/connectedness.md",
+      "exercise": "connectedness"
+    },
+    {
+      "code": "quotient",
+      "path": "point-set/quotient-spaces.md",
+      "exercise": "quotient"
+    },
+    {
+      "code": "P4",
+      "path": "point-set/compactness-metric.md",
+      "exercise": "point-set-compactness-metric"
+    },
+    {
+      "code": "P5",
+      "path": "point-set/filters-tychonoff.md",
+      "exercise": "point-set-filters-tychonoff"
+    },
+    {
+      "code": "P6",
+      "path": "point-set/local-compactness.md",
+      "exercise": "point-set-local-compactness"
+    },
+    {
+      "code": "P7",
+      "path": "point-set/metrization-extension.md",
+      "exercise": "point-set-metrization-extension"
+    },
+    {
+      "code": "P8",
+      "path": "point-set/completion-baire.md",
+      "exercise": "point-set-completion-baire"
+    },
+    {
+      "code": "P9",
+      "path": "point-set/local-properties-partitions.md",
+      "exercise": "point-set-local-properties-partitions"
+    },
+    {
+      "code": "P10",
+      "path": "point-set/function-spaces.md",
+      "exercise": "point-set-function-spaces"
+    },
+    {
+      "code": "homotopy",
+      "path": "algebraic/homotopy-fundamental-group.md",
+      "exercise": "homotopy"
+    },
+    {
+      "code": "F1",
+      "path": "algebraic/fundamental-group/functor-basepoint.md",
+      "exercise": "algebraic-fundamental-group-functor-basepoint"
+    },
+    {
+      "code": "F2",
+      "path": "algebraic/fundamental-group/van-kampen.md",
+      "exercise": "algebraic-fundamental-group-van-kampen"
+    },
+    {
+      "code": "C1",
+      "path": "algebraic/covering/lifting-circle.md",
+      "exercise": "algebraic-covering-lifting-circle"
+    },
+    {
+      "code": "C2",
+      "path": "algebraic/covering/classification.md",
+      "exercise": "algebraic-covering-classification"
+    },
+    {
+      "code": "linear-quotient",
+      "path": "algebraic/linear-algebra-primer.md",
+      "exercise": "linear-quotient"
+    },
+    {
+      "code": "homology",
+      "path": "algebraic/03-homology.md",
+      "exercise": "homology"
+    },
+    {
+      "code": "H1",
+      "path": "algebraic/homology/singular-chains.md",
+      "exercise": "algebraic-homology-singular-chains"
+    },
+    {
+      "code": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "exercise": "algebraic-homology-exact-excision"
+    },
+    {
+      "code": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "exercise": "algebraic-homology-cellular-coefficients"
+    },
+    {
+      "code": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "exercise": "algebraic-cohomology-cochains-products"
+    },
+    {
+      "code": "Q2",
+      "path": "algebraic/cohomology/duality.md",
+      "exercise": "algebraic-cohomology-duality"
+    },
+    {
+      "code": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "exercise": "algebraic-graduate-tools"
+    },
+    {
+      "code": "D1",
+      "path": "differential/manifolds-rank.md",
+      "exercise": "differential-manifolds-rank"
+    },
+    {
+      "code": "D2",
+      "path": "differential/transversality-degree.md",
+      "exercise": "differential-transversality-degree"
+    },
+    {
+      "code": "D3",
+      "path": "differential/forms-derham.md",
+      "exercise": "differential-forms-derham"
+    },
+    {
+      "code": "D4",
+      "path": "differential/morse-handles.md",
+      "exercise": "differential-morse-handles"
+    },
+    {
+      "code": "D5",
+      "path": "differential/bundles-characteristic.md",
+      "exercise": "differential-bundles-characteristic"
+    },
+    {
+      "code": "T1",
+      "path": "geometric/categories-triangulations.md",
+      "exercise": "geometric-categories-triangulations"
+    },
+    {
+      "code": "T2",
+      "path": "geometric/surfaces.md",
+      "exercise": "geometric-surfaces"
+    },
+    {
+      "code": "T3",
+      "path": "geometric/knots.md",
+      "exercise": "geometric-knots"
+    },
+    {
+      "code": "T4",
+      "path": "geometric/three-manifolds-surgery.md",
+      "exercise": "geometric-three-manifolds-surgery"
+    },
+    {
+      "code": "K1",
+      "path": "computational/boundary-algorithms.md",
+      "exercise": "computational-boundary-algorithms"
+    },
+    {
+      "code": "R1",
+      "path": "persistence/modules-reduction.md",
+      "exercise": "persistence-modules-reduction"
+    },
+    {
+      "code": "R2",
+      "path": "persistence/stability.md",
+      "exercise": "persistence-stability"
+    },
+    {
+      "code": "A1",
+      "path": "ai/features-learning.md",
+      "exercise": "ai-features-learning"
+    },
+    {
+      "code": "A2",
+      "path": "ai/evaluation-protocol.md",
+      "exercise": "ai-evaluation-protocol"
+    }
+  ]
+}

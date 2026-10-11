@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-12",
+  "method": "Agent-operated Codex in-app browser, observed DOM and screenshots; not CI or formal mathematical verification",
+  "site": "http://127.0.0.1:8014/",
+  "math": [
+    {
+      "path": "preliminaries/sets-maps-relations/",
+      "formulas": 342,
+      "rendered": 342,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "preliminaries/proofs-counterexamples/",
+      "formulas": 115,
+      "rendered": 115,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "preliminaries/metric-spaces/",
+      "formulas": 294,
+      "rendered": 294,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "exercises/pre1-solutions/",
+      "formulas": 164,
+      "rendered": 164,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "exercises/pre2-solutions/",
+      "formulas": 56,
+      "rendered": 56,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "exercises/pre3-solutions/",
+      "formulas": 169,
+      "rendered": 169,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "algebraic/cohomology/duality/",
+      "formulas": 55,
+      "rendered": 55,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "algebraic/homology/cellular-coefficients/",
+      "formulas": 74,
+      "rendered": 74,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "algebraic/graduate-tools/",
+      "formulas": 65,
+      "rendered": 65,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "differential/forms-derham/",
+      "formulas": 51,
+      "rendered": 51,
+      "merror": 0,
+      "raw_display_delimiters": false
+    },
+    {
+      "path": "differential/morse-handles/",
+      "formulas": 55,
+      "rendered": 55,
+      "merror": 0,
+      "raw_display_delimiters": false
+    }
+  ],
+  "total_formulas": 1440,
+  "exercises": {
+    "keys": [
+      "pre1",
+      "pre2",
+      "pre3"
+    ],
+    "checks": [
+      "empty submission",
+      "two hints",
+      "incorrect feedback",
+      "selection change clears feedback",
+      "correct feedback",
+      "reset clears selection, feedback and hints"
+    ],
+    "passed": true
+  },
+  "lab": {
+    "checks": [
+      "triangle inequality violation 3 > 1 + 1",
+      "metric matrix [[0,2,3],[2,0,4],[3,4,0]]",
+      "strict ball B(0,3)={0,1} excludes vertex 2",
+      "zero 2x2 pseudometric",
+      "reject nonsquare [[]]",
+      "identity and collapse mapping outputs",
+      "adding {b} completes the five-open-set topology",
+      "matrix edits clear stale ball output"
+    ],
+    "passed": true
+  },
+  "search": {
+    "query": "伪度量",
+    "result_pages": 8,
+    "includes": [
+      "PRE3 chapter",
+      "PRE3 solutions"
+    ]
+  },
+  "themes": {
+    "light": "default",
+    "dark": "slate",
+    "restored": "slate"
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "pages": [
+      "labs/foundations/",
+      "preliminaries/metric-spaces/"
+    ],
+    "document_width": 375,
+    "no_whole_page_horizontal_overflow": true,
+    "svg_loaded": true,
+    "viewport_restored": true
+  },
+  "visual_checks": [
+    "PRE3 mobile typography and SVG",
+    "foundation lab mobile controls",
+    "prerequisite SVG in light desktop theme"
+  ],
+  "limits": [
+    "Only the listed pages and workflows were inspected in the browser.",
+    "Original 42 chapters were not all rechecked visually in this batch.",
+    "Browser acceptance is recorded observation, not a checked-in browser automation suite."
+  ]
+}

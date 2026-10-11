@@ -29,7 +29,7 @@ $$
 dK\omega+Kd\omega=F_1^*\omega-F_0^*\omega.
 $$
 
-对星形开集取 $F(x,t)=tx$。正次形式经常值映射拉回为零，闭形式遂满足 $\omega=dK\omega$。$\square$
+对星形开集 $U$，先取星形中心 $a\in U$，再设 $F(x,t)=a+t(x-a)$。星形假设保证整条线段留在 $U$ 中，$F_0$ 为常值 $a$，$F_1$ 为恒等映射。正次形式经常值映射拉回为零，闭形式遂满足 $\omega=dK\omega$。不能不经平移就使用 $tx$：例如 $U=(1,2)$ 时 $t=0$ 已离开定义域。$\square$
 
 **定理 D3.3（Stokes）。** 对定向光滑 $n$ 维带边界流形及紧支撑 $(n-1)$ 形式，$\int_Md\omega=\int_{\partial M}\omega$，边界定向采用外法向在前。
 

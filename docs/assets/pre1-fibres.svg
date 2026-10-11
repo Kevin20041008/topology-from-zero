@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" role="img" aria-labelledby="pre1-title pre1-desc">
+  <title id="pre1-title">映射的纤维、像与陪域</title>
+  <desc id="pre1-desc">定义域有a、b、c、d四点。a和b映到u，c和d映到v；陪域第三点w没有原像。两条非空纤维为集合a、b与集合c、d。</desc>
+  <defs>
+    <marker id="pre1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="900" height="590" rx="16" fill="#ffffff"/>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#172033">
+    <text x="70" y="44" font-size="25" font-weight="700">一个函数，三种集合信息</text>
+    <text x="185" y="90" text-anchor="middle" font-size="21" font-weight="600">X：定义域</text>
+    <text x="665" y="90" text-anchor="middle" font-size="21" font-weight="600">Y：陪域</text>
+    <rect x="55" y="108" width="260" height="350" rx="24" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    <rect x="535" y="108" width="260" height="350" rx="24" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+    <rect x="78" y="127" width="214" height="140" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <rect x="78" y="297" width="214" height="140" rx="20" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <rect x="558" y="132" width="214" height="213" rx="20" fill="#eff6ff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="185" y="151" text-anchor="middle" font-size="16">纤维 f⁻¹({u}) = {a,b}</text>
+    <text x="185" y="321" text-anchor="middle" font-size="16">纤维 f⁻¹({v}) = {c,d}</text>
+    <text x="665" y="158" text-anchor="middle" font-size="16">实际像 f(X) = {u,v}</text>
+    <g fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#pre1-arrow)">
+      <path d="M 198 189 C 350 189, 450 210, 644 210"/>
+      <path d="M 198 232 C 365 232, 455 210, 644 210"/>
+      <path d="M 198 359 C 350 359, 450 302, 644 302"/>
+      <path d="M 198 402 C 365 402, 455 302, 644 302"/>
+    </g>
+    <g fill="#2563eb">
+      <circle cx="185" cy="189" r="8"/><circle cx="185" cy="232" r="8"/>
+      <circle cx="185" cy="359" r="8"/><circle cx="185" cy="402" r="8"/>
+      <circle cx="665" cy="210" r="8"/><circle cx="665" cy="302" r="8"/>
+    </g>
+    <circle cx="665" cy="402" r="8" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+    <g font-size="22" font-weight="600">
+      <text x="153" y="196">a</text><text x="153" y="239">b</text>
+      <text x="153" y="366">c</text><text x="153" y="409">d</text>
+      <text x="686" y="217">u</text><text x="686" y="309">v</text>
+      <text x="686" y="409">w</text>
+    </g>
+    <text x="665" y="440" text-anchor="middle" font-size="16" fill="#475569">w 没有原像</text>
+    <text x="450" y="497" text-anchor="middle" font-size="20">商集 X/∼f 的元素是两个非空纤维。</text>
+    <text x="450" y="532" text-anchor="middle" font-size="18" fill="#475569">逆像收集输入；像只记录输出，可能丢失同一纤维内的区别。</text>
+    <text x="450" y="566" text-anchor="middle" font-size="14" fill="#64748b">Topology from Zero · PRE1 原创有限映射示意图</text>
+  </g>
+</svg>
