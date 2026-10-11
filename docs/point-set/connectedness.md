@@ -80,6 +80,9 @@ $$
     4. 两个互不相交的单点是反例；非空相交是充分条件，见 B.7，但不是必要条件（如 $[0,1]$ 与 $(1,2]$）。
     5. 只加边时分支只能合并或不变。有限单纯复形的 $H_0$ 记录其边图分支数；这个代数对应将在第三章的补充证明中建立。
 
+<div class="admonition question" data-exercise="connectedness"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 连通空间、分支与道路连通性。

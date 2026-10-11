@@ -16,7 +16,7 @@ def main():
     assert SITE.is_dir(), "Run python -m mkdocs build --strict first"
     failures = []
     html_paths = sorted(SITE.rglob("*.html"))
-    assert len(html_paths) >= 24, "Missing expected pages"
+    assert len(html_paths) >= 26, "Missing expected pages"
     parsed = {path.resolve(): BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser") for path in html_paths}
     for path in html_paths:
         soup = parsed[path.resolve()]
@@ -52,7 +52,7 @@ def main():
     index = json.loads((SITE / "search/search_index.json").read_text(encoding="utf-8"))
     # Material inserts zero-width word separators for Chinese tokenization.
     indexed = " ".join(item["text"] for item in index["docs"]).replace("\u200b", "")
-    for term in ["紧致", "同调", "拓扑基", "子基", "道路连通", "基本群"]:
+    for term in ["紧致", "同调", "拓扑基", "子基", "道路连通", "基本群", "商空间", "陪集"]:
         assert term in indexed, f"Missing Chinese search content: {term}"
     assert set(index["config"]["lang"]) == {"zh", "en"}
 
@@ -63,21 +63,27 @@ def main():
     assert not any(src.startswith("http") for src in scripts), "Unexpected remote script"
     assert (SITE / "assets/vendor/mathjax/tex-svg.js").stat().st_size > 100000
 
-    for chapter in ["introduction/01-spaces", "point-set/02-continuity", "algebraic/03-homology",
-                    "point-set/bases-subbases", "point-set/connectedness", "algebraic/homotopy-fundamental-group"]:
+    chapters = {"introduction/01-spaces": "spaces", "point-set/02-continuity": "continuity",
+                "algebraic/03-homology": "homology", "point-set/bases-subbases": "bases",
+                "point-set/connectedness": "connectedness", "algebraic/homotopy-fundamental-group": "homotopy",
+                "point-set/quotient-spaces": "quotient", "algebraic/linear-algebra-primer": "linear-quotient"}
+    for chapter, exercise in chapters.items():
         page = BeautifulSoup((SITE / chapter / "index.html").read_text(encoding="utf-8"), "html.parser")
         text = page.get_text()
         for section in ["直观解释", "严格定义", "定理与证明", "正例与反例", "练习", "参考书目"]:
             assert section in text, f"Missing {section} in {chapter}"
         assert page.select(".md-footer__link--prev") and page.select(".md-footer__link--next")
         assert page.select(".arithmatex"), f"Missing formula markup in {chapter}"
+        assert page.select_one(f'[data-exercise="{exercise}"]'), f"Missing exercise in {chapter}"
+        assert any('exercises.mjs' in tag.get('src', '') and tag.get('type') == 'module' for tag in page.select('script[src]'))
     for page_name in ["triangle", "point-cloud", "surfaces"]:
         page = BeautifulSoup((SITE / "labs" / page_name / "index.html").read_text(encoding="utf-8"), "html.parser")
         assert page.select_one('[data-lab]'), f"Missing interactive lab: {page_name}"
         assert any('experiments.mjs' in tag.get('src', '') and tag.get('type') == 'module' for tag in page.select('script[src]'))
     assert (SITE / 'assets/vendor/three/three.module.js').is_file()
     assert (SITE / 'javascripts/topology-core.mjs').is_file()
-    print(f"PASS {len(html_paths)} HTML pages: local links/fragments, {len(legacy['pages'])} legacy URLs and anchors, Chinese search, six chapters, navigation, math and interactive modules")
+    assert (SITE / 'javascripts/exercise-bank.mjs').is_file()
+    print(f"PASS {len(html_paths)} HTML pages: local links/fragments, {len(legacy['pages'])} legacy URLs and anchors, Chinese search, eight chapters/exercises, navigation, math and interactive modules")
 
 
 if __name__ == "__main__":

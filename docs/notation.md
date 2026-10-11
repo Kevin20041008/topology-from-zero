@@ -25,5 +25,10 @@
 | $\pi_1(X,x_0)$，基本群 | fundamental group | 基于 $x_0$ 的环路的端点固定同伦类 |
 | $\alpha*\beta$，拼接 | concatenation | 先走 $\alpha$ 再走 $\beta$ |
 | 可缩 | contractible | 非空空间的恒等映射同伦于常值映射 |
+| $X/{\sim}$，商空间 | quotient space | 商集合配上“子集开当且仅当其逆像开”的拓扑 |
+| 饱和 | saturated | 子集是完整等价类的并 |
+| $Z/B$，线性商空间 | quotient vector space | $B$ 必须是 $Z$ 的子空间，元素是陪集 |
+| 同伦等价 | homotopy equivalence | 两个方向连续映射的复合分别同伦于恒等映射 |
+| 同调同构 | homology isomorphism | 必须说明次数、系数以及是否由指定空间映射诱导 |
 
 若未另行说明，实数子集使用通常拓扑诱导的子空间拓扑；有限同调计算使用 $\mathbb F_2$。第一章的空集、全空间允许既开又闭。

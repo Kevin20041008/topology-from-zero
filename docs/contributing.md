@@ -10,7 +10,9 @@
 
 ## 提交前检查
 
-运行 `node --test scripts/test_topology.mjs`、`python scripts/verify_notebooks.py`、`python -m mkdocs build --strict`、`python scripts/verify_site.py` 和 `git diff --check`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
+先用 `python -m pip install -r requirements-validation.txt` 安装验证依赖，再运行 `node --test scripts/test_topology.mjs`、`python scripts/verify_independent.py`、`python scripts/verify_notebooks.py`、`python -m mkdocs build --strict`、`python scripts/verify_site.py` 和 `git diff --check`。涉及公式或样式时，再检查浏览器中的实际排版与手机宽度。
+
+新增或修改自检题时，逐个核对选项的数学理由，并实测空提交、错答、正确答案、分步提示和重置；题库位于 `docs/javascripts/exercise-bank.mjs`。不得通过缩短、舍弃正持续区间或放宽断言来消除测试差异。
 
 修改现有项目时先检查冲突，保留原文件；提交数学修正时附具体位置、问题说明和论证。不要用占位文本增加章节数量。
 

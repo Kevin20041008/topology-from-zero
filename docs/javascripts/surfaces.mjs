@@ -15,6 +15,9 @@ export function mobiusPoint(u, v) {
 }
 
 function mobiusGeometry(along = 112, across = 20) {
+  // Rendering intentionally duplicates the u=0 and u=2pi seam (separate normals).
+  // Its raw index complex is a rectangle. For topology, use surfaceComplex in
+  // surface-topology.mjs, which identifies (along,j) with (0,across-j) exactly.
   const positions = [], indices = [];
   for (let i = 0; i <= along; i++) for (let j = 0; j <= across; j++) {
     positions.push(...mobiusPoint(i / along * 2 * Math.PI, (j / across - .5) * 1.1).toArray());

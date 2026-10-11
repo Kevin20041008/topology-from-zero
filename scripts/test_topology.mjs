@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {bettiNumbers, boundaryMatrix, rankF2, ripsFiltration, persistentHomology, bettiAt, pointPresets} from '../docs/javascripts/topology-core.mjs';
 import {surfaces, mobiusPoint, createSurfaceGeometry} from '../docs/javascripts/surfaces.mjs';
+import {surfaceComplex} from '../docs/javascripts/surface-topology.mjs';
+import {pointCases} from './topology_cases.mjs';
 
 test('hollow triangle and filled triangle distinguish cycles from boundaries', () => {
   const hollow = [[0], [1], [2], [0, 1], [0, 2], [1, 2]];
@@ -151,26 +153,9 @@ test('nonfinite coordinates and unrepresentable distances are rejected', () => {
   }
 });
 
-// Weld coincident render vertices only in these bounded, coarse fixtures.
-// This tolerance is not used by the Rips algorithm or claimed for arbitrary meshes.
-function meshComplex(geometry) {
-  const points = [], remap = [];
-  const position = geometry.getAttribute('position');
-  for (let i = 0; i < position.count; i++) {
-    const p = [position.getX(i), position.getY(i), position.getZ(i)];
-    assert.ok(p.every(Number.isFinite));
-    let v = points.findIndex(q => Math.hypot(...p.map((x, j) => x - q[j])) < 1e-5);
-    if (v < 0) { v = points.length; points.push(p); }
-    remap.push(v);
-  }
-  const faceMap = new Map(), edges = new Map();
-  const indices = geometry.index.array;
-  for (let i = 0; i < indices.length; i += 3) {
-    const face = Array.from(indices.slice(i, i + 3), v => remap[v]).sort((a, b) => a - b);
-    assert.equal(new Set(face).size, 3, 'no collapsed triangles after seam/pole identification');
-    faceMap.set(face.join(','), face);
-  }
-  const triangles = [...faceMap.values()];
+// Combinatorial incidence only: no coordinate tolerance identifies vertices.
+function complexMesh(simplices) {
+  const triangles = simplices.filter(s => s.length === 3), edges = new Map();
   triangles.forEach((face, f) => {
     for (let j = 0; j < 3; j++) {
       const a = face[j], b = face[(j + 1) % 3];
@@ -179,7 +164,7 @@ function meshComplex(geometry) {
       edges.get(key).faces.push({face: f, direction: a < b ? 1 : -1});
     }
   });
-  return {vertices: points.map((_, i) => [i]), edges: [...edges.values()], triangles};
+  return {vertices: simplices.filter(s => s.length === 1), edges: [...edges.values()], triangles};
 }
 
 function meshOrientable(mesh) {
@@ -208,12 +193,17 @@ function meshOrientable(mesh) {
 }
 
 for (const [name, expected] of Object.entries({sphere: [1, 0, 1], torus: [1, 2, 1], mobius: [1, 1, 0]})) {
-  test(`${name}: welded meshes verify Betti, Euler, boundary and orientability at two resolutions`, () => {
+  test(`${name}: exact quotient meshes verify Betti, Euler, boundary and orientability at two resolutions`, () => {
     for (const size of [6, 10]) {
       const geometry = createSurfaceGeometry(name, {width: size, height: 4, radial: 4, tubular: size, along: size, across: 4});
-      const mesh = meshComplex(geometry);
+      assert.ok(Array.from(geometry.getAttribute('position').array).every(Number.isFinite));
+      const mesh = complexMesh(surfaceComplex(name, {along: size, across: 4}));
       geometry.dispose();
       const edges = mesh.edges.map(e => e.vertices);
+      const d1 = boundaryMatrix(mesh.vertices, edges), d2 = boundaryMatrix(edges, mesh.triangles);
+      for (const row of d1) for (let j = 0; j < mesh.triangles.length; j++) {
+        assert.equal(row.reduce((sum, entry, k) => sum ^ (entry & d2[k][j]), 0), 0);
+      }
       const b01 = bettiNumbers([...mesh.vertices, ...edges, ...mesh.triangles]);
       const b2 = mesh.triangles.length - rankF2(boundaryMatrix(edges, mesh.triangles));
       assert.deepEqual([...b01, b2], expected);
@@ -243,6 +233,43 @@ test('Mobius seam reverses the width coordinate and its boundary closes after tw
   assert.ok(start.distanceTo(mobiusPoint(4 * Math.PI, .55)) < 1e-12);
 });
 
+test('raw Mobius render indices describe a cut rectangle, not the identified mathematical band', () => {
+  const along = 8, across = 4;
+  const geometry = createSurfaceGeometry('mobius', {along, across});
+  const indices = geometry.index.array, simplices = new Map();
+  for (let i = 0; i < indices.length; i += 3) {
+    const face = Array.from(indices.slice(i, i + 3));
+    for (let mask = 1; mask < 8; mask++) {
+      const simplex = face.filter((_, j) => mask & (1 << j)).sort((a, b) => a - b);
+      simplices.set(simplex.join(','), simplex);
+    }
+  }
+  assert.equal(geometry.getAttribute('position').count, (along + 1) * (across + 1));
+  assert.deepEqual(bettiNumbers([...simplices.values()]), [1, 0]);
+  assert.equal(meshOrientable(complexMesh([...simplices.values()])), true);
+  const band = surfaceComplex('mobius', {along, across});
+  assert.equal(band.filter(s => s.length === 1).length, along * (across + 1));
+  assert.deepEqual(bettiNumbers(band), [1, 1]);
+  assert.equal(meshOrientable(complexMesh(band)), false);
+  geometry.dispose();
+});
+
+test('43 adversarial and seeded random point clouds agree at every event and intervening scale', () => {
+  for (const {name, points} of pointCases()) {
+    const filtration = ripsFiltration(points), bars = persistentHomology(filtration);
+    const events = [...new Set([0, ...filtration.map(s => s.birth)])];
+    const probes = [...events, ...events.slice(1).map((end, i) => events[i] + (end - events[i]) / 2)];
+    for (const epsilon of probes) {
+      const active = filtration.filter(s => s.birth <= epsilon).map(s => s.vertices);
+      assert.deepEqual(bettiAt(bars, epsilon), bettiNumbers(active), `${name} at ${epsilon}`);
+      assert.equal(bettiAt(bars, epsilon)[0], componentCount(points, epsilon), `${name} H0 at ${epsilon}`);
+    }
+    assert.ok(bars.every(b => b.death > b.birth));
+    const signature = ps => persistentHomology(ripsFiltration(ps)).map(b => [b.dimension, b.birth, b.death]);
+    assert.deepEqual(signature([...points].reverse()), signature(points), `${name} relabeling`);
+  }
+});
+
 test('invalid filtrations fail rather than silently produce negative or meaningless bars', () => {
   const vertex = {vertices: [0], dimension: 0, birth: 0};
   assert.throws(() => persistentHomology([vertex, vertex]), /duplicate/i);
@@ -265,6 +292,13 @@ test('P0 A: points 1e-10 apart have two H0 classes at epsilon zero', () => {
   assert.deepEqual(bettiAt(bars, 0), [2, 0]);
   assert.equal(bars.filter(b => b.dimension === 0 && b.death > 0 && b.death < Infinity).length, 1);
   assert.deepEqual(bettiAt(bars, 0), bettiNumbers(filtration.filter(s => s.birth <= 0).map(s => s.vertices)));
+});
+
+test('P1: a 12-decimal grid must not move a positive edge birth to zero', () => {
+  const filtration = ripsFiltration([[0, 0], [1e-14, 0]]);
+  assert.equal(filtration.find(s => s.dimension === 1).birth, 5e-15);
+  assert.deepEqual(bettiAt(persistentHomology(filtration), 0), [2, 0]);
+  assert.deepEqual(bettiAt(persistentHomology(filtration), 5e-15), [1, 0]);
 });
 
 test('P0 B: a thin rectangle retains its short nonzero H1 interval', () => {

@@ -94,6 +94,9 @@ $$
 
 **计算衔接。** [有限拓扑实验](../labs/index.md#finite)将穷举验证有限例子。穷举不能替代本章对任意度量空间的证明。
 
+<div class="admonition question" data-exercise="spaces"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 可进一步阅读拓扑空间、拓扑基与度量拓扑部分。

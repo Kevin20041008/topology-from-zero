@@ -84,6 +84,9 @@ $$
 
 **可运行实验。** [Notebook 01](../labs/index.md#finite)枚举全部相关逆像，并复现“连续双射不一定同胚”。实验中的所有空间有限，不能用它验证无限空间的紧致性判定。
 
+<div class="admonition question" data-exercise="continuity"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 连续函数、紧致空间与分离公理部分。

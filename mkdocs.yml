@@ -45,9 +45,11 @@ nav:
       - '基础 A · 拓扑基与子基': point-set/bases-subbases.md
       - '02 · 连续映射与紧致性': point-set/02-continuity.md
       - '基础 B · 连通性': point-set/connectedness.md
+      - '基础 D · 商空间与边界识别': point-set/quotient-spaces.md
   - 代数拓扑:
       - 模块导读: algebraic/index.md
       - '基础 C · 同伦与基本群': algebraic/homotopy-fundamental-group.md
+      - '代数预备 · 链群与线性商空间': algebraic/linear-algebra-primer.md
       - '03 · 环、边界与同调': algebraic/03-homology.md
   - 计算拓扑: computational/index.md
   - 持续同调: persistence/index.md
@@ -88,6 +90,8 @@ extra_javascript:
   - javascripts/mathjax.js
   - assets/vendor/mathjax/tex-svg.js
   - path: javascripts/experiments.mjs
+    type: module
+  - path: javascripts/exercises.mjs
     type: module
 validation:
   nav:

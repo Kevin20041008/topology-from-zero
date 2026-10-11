@@ -88,6 +88,9 @@ $$
 
 下一步阅读[第二章](02-continuity.md)的连续像证明，再进入[连通性](connectedness.md)。
 
+<div class="admonition question" data-exercise="bases"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 基、子基、子空间与有限积拓扑。
