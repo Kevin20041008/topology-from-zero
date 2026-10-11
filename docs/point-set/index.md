@@ -1,13 +1,24 @@
 # 点集拓扑
 
-**核心问题：** 连续映射会保持空间的哪些性质？
+点集拓扑（point-set topology）按研究生通用基础课程组织：生成拓扑、闭包与网、分离与可数性、积与商、连通、紧致、滤子、度量化、完备化、Baire、仿紧致、单位分解和函数空间。基本内容均有正文入口，不以空白章节占位。集合论采用 ZFC；P5 明确使用 Zorn 引理，P7 证明有界与一般实值 Tietze，P9 引用 Stone 仿紧致性定理。
 
-点集拓扑（point-set topology）研究拓扑空间本身的结构。本模块先以连续和紧致为主线，练习用逆像转换问题，以及辨认定理中不能遗漏的假设。
+建议先读第一章、基础 A、第二章，再按下表推进。连通与商空间可在 P3 后阅读；P7 与 P8 是可并行学习的两个分支。每章的分析与代数先修单独写在页首。
 
-- **阅读顺序：** [基础 A · 拓扑基与子基](bases-subbases.md) → [02 · 连续映射与紧致性](02-continuity.md) → [基础 B · 连通性](connectedness.md)。
-- **现在可做：** 在有限例子中区分连续双射与同胚。
-- **粘合支线：** 第二章后可读[基础 D · 商空间与边界识别](quotient-spaces.md)，理解商映射与莫比乌斯带的反向接缝。
-- **后续范围：** 分离公理、无限积与更多商空间例子；尚未形成完整课程。
-- **先修：** [第一章](../introduction/01-spaces.md)；函数逆像的运算。
+| 正文章节 | 本站先修代码 |
+| --- | --- |
+| [基础 A · 拓扑基与子基](bases-subbases.md) | spaces |
+| [02 · 连续映射与紧致性](02-continuity.md) | spaces, bases |
+| [P1 · 闭包、内部、边界与网](closure-nets.md) | bases, continuity |
+| [P2 · 分离公理与可数性](separation-countability.md) | P1 |
+| [P3 · 任意积、箱拓扑与拓扑和](products-sums.md) | bases, P1 |
+| [基础 B · 连通性](connectedness.md) | continuity |
+| [基础 D · 商空间](quotient-spaces.md) | continuity, bases |
+| [P4 · 紧致性、有限交性质与度量判据](compactness-metric.md) | continuity, P1, P2, P3 |
+| [P5 · 滤子、超滤子与 Tychonoff 定理](filters-tychonoff.md) | P3, P4 |
+| [P6 · 局部紧致、紧化与适当映射](local-compactness.md) | P2, P3, P4, P5, quotient |
+| [P7 · Urysohn 引理、Tietze 延拓与度量化](metrization-extension.md) | P2, P3, P4 |
+| [P8 · 完备化、Baire 空间与不动点](completion-baire.md) | P4, P6 |
+| [P9 · 局部连通、仿紧致与单位分解](local-properties-partitions.md) | P2, P6, P7, connectedness |
+| [P10 · 函数空间、紧开拓扑与 Arzelà–Ascoli](function-spaces.md) | P3, P4, P5, P6, P7, P8, P9 |
 
-读完后应能独立重构紧致与连通的连续像证明，并区分连通与道路连通。接着可读[基础 C · 同伦与基本群](../algebraic/homotopy-fundamental-group.md)；也可先完成[代数预备](../algebraic/linear-algebra-primer.md)，再进入第三章。商拓扑不是本版环路群公理证明的先修。
+先修代码、整体顺序和引用定理范围见[研究生课程地图](../curriculum.md)；待独立审阅事项见[审查台账](../graduate-review.md)。

@@ -1,0 +1,526 @@
+{
+  "version": "v0.4-graduate-candidate",
+  "baseline": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
+  "chapters": [
+    {
+      "path": "introduction/01-spaces.md",
+      "title": "01 · 从距离到拓扑",
+      "exercise": "spaces",
+      "level": "foundation",
+      "code": "spaces",
+      "course": "introduction",
+      "prerequisites": []
+    },
+    {
+      "path": "point-set/bases-subbases.md",
+      "title": "基础 A · 拓扑基与子基",
+      "exercise": "bases",
+      "level": "foundation",
+      "code": "bases",
+      "course": "point-set",
+      "prerequisites": [
+        "spaces"
+      ]
+    },
+    {
+      "path": "point-set/02-continuity.md",
+      "title": "02 · 连续映射与紧致性",
+      "exercise": "continuity",
+      "level": "foundation",
+      "code": "continuity",
+      "course": "point-set",
+      "prerequisites": [
+        "spaces",
+        "bases"
+      ]
+    },
+    {
+      "path": "point-set/closure-nets.md",
+      "title": "P1 · 闭包、内部、边界与网",
+      "exercise": "point-set-closure-nets",
+      "level": "graduate",
+      "code": "P1",
+      "course": "point-set",
+      "prerequisites": [
+        "bases",
+        "continuity"
+      ]
+    },
+    {
+      "path": "point-set/separation-countability.md",
+      "title": "P2 · 分离公理与可数性",
+      "exercise": "point-set-separation-countability",
+      "level": "graduate",
+      "code": "P2",
+      "course": "point-set",
+      "prerequisites": [
+        "P1"
+      ]
+    },
+    {
+      "path": "point-set/products-sums.md",
+      "title": "P3 · 任意积、箱拓扑与拓扑和",
+      "exercise": "point-set-products-sums",
+      "level": "graduate",
+      "code": "P3",
+      "course": "point-set",
+      "prerequisites": [
+        "bases",
+        "P1"
+      ]
+    },
+    {
+      "path": "point-set/connectedness.md",
+      "title": "基础 B · 连通性",
+      "exercise": "connectedness",
+      "level": "foundation",
+      "code": "connectedness",
+      "course": "point-set",
+      "prerequisites": [
+        "continuity"
+      ]
+    },
+    {
+      "path": "point-set/quotient-spaces.md",
+      "title": "基础 D · 商空间",
+      "exercise": "quotient",
+      "level": "foundation",
+      "code": "quotient",
+      "course": "point-set",
+      "prerequisites": [
+        "continuity",
+        "bases"
+      ]
+    },
+    {
+      "path": "point-set/compactness-metric.md",
+      "title": "P4 · 紧致性、有限交性质与度量判据",
+      "exercise": "point-set-compactness-metric",
+      "level": "graduate",
+      "code": "P4",
+      "course": "point-set",
+      "prerequisites": [
+        "continuity",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    {
+      "path": "point-set/filters-tychonoff.md",
+      "title": "P5 · 滤子、超滤子与 Tychonoff 定理",
+      "exercise": "point-set-filters-tychonoff",
+      "level": "graduate",
+      "code": "P5",
+      "course": "point-set",
+      "prerequisites": [
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "path": "point-set/local-compactness.md",
+      "title": "P6 · 局部紧致、紧化与适当映射",
+      "exercise": "point-set-local-compactness",
+      "level": "graduate",
+      "code": "P6",
+      "course": "point-set",
+      "prerequisites": [
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "quotient"
+      ]
+    },
+    {
+      "path": "point-set/metrization-extension.md",
+      "title": "P7 · Urysohn 引理、Tietze 延拓与度量化",
+      "exercise": "point-set-metrization-extension",
+      "level": "graduate",
+      "code": "P7",
+      "course": "point-set",
+      "prerequisites": [
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "path": "point-set/completion-baire.md",
+      "title": "P8 · 完备化、Baire 空间与不动点",
+      "exercise": "point-set-completion-baire",
+      "level": "graduate",
+      "code": "P8",
+      "course": "point-set",
+      "prerequisites": [
+        "P4",
+        "P6"
+      ]
+    },
+    {
+      "path": "point-set/local-properties-partitions.md",
+      "title": "P9 · 局部连通、仿紧致与单位分解",
+      "exercise": "point-set-local-properties-partitions",
+      "level": "graduate",
+      "code": "P9",
+      "course": "point-set",
+      "prerequisites": [
+        "P2",
+        "P6",
+        "P7",
+        "connectedness"
+      ]
+    },
+    {
+      "path": "point-set/function-spaces.md",
+      "title": "P10 · 函数空间、紧开拓扑与 Arzelà–Ascoli",
+      "exercise": "point-set-function-spaces",
+      "level": "graduate",
+      "code": "P10",
+      "course": "point-set",
+      "prerequisites": [
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9"
+      ]
+    },
+    {
+      "path": "algebraic/homotopy-fundamental-group.md",
+      "title": "基础 C · 同伦与基本群",
+      "exercise": "homotopy",
+      "level": "foundation",
+      "code": "homotopy",
+      "course": "algebraic",
+      "prerequisites": [
+        "bases",
+        "continuity",
+        "connectedness"
+      ]
+    },
+    {
+      "path": "algebraic/fundamental-group/functor-basepoint.md",
+      "title": "F1 · 基点变换、函子性与形变收缩",
+      "exercise": "algebraic-fundamental-group-functor-basepoint",
+      "level": "graduate",
+      "code": "F1",
+      "course": "algebraic",
+      "prerequisites": [
+        "homotopy"
+      ]
+    },
+    {
+      "path": "algebraic/fundamental-group/van-kampen.md",
+      "title": "F2 · van Kampen、图与胞腔表示",
+      "exercise": "algebraic-fundamental-group-van-kampen",
+      "level": "graduate",
+      "code": "F2",
+      "course": "algebraic",
+      "prerequisites": [
+        "F1",
+        "C1",
+        "quotient"
+      ]
+    },
+    {
+      "path": "algebraic/covering/lifting-circle.md",
+      "title": "C1 · 覆盖映射、提升与圆周基本群",
+      "exercise": "algebraic-covering-lifting-circle",
+      "level": "graduate",
+      "code": "C1",
+      "course": "algebraic",
+      "prerequisites": [
+        "F1",
+        "P4"
+      ]
+    },
+    {
+      "path": "algebraic/covering/classification.md",
+      "title": "C2 · 提升判据、万有覆盖与覆盖分类",
+      "exercise": "algebraic-covering-classification",
+      "level": "graduate",
+      "code": "C2",
+      "course": "algebraic",
+      "prerequisites": [
+        "C1",
+        "connectedness"
+      ]
+    },
+    {
+      "path": "algebraic/linear-algebra-primer.md",
+      "title": "代数预备 · 链群与线性商空间",
+      "exercise": "linear-quotient",
+      "level": "foundation",
+      "code": "linear-quotient",
+      "course": "algebraic",
+      "prerequisites": [
+        "spaces"
+      ]
+    },
+    {
+      "path": "algebraic/03-homology.md",
+      "title": "03 · 环、边界与同调",
+      "exercise": "homology",
+      "level": "foundation",
+      "code": "homology",
+      "course": "algebraic",
+      "prerequisites": [
+        "linear-quotient"
+      ]
+    },
+    {
+      "path": "algebraic/homology/singular-chains.md",
+      "title": "H1 · 整数奇异链与同伦不变性",
+      "exercise": "algebraic-homology-singular-chains",
+      "level": "graduate",
+      "code": "H1",
+      "course": "algebraic",
+      "prerequisites": [
+        "F1",
+        "linear-quotient"
+      ]
+    },
+    {
+      "path": "algebraic/homology/exact-excision.md",
+      "title": "H2 · 相对同调、切除与 Mayer–Vietoris",
+      "exercise": "algebraic-homology-exact-excision",
+      "level": "graduate",
+      "code": "H2",
+      "course": "algebraic",
+      "prerequisites": [
+        "H1",
+        "P4"
+      ]
+    },
+    {
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "title": "H3 · 胞腔同调、挠与系数变换",
+      "exercise": "algebraic-homology-cellular-coefficients",
+      "level": "graduate",
+      "code": "H3",
+      "course": "algebraic",
+      "prerequisites": [
+        "H2",
+        "F2"
+      ]
+    },
+    {
+      "path": "algebraic/cohomology/cochains-products.md",
+      "title": "Q1 · 上链、泛系数与杯积环",
+      "exercise": "algebraic-cohomology-cochains-products",
+      "level": "graduate",
+      "code": "Q1",
+      "course": "algebraic",
+      "prerequisites": [
+        "H3"
+      ]
+    },
+    {
+      "path": "algebraic/cohomology/duality.md",
+      "title": "Q2 · 定向、帽积与 Poincaré 对偶",
+      "exercise": "algebraic-cohomology-duality",
+      "level": "graduate",
+      "code": "Q2",
+      "course": "algebraic",
+      "prerequisites": [
+        "Q1"
+      ]
+    },
+    {
+      "path": "algebraic/graduate-tools.md",
+      "title": "G1 · 高阶同伦、纤维化与谱序列入口",
+      "exercise": "algebraic-graduate-tools",
+      "level": "graduate",
+      "code": "G1",
+      "course": "algebraic",
+      "prerequisites": [
+        "C2",
+        "Q2"
+      ]
+    },
+    {
+      "path": "differential/manifolds-rank.md",
+      "title": "D1 · 光滑流形、切空间与秩定理",
+      "exercise": "differential-manifolds-rank",
+      "level": "graduate",
+      "code": "D1",
+      "course": "differential",
+      "prerequisites": [
+        "P2",
+        "P6",
+        "P9"
+      ]
+    },
+    {
+      "path": "differential/transversality-degree.md",
+      "title": "D2 · 横截性、交叉与映射度",
+      "exercise": "differential-transversality-degree",
+      "level": "graduate",
+      "code": "D2",
+      "course": "differential",
+      "prerequisites": [
+        "D1",
+        "H3",
+        "Q2"
+      ]
+    },
+    {
+      "path": "differential/forms-derham.md",
+      "title": "D3 · 微分形式、Stokes 与 de Rham 上同调",
+      "exercise": "differential-forms-derham",
+      "level": "graduate",
+      "code": "D3",
+      "course": "differential",
+      "prerequisites": [
+        "D1",
+        "Q1",
+        "Q2"
+      ]
+    },
+    {
+      "path": "differential/morse-handles.md",
+      "title": "D4 · Morse 函数、子水平集与柄",
+      "exercise": "differential-morse-handles",
+      "level": "graduate",
+      "code": "D4",
+      "course": "differential",
+      "prerequisites": [
+        "D1",
+        "D2",
+        "H3"
+      ]
+    },
+    {
+      "path": "differential/bundles-characteristic.md",
+      "title": "D5 · 向量丛、截面与特征类入口",
+      "exercise": "differential-bundles-characteristic",
+      "level": "graduate",
+      "code": "D5",
+      "course": "differential",
+      "prerequisites": [
+        "D1",
+        "D3",
+        "C1",
+        "Q1"
+      ]
+    },
+    {
+      "path": "geometric/categories-triangulations.md",
+      "title": "T1 · TOP、PL、DIFF 与三角剖分",
+      "exercise": "geometric-categories-triangulations",
+      "level": "graduate",
+      "code": "T1",
+      "course": "geometric",
+      "prerequisites": [
+        "quotient",
+        "H3",
+        "D1"
+      ]
+    },
+    {
+      "path": "geometric/surfaces.md",
+      "title": "T2 · 紧曲面分类与多边形计算",
+      "exercise": "geometric-surfaces",
+      "level": "graduate",
+      "code": "T2",
+      "course": "geometric",
+      "prerequisites": [
+        "T1",
+        "F2",
+        "Q2"
+      ]
+    },
+    {
+      "path": "geometric/knots.md",
+      "title": "T3 · 结、环境同痕与补空间群",
+      "exercise": "geometric-knots",
+      "level": "graduate",
+      "code": "T3",
+      "course": "geometric",
+      "prerequisites": [
+        "T1",
+        "F2"
+      ]
+    },
+    {
+      "path": "geometric/three-manifolds-surgery.md",
+      "title": "T4 · 三维流形、Dehn 填充与配边",
+      "exercise": "geometric-three-manifolds-surgery",
+      "level": "graduate",
+      "code": "T4",
+      "course": "geometric",
+      "prerequisites": [
+        "T2",
+        "T3",
+        "H2",
+        "D4"
+      ]
+    },
+    {
+      "path": "computational/boundary-algorithms.md",
+      "title": "K1 · 有限复形、边界算法与可验证不变量",
+      "exercise": "computational-boundary-algorithms",
+      "level": "graduate",
+      "code": "K1",
+      "course": "computational",
+      "prerequisites": [
+        "homology",
+        "H3"
+      ]
+    },
+    {
+      "path": "persistence/modules-reduction.md",
+      "title": "R1 · 持续模、区间与矩阵约化",
+      "exercise": "persistence-modules-reduction",
+      "level": "graduate",
+      "code": "R1",
+      "course": "persistence",
+      "prerequisites": [
+        "K1"
+      ]
+    },
+    {
+      "path": "persistence/stability.md",
+      "title": "R2 · 扰动、交错与稳定性范围",
+      "exercise": "persistence-stability",
+      "level": "graduate",
+      "code": "R2",
+      "course": "persistence",
+      "prerequisites": [
+        "R1"
+      ]
+    },
+    {
+      "path": "ai/features-learning.md",
+      "title": "A1 · 持续特征、稳定表示与可微边界",
+      "exercise": "ai-features-learning",
+      "level": "graduate",
+      "code": "A1",
+      "course": "ai",
+      "prerequisites": [
+        "R2"
+      ]
+    },
+    {
+      "path": "ai/evaluation-protocol.md",
+      "title": "A2 · 拓扑学习实验、基线与泛化证据",
+      "exercise": "ai-evaluation-protocol",
+      "level": "graduate",
+      "code": "A2",
+      "course": "ai",
+      "prerequisites": [
+        "A1"
+      ]
+    }
+  ],
+  "notebooks": [
+    "01-finite-topology.ipynb",
+    "02-square-homology.ipynb",
+    "03-cohomology-cup-products.ipynb",
+    "04-topology-learning-baselines.ipynb"
+  ]
+}

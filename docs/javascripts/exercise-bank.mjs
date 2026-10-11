@@ -1,6 +1,7 @@
+import {graduateExercises} from './graduate-exercises.mjs';
 // Original formative exercises. Feedback explains the mathematical reason;
 // no learner responses are stored or sent to a server.
-export const exercises = {
+const originalExercises = {
   spaces: {
     question: '在通常实数拓扑中，所有区间 (−1/n, 1/n)（n≥1）的交是什么？',
     hints: ['先检查 0 是否属于每一个区间。', '若 x≠0，选 n>1/|x|；这个区间还包含 x 吗？'],
@@ -74,3 +75,5 @@ export const exercises = {
     ],
   },
 };
+
+export const exercises = {...originalExercises, ...graduateExercises};

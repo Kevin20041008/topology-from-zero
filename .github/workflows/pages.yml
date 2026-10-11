@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify interactive topology algorithms
-        run: node --test scripts/test_topology.mjs
+        run: node --test scripts/test_topology.mjs scripts/test_curriculum.mjs
       - run: python -m pip install -r requirements-validation.txt
       - name: Compare with independent GUDHI persistence
         run: python scripts/verify_independent.py

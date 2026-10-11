@@ -1,12 +1,25 @@
 # 代数拓扑
 
-**核心问题：** 如何把空间的结构转成可比较的代数对象？
+代数拓扑（algebraic topology）现在分为**基本群、覆盖空间、同调、上同调**四个连续单元，附高阶同伦和谱序列入口。基础 C 与第三章保留原地址，成为预备入口。
 
-代数拓扑（algebraic topology）通过群、链复形等对象研究空间。当前示范从有限单纯复形的同调开始，使用二元域与基础线性代数，可直接连接后面的计算实验。
+实际先修顺序为 **基础 C → F1 → C1 → F2 → C2**：先用覆盖提升算圆周基本群，再用 van Kampen 计算图和胞腔表示，因此导航分组不等于唯一阅读顺序。同调路线为**代数预备 → 第三章 → H1 → H2 → H3 → Q1 → Q2 → G1**。H3 的群表示例子用 F2。
 
-- **现在可读：** [基础 C · 同伦与基本群](homotopy-fundamental-group.md)，以及[代数预备 · 链群与线性商空间](linear-algebra-primer.md) → [03 · 环、边界与同调](03-homology.md)的计算路线。
-- **掌握标准：** 能解释边界为何必为循环、循环为何未必为边界，并手算空心和填实三角形的第一 Betti 数。
-- **后续范围：** 圆周基本群的计算、覆盖空间、同调不变性与基本群到第一同调的联系；基础 C 已证明基本群公理，但没有证明这些后续结果。
-- **先修：** 基础 C 需要连续、积拓扑与道路；第三章需要线性映射、核、像、秩与有限维商空间。两条入口的依赖见[数学审查](../math-review.md)。
+主线默认整数系数；改用域或模 2 时明确标注。原实验始终是模 2 有限计算。分解定理、一般空间比较定理和深层对偶的引用边界见各章及审查台账。
 
-把手算过程写成程序，请进入[计算拓扑](../computational/index.md)。
+| 正文章节 | 本站先修代码 |
+| --- | --- |
+| [基础 C · 同伦与基本群](homotopy-fundamental-group.md) | bases, continuity, connectedness |
+| [F1 · 基点变换、函子性与形变收缩](fundamental-group/functor-basepoint.md) | homotopy |
+| [F2 · van Kampen、图与胞腔表示](fundamental-group/van-kampen.md) | F1, C1, quotient |
+| [C1 · 覆盖映射、提升与圆周基本群](covering/lifting-circle.md) | F1, P4 |
+| [C2 · 提升判据、万有覆盖与覆盖分类](covering/classification.md) | C1, connectedness |
+| [代数预备 · 链群与线性商空间](linear-algebra-primer.md) | spaces |
+| [03 · 环、边界与同调](03-homology.md) | linear-quotient |
+| [H1 · 整数奇异链与同伦不变性](homology/singular-chains.md) | F1, linear-quotient |
+| [H2 · 相对同调、切除与 Mayer–Vietoris](homology/exact-excision.md) | H1, P4 |
+| [H3 · 胞腔同调、挠与系数变换](homology/cellular-coefficients.md) | H2, F2 |
+| [Q1 · 上链、泛系数与杯积环](cohomology/cochains-products.md) | H3 |
+| [Q2 · 定向、帽积与 Poincaré 对偶](cohomology/duality.md) | Q1 |
+| [G1 · 高阶同伦、纤维化与谱序列入口](graduate-tools.md) | C2, Q2 |
+
+先修代码、整体顺序和引用定理范围见[研究生课程地图](../curriculum.md)；待独立审阅事项见[审查台账](../graduate-review.md)。

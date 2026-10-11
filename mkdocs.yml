@@ -4,7 +4,7 @@ site_url: !ENV [SITE_URL, 'http://127.0.0.1:8000/']
 repo_url: https://github.com/Kevin20041008/topology-from-zero
 repo_name: Kevin20041008/topology-from-zero
 edit_uri: edit/main/docs/
-copyright: 原创教材 CC BY 4.0 · 代码 MIT · v0.3 Foundations Expansion
+copyright: 原创教材 CC BY 4.0 · 代码 MIT · v0.4 Graduate Courses · 审阅候选
 theme:
   name: material
   language: zh
@@ -37,23 +37,70 @@ theme:
     - content.code.copy
 nav:
   - 开始学习: index.md
+  - 研究生课程地图: curriculum.md
   - 拓扑学导论:
-      - 模块导读: introduction/index.md
+      - 课程导读: introduction/index.md
       - '01 · 从距离到拓扑': introduction/01-spaces.md
   - 点集拓扑:
-      - 模块导读: point-set/index.md
+      - 课程导读: point-set/index.md
       - '基础 A · 拓扑基与子基': point-set/bases-subbases.md
       - '02 · 连续映射与紧致性': point-set/02-continuity.md
+      - 'P1 · 闭包、内部、边界与网': point-set/closure-nets.md
+      - 'P2 · 分离公理与可数性': point-set/separation-countability.md
+      - 'P3 · 任意积、箱拓扑与拓扑和': point-set/products-sums.md
       - '基础 B · 连通性': point-set/connectedness.md
-      - '基础 D · 商空间与边界识别': point-set/quotient-spaces.md
+      - '基础 D · 商空间': point-set/quotient-spaces.md
+      - 'P4 · 紧致性、有限交性质与度量判据': point-set/compactness-metric.md
+      - 'P5 · 滤子、超滤子与 Tychonoff 定理': point-set/filters-tychonoff.md
+      - 'P6 · 局部紧致、紧化与适当映射': point-set/local-compactness.md
+      - 'P7 · Urysohn 引理、Tietze 延拓与度量化': point-set/metrization-extension.md
+      - 'P8 · 完备化、Baire 空间与不动点': point-set/completion-baire.md
+      - 'P9 · 局部连通、仿紧致与单位分解': point-set/local-properties-partitions.md
+      - 'P10 · 函数空间、紧开拓扑与 Arzelà–Ascoli': point-set/function-spaces.md
   - 代数拓扑:
-      - 模块导读: algebraic/index.md
-      - '基础 C · 同伦与基本群': algebraic/homotopy-fundamental-group.md
-      - '代数预备 · 链群与线性商空间': algebraic/linear-algebra-primer.md
-      - '03 · 环、边界与同调': algebraic/03-homology.md
-  - 计算拓扑: computational/index.md
-  - 持续同调: persistence/index.md
-  - 拓扑与人工智能: ai/index.md
+      - 课程导读: algebraic/index.md
+      - 基本群:
+          - '基础 C · 同伦与基本群': algebraic/homotopy-fundamental-group.md
+          - 'F1 · 基点变换、函子性与形变收缩': algebraic/fundamental-group/functor-basepoint.md
+          - 'F2 · van Kampen、图与胞腔表示': algebraic/fundamental-group/van-kampen.md
+      - 覆盖空间:
+          - 'C1 · 覆盖映射、提升与圆周基本群': algebraic/covering/lifting-circle.md
+          - 'C2 · 提升判据、万有覆盖与覆盖分类': algebraic/covering/classification.md
+      - 同调:
+          - '代数预备 · 链群与线性商空间': algebraic/linear-algebra-primer.md
+          - '03 · 环、边界与同调': algebraic/03-homology.md
+          - 'H1 · 整数奇异链与同伦不变性': algebraic/homology/singular-chains.md
+          - 'H2 · 相对同调、切除与 Mayer–Vietoris': algebraic/homology/exact-excision.md
+          - 'H3 · 胞腔同调、挠与系数变换': algebraic/homology/cellular-coefficients.md
+      - 上同调:
+          - 'Q1 · 上链、泛系数与杯积环': algebraic/cohomology/cochains-products.md
+          - 'Q2 · 定向、帽积与 Poincaré 对偶': algebraic/cohomology/duality.md
+      - 研究工具:
+          - 'G1 · 高阶同伦、纤维化与谱序列入口': algebraic/graduate-tools.md
+  - 微分拓扑:
+      - 课程导读: differential/index.md
+      - 'D1 · 光滑流形、切空间与秩定理': differential/manifolds-rank.md
+      - 'D2 · 横截性、交叉与映射度': differential/transversality-degree.md
+      - 'D3 · 微分形式、Stokes 与 de Rham 上同调': differential/forms-derham.md
+      - 'D4 · Morse 函数、子水平集与柄': differential/morse-handles.md
+      - 'D5 · 向量丛、截面与特征类入口': differential/bundles-characteristic.md
+  - 几何拓扑:
+      - 课程导读: geometric/index.md
+      - 'T1 · TOP、PL、DIFF 与三角剖分': geometric/categories-triangulations.md
+      - 'T2 · 紧曲面分类与多边形计算': geometric/surfaces.md
+      - 'T3 · 结、环境同痕与补空间群': geometric/knots.md
+      - 'T4 · 三维流形、Dehn 填充与配边': geometric/three-manifolds-surgery.md
+  - 计算拓扑:
+      - 课程导读: computational/index.md
+      - 'K1 · 有限复形、边界算法与可验证不变量': computational/boundary-algorithms.md
+  - 持续同调:
+      - 课程导读: persistence/index.md
+      - 'R1 · 持续模、区间与矩阵约化': persistence/modules-reduction.md
+      - 'R2 · 扰动、交错与稳定性范围': persistence/stability.md
+  - 拓扑与人工智能:
+      - 课程导读: ai/index.md
+      - 'A1 · 持续特征、稳定表示与可微边界': ai/features-learning.md
+      - 'A2 · 拓扑学习实验、基线与泛化证据': ai/evaluation-protocol.md
   - 实验与共建:
       - 实验室: labs/index.md
       - '实验 1 · 三角形的洞': labs/triangle.md
@@ -61,6 +108,7 @@ nav:
       - '实验 3 · 三维拓扑曲面': labs/surfaces.md
       - 教材进度: progress.md
       - 先修依赖与数学审查: math-review.md
+      - 研究生内容审查台账: graduate-review.md
       - 符号与术语: notation.md
       - 公式渲染检查: math-check.md
       - 本地运行与部署: development.md
@@ -68,6 +116,7 @@ nav:
 plugins:
   - search:
       lang: [zh, en]
+      jieba_dict_user: scripts/search-dictionary.txt
 markdown_extensions:
   - admonition
   - attr_list
