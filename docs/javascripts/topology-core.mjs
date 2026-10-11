@@ -101,7 +101,7 @@ export function persistentHomology(filtration) {
     birth: filtration[i].birth,
     death: deaths.has(i) ? deaths.get(i) : Infinity,
     creator: filtration[i].vertices,
-  })).filter(bar => bar.death - bar.birth > 1e-10)
+  })).filter(bar => bar.death > bar.birth)
     .sort((a, b) => a.dimension - b.dimension || a.birth - b.birth || b.death - a.death);
 }
 
