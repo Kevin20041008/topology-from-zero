@@ -2,6 +2,8 @@
 
 <div class="chapter-meta">模块：拓扑学导论 · 先修：集合、函数、实数 · 建议：阅读 30 分钟，练习 30 分钟<br>本章目标：从度量开集推导拓扑公理，并区分“点的集合”和“空间”。</div>
 
+**先修自检。** 能否区分 $x\in U$ 与 $U\subseteq X$，并写出并、交、补集？无穷交反例还用到阿基米德性质：对任意 $x\ne0$，存在正整数 $n$ 使 $1/n<|x|$。若这些操作不熟悉，先完成[先修依赖审查](../math-review.md)中的自检。
+
 ## 1. 直观解释：保留“附近”的结构
 
 在实数轴上，判断一个点是否靠近另一个点，可以测量距离。但有些问题只关心“一个点是否拥有完全落在某集合中的小范围”，并不在意小范围究竟有多大。拓扑学（topology）把这样的局部关系抽象成开集（open set）。
@@ -92,6 +94,9 @@ $$
 
 **计算衔接。** [有限拓扑实验](../labs/index.md#finite)将穷举验证有限例子。穷举不能替代本章对任意度量空间的证明。
 
+<div class="admonition question" data-exercise="spaces"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 可进一步阅读拓扑空间、拓扑基与度量拓扑部分。
@@ -102,4 +107,4 @@ $$
 ---
 
 [返回学习路线](../index.md){ .md-button }
-[下一章：连续映射与紧致性 →](../point-set/02-continuity.md){ .md-button .md-button--primary }
+[下一步：基础 A · 拓扑基与子基 →](../point-set/bases-subbases.md){ .md-button .md-button--primary }

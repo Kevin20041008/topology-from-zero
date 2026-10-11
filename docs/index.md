@@ -20,7 +20,7 @@ hide:
 </div>
 </div>
 
-<div class="book-stats"><span><strong>06</strong> 课程模块</span><span><strong>03</strong> 示范章节</span><span><strong>03</strong> 浏览器交互实验</span><span><strong>02</strong> Python Notebook</span></div>
+<div class="book-stats"><span><strong>06</strong> 课程模块</span><span><strong>08</strong> 实质章节</span><span><strong>03</strong> 浏览器交互实验</span><span><strong>02</strong> Python Notebook</span></div>
 
 ## 动手改变一个空间
 
@@ -64,7 +64,15 @@ hide:
 
 ## 学习路线图
 
-主线按 **01 → 02 → 03 → 04 → 05 → 06** 推进；计算实验也可从第三章提前进入。第一次阅读只需集合、函数与基础线性代数。涉及群、商空间或概率的后续内容会先补充所需概念。
+六个模块按下方顺序展开；当前章节的建议路线为 **第一章 → 基础 A → 第二章 → 基础 B → 基础 C**。第三章的有限同调可在补足线性代数后独立进入，不要求先学基本群。旧章号与 URL 保留，基础 A/B/C 插入原路线而不重编号。详细先修条件与引用结论见[依赖审查](math-review.md)。
+
+| 新增基础 | 解决的问题 | 读前准备 |
+| --- | --- | --- |
+| [基础 A · 拓扑基与子基](point-set/bases-subbases.md) | 如何由小块生成拓扑，如何使用子空间与积空间 | 第一章、集合并交 |
+| [基础 B · 连通性](point-set/connectedness.md) | 连通为何不同于道路连通 | 连续映射、子空间；进阶反例需实分析 |
+| [基础 C · 同伦与基本群](algebraic/homotopy-fundamental-group.md) | 为什么环路的同伦类组成群 | 积拓扑、道路；群公理在章内定义 |
+| [基础 D · 商空间与边界识别](point-set/quotient-spaces.md) | 如何严格定义粘合，为何接缝编号很重要 | 子空间、连续映射、等价关系 |
+| [代数预备 · 链群与线性商空间](algebraic/linear-algebra-primer.md) | 循环模掉边界意味着什么，秩公式从何而来 | 集合、有限求和、模 2 加法 |
 
 <div class="route-grid" markdown>
 <div class="route-step" markdown>
@@ -109,5 +117,7 @@ hide:
 
 每篇示范章都按照“直观解释 → 严格定义 → 定理与证明 → 正例与反例 → 练习 → 参考书目”展开。建议先独立完成习题，再展开提示。Notebook 中的计算只验证具体有限例子；证明负责一般结论。
 
-!!! info "教材进度 · 2026-10-11"
-    当前 v0.2 包含三篇示范章、三个浏览器交互实验与两份 Notebook，尚未完成整本教材，也未经过独立同行审阅。其他模块提供学习目标、先修关系和后续范围，不放置空白章节。详见[进度说明](progress.md)和[贡献约定](contributing.md)。
+八篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
+
+!!! info "教材进度 · 2026-10-12"
+    v0.3 Foundations Expansion 在原三篇示范章上新增五篇基础与预备章，保留三个浏览器实验与两份 Notebook。计算保留全部正长度持续区间，不再把距离固定舍入到 12 位小数。尚未完成整本教材，也未经过独立同行审阅。详见[进度说明](progress.md)、[未完成数学审查项](math-review.md)和[贡献约定](contributing.md)。

@@ -10,6 +10,8 @@ MkDocs (BSD-2-Clause), MkDocs Material (MIT), NumPy (BSD-3-Clause), Matplotlib (
 
 The textbook prose and local SVG illustrations are original contributions; book citations do not reproduce textbook content.
 
+GUDHI 3.11.0 is installed from PyPI for independent mathematical validation, as pinned in `requirements-validation.txt`. It is not vendored or loaded by the browser. GUDHI and its bundled dependencies retain their upstream license terms; see the GUDHI distribution and https://gudhi.inria.fr/ for source and licensing information.
+
 ## Three.js r170
 
 MIT License; original LICENSE retained beside the local modules.

@@ -1,0 +1,54 @@
+name: 数学问题反馈
+description: 报告缺失假设、证明漏洞、反例、习题答案或实验数学结果问题。
+title: "[数学] "
+body:
+  - type: markdown
+    attributes:
+      value: 请用自己的话描述问题，提供最小反例或复现步骤；无需粘贴受版权保护的教材正文。
+  - type: input
+    id: location
+    attributes:
+      label: 页面与具体位置
+      description: 章节 URL、命题/定义编号或实验名称。
+      placeholder: /point-set/connectedness/，定理 B.6
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      description: 如 v0.3 候选版、提交 SHA，或你访问页面的日期。
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 定义或假设缺失
+        - 证明步骤不成立
+        - 例子、反例或练习答案
+        - 实验计算或不变量
+        - 符号或前置依赖不清楚
+        - 其他数学问题
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: 哪个结论有问题
+      description: 简述实际陈述，以及它为什么可能不成立。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 反例、论证或复现步骤
+      description: 实验问题请注明点坐标、系数域、半径 ε 或距离阈值 r、期望值与实际值；理论问题请写出缺失步骤或最小反例。
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 建议修正与参考来源（可选）
+      description: 可提供补充假设、替代证明，以及可核查的书目/定理编号或公开链接。尚无修正方案也欢迎反馈。

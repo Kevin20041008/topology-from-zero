@@ -2,6 +2,8 @@
 
 <div class="chapter-meta">模块：代数拓扑 · 先修：集合、向量空间、矩阵的核与秩 · 建议：阅读 45 分钟，实验 30 分钟<br>本章目标：在二元域上构造第一同调，并解释闭合的环为何可能代表零。</div>
 
+**先修桥梁。** [代数预备章](linear-algebra-primer.md)定义链群所需的坐标空间、核与像，证明秩–零度定理和有限维商空间的维数公式，并给出手算练习。连通分支见[基础 B](../point-set/connectedness.md)；“可缩”及其在凸集上的证明见[基础 C](homotopy-fundamental-group.md)。基本群不是本章矩阵计算的前提，也不把同伦不变性作为已证明结论使用。
+
 ## 1. 直观解释：闭合不等于有洞
 
 用三根线段围成一个三角形，它的轮廓是一条闭合的环。如果再加入三角形内部，这条轮廓仍然闭合，却已经是一个面的边界。第一同调（first homology）正是要区分这两种情况：哪些环只是面拼接后的边界，哪些环不能这样填上？
@@ -53,6 +55,14 @@ $$
 
 **证明。** 秩–零度定理（rank–nullity theorem）给出 $\dim Z_k=n_k-\operatorname{rank}D_k$；商空间的维数等于 $\dim Z_k-\dim B_k$，而 $\dim B_k=\operatorname{rank}D_{k+1}$。$\square$
 
+**命题 3.5（零维同调与边图分支）。** 有限单纯复形 $K$ 的 $\beta_0$ 等于其顶点与边构成的图的连通分支数 $c$，其中图连通指两顶点可由有限条边连接。空复形对应 $c=0$。
+
+**证明。** 因 $\partial_0=0$，有 $H_0=C_0/\operatorname{im}\partial_1$。定义线性映射 $q:C_0\to\mathbb F_2^c$，将每个顶点送到它所属分支的坐标单位向量。每个分支非空，所以 $q$ 满射；一条边的两个端点同属一个分支，故 $q\partial_1=0$，即 $\operatorname{im}\partial_1\subseteq\ker q$。
+
+反向，在每个分支选根顶点 $r$。沿边路径相加，内部顶点在模 2 下成对抵消，故任意该分支顶点 $v$ 都满足 $[v]+[r]\in\operatorname{im}\partial_1$。若链 $z\in\ker q$，每个分支的系数之和为零；将其中每个 $[v]$ 写成 $([v]+[r])+[r]$，所有根项也抵消。因此 $z$ 是边界，得到 $\ker q=\operatorname{im}\partial_1$。商空间于是与 $\mathbb F_2^c$ 同构，维数为 $c$。空复形两边均为零。$\square$
+
+这证明了有限边图实验中的分支计数。将单纯同调与任意拓扑空间或不同三角剖分下的同调对应起来，还需要后续的不变性理论。
+
 ## 4. 正例与反例
 
 **正例 A：空心三角形。** 令 $K$ 包含三个顶点和三条边，没有二维单形。按顶点 $0,1,2$ 和边 $01,02,12$ 排序，
@@ -96,6 +106,9 @@ $$
     3. 公式中 $H_1$ 只依赖 $D_1,D_2$；$H_2$ 还需要 $D_3$。忽略三维单形可能虚增 $\beta_2$。
     4. 尺度变为 $2$ 与 $2\sqrt2$。持续区间的端点依赖距离单位；单纯形之间的组合结构在对应尺度下保持一致。
 
+<div class="admonition question" data-exercise="homology"></div>
+<noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
+
 ## 6. 参考书目
 
 - Allen Hatcher. *Algebraic Topology*. Cambridge University Press, 2002. 同调的系统理论；可通过[作者主页](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)查找作者提供的版本。
@@ -106,5 +119,5 @@ $$
 
 ---
 
-[← 上一章：连续映射与紧致性](../point-set/02-continuity.md){ .md-button }
+[← 基础 C：同伦与基本群](homotopy-fundamental-group.md){ .md-button }
 [继续：运行同调实验 →](../labs/index.md#homology){ .md-button .md-button--primary }

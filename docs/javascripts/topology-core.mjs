@@ -41,13 +41,19 @@ export function bettiNumbers(simplices) {
 }
 
 // The filtration parameter is ball radius epsilon: an edge enters at d/2.
-// Rounding to 12 decimal places gives reproducible ties for symmetric point sets.
+// Keep representable positive lifetimes; a fixed rounding grid breaks rescaling.
 export function ripsFiltration(points) {
+  if (!Array.isArray(points) || points.some(p => !Array.isArray(p) || p.length !== 2 || !p.every(Number.isFinite))) {
+    throw new Error('Expected finite 2D coordinates');
+  }
   const result = points.map((_, i) => ({vertices: [i], dimension: 0, birth: 0}));
   const edgeBirths = new Map();
   for (let i = 0; i < points.length; i++) {
     for (let j = i + 1; j < points.length; j++) {
-      const birth = Math.round(Math.hypot(points[i][0] - points[j][0], points[i][1] - points[j][1]) / 2 * 1e12) / 1e12;
+      const distance = Math.hypot(points[i][0] - points[j][0], points[i][1] - points[j][1]);
+      if (!Number.isFinite(distance)) throw new Error('Pairwise distance must be finite; rescale coordinates');
+      const birth = distance / 2;
+      if (distance > 0 && birth === 0) throw new Error('Pairwise distance underflows at half scale; rescale coordinates');
       edgeBirths.set(`${i},${j}`, birth);
       result.push({vertices: [i, j], dimension: 1, birth});
     }
@@ -76,7 +82,19 @@ function xorSets(a, b) {
 
 // Standard left-to-right boundary-column reduction. Faces precede cofaces.
 export function persistentHomology(filtration) {
-  const lookup = new Map(filtration.map((s, i) => [s.vertices.join(','), i]));
+  const lookup = new Map();
+  filtration.forEach((s, i) => {
+    if (!Array.isArray(s.vertices) || !s.vertices.length ||
+        s.vertices.some((v, j) => !Number.isSafeInteger(v) || v < 0 || (j > 0 && v <= s.vertices[j - 1]))) {
+      throw new Error('Simplex vertices must be distinct increasing nonnegative integers');
+    }
+    if (s.dimension !== s.vertices.length - 1) throw new Error('Invalid simplex dimension');
+    if (!Number.isFinite(s.birth) || s.birth < 0) throw new Error('Invalid birth scale');
+    if (i && s.birth < filtration[i - 1].birth) throw new Error('Invalid filtration order');
+    const key = s.vertices.join(',');
+    if (lookup.has(key)) throw new Error('Duplicate simplex');
+    lookup.set(key, i);
+  });
   const reduced = [];
   const owner = new Map();
   const births = [];

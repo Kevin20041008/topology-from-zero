@@ -30,7 +30,9 @@ jobs:
           node-version: '22'
       - name: Verify interactive topology algorithms
         run: node --test scripts/test_topology.mjs
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r requirements-validation.txt
+      - name: Compare with independent GUDHI persistence
+        run: python scripts/verify_independent.py
       - name: Execute and validate notebooks
         run: python scripts/verify_notebooks.py
       - name: Configure Pages

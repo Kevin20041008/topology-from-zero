@@ -1,0 +1,135 @@
+{
+  "baseline_commit": "3ff61af40d14afca7da5ec8c05fa661ef537754b",
+  "pages": {
+    "./": [
+      "_1",
+      "_10",
+      "_11",
+      "_12",
+      "_13",
+      "_14",
+      "_2",
+      "_3",
+      "_4",
+      "_5",
+      "_6",
+      "_7",
+      "_8",
+      "_9"
+    ],
+    "ai/": [
+      "_1",
+      "_2"
+    ],
+    "algebraic/": [
+      "_1"
+    ],
+    "computational/": [
+      "_1",
+      "_2"
+    ],
+    "contributing/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4"
+    ],
+    "development/": [
+      "_1",
+      "_2",
+      "_3",
+      "__codelineno-0-1",
+      "__codelineno-0-2",
+      "__codelineno-0-3",
+      "__codelineno-0-4",
+      "__codelineno-0-5",
+      "__codelineno-0-6",
+      "__codelineno-0-7",
+      "__codelineno-0-8",
+      "github-pages"
+    ],
+    "introduction/": [
+      "_1"
+    ],
+    "labs/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4",
+      "_5",
+      "_6",
+      "__codelineno-0-1",
+      "__codelineno-1-1",
+      "finite",
+      "homology",
+      "python-notebook"
+    ],
+    "math-check/": [
+      "_1",
+      "_2",
+      "_3",
+      "_4",
+      "_5"
+    ],
+    "notation/": [
+      "_1"
+    ],
+    "persistence/": [
+      "_1",
+      "_2",
+      "_3"
+    ],
+    "point-set/": [
+      "_1"
+    ],
+    "progress/": [
+      "_1",
+      "_2",
+      "_3"
+    ],
+    "algebraic/03-homology/": [
+      "03",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "introduction/01-spaces/": [
+      "01",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "labs/point-cloud/": [
+      "2",
+      "_1",
+      "_2",
+      "point-preset",
+      "point-radius"
+    ],
+    "labs/surfaces/": [
+      "3",
+      "_1",
+      "_2"
+    ],
+    "labs/triangle/": [
+      "1",
+      "_1",
+      "_2"
+    ],
+    "point-set/02-continuity/": [
+      "02",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  }
+}

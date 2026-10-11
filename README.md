@@ -1,6 +1,6 @@
 # topology-from-zero · 从零开始的拓扑学
 
-中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。当前版本 **v0.2：三篇原创示范章节 + 三个浏览器交互实验 + 两个已执行 Notebook**。
+中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**v0.3 Foundations Expansion：八篇实质章节及分步自检 + 三个浏览器交互实验 + 两个已执行 Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
 
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
@@ -9,6 +9,8 @@
 1. 从距离到拓扑：开集、拓扑公理与度量诱导拓扑。
 2. 连续映射与紧致性：逆像定义、连续像定理与必要假设。
 3. 环、边界与同调：在二元域上证明边界的边界为零，手算与验证第一同调。
+
+新增基础 A（拓扑基与子基）、基础 B（连通性）、基础 C（同伦与基本群）、基础 D（商空间）与代数预备（链群与线性商空间）。原有章号与 URL 不变；建议按 01 → A → 02 → B → C 阅读，D 为粘合支线，代数预备 → 03 为有限计算支线。每篇新增章均含定义、严格证明、正反例、习题与参考书目；八章均提供两级提示和按选项解释的即时反馈。
 
 六个模块均有导读；未完成部分明确标为规划，不声称已经完成整本教材。
 
@@ -26,7 +28,8 @@ JavaScript 和 Three.js 均随站点分发。实验 2 使用球半径 ε，前�
 
 ```powershell
 .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-validation.txt
+python scripts/verify_independent.py
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
 python scripts/verify_site.py
@@ -44,7 +47,7 @@ Notebook 含执行结果与断言；验证脚本在临时目录执行副本，�
 
 ## 部署到 GitHub Pages
 
-将本目录内容放到名为 `topology-from-zero` 的 GitHub 仓库根目录，默认分支使用 `main`。在 Settings → Pages → Build and deployment 中选择 **GitHub Actions**，随后推送或手动运行工作流。
+主仓库已上线，后续维护不需要重新初始化。创建工作分支并提交 Pull Request，等待全部检查与数学审阅后再合并到 `main`。只有发布自己的 Fork 时，才需要在 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。
 
 `.github/workflows/pages.yml` 对 PR 执行 JavaScript 算法测试、Notebook、严格构建和站点检查；只有 `main` 的推送或手动运行会部署。正式 `site_url` 使用 GitHub Pages 返回的实际地址，支持项目子路径与自定义域名。主仓库为 `Kevin20041008/topology-from-zero`；Fork 后可按上述步骤发布到自己的账户。
 
@@ -53,19 +56,24 @@ Notebook 含执行结果与断言；验证脚本在临时目录执行副本，�
 ```text
 docs/                       Markdown、样式、原创 SVG 与本地 MathJax
   introduction/             导论 + 示范章 01
-  point-set/                点集拓扑 + 示范章 02
-  algebraic/                代数拓扑 + 示范章 03
+  point-set/                点集拓扑 + 示范章 02 + 基础 A/B/D
+  algebraic/                代数拓扑 + 示范章 03 + 基础 C + 代数预备
   computational/            计算拓扑导读
   persistence/              持续同调导读
   ai/                       拓扑与人工智能导读
   labs/notebooks/           两份可运行 .ipynb
 scripts/                    可重复的内容与构建检查
 .github/workflows/pages.yml 构建和部署
+.github/ISSUE_TEMPLATE/     数学问题反馈表单
+CHANGELOG.md                发布变更记录
 requirements.in             直接依赖范围
 requirements.txt            本次验证的精确依赖版本
+requirements-validation.txt 独立 GUDHI 对照依赖
 ```
 
 全文搜索支持中文分词；公式、字体设置和插图不依赖第三方 CDN。浏览器端公式的人工验收页位于 `/math-check/`。构建检查可以验证数学标记，实际 SVG 排版还需要浏览器检查。
+
+JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区间临界值、边界平方为零、欧拉关系和三种曲面的精确参数识别复形。GUDHI 对照共享浮点边长，逐值比较 43 组点云的正持续区间，不以容差隐藏差异。渲染几何、数学曲面和计算复形在教材中分别说明。旧 URL 与正文锚点由 `scripts/legacy_urls.json` 保护。仅构建站点仍可安装 `requirements.txt`；完整验证需安装 `requirements-validation.txt`。运行记录见 [VALIDATION.md](VALIDATION.md)；自动化通过不代表已完成独立数学审阅。
 
 ## 许可与来源
 
