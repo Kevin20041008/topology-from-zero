@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 410" role="img" aria-labelledby="title desc">
+  <title id="title">从一个环到三角剖分</title><desc id="desc">原创拓扑学示意图：带三角网格的环面投影，下方把四点方环与填充三角形并列。图形只作学习意象，不是精确嵌入模型。</desc>
+  <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#87a59b" opacity=".28"/></pattern><mask id="hole"><rect width="500" height="410" fill="white"/><ellipse cx="250" cy="151" rx="82" ry="38" fill="black"/></mask></defs>
+  <rect x="10" y="10" width="480" height="390" rx="12" fill="#eef1e7"/>
+  <rect x="10" y="10" width="480" height="390" fill="url(#grid)"/>
+  <g mask="url(#hole)">
+    <ellipse cx="250" cy="177" rx="183" ry="105" fill="#d6e5ce" stroke="#2d7166" stroke-width="2"/>
+    <g fill="none" stroke="#52877a" stroke-width="1.2"><ellipse cx="250" cy="151" rx="183" ry="78"/><ellipse cx="250" cy="169" rx="169" ry="97"/><ellipse cx="250" cy="182" rx="141" ry="92"/><ellipse cx="250" cy="186" rx="112" ry="77"/><path d="M72 151 96 224 143 251 184 196 174 108 137 89M104 113 146 170 176 261 216 278 229 215 220 76M281 75 270 217 295 278 328 260 355 173 397 113M363 90 325 108 315 196 356 250 404 223 429 150M84 213l62-43 74 43 95-17 90 28M105 113l71 64 53-67 96 1 30 62 74-23"/></g>
+  </g>
+  <ellipse cx="250" cy="151" rx="82" ry="38" fill="none" stroke="#2d7166" stroke-width="2"/>
+  <path d="M192 176q58-64 116 0" fill="none" stroke="#2d7166" stroke-width="1.6" stroke-dasharray="5 5"/>
+  <g font-family="Georgia,serif" fill="#315b50"><text x="37" y="42" font-size="13" letter-spacing="2">A STUDY OF SHAPE</text><text x="383" y="265" font-size="23" font-style="italic">H₁</text></g>
+  <g transform="translate(138 315)" stroke="#2d7166" stroke-width="2" fill="none"><path d="M0 0h50v50H0z"/><g fill="#2d7166"><circle r="3"/><circle cx="50" r="3"/><circle cy="50" r="3"/><circle cx="50" cy="50" r="3"/></g></g>
+  <path d="M217 340h52m-8-5 8 5-8 5" fill="none" stroke="#a5844d" stroke-width="2"/>
+  <g transform="translate(301 315)" stroke="#2d7166" stroke-width="2"><path d="M0 0h50v50H0z" fill="#cbdcbe"/><path d="m0 0 50 50"/><g fill="#2d7166"><circle r="3"/><circle cx="50" r="3"/><circle cy="50" r="3"/><circle cx="50" cy="50" r="3"/></g></g>
+  <text x="250" y="389" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#55766c">SPACE → STRUCTURE → COMPUTATION</text>
+</svg>

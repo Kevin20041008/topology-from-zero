@@ -1,0 +1,95 @@
+site_name: topology-from-zero
+site_description: 从直观、定义到证明与计算的中文拓扑学开放教材
+site_url: !ENV [SITE_URL, 'http://127.0.0.1:8000/']
+repo_url: https://github.com/Kevin20041008/topology-from-zero
+repo_name: Kevin20041008/topology-from-zero
+edit_uri: edit/main/docs/
+copyright: 原创教材 CC BY 4.0 · 代码 MIT · v0.2 交互版
+theme:
+  name: material
+  language: zh
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+nav:
+  - 开始学习: index.md
+  - 拓扑学导论:
+      - 模块导读: introduction/index.md
+      - '01 · 从距离到拓扑': introduction/01-spaces.md
+  - 点集拓扑:
+      - 模块导读: point-set/index.md
+      - '02 · 连续映射与紧致性': point-set/02-continuity.md
+  - 代数拓扑:
+      - 模块导读: algebraic/index.md
+      - '03 · 环、边界与同调': algebraic/03-homology.md
+  - 计算拓扑: computational/index.md
+  - 持续同调: persistence/index.md
+  - 拓扑与人工智能: ai/index.md
+  - 实验与共建:
+      - 实验室: labs/index.md
+      - '实验 1 · 三角形的洞': labs/triangle.md
+      - '实验 2 · 点云与持续同调': labs/point-cloud.md
+      - '实验 3 · 三维拓扑曲面': labs/surfaces.md
+      - 教材进度: progress.md
+      - 符号与术语: notation.md
+      - 公式渲染检查: math-check.md
+      - 本地运行与部署: development.md
+      - 贡献与版权: contributing.md
+plugins:
+  - search:
+      lang: [zh, en]
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/experiments.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - assets/vendor/mathjax/tex-svg.js
+  - path: javascripts/experiments.mjs
+    type: module
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
+    unrecognized_links: warn
