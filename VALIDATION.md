@@ -6,9 +6,11 @@
 
 提交 `7386ded`，独立 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2)。在同一套严格断言下，修复前 A 为 `(1,0)`、B 为 `(1,0)`，分别违反期望 `(2,0)`、`(1,1)`；仅把寿命过滤改为 `death > birth` 后，9 项全部通过。完整输入、命令和三个修改文件见 [P0-VALIDATION.md](P0-VALIDATION.md)。
 
-[P0 远程运行](https://github.com/Kevin20041008/topology-from-zero/actions/runs/38152713310)已通过全部构建检查；PR 的部署任务按条件跳过，未合并或部署。
+[P0 PR 远程运行](https://github.com/Kevin20041008/topology-from-zero/actions/runs/38152713310)通过全部构建检查。2026-10-12 再次确认相同两项回归保留且 9 项测试通过，正常合并为 `017124756e50e58994467ba9275aadb2fc923e52`；[main 构建及 Pages 部署](https://github.com/Kevin20041008/topology-from-zero/actions/runs/38155464097)均成功。下载公开网站的 `topology-core.mjs`，确认与已审查源文件逐字节相同，再执行 A/B，结果严格为 `(2,0)`、`(1,1)`。该检查确认 P0 已抵达正式网站。
 
 ## P1：全部本地检查
+
+发布前已再次运行下列全部命令；严格构建使用正式站点的 `SITE_URL`。重点证明的再次复核结果见数学审查台账的“发布前重点复核”。
 
 | 检查 | 结果 |
 | --- | --- |

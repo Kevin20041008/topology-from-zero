@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased] — v0.3 Foundations Expansion
+## [0.3] — 2026-10-12 · Foundations Expansion
 
-先提交独立的 P0 热修复 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2)，再通过依赖它的教学 PR 提交本版。检查通过并完成审阅后才能合并发布，不代表正式站点已经升级。
+P0 热修复 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并，本版通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 发布。发布前复核正弦曲线、基本群群公理、商映射及线性商空间证明；这是作者侧数学复核，独立同行审阅仍待完成，详见 `docs/math-review.md`。
 
 ### 教材
 
@@ -30,9 +30,10 @@
 - 增加数学问题反馈表单和作者侧数学审查台账。
 - 保留现有 MkDocs、Notebook、GitHub Pages 部署方式及原创视觉；GUDHI 仅作为验证依赖，不进入浏览器。
 
-## [Unreleased] — v0.2 P0 short-interval hotfix
+## v0.2 P0 short-interval hotfix — 2026-10-12
 
 - 单独提交 `7386ded` 与 PR #2，仅修改寿命过滤并加入指定的 A/B 严格回归。
+- 通过 PR #2 合并到 `main`，合并提交 `017124756e50e58994467ba9275aadb2fc923e52`。
 - 在 v0.2 基线上实测先失败（7 通过、2 失败），一行修复后 9 项全部通过。
 - 全部原有 Notebook、严格构建和 20 页站点检查通过；证据及三文件清单见 `P0-VALIDATION.md`。
 

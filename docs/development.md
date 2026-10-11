@@ -28,7 +28,7 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 3. 完成审阅后合并到 `main`，由 **Build textbook and deploy Pages** 工作流发布。PR 自身不会部署。
 4. 若发布 Fork，才需要在自己的仓库 **Settings → Pages → Source** 选择 **GitHub Actions**；默认分支变化时同步修改工作流条件。
 
-构建任务执行 JavaScript 算法测试、GUDHI 独立对照、Notebook、严格构建并校验站点。PR 只做构建检查，部署任务仅对 `main` 的非 PR 事件运行。工作流从 `actions/configure-pages` 获取实际站点地址，通过 `SITE_URL` 注入配置。P0 热修复 PR 应先审查，后续教学 PR 以它为基线；热修复合并后再将教学 PR 的目标分支调整为 `main`。
+构建任务执行 JavaScript 算法测试、GUDHI 独立对照、Notebook、严格构建并校验站点。PR 只做构建检查，部署任务仅对 `main` 的非 PR 事件运行。工作流从 `actions/configure-pages` 获取实际站点地址，通过 `SITE_URL` 注入配置。v0.3 按先合并 P0、验证线上脚本，再将教学 PR 转向 `main` 的顺序发布。后续维护也应等待部署成功，并验证线上文件和交互行为，不能把分支检查通过当成正式站点已更新。
 
 主仓库：[Kevin20041008/topology-from-zero](https://github.com/Kevin20041008/topology-from-zero)。站点地址：[在线教材](https://kevin20041008.github.io/topology-from-zero/)。每次提交的部署状态可在仓库的 Actions 页面查看。
 
