@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" role="img" aria-labelledby="title desc">
+  <title id="title">量词顺序：每行有见证，但没有共同的一列</title>
+  <desc id="desc">三行三列矩阵仅在对角线上为真。每个x可以选y等于x，但没有一个y适用于全部x。</desc>
+  <rect width="680" height="330" rx="16" fill="#f3f6f4"/>
+  <g font-family="sans-serif" fill="#172d2b" text-anchor="middle">
+    <text x="340" y="35" font-size="20">R(x,y) ⇔ x = y</text>
+    <g font-size="18"><text x="150" y="80">y=0</text><text x="250" y="80">y=1</text><text x="350" y="80">y=2</text><text x="58" y="125">x=0</text><text x="58" y="185">x=1</text><text x="58" y="245">x=2</text></g>
+    <g stroke="#a9bdb7" fill="none"><path d="M100 95H400M100 155H400M100 215H400M100 275H400M100 95V275M200 95V275M300 95V275M400 95V275"/></g>
+    <g font-size="26"><text x="150" y="133" fill="#126c58">●</text><text x="250" y="133">×</text><text x="350" y="133">×</text><text x="150" y="193">×</text><text x="250" y="193" fill="#126c58">●</text><text x="350" y="193">×</text><text x="150" y="253">×</text><text x="250" y="253">×</text><text x="350" y="253" fill="#126c58">●</text></g>
+    <text x="532" y="133" font-size="18">每行选自己的 ●</text><text x="532" y="185" font-size="18">∀x ∃y：成立</text><text x="532" y="225" font-size="18">∃y ∀x：不成立</text><text x="340" y="308" font-size="15">有限模型展示两句话不同；一般推理仍需证明。</text>
+  </g>
+</svg>

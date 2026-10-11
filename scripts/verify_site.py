@@ -7,6 +7,7 @@ from urllib.parse import unquote, urlsplit
 import json
 
 from bs4 import BeautifulSoup
+from mkdocs.config import load_config
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
@@ -15,6 +16,7 @@ SITE = ROOT / "site"
 def main():
     assert SITE.is_dir(), "Run python -m mkdocs build --strict first"
     failures = []
+    base_path = urlsplit(load_config(config_file=str(ROOT / 'mkdocs.yml'))['site_url']).path.rstrip('/') + '/'
     html_paths = sorted(SITE.rglob("*.html"))
     assert len(html_paths) >= 64, "Missing expected graduate course pages"
     parsed = {path.resolve(): BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser") for path in html_paths}
@@ -25,10 +27,15 @@ def main():
             target = urlsplit(value)
             if not value or target.scheme or target.netloc:
                 continue
-            # 404.html uses root paths based on the configured deployment URL.
             if value.startswith("/"):
-                continue
-            resolved = (path.parent / unquote(target.path)).resolve() if target.path else path.resolve()
+                # Project Pages roots contain /topology-from-zero/. Validate
+                # them against this build, including generated 404 resources.
+                if not target.path.startswith(base_path):
+                    failures.append(f"{path.relative_to(SITE)} -> outside site prefix {value}")
+                    continue
+                resolved = (SITE / unquote(target.path[len(base_path):])).resolve()
+            else:
+                resolved = (path.parent / unquote(target.path)).resolve() if target.path else path.resolve()
             if resolved.is_dir():
                 resolved = resolved / "index.html"
             if not resolved.is_file():
@@ -62,7 +69,7 @@ def main():
     # Removing zero-width separators can hide a broken Chinese query. Preserve
     # the mathematical search terms as actual contiguous index tokens too.
     segmented = ' '.join(item['title'] + ' ' + item['text'] for item in index['docs'])
-    for term in ['拓扑基', '道路连通', '基本群', '上同调', '横截', '杯积', '配边', '超滤子', '数据泄漏']:
+    for term in ['拓扑基', '道路连通', '基本群', '上同调', '横截', '杯积', '配边', '超滤子', '数据泄漏', '伪度量', '等价关系', '逆像']:
         assert term in segmented, f'Chinese mathematical term split by tokenizer: {term}'
 
     formula = BeautifulSoup((SITE / "math-check/index.html").read_text(encoding="utf-8"), "html.parser")
@@ -84,7 +91,11 @@ def main():
     for chapter, exercise in chapters.items():
         page = BeautifulSoup((SITE / chapter / "index.html").read_text(encoding="utf-8"), "html.parser")
         text = page.get_text()
-        for section in ["直观解释", "严格定义", "定理与证明", "正例与反例", "练习", "参考书目"]:
+        record = next(c for c in curriculum['chapters'] if c['path'] == chapter + '.md')
+        required = ["直观解释", "严格定义", "定理与证明", "正例与反例", "练习", "参考书目"]
+        if record.get('template') == 2:
+            required = ["学习目标", "先修知识", "直观解释", "严格定义", "定理与证明", "正例与反例", "原创图解", "编程实验", "课后习题", "习题解答", "本章总结", "参考书目"]
+        for section in required:
             assert section in text, f"Missing {section} in {chapter}"
         assert page.select(".md-footer__link--prev") and page.select(".md-footer__link--next")
         assert page.select(".arithmatex"), f"Missing formula markup in {chapter}"
@@ -114,6 +125,11 @@ def main():
             assert not any(ord(c) < 32 and c not in '\n\r\t' for c in article.get_text()), f'Control character in {path}'
     for name in curriculum['notebooks']:
         assert (SITE / 'labs/notebooks' / name).is_file(), f'Missing notebook download: {name}'
+    foundation_lab = parsed[(SITE / 'labs/foundations/index.html').resolve()]
+    assert foundation_lab.select_one('[data-foundations-lab]')
+    assert len(foundation_lab.select('[data-generator]')) == 6
+    assert foundation_lab.select_one('[data-check-ball]')
+    assert any('foundations-lab.mjs' in tag.get('src', '') for tag in foundation_lab.select('script[src]'))
     print(f"PASS {len(html_paths)} HTML pages: local links/fragments, v0.2/v0.3 legacy inventories {legacy_counts}, Chinese search, {len(chapters)} chapters/exercises, navigation, math and interactive modules")
 
 

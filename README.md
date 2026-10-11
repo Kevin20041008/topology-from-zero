@@ -1,6 +1,6 @@
 # topology-from-zero · 从零开始的拓扑学
 
-中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**v0.4 Graduate Courses 审阅候选：42 篇正文及分步自检 + 三个浏览器交互实验 + 四个已执行 Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
+中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**M1基础批次1审阅候选：45篇正文及自检、24题新增完整答案、四个浏览器实验、四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
 
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
@@ -33,7 +33,7 @@ python scripts/verify_independent.py
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
 python scripts/verify_site.py
-node --test scripts/test_topology.mjs scripts/test_curriculum.mjs
+node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
 python -m mkdocs serve
 ```
 
@@ -80,3 +80,8 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 ## 许可与来源
 
 原创教材文字、题目与插图：**CC BY 4.0**；项目代码与 Notebook 代码单元：**MIT**。Notebook 说明单元适用 CC BY 4.0。请阅读 `LICENSE.md`、`LICENSE-CODE` 和 `THIRD_PARTY_NOTICES.md`。参考书只列书目信息，不复制教材正文或插图。
+
+
+## 长期建设与当前交付
+
+[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分82单元；本批只完成PRE1–PRE3与M0审计，未把全书标为完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批PR依赖尚未合并的PR #3，不自动发布。

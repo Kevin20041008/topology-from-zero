@@ -1,7 +1,51 @@
 {
-  "version": "v0.4-graduate-candidate",
+  "version": "m1-foundations-batch-1-candidate",
   "baseline": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
   "chapters": [
+    {
+      "path": "preliminaries/sets-maps-relations.md",
+      "title": "PRE1 · 集合、映射与等价类",
+      "exercise": "pre1",
+      "level": "foundation",
+      "code": "PRE1",
+      "course": "preliminaries",
+      "prerequisites": [],
+      "template": 2,
+      "solutions": "exercises/pre1-solutions.md",
+      "review": "project/reviews/PRE1.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "preliminaries/proofs-counterexamples.md",
+      "title": "PRE2 · 量词、证明方法与反例构造",
+      "exercise": "pre2",
+      "level": "foundation",
+      "code": "PRE2",
+      "course": "preliminaries",
+      "prerequisites": [
+        "PRE1"
+      ],
+      "template": 2,
+      "solutions": "exercises/pre2-solutions.md",
+      "review": "project/reviews/PRE2.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "preliminaries/metric-spaces.md",
+      "title": "PRE3 · 度量空间：从距离到拓扑",
+      "exercise": "pre3",
+      "level": "foundation",
+      "code": "PRE3",
+      "course": "preliminaries",
+      "prerequisites": [
+        "PRE1",
+        "PRE2"
+      ],
+      "template": 2,
+      "solutions": "exercises/pre3-solutions.md",
+      "review": "project/reviews/PRE3.md",
+      "exerciseCount": 8
+    },
     {
       "path": "introduction/01-spaces.md",
       "title": "01 · 从距离到拓扑",
@@ -9,7 +53,9 @@
       "level": "foundation",
       "code": "spaces",
       "course": "introduction",
-      "prerequisites": []
+      "prerequisites": [
+        "PRE3"
+      ]
     },
     {
       "path": "point-set/bases-subbases.md",
@@ -258,7 +304,9 @@
       "code": "linear-quotient",
       "course": "algebraic",
       "prerequisites": [
-        "spaces"
+        "spaces",
+        "PRE1",
+        "PRE2"
       ]
     },
     {

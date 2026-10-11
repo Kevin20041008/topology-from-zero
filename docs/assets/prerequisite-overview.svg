@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 680" role="img" aria-labelledby="title desc">
+<title id="title">课程方向先修概览</title><desc id="desc">从集合、证明、度量到点集拓扑，分出代数、微分几何、集合维数及计算AI路线。详细先修以正文邻接表为准。</desc>
+<rect width="860" height="680" fill="#f3f6f4" rx="16"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#527b70"/></marker></defs>
+<path d="M420 74 L420 105" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M420 154 L420 185" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M420 234 L420 265" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M420 314 L190 375" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M420 314 L440 375" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M420 314 L690 375" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M190 424 L160 485" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M440 424 L160 485" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M190 424 L340 485" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M190 424 L560 485" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M560 534 L560 575" fill="none" stroke="#527b70" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="330" y="30" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="420" y="58" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">集合与映射</text>
+<rect x="330" y="110" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="420" y="138" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">证明与反例</text>
+<rect x="330" y="190" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="420" y="218" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">度量空间</text>
+<rect x="330" y="270" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="420" y="298" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">点集拓扑</text>
+<rect x="100" y="380" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="190" y="408" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">基本群与同调</text>
+<rect x="350" y="380" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="440" y="408" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">微分与几何</text>
+<rect x="600" y="380" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="690" y="408" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">集合与维数</text>
+<rect x="70" y="490" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="160" y="518" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">纽结理论</text>
+<rect x="250" y="490" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="340" y="518" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">现代同伦</text>
+<rect x="470" y="490" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="560" y="518" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">计算 → TDA</text>
+<rect x="470" y="580" width="180" height="44" rx="8" fill="#fff" stroke="#71978a"/><text x="560" y="608" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#183c34">拓扑与AI</text>
+<text x="430" y="660" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#183c34">方向概览不代表全卷先修；完整单元依赖见正文表格。</text></svg>
