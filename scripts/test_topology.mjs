@@ -258,3 +258,23 @@ test('relabeling vertices preserves the multiset of persistence intervals', () =
     .map(b => `${b.dimension}:${b.birth}:${b.death}`).sort();
   for (const preset of Object.values(pointPresets)) assert.deepEqual(signature(preset.points), signature([...preset.points].reverse()));
 });
+
+test('P0 A: points 1e-10 apart have two H0 classes at epsilon zero', () => {
+  const filtration = ripsFiltration([[0, 0], [1e-10, 0]]);
+  const bars = persistentHomology(filtration);
+  assert.deepEqual(bettiAt(bars, 0), [2, 0]);
+  assert.equal(bars.filter(b => b.dimension === 0 && b.death > 0 && b.death < Infinity).length, 1);
+  assert.deepEqual(bettiAt(bars, 0), bettiNumbers(filtration.filter(s => s.birth <= 0).map(s => s.vertices)));
+});
+
+test('P0 B: a thin rectangle retains its short nonzero H1 interval', () => {
+  const filtration = ripsFiltration([[0, 0], [1, 0], [1, 1e-5], [0, 1e-5]]);
+  const bars = persistentHomology(filtration);
+  const epsilon = 0.5000000000125;
+  assert.deepEqual(bettiAt(bars, epsilon), [1, 1]);
+  const h1 = bars.filter(b => b.dimension === 1);
+  assert.equal(h1.length, 1);
+  assert.ok(h1[0].death > h1[0].birth && h1[0].death - h1[0].birth < 1e-10);
+  assert.deepEqual(bettiAt(bars, epsilon), bettiNumbers(filtration.filter(s => s.birth <= epsilon).map(s => s.vertices)));
+  assert.deepEqual(bettiAt(bars, h1[0].death), [1, 0]);
+});
