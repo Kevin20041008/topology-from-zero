@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-12",
+  "environment": "Local build served on 127.0.0.1:8015; not the published website",
+  "method": "Read-only DOM counts through browser tools, summary click and anchor click; visual inspection of open-ball and truncated-metric proofs",
+  "pages": [
+    {"path": "introduction/01-spaces/", "formulas": 227, "rendered": 227, "mathErrors": 0},
+    {"path": "preliminaries/metric-spaces/", "formulas": 296, "rendered": 296, "mathErrors": 0},
+    {"path": "point-set/bases-subbases/", "formulas": 122, "rendered": 122, "mathErrors": 0}
+  ],
+  "openAnswerLabels": ["第 1 题。", "第 2 题。", "第 3 题。", "第 4 题。", "第 5 题。", "第 6 题。"],
+  "anchorsPresent": ["open-balls-are-open", "truncated-metric", "sierpinski-not-metrizable"],
+  "linksObserved": [
+    {"source": "preliminaries/metric-spaces/", "label": "截断度量完整例题", "href": "../../introduction/01-spaces/#truncated-metric"},
+    {"source": "point-set/bases-subbases/", "label": "导论引理 1.4", "href": "../../introduction/01-spaces/#open-balls-are-open"}
+  ],
+  "scope": "Rendering and navigation observations, not mathematical proof verification or whole-site interactive testing"
+}
