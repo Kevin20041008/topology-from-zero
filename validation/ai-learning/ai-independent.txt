@@ -1,0 +1,1 @@
+PASS GUDHI 3.11.0: 512 closed-square cubical masks; 25 lower-star paths, 49 intervals exactly equal

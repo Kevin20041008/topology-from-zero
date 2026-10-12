@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 410" role="img" aria-labelledby="a7-title a7-desc">
+  <title id="a7-title">点云学习的几何路径与拓扑路径</title>
+  <desc id="a7-desc">左侧输入点云分到上方几何网络和下方半径尺度Rips及持续同调两条路径，再合并为预测器。底部注明固定对应每点位移eta只能在假设下给边出生误差eta，按源物体分组的训练测试隔离贯穿全流程。</desc>
+  <rect width="980" height="410" rx="14" fill="#f5f8f4"/>
+  <g font-family="sans-serif" fill="#173f39">
+    <text x="26" y="36" font-size="21" font-weight="600">点云信息的两种表示，收益由实验判断</text>
+    <rect x="28" y="113" width="169" height="129" rx="10" fill="#e1ebe3" stroke="#7b9c89"/>
+    <g fill="#246d5b"><circle cx="65" cy="158" r="4"/><circle cx="92" cy="143" r="4"/><circle cx="126" cy="154" r="4"/><circle cx="147" cy="176" r="4"/><circle cx="123" cy="191" r="4"/><circle cx="88" cy="196" r="4"/><circle cx="65" cy="181" r="4"/></g>
+    <text x="52" y="221" font-size="17">有限点云 X</text>
+    <path d="M197 150L263 99M197 209L263 260" fill="none" stroke="#476e5d" stroke-width="2"/>
+    <rect x="263" y="64" width="339" height="73" rx="9" fill="#dfebe3" stroke="#7b9c89"/>
+    <text x="281" y="94" font-size="18">几何路径：坐标与局部邻域</text>
+    <text x="281" y="119" font-size="15">PointNet / PointNet++ 等表示</text>
+    <rect x="263" y="222" width="339" height="84" rx="9" fill="#eee5d1" stroke="#b3975b"/>
+    <text x="281" y="251" font-size="18">拓扑路径：VRε → 持续特征</text>
+    <text x="281" y="278" font-size="15">边距离 ≤ 2ε；边出生 = 距离 / 2</text>
+    <path d="M602 101L677 159M602 264L677 205" fill="none" stroke="#476e5d" stroke-width="2"/>
+    <rect x="677" y="125" width="271" height="119" rx="10" fill="#d3e5d9" stroke="#4a7c62"/>
+    <text x="703" y="156" font-size="19">固定预测器与公平对照</text>
+    <text x="703" y="185" font-size="16">几何 / 拓扑 / 联合</text>
+    <text x="703" y="214" font-size="15">不从稳定性直接推出精度</text>
+    <line x1="27" y1="330" x2="950" y2="330" stroke="#b9cbbf"/>
+    <text x="29" y="360" font-size="16">固定对应：每点移动 ≤ η ⇒ 每条边出生变化 ≤ η</text>
+    <text x="29" y="387" font-size="16">先按源物体分组，再拟合预处理；测试对象不得参与选模型或选特征</text>
+  </g>
+</svg>

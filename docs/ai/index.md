@@ -12,5 +12,17 @@
 | --- | --- |
 | [A1 · 持续特征、稳定表示与可微边界](features-learning.md) | R2 |
 | [A2 · 拓扑学习实验、基线与泛化证据](evaluation-protocol.md) | A1 |
+| [A3 · 拓扑损失](topological-loss.md) | A1、A2 |
+| [A4 · 拓扑与图像分割](segmentation-topology.md) | 同调、K1、连通性、A2 |
+| [A5 · 医学图像拓扑](medical-topology.md) | A3、A4 |
+| [A6 · 高阶图神经网络](higher-order-networks.md) | 同调、K1、A2；实矩阵线性代数 |
+| [A7 · 三维点云与形状学习](point-cloud-learning.md) | PRE3、A1、A2 |
+| [A8 · 可微持续同调](differentiable-persistence.md) | A3、R1；多元微分与反向传播 |
+
+A3–A8 本批已补写正文、48 道书面习题及完整答案。损失路线可按 A3 → A8 学习；分割路线按 A4 → A5；A6、A7为结构化网络和点云的平行支线。章节使用精确的小命题与可审查的模型，不以“已经覆盖主题”声称完成所有架构或临床训练复现。
+
+[打开 AI 拓扑实验](../labs/ai-topology.md)：用路径模型比较硬 Betti 损失和持续寿命损失；用闭像素方块展示相同 Dice 的不同孔洞；在四点路径上检查持续端点切换与不可微位置。三项实验无需新的浏览器依赖。
+
+**证据边界。** 数学命题依据正文证明及逐章复核；实验结果只指给定的合成路径、掩膜与已有点云数据。新批次没有训练临床模型，没有宣称提升 Dice、IoU 或 Accuracy。一般优化收敛、解剖正确性和分布外泛化需额外条件与独立实验。
 
 先修代码、整体顺序和引用定理范围见[研究生课程地图](../curriculum.md)；待独立审阅事项见[审查台账](../graduate-review.md)。

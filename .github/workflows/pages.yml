@@ -29,10 +29,14 @@ jobs:
         with:
           node-version: '22'
       - name: Verify interactive topology algorithms
-        run: node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
+        run: node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs scripts/test_ai_topology.mjs
       - run: python -m pip install -r requirements-validation.txt
       - name: Compare with independent GUDHI persistence
         run: python scripts/verify_independent.py
+      - name: Compare AI teaching models with GUDHI
+        run: python scripts/verify_ai_independent.py
+      - name: Execute original Python examples in AI chapters
+        run: python scripts/verify_ai_examples.py
       - name: Execute and validate notebooks
         run: python scripts/verify_notebooks.py
       - name: Configure Pages

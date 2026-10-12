@@ -69,7 +69,7 @@ def main():
     # Removing zero-width separators can hide a broken Chinese query. Preserve
     # the mathematical search terms as actual contiguous index tokens too.
     segmented = ' '.join(item['title'] + ' ' + item['text'] for item in index['docs'])
-    for term in ['拓扑基', '道路连通', '基本群', '上同调', '横截', '杯积', '配边', '超滤子', '数据泄漏', '伪度量', '等价关系', '逆像']:
+    for term in ['拓扑基', '道路连通', '基本群', '上同调', '横截', '杯积', '配边', '超滤子', '数据泄漏', '伪度量', '等价关系', '逆像', '拓扑损失', '可微持续同调', '图像分割']:
         assert term in segmented, f'Chinese mathematical term split by tokenizer: {term}'
 
     formula = BeautifulSoup((SITE / "math-check/index.html").read_text(encoding="utf-8"), "html.parser")
@@ -130,6 +130,13 @@ def main():
     assert len(foundation_lab.select('[data-generator]')) == 6
     assert foundation_lab.select_one('[data-check-ball]')
     assert any('foundations-lab.mjs' in tag.get('src', '') for tag in foundation_lab.select('script[src]'))
+    ai_lab = parsed[(SITE / 'labs/ai-topology/index.html').resolve()]
+    assert {e['data-ai-lab'] for e in ai_lab.select('[data-ai-lab]')} == {'loss', 'segmentation', 'differentiable'}
+    assert len(ai_lab.select('input[type="range"]')) == 3
+    assert ai_lab.select_one('[data-step]') and ai_lab.select_one('[data-tie]')
+    assert len(ai_lab.select('select option')) == 6
+    assert all(ai_lab.find(id=anchor) for anchor in ['loss', 'segmentation', 'differentiable'])
+    assert any('ai-topology-lab.mjs' in tag.get('src', '') for tag in ai_lab.select('script[src]'))
     print(f"PASS {len(html_paths)} HTML pages: local links/fragments, v0.2/v0.3 legacy inventories {legacy_counts}, Chinese search, {len(chapters)} chapters/exercises, navigation, math and interactive modules")
 
 

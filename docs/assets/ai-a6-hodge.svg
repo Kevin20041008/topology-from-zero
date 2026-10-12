@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" role="img" aria-labelledby="a6-title a6-desc">
+  <title id="a6-title">从有向单元到Hodge算子</title>
+  <desc id="a6-desc">左图三角环可以保留为空心或者加入一个面；边零一反向时，边界矩阵对应列和有向信号系数同时变号。右侧依次显示顶点边面信号的维数及Hodge算子从下方与上方关联相加。</desc>
+  <rect width="940" height="340" rx="14" fill="#f5f8f4"/>
+  <g font-family="sans-serif" fill="#173f39">
+    <text x="25" y="35" font-size="21" font-weight="600">结构选择与定向选择是两回事</text>
+    <polygon points="75,240 285,240 180,75" fill="#d9eadf" stroke="#246d5b" stroke-width="3"/>
+    <path d="M139 240H173L164 234M173 240L164 246" fill="none" stroke="#246d5b" stroke-width="3"/>
+    <path d="M249 184L231 156L231 168M231 156L241 162" fill="none" stroke="#246d5b" stroke-width="3"/>
+    <path d="M111 184L129 156L119 162M129 156L129 168" fill="none" stroke="#246d5b" stroke-width="3"/>
+    <circle cx="75" cy="240" r="5" fill="#173f39"/><circle cx="285" cy="240" r="5" fill="#173f39"/><circle cx="180" cy="75" r="5" fill="#173f39"/>
+    <text x="56" y="266" font-size="17">0</text><text x="286" y="266" font-size="17">1</text><text x="178" y="65" font-size="17">2</text>
+    <text x="146" y="171" font-size="16">面可选</text>
+    <text x="30" y="297" font-size="15">有面：循环成为边界；无面：保留环</text>
+    <line x1="385" y1="56" x2="385" y2="318" stroke="#b9cbbf"/>
+    <text x="416" y="80" font-size="18">面信号 X₂：n₂ × f₂</text>
+    <path d="M491 94V116L486 108M491 116L496 108" fill="none" stroke="#996c2d" stroke-width="2"/>
+    <text x="513" y="111" font-size="16">B₂：面 → 边</text>
+    <text x="416" y="144" font-size="18">边信号 X₁：n₁ × f₁</text>
+    <path d="M491 158V180L486 172M491 180L496 172" fill="none" stroke="#996c2d" stroke-width="2"/>
+    <text x="513" y="175" font-size="16">B₁：边 → 点</text>
+    <text x="416" y="208" font-size="18">点信号 X₀：n₀ × f₀</text>
+    <rect x="405" y="229" width="509" height="83" rx="8" fill="#e2ece4"/>
+    <text x="423" y="255" font-size="18">L₁ = B₁ᵀB₁ + B₂B₂ᵀ</text>
+    <text x="423" y="283" font-size="16">边换向 D：X₁′ = DX₁，L₁′ = DL₁D</text>
+    <text x="716" y="255" font-size="14">下关联 + 上关联</text>
+  </g>
+</svg>

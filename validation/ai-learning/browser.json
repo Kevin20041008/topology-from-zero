@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-12",
+  "method": "Local static build at http://127.0.0.1:8016; Codex browser UI actions and read-only DOM observations. Browser checks are local, not part of CI.",
+  "math": {
+    "pages": {
+      "ai/topological-loss/": 177,
+      "ai/segmentation-topology/": 98,
+      "ai/medical-topology/": 117,
+      "ai/higher-order-networks/": 128,
+      "ai/point-cloud-learning/": 99,
+      "ai/differentiable-persistence/": 150,
+      "exercises/a3-solutions/": 120,
+      "exercises/a4-solutions/": 60,
+      "exercises/a5-solutions/": 64,
+      "exercises/a6-solutions/": 88,
+      "exercises/a7-solutions/": 65,
+      "exercises/a8-solutions/": 98,
+      "labs/ai-topology/": 48
+    },
+    "source_markers": 1312,
+    "rendered_containers": 1312,
+    "merror_nodes": 0,
+    "all_four_original_svg_images_loaded": true,
+    "all_six_chapter_statuses_reviewed": true
+  },
+  "loss_controls": [
+    {"t": 0, "beta0_at_half": 1, "hard_loss": 0, "lifespan_loss": 0, "gradient": 0},
+    {"t": 0.5, "beta0_at_half": 1, "hard_loss": 0, "lifespan_loss": 0.25, "gradient": 1},
+    {"t": 1, "beta0_at_half": 2, "hard_loss": 1, "lifespan_loss": 1, "gradient": 2},
+    {"action": "gradient step from 1", "t": 0.8, "lifespan_loss": 0.64, "gradient": 1.6}
+  ],
+  "segmentation_controls": [
+    {"preset": "hole", "betti": [1, 1], "euler": 0, "dice": "48/49"},
+    {"preset": "notch", "betti": [1, 0], "euler": 1, "dice": "48/49"},
+    {"preset": "target", "betti": [1, 0], "euler": 1, "dice": "50/50"},
+    {"preset": "broken", "betti": [2, 0], "euler": 2, "dice": "24/25"},
+    {"preset": "bridge", "betti": [1, 0], "euler": 1, "dice": "26/26"},
+    {"preset": "empty", "betti": [0, 0], "euler": 0, "dice": "0/25"}
+  ],
+  "differentiable_controls": [
+    {"a": 0.7, "b": 0.4, "loss": 0.49, "gradient": [1.4, 0]},
+    {"a": 0.5, "b": 0.5, "loss": 0.25, "ordinary_gradient_exists": false, "left_partial": 0, "right_partial": 1},
+    {"a": 1, "b": 1, "loss": 1, "right_partial_label": "实平面公式延拓的右导数=2（域内不能向右扰动）"},
+    {"a": 0, "b": 0, "loss": 0, "gradient": [0, 0], "label": "非负参数域内的二次零点"}
+  ],
+  "quizzes": {
+    "chapters": ["A3", "A4", "A5", "A6", "A7", "A8"],
+    "each_checked": ["empty submission feedback", "two distinct hints", "wrong answer feedback", "correct answer feedback", "reset clears selection, hints and feedback"]
+  },
+  "responsive": {
+    "viewport_width": 390,
+    "viewport_height": 844,
+    "document_scroll_width": 375,
+    "pages": ["labs/ai-topology/", "ai/higher-order-networks/"],
+    "page_overflow": false,
+    "viewport_restored": true
+  },
+  "search": {
+    "query": "可微持续同调",
+    "action": "Fill followed by native Space/Backspace keyboard events; fill alone left the theme's results idle.",
+    "found": ["A8 chapter", "A8 solutions", "A8 review"],
+    "result_count_displayed": 141
+  },
+  "console_errors_and_warnings_observed": []
+}

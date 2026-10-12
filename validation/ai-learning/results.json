@@ -1,0 +1,84 @@
+[
+  {
+    "name": "javascript",
+    "command": [
+      "node",
+      "--test",
+      "scripts/test_topology.mjs",
+      "scripts/test_curriculum.mjs",
+      "scripts/test_foundations.mjs",
+      "scripts/test_ai_topology.mjs"
+    ],
+    "exit_code": 0,
+    "tail": "e coordinates and unrepresentable distances are rejected (0.4616ms)\n✔ sphere: exact quotient meshes verify Betti, Euler, boundary and orientability at two resolutions (5.3007ms)\n✔ torus: exact quotient meshes verify Betti, Euler, boundary and orientability at two resolutions (10.3366ms)\n✔ mobius: exact quotient meshes verify Betti, Euler, boundary and orientability at two resolutions (10.2109ms)\n✔ Mobius seam reverses the width coordinate and its boundary closes after two turns (0.1787ms)\n✔ raw Mobius render indices describe a cut rectangle, not the identified mathematical band (4.1724ms)\n✔ 43 adversarial and seeded random point clouds agree at every event and intervening scale (35.9584ms)\n✔ invalid filtrations fail rather than silently produce negative or meaningless bars (0.4528ms)\n✔ relabeling vertices preserves the multiset of persistence intervals (1.1133ms)\n✔ P0 A: points 1e-10 apart have two H0 classes at epsilon zero (0.1437ms)\n✔ P1: a 12-decimal grid must not move a positive edge birth to zero (0.0693ms)\n✔ P0 B: a thin rectangle retains its short nonzero H1 interval (0.148ms)\nℹ tests 51\nℹ suites 0\nℹ pass 51\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 636.368\n"
+  },
+  {
+    "name": "independent",
+    "command": [
+      "python",
+      "scripts/verify_independent.py"
+    ],
+    "exit_code": 0,
+    "tail": "PASS GUDHI 3.11.0: 43 point clouds, 217 H0/H1 intervals exactly equal; 3 abstract surface complexes\n"
+  },
+  {
+    "name": "ai-independent",
+    "command": [
+      "python",
+      "scripts/verify_ai_independent.py"
+    ],
+    "exit_code": 0,
+    "tail": "PASS GUDHI 3.11.0: 512 closed-square cubical masks; 25 lower-star paths, 49 intervals exactly equal\n"
+  },
+  {
+    "name": "ai-examples",
+    "command": [
+      "python",
+      "scripts/verify_ai_examples.py"
+    ],
+    "exit_code": 0,
+    "tail": "PASS topological-loss: 1 Python block(s), all assertions passed\nPASS medical-topology: 1 Python block(s), all assertions passed\nPASS higher-order-networks: 1 Python block(s), all assertions passed\nExact finite checks passed; no neural model was trained.\nPASS point-cloud-learning: 1 Python block(s), all assertions passed\nFixed correspondence, radius convention, finite checks passed.\nPASS differentiable-persistence: 1 Python block(s), all assertions passed\n1.0000999999998372 0.0 0.5000499999999186\n"
+  },
+  {
+    "name": "notebooks",
+    "command": [
+      "python",
+      "scripts/verify_notebooks.py"
+    ],
+    "exit_code": 0,
+    "tail": "PASS 01-finite-topology.ipynb: 2 code cells executed in a fresh kernel\nPASS 02-square-homology.ipynb: 5 code cells executed in a fresh kernel\nPASS 03-cohomology-cup-products.ipynb: 3 code cells executed in a fresh kernel\nPASS 04-topology-learning-baselines.ipynb: 3 code cells executed in a fresh kernel\n"
+  },
+  {
+    "name": "build",
+    "command": [
+      "python",
+      "-m",
+      "mkdocs",
+      "build",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "tail": "\n │  ⚠  Warning from the Material for MkDocs team\n │\n │  MkDocs 2.0, the underlying framework of Material for MkDocs,\n │  will introduce backward-incompatible changes, including:\n │\n │  × All plugins will stop working – the plugin system has been removed\n │  × All theme overrides will break – the theming system has been rewritten\n │  × No migration path exists – existing projects cannot be upgraded\n │  × Closed contribution model – community members can't report bugs\n │  × Currently unlicensed – unsuitable for production use\n │\n │  Our full analysis:\n │\n │  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/\n\nBuilding prefix dict from the default dictionary ...\nLoading model from cache <user-profile>\\AppData\\Local\\Temp\\jieba.cache\nLoading model cost 0.379 seconds.\nPrefix dict has been built successfully.\nINFO    -  Cleaning site directory\nINFO    -  Building documentation to directory: <repository>\\site\nINFO    -  Documentation built in 2.77 seconds\n"
+  },
+  {
+    "name": "site",
+    "command": [
+      "python",
+      "scripts/verify_site.py"
+    ],
+    "exit_code": 0,
+    "tail": "PASS 145 HTML pages: local links/fragments, v0.2/v0.3 legacy inventories [19, 25], Chinese search, 51 chapters/exercises, navigation, math and interactive modules\n"
+  },
+  {
+    "name": "diff",
+    "command": [
+      "git",
+      "-c",
+      "core.safecrlf=false",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "tail": ""
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "version": "m1-foundations-batch-1-candidate",
+  "version": "m6-ai-learning-batch-candidate",
   "baseline": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
   "chapters": [
     {
@@ -563,6 +563,106 @@
       "prerequisites": [
         "A1"
       ]
+    },
+    {
+      "path": "ai/topological-loss.md",
+      "title": "A3 · 拓扑损失：目标、梯度与约束的边界",
+      "exercise": "ai-topological-loss",
+      "level": "graduate",
+      "code": "A3",
+      "course": "ai",
+      "prerequisites": [
+        "A1",
+        "A2"
+      ],
+      "template": 2,
+      "solutions": "exercises/a3-solutions.md",
+      "review": "project/reviews/A3.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "ai/segmentation-topology.md",
+      "title": "A4 · 图像分割：像素误差与拓扑错误",
+      "exercise": "ai-segmentation-topology",
+      "level": "graduate",
+      "code": "A4",
+      "course": "ai",
+      "prerequisites": [
+        "homology",
+        "K1",
+        "connectedness",
+        "A2"
+      ],
+      "template": 2,
+      "solutions": "exercises/a4-solutions.md",
+      "review": "project/reviews/A4.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "ai/medical-topology.md",
+      "title": "A5 · 医学图像：骨架、拓扑先验与评价边界",
+      "exercise": "ai-medical-topology",
+      "level": "graduate",
+      "code": "A5",
+      "course": "ai",
+      "prerequisites": [
+        "A3",
+        "A4"
+      ],
+      "template": 2,
+      "solutions": "exercises/a5-solutions.md",
+      "review": "project/reviews/A5.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "ai/higher-order-networks.md",
+      "title": "A6 · 高阶关系、Hodge 算子与神经网络",
+      "exercise": "ai-higher-order-networks",
+      "level": "graduate",
+      "code": "A6",
+      "course": "ai",
+      "prerequisites": [
+        "homology",
+        "K1",
+        "A2"
+      ],
+      "template": 2,
+      "solutions": "exercises/a6-solutions.md",
+      "review": "project/reviews/A6.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "ai/point-cloud-learning.md",
+      "title": "A7 · 点云学习：几何、持续同调与稳定性",
+      "exercise": "ai-point-cloud-learning",
+      "level": "graduate",
+      "code": "A7",
+      "course": "ai",
+      "prerequisites": [
+        "PRE3",
+        "A1",
+        "A2"
+      ],
+      "template": 2,
+      "solutions": "exercises/a7-solutions.md",
+      "review": "project/reviews/A7.md",
+      "exerciseCount": 8
+    },
+    {
+      "path": "ai/differentiable-persistence.md",
+      "title": "A8 · 可微持续同调：局部导数与配对切换",
+      "exercise": "ai-differentiable-persistence",
+      "level": "graduate",
+      "code": "A8",
+      "course": "ai",
+      "prerequisites": [
+        "A3",
+        "R1"
+      ],
+      "template": 2,
+      "solutions": "exercises/a8-solutions.md",
+      "review": "project/reviews/A8.md",
+      "exerciseCount": 8
     }
   ],
   "notebooks": [
