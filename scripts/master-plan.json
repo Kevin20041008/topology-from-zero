@@ -508,7 +508,9 @@
       "proof": "图册；导子切空间；切丛/余切丛；IFT与常秩",
       "examples": "浸入/嵌入/下沉；拓扑非嵌入",
       "lab": "参数化与秩",
-      "existing": "differential/manifolds-rank.md"
+      "existing": "differential/manifolds-rank.md",
+      "status": "Reviewed: written core and 8 solutions; derivations and tangent/cotangent bundles remain",
+      "review": "project/reviews/D1.md"
     },
     {
       "code": "DT1",
@@ -537,7 +539,9 @@
       "proof": "正则水平集；Sard分析先修；参数横截；映射度",
       "examples": "切触非横截；球面度",
       "lab": "正则值演示",
-      "existing": "differential/transversality-degree.md"
+      "existing": "differential/transversality-degree.md",
+      "status": "Reviewed: written core and 8 solutions; Sard and general fundamental-class tools remain external",
+      "review": "project/reviews/D2.md"
     },
     {
       "code": "D3",

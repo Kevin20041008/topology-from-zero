@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "site": "http://127.0.0.1:8014/",
+  "method": "Actual local browser via cua_repl; separate from CI and mathematical review",
+  "pages": [
+    {"path": "differential/manifolds-rank/", "math": 342, "rendered": 342, "merror": 0, "quizChoices": 3},
+    {"path": "exercises/d1-solutions/", "math": 120, "rendered": 120, "merror": 0},
+    {"path": "differential/transversality-degree/", "math": 311, "rendered": 311, "merror": 0, "quizChoices": 3},
+    {"path": "exercises/d2-solutions/", "math": 138, "rendered": 138, "merror": 0}
+  ],
+  "totalMath": 911,
+  "quizFlows": {"D1": "empty submission, two hints, incorrect choice, clear feedback on change, correct choice, reset", "D2": "empty submission, two hints, incorrect choice, clear feedback on change, correct choice, reset"},
+  "visual": {
+    "desktop": "Both original SVGs inspected in the pages; no whole-page horizontal overflow on the four checked pages",
+    "mobile": "390x844 viewport; D1/D2 document scrollWidth 375, innerWidth 390; both SVGs loaded and fit. Small diagram labels motivate a direct original-SVG link.",
+    "theme": "D2 default and slate checked; original slate restored; viewport override reset",
+    "consoleErrors": 0
+  },
+  "search": {"query": "横截", "reportedResults": 21, "firstPages": ["D2正文", "D2完整解答"]},
+  "limits": "No repeat of all previous chapters or every old experiment UI; algorithms covered by existing tests. No claim of theorem verification from browser rendering."
+}

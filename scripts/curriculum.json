@@ -1,5 +1,5 @@
 {
-  "version": "m1-foundations-batch-1-candidate",
+  "version": "m3-differential-foundations-candidate",
   "baseline": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
   "chapters": [
     {
@@ -401,7 +401,11 @@
         "P2",
         "P6",
         "P9"
-      ]
+      ],
+      "template": 2,
+      "exerciseCount": 8,
+      "solutions": "exercises/d1-solutions.md",
+      "review": "project/reviews/D1.md"
     },
     {
       "path": "differential/transversality-degree.md",
@@ -414,7 +418,11 @@
         "D1",
         "H3",
         "Q2"
-      ]
+      ],
+      "template": 2,
+      "exerciseCount": 8,
+      "solutions": "exercises/d2-solutions.md",
+      "review": "project/reviews/D2.md"
     },
     {
       "path": "differential/forms-derham.md",

@@ -35,8 +35,8 @@
 | Q1 | [Q1 · 上链、泛系数与杯积环](Q1.md) | Draft；分次交换性及空间外积比较引用；链级非严格交换 |
 | Q2 | [Q2 · 定向、帽积与 Poincaré 对偶](Q2.md) | Advanced Outline；有限 PL 对偶机制已写；与奇异帽积比较及一般流形版本引用 |
 | G1 | [G1 · 高阶同伦、纤维化与谱序列入口](G1.md) | Advanced Outline；Serre/Hurewicz/胞腔逼近引用；稳定页有扩张问题 |
-| D1 | [D1 · 光滑流形、切空间与秩定理](D1.md) | Advanced Outline；IFT/ODE 先修；Whitney 嵌入引用 |
-| D2 | [D2 · 横截性、交叉与映射度](D2.md) | Advanced Outline；Sard、一般基本类/局部定向比较及相对横截逼近引用 |
+| D1 | [D1 · 光滑流形、切空间与秩定理](D1.md) | Reviewed（本批核心/8题）；IFT/Whitney外引，导子与切余切丛待建 |
+| D2 | [D2 · 横截性、交叉与映射度](D2.md) | Reviewed（核心/8题及条件推导）；Sard、一般基本类/局部比较与边界理论仍外引 |
 | D3 | [D3 · 微分形式、Stokes 与 de Rham 上同调](D3.md) | Advanced Outline；de Rham 全局同构与环兼容引用，不只检查链映射 |
 | D4 | [D4 · Morse 函数、子水平集与柄](D4.md) | Advanced Outline；Morse 引理、柄附加与临界值分离引用 |
 | D5 | [D5 · 向量丛、截面与特征类入口](D5.md) | Advanced Outline；可缩底上的丛平凡性、一般 c₁ 与曲率比较引用 |

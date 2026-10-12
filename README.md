@@ -1,6 +1,6 @@
 # topology-from-zero · 从零开始的拓扑学
 
-中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**M1基础批次1审阅候选：45篇正文及自检、24题新增完整答案、四个浏览器实验、四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
+中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**M3微分基础批次审阅候选：45篇正文及自检、5章40题完整答案、四个浏览器实验、四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
 
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
@@ -12,7 +12,7 @@
 
 新增基础 A（拓扑基与子基）、基础 B（连通性）、基础 C（同伦与基本群）、基础 D（商空间）与代数预备（链群与线性商空间）。原有章号与 URL 不变；建议按 01 → A → 02 → B → C 阅读，D 为粘合支线，代数预备 → 03 为有限计算支线。每篇新增章均含定义、严格证明、正反例、习题与参考书目；原八章均提供两级提示和按选项解释的即时反馈。
 
-八个方向按研究生深度组织；代数拓扑拆为基本群、覆盖、同调、上同调四单元，新增微分与几何拓扑。完整清单见 [课程地图](docs/curriculum.md)，逐章证明范围与引用边界见 [研究生审查台账](docs/graduate-review.md)。本候选版未发布，不声称全部深定理已自包含证明。
+长期课程按11部分、研究生深度组织，现有正文仍有缺口；代数拓扑拆为基本群、覆盖、同调、上同调四单元，新增微分与几何拓扑。完整清单见 [课程地图](docs/curriculum.md)，逐章证明范围与引用边界见 [研究生审查台账](docs/graduate-review.md)。本候选版未发布，不声称全部深定理已自包含证明。
 
 ## 浏览器交互实验
 
@@ -84,4 +84,4 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 
 ## 长期建设与当前交付
 
-[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分82单元；本批只完成PRE1–PRE3与M0审计，未把全书标为完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批PR依赖尚未合并的PR #3，不自动发布。
+[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分82单元；PRE1–PRE3与M0审计已完成首批交付，本批继续扩写D1–D2及16题解答；M1、M2、M3及全书均未整体完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批依赖PR #4（其上游为PR #3），用户要求暂不发布。

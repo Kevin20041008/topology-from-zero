@@ -1,0 +1,53 @@
+{
+  "scope": "M3 D1/D2 differential foundations batch, unpublished; theoretical review is separate",
+  "results": [
+    {
+      "check": "independent",
+      "command": "python scripts/verify_independent.py",
+      "exit_code": 0,
+      "seconds": 0.42,
+      "date_utc": "2026-10-11T19:10:48.539416+00:00",
+      "log": "independent.txt"
+    },
+    {
+      "check": "notebooks",
+      "command": "python scripts/verify_notebooks.py",
+      "exit_code": 0,
+      "seconds": 8.03,
+      "date_utc": "2026-10-11T19:10:56.152464+00:00",
+      "log": "notebooks.txt"
+    },
+    {
+      "check": "javascript",
+      "command": "node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs",
+      "exit_code": 0,
+      "seconds": 0.44,
+      "date_utc": "2026-10-11T19:27:44.694393+00:00",
+      "log": "javascript.txt"
+    },
+    {
+      "check": "build",
+      "command": "python -m mkdocs build --strict",
+      "exit_code": 0,
+      "seconds": 2.72,
+      "date_utc": "2026-10-11T19:27:47.418466+00:00",
+      "log": "build.txt"
+    },
+    {
+      "check": "site",
+      "command": "python scripts/verify_site.py",
+      "exit_code": 0,
+      "seconds": 9.33,
+      "date_utc": "2026-10-11T19:27:56.748904+00:00",
+      "log": "site.txt"
+    },
+    {
+      "check": "diff",
+      "command": "git -c core.safecrlf=false diff --check",
+      "exit_code": 0,
+      "seconds": 0.14,
+      "date_utc": "2026-10-11T19:27:56.884159+00:00",
+      "log": "diff.txt"
+    }
+  ]
+}
