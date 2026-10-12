@@ -1,6 +1,6 @@
 # 研究生课程地图
 
-当前候选含45篇正文与45个分步自检、4个浏览器实验和4份Notebook。原八方向加数学预备形成现有课程，11部分长期体系见总计划；只有PRE1–PRE3在本批完成十二项模板与24题完整答案。研究生深度体现为定理假设、证明结构、反例和系数/范畴边界；不意味着已自包含证明拓扑学的全部深定理。
+当前候选含51篇正文与51个分步自检。PRE1–PRE3及本批A3–A8采用十二项模板，共72题配套完整答案；导论另有六题完整解答。保留四项已有浏览器实验和四份Notebook，新增一页含三项AI交互实验。研究生深度体现为假设、证明、反例和适用边界，不代表全书已完成或高级定理已全部自包含证明。
 
 ## 建议学习顺序
 
@@ -61,6 +61,12 @@
 | R2 | [R2 · 扰动、交错与稳定性范围](persistence/stability.md) | R1 |
 | A1 | [A1 · 持续特征、稳定表示与可微边界](ai/features-learning.md) | R2 |
 | A2 | [A2 · 拓扑学习实验、基线与泛化证据](ai/evaluation-protocol.md) | A1 |
+| A3 | [拓扑损失：目标、梯度与约束的边界](ai/topological-loss.md) | A1, A2 |
+| A4 | [图像分割：像素误差与拓扑错误](ai/segmentation-topology.md) | homology, K1, connectedness, A2 |
+| A5 | [医学图像：骨架、拓扑先验与评价边界](ai/medical-topology.md) | A3, A4 |
+| A6 | [高阶关系、Hodge 算子与神经网络](ai/higher-order-networks.md) | homology, K1, A2 |
+| A7 | [点云学习：几何、持续同调与稳定性](ai/point-cloud-learning.md) | PRE3, A1, A2 |
+| A8 | [可微持续同调：局部导数与配对切换](ai/differentiable-persistence.md) | A3, R1 |
 
 ## 证明与实验的边界
 
@@ -75,5 +81,5 @@
 所有这些“引用”都在正文使用处再次标记。[研究生审查台账](graduate-review.md)记录尚未完成的独立复核；[实验室](labs/index.md)区分浏览器探索、Notebook 计算与一般定理证明。
 
 
-!!! info "M1 基础批次 1：持续建设中"
-    新增PRE1–PRE3三章、24题完整答案与基础实验台。当前候选合计45章；旧42章仍待按新标准升级。11部分82单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
+!!! info "AI 增补：持续建设中"
+    新增A3–A8六章、48题完整答案与三项交互。当前候选51章；原有章节仍按各自审查义务升级。11部分88单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。

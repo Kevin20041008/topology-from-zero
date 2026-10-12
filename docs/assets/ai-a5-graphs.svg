@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">中心线分叉与吻合环</title>
+  <desc id="desc">左侧有四个顶点和三条边的Y形图无循环；右侧增加连接两个叶点的吻合边后有一个循环。中心线与实体的同调对应需要形变收缩假设。</desc>
+  <rect width="900" height="360" rx="12" fill="#f8fafc"/>
+  <g font-family="sans-serif" text-anchor="middle" fill="#172554">
+    <text x="230" y="38" font-size="21">分叉：树形中心线</text><text x="670" y="38" font-size="21">吻合：允许一个循环</text>
+  </g>
+  <g stroke="#2563eb" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M230 235V150L145 85M230 150L315 85"/><path d="M670 235V150L585 85M670 150L755 85"/>
+    <path d="M585 85Q670 25 755 85" stroke="#9333ea"/>
+  </g>
+  <g fill="#172554" stroke="#ffffff" stroke-width="2">
+    <circle cx="230" cy="235" r="8"/><circle cx="230" cy="150" r="8"/><circle cx="145" cy="85" r="8"/><circle cx="315" cy="85" r="8"/>
+    <circle cx="670" cy="235" r="8"/><circle cx="670" cy="150" r="8"/><circle cx="585" cy="85" r="8"/><circle cx="755" cy="85" r="8"/>
+  </g>
+  <g font-family="sans-serif" text-anchor="middle" fill="#172554" font-size="18">
+    <text x="230" y="278">v = 4，e = 3，c = 1</text><text x="670" y="278">v = 4，e = 4，c = 1</text>
+    <text x="230" y="307">β₁ = e − v + c = 0</text><text x="670" y="307">β₁ = e − v + c = 1</text>
+    <text x="450" y="343" font-size="15">实体 → 中心线的同调一致性，需要形变收缩等明确条件</text>
+  </g>
+</svg>

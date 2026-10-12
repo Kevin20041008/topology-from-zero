@@ -4,7 +4,7 @@
 
 ![从集合与证明进入点集、代数、几何和计算AI路线的先修概览](../assets/prerequisite-overview.svg)
 
-以下保留可维护的Mermaid源文本，完整82节点的精确关系见后表。
+以下保留可维护的Mermaid源文本，完整88节点的精确关系见后表。
 
 ```mermaid
 flowchart TD
@@ -33,7 +33,7 @@ flowchart TD
 | --- | --- | --- |
 | PRE1 · 集合、映射、关系与等价类 | 无 | PRE2, PRE3, quotient, linear-quotient |
 | PRE2 · 量词、证明方法与反例构造 | PRE1 | PRE3, PRE4, linear-quotient, KN3 |
-| PRE3 · 度量空间与收敛 | PRE1, PRE2 | spaces, P8, ST6, TD1 |
+| PRE3 · 度量空间与收敛 | PRE1, PRE2 | spaces, P8, ST6, TD1, A7 |
 | PRE4 · 可数性、选择与集合论工具 | PRE2 | P2, P5, ST1 |
 | spaces · 拓扑空间、开闭集与邻域 | PRE3 | bases |
 | bases · 拓扑基与子基 | spaces | PS1, continuity, P3 |
@@ -43,7 +43,7 @@ flowchart TD
 | P2 · 分离公理与可数性 | P1, PRE4 | P4, P6, P7, P9, D1, ST1, ST2 |
 | P3 · 乘积、箱拓扑与拓扑和 | bases, P1 | connectedness, P4, P5, P7, P10, homotopy, ST2 |
 | quotient · 商拓扑与商映射 | continuity, PRE1 | P6, homotopy, F2, T1 |
-| connectedness · 连通与道路连通 | continuity, P3 | P9, homotopy, C2, CT3 |
+| connectedness · 连通与道路连通 | continuity, P3 | P9, homotopy, C2, CT3, A4 |
 | P4 · 紧致性与度量判据 | P1, P2, P3, continuity | P5, P6, P7, P8, P10, C1, H2, ST1 |
 | P5 · 滤子、超滤子与Tychonoff | P3, P4, PRE4 | P6, ST3 |
 | P6 · 局部紧致与紧化 | P2, P4, P5, quotient | P8, P9, P10, D1, ST3 |
@@ -58,7 +58,7 @@ flowchart TD
 | C2 · 覆盖分类与提升判据 | C1, connectedness | AT1, G1 |
 | AT1 · 自由群、胞腔粘合与综合计算 | F2, C2 | 本计划终端 |
 | linear-quotient · 自由群组、链群与商空间预备 | PRE1, PRE2 | homology, H1 |
-| homology · 有向单纯形与单纯同调 | linear-quotient | K1 |
+| homology · 有向单纯形与单纯同调 | linear-quotient | K1, A4, A6 |
 | H1 · 奇异链、函子性与同伦不变性 | homotopy, linear-quotient | H2 |
 | H2 · 相对同调、切除与长正合列 | H1, P4 | H3, T4, TD3 |
 | H3 · CW复形、胞腔同调与整数计算 | H2, F2 | Q1, AT2, AT3, D2, D4, T1, KN2, HT2, K1, CT1, AI2 |
@@ -94,28 +94,38 @@ flowchart TD
 | ST4 · 一般度量化与集合论公理 | P7, P9, ST2 | 本计划终端 |
 | ST5 · 覆盖维数与归纳维数 | P7, P10, ST3 | ST6 |
 | ST6 · 分形维数与无限维拓扑 | ST5, PRE3 | 本计划终端 |
-| K1 · 有限复形、边界算法与不变量 | homology, H3 | CT1, CT2, CT3, CT5, TD1, R1 |
+| K1 · 有限复形、边界算法与不变量 | homology, H3 | CT1, CT2, CT3, CT5, TD1, R1, A4, A6 |
 | CT1 · 立方复形、整数同调与SNF | K1, H3 | CT4, AI3 |
 | CT2 · 复形约化与离散Morse | K1, D4 | CT4, CT5 |
 | CT3 · Reeb图、Contour Tree与Mapper | K1, connectedness | 本计划终端 |
 | CT4 · 网格、重建与拓扑保持 | CT1, CT2, T1 | CT5, AI3 |
 | CT5 · 复杂度、内存与数值退化 | K1, CT2, CT4 | TD4 |
 | TD1 · Čech、Rips、Alpha与滤过 | PRE3, K1 | R1 |
-| R1 · 持续模、区间与矩阵约化 | K1, TD1 | R2, TD3, TD4 |
+| R1 · 持续模、区间与矩阵约化 | K1, TD1 | R2, TD3, TD4, A8 |
 | R2 · 图距离、交错与稳定性 | R1 | TD2, TD4, A1 |
 | TD2 · 景观、图像与统计推断 | R2 | A1 |
 | TD3 · Zigzag、Extended与多参数 | R1, H2 | 本计划终端 |
 | TD4 · 软件对照与可复现TDA | R1, R2, CT5 | AI5 |
-| A1 · 拓扑表示与机器学习 | R2, TD2 | A2, AI1 |
-| A2 · 分类器、基线与可信评估 | A1 | AI1, AI2 |
+| A1 · 拓扑表示与机器学习 | R2, TD2 | A2, AI1, A3, A7 |
+| A2 · 分类器、基线与可信评估 | A1 | AI1, AI2, A3, A4, A6, A7 |
 | AI1 · 神经网络拓扑约束与损失 | A1, A2 | AI3, AI4 |
 | AI2 · GNN、单纯与胞腔神经网络 | H3, Q1, A2 | AI4 |
 | AI3 · 点云、视觉与医学分割 | AI1, CT1, CT4 | AI5 |
 | AI4 · 异常检测、生成与表示学习 | AI1, AI2 | AI5 |
 | AI5 · 论文复现与研究边界 | AI3, AI4, TD4 | 本计划终端 |
+| A3 · 拓扑损失：目标、梯度与约束的边界 | A1, A2 | A5, A8 |
+| A4 · 图像分割：像素误差与拓扑错误 | homology, K1, connectedness, A2 | A5 |
+| A5 · 医学图像：骨架、拓扑先验与评价边界 | A3, A4 | 本计划终端 |
+| A6 · 高阶关系、Hodge 算子与神经网络 | homology, K1, A2 | 本计划终端 |
+| A7 · 点云学习：几何、持续同调与稳定性 | PRE3, A1, A2 | 本计划终端 |
+| A8 · 可微持续同调：局部导数与配对切换 | A3, R1 | 本计划终端 |
 
 ## 前置缺口与补齐顺序
 
 现有spaces直接假定集合/映射/实数，现有商空间假定等价关系；PRE1–PRE3首先补齐。PRE4补选择与不可数工具，PS1把现有分散的子空间论证组织为完整教学单元；然后逐章补习题解答和定理审查。代数预备尚需自由阿贝尔群/一般模完整先修；微分卷的分析先修不能用拓扑摘要替代。
 
 现有正文的可执行依赖在 `scripts/curriculum.json`，长期计划在 `scripts/master-plan.json`。两者分别测试无环、代码解析与页面存在性；计划节点不要求有虚构页面。导航次序是主题分组，跨组先修以本图为准。
+
+## AI 新增正文的实际学习支线
+
+A1/A2 → A3 → A8 是损失与微分支线；同调、K1、连通性与 A2 → A4 → A5 是分割与解剖支线，A5还依赖A3；同调、K1 与 A2 → A6 是高阶网络；PRE3与A1/A2 → A7 是点云支线。A3–A8均已有正文、八题及完整答案，独立模型复核与实验范围按单章记录。原AI1–AI5保留为长期主题包，不将新增六章视作其全部完成。

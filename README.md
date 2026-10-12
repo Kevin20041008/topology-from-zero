@@ -1,6 +1,6 @@
 # topology-from-zero · 从零开始的拓扑学
 
-中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**M1基础批次1审阅候选：45篇正文及自检、24题新增完整答案、四个浏览器实验、四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
+中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**AI增补审阅候选：51篇正文及自检；新增A3–A8六章、48题完整答案和三项AI交互实验；保留已有实验与四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
 
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
@@ -30,10 +30,12 @@ JavaScript 和 Three.js 均随站点分发。实验 2 使用球半径 ε，前�
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements-validation.txt
 python scripts/verify_independent.py
+python scripts/verify_ai_independent.py
+python scripts/verify_ai_examples.py
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
 python scripts/verify_site.py
-node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
+node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs scripts/test_ai_topology.mjs
 python -m mkdocs serve
 ```
 
@@ -62,7 +64,7 @@ docs/                       Markdown、样式、原创 SVG 与本地 MathJax
   geometric/                PL、曲面、结与三维粘合
   computational/            有限边界算法
   persistence/              持续同调导读
-  ai/                       拓扑与人工智能导读
+  ai/                       A1–A8 拓扑学习正文与导读
   labs/notebooks/           四份已执行 .ipynb
 scripts/                    可重复的内容与构建检查
 .github/workflows/pages.yml 构建和部署
@@ -84,4 +86,4 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 
 ## 长期建设与当前交付
 
-[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分82单元；本批只完成PRE1–PRE3与M0审计，未把全书标为完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批PR依赖尚未合并的PR #3，不自动发布。
+[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分88单元；本批细化A3–A8，包含48题完整解答、三项AI交互实验及独立对照。原长期主题包仍有未完成内容，未把全书标为完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批从 `main` 的 `e6e80cd` 创建独立分支，仅提交PR审阅，不合并、不发布。

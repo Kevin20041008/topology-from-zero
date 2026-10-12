@@ -9,8 +9,10 @@
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements-validation.txt
-node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs
+node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs scripts/test_ai_topology.mjs
 python scripts/verify_independent.py
+python scripts/verify_ai_independent.py
+python scripts/verify_ai_examples.py
 python scripts/verify_notebooks.py
 python -m mkdocs build --strict
 python scripts/verify_site.py
@@ -41,8 +43,10 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 - `python -m mkdocs build --strict` 将警告视为错误。
 - `python scripts/verify_site.py` 检查本地链接与片段、v0.2 与 v0.3 的旧 URL/锚点、课程清单中的全部正文和自检挂载、搜索索引、数学标记和本地 MathJax。
 - `python scripts/verify_independent.py` 在同一双精度边出生值上，使用 GUDHI 独立构造和约化，严格比较区间；另对照三个曲面抽象复形。它不用于证明一般数学定理。
-- `node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs` 检查三角形、退化点云、持续区间、等距/尺度变换、边界平方为零及曲面网格不变量；需要 Node.js 22 或更新版本。
-- 三个交互页面位于 `docs/labs/`，浏览器算法位于 `docs/javascripts/topology-core.mjs`，Three.js 的版本和许可见 `THIRD_PARTY_NOTICES.md`。
+- `python scripts/verify_ai_independent.py` 使用 GUDHI 的立方复形对照 512 个三乘三掩膜，并对照 25 个下星路径滤过的 49 条区间；不以容差合并差异。
+- `python scripts/verify_ai_examples.py` 在各自临时目录和新进程执行 A3、A5、A6、A7、A8 中登记的原创 Python 示例，验证解析参照、clDice 有效/无效骨架、矩阵与三维点云计算的代码断言。
+- `node --test scripts/test_topology.mjs scripts/test_curriculum.mjs scripts/test_foundations.mjs scripts/test_ai_topology.mjs` 检查三角形、退化点云、持续区间、等距/尺度变换、边界平方为零及曲面网格不变量；需要 Node.js 22 或更新版本。
+- 交互页面位于 `docs/labs/`；原三项实验和基础实验台保留，AI 实验页增加损失、分割、可微边界三个模型。AI 核心复用 `topology-core.mjs` 的约化和模 2 运算，UI 使用本地 SVG。Three.js 的版本和许可见 `THIRD_PARTY_NOTICES.md`。
 - 浏览器中访问[公式检查页](math-check.md)，验证最终 SVG 排版、搜索与明暗主题。
 
 `site/` 为可再生构建输出，已在 `.gitignore` 中忽略。`requirements.txt` 记录本次运行版本；添加依赖时同时维护 `requirements.in`，在新环境验证后更新锁定文件。

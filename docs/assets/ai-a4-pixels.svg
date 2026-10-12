@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 365" role="img" aria-labelledby="title desc">
+  <title id="title">相同 Dice，不同拓扑</title>
+  <desc id="desc">完整五乘五真值、删除中心像素及删除上边缘中间像素。后两者 Dice 均为四十八除以四十九，只有中心缺损产生洞。</desc>
+  <defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-width="1.5"/></pattern></defs>
+  <rect width="900" height="365" rx="12" fill="#f8fafc"/>
+  <g font-family="sans-serif" fill="#172554" text-anchor="middle">
+    <text x="150" y="35" font-size="20">真值：25 像素</text><text x="450" y="35" font-size="20">中心缺损：24 像素</text><text x="750" y="35" font-size="20">边缘缺口：24 像素</text>
+  </g>
+  <g transform="translate(60 60)"><rect width="180" height="180" fill="#2563eb"/><rect width="180" height="180" fill="url(#grid)"/></g>
+  <g transform="translate(360 60)"><rect width="180" height="180" fill="#2563eb"/><rect x="72" y="72" width="36" height="36" fill="#ffffff"/><rect width="180" height="180" fill="url(#grid)"/><rect x="72" y="72" width="36" height="36" fill="none" stroke="#ea580c" stroke-width="2"/></g>
+  <g transform="translate(660 60)"><rect width="180" height="180" fill="#2563eb"/><rect x="72" width="36" height="36" fill="#ffffff"/><rect width="180" height="180" fill="url(#grid)"/><path d="M90 18V-12" stroke="#ea580c" stroke-width="3"/><path d="M84 -4L90 -12L96 -4" stroke="#ea580c" stroke-width="2" fill="none"/></g>
+  <g font-family="sans-serif" fill="#172554" text-anchor="middle" font-size="18">
+    <text x="150" y="277">β₀ = 1，β₁ = 0</text><text x="450" y="277">β₀ = 1，β₁ = 1</text><text x="750" y="277">β₀ = 1，β₁ = 0</text>
+    <text x="150" y="308">Dice = 1</text><text x="450" y="308">Dice = 48/49</text><text x="750" y="308">Dice = 48/49</text>
+    <text x="450" y="346" font-size="15">闭方块前景：8 邻接；补零外框后的背景：4 邻接</text>
+  </g>
+</svg>

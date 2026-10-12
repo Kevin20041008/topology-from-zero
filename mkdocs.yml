@@ -4,7 +4,7 @@ site_url: !ENV [SITE_URL, 'http://127.0.0.1:8000/']
 repo_url: https://github.com/Kevin20041008/topology-from-zero
 repo_name: Kevin20041008/topology-from-zero
 edit_uri: edit/main/docs/
-copyright: 原创教材 CC BY 4.0 · 代码 MIT · M1 基础批次 1 · 审阅候选
+copyright: 原创教材 CC BY 4.0 · 代码 MIT · AI 拓扑学习增补 · 审阅候选
 theme:
   name: material
   language: zh
@@ -101,9 +101,16 @@ nav:
       - 课程导读: ai/index.md
       - 'A1 · 拓扑特征': ai/features-learning.md
       - 'A2 · 基线与评估': ai/evaluation-protocol.md
+      - 'A3 · 拓扑损失': ai/topological-loss.md
+      - 'A4 · 拓扑与图像分割': ai/segmentation-topology.md
+      - 'A5 · 医学图像拓扑': ai/medical-topology.md
+      - 'A6 · 高阶图神经网络': ai/higher-order-networks.md
+      - 'A7 · 三维点云与形状学习': ai/point-cloud-learning.md
+      - 'A8 · 可微持续同调': ai/differentiable-persistence.md
   - 交互实验室:
       - 实验导读: labs/index.md
       - 基础实验台: labs/foundations.md
+      - AI 拓扑实验: labs/ai-topology.md
       - 三角形的洞: labs/triangle.md
       - 点云与持续同调: labs/point-cloud.md
       - 三维拓扑曲面: labs/surfaces.md
@@ -113,6 +120,12 @@ nav:
       - PRE1完整解答: exercises/pre1-solutions.md
       - PRE2完整解答: exercises/pre2-solutions.md
       - PRE3完整解答: exercises/pre3-solutions.md
+      - A3完整解答: exercises/a3-solutions.md
+      - A4完整解答: exercises/a4-solutions.md
+      - A5完整解答: exercises/a5-solutions.md
+      - A6完整解答: exercises/a6-solutions.md
+      - A7完整解答: exercises/a7-solutions.md
+      - A8完整解答: exercises/a8-solutions.md
   - 参考书目: references.md
   - 学习路线与贡献指南:
       - 现有课程地图: curriculum.md
@@ -162,6 +175,8 @@ extra_javascript:
   - path: javascripts/exercises.mjs
     type: module
   - path: javascripts/foundations-lab.mjs
+    type: module
+  - path: javascripts/ai-topology-lab.mjs
     type: module
 validation:
   nav:

@@ -1170,6 +1170,94 @@
       "examples": "失败复现与负结果",
       "lab": "多种子/公开数据待建设",
       "existing": null
+    },
+    {
+      "code": "A3",
+      "title": "拓扑损失：目标、梯度与约束的边界",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "A1",
+        "A2"
+      ],
+      "proof": "硬阈值分片常数；下星滤过；有限条寿命损失与梯度",
+      "examples": "三顶点桥；小损失不保证目标拓扑",
+      "lab": "AI实验：损失",
+      "existing": "ai/topological-loss.md"
+    },
+    {
+      "code": "A4",
+      "title": "图像分割：像素误差与拓扑错误",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "homology",
+        "K1",
+        "connectedness",
+        "A2"
+      ],
+      "proof": "Dice恒等式；闭方块链复形；8/4邻接与孔洞",
+      "examples": "相同Dice不同孔洞；窄桥断裂",
+      "lab": "AI实验：分割",
+      "existing": "ai/segmentation-topology.md"
+    },
+    {
+      "code": "A5",
+      "title": "医学图像：骨架、拓扑先验与评价边界",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "A3",
+        "A4"
+      ],
+      "proof": "骨架分数范围及互含；先验条件与临床边界",
+      "examples": "吻合环；视野裁剪；实体与中心线",
+      "lab": "合成分割/协议；真实临床复现未完成",
+      "existing": "ai/medical-topology.md"
+    },
+    {
+      "code": "A6",
+      "title": "高阶关系、Hodge 算子与神经网络",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "homology",
+        "K1",
+        "A2"
+      ],
+      "proof": "Hodge正半定与核交；定向翻转等变；奇激活",
+      "examples": "三角环与填面；ReLU反例",
+      "lab": "有限矩阵计算",
+      "existing": "ai/higher-order-networks.md"
+    },
+    {
+      "code": "A7",
+      "title": "点云学习：几何、持续同调与稳定性",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "PRE3",
+        "A1",
+        "A2"
+      ],
+      "proof": "对应扰动半径界；刚体不变与缩放等变",
+      "examples": "同拓扑不同几何；采样/密度/截断限制",
+      "lab": "既有点云实验与Notebook04",
+      "existing": "ai/point-cloud-learning.md"
+    },
+    {
+      "code": "A8",
+      "title": "可微持续同调：局部导数与配对切换",
+      "part": "XI",
+      "milestone": 6,
+      "prerequisites": [
+        "A3",
+        "R1"
+      ],
+      "proof": "固定配对/唯一选择局部链式法则；并列处单侧导数",
+      "examples": "四顶点双桥；中央差分非导数",
+      "lab": "AI实验：可微边界",
+      "existing": "ai/differentiable-persistence.md"
     }
   ]
 }
