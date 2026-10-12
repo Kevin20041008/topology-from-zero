@@ -161,6 +161,8 @@ $$
 
 ### 例 4：一致等价不必双 Lipschitz 等价
 
+在进入三种等价性的区别前，可以先读导论的[截断度量完整例题](../introduction/01-spaces.md#truncated-metric)：$|x-y|$ 与 $\min\{1,|x-y|\}$ 的小半径球相同，诱导同一拓扑，但距离函数不同。本章第 4 题进一步证明任意度量与其截断度量一致等价。
+
 在 $\mathbb R$ 上取 $d(x,y)=|x-y|$，$\sigma(x,y)=\sqrt{|x-y|}$。由 $\sqrt{a+b}\le\sqrt a+\sqrt b$（平方后右侧多出非负项 $2\sqrt{ab}$）和 $d$ 的三角不等式，$\sigma$ 是度量。
 
 给定 $\varepsilon>0$，若 $d(x,y)<\varepsilon^2$ 则 $\sigma(x,y)<\varepsilon$；若 $\sigma(x,y)<\sqrt\varepsilon$ 则 $d(x,y)<\varepsilon$，所以二者一致等价。若存在统一上界 $\sigma\le C d$，取 $x=0,y=t>0$ 得 $1/\sqrt t\le C$，让 $t\downarrow0$ 即矛盾。因此不存在双 Lipschitz 等价。这个反例也提醒我们：没有线性尺度界，不等于没有任何一致尺度界。
