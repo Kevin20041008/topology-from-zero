@@ -1,0 +1,301 @@
+{
+  "stats": {
+    "startTime": "2026-10-14T09:18:34.845Z",
+    "duration": 88585.06,
+    "expected": 36,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "name": "render Chinese mathematics and contain layout: preliminaries/countability-choice/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: point-set/subspaces/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: preliminaries/groups-modules/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: computational/integer-homology/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: algebraic/cohomology/duality/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: ai/projects/topology-optimization/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: math-check/",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route A: assessment, persisted progress and next lesson",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route B: assessment, persisted progress and next lesson",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route C: assessment, persisted progress and next lesson",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "corrupt/unavailable storage does not block learning and reset is scoped",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "new chapter self-tests give two hints, wrong/correct reasons and reset",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "static learning routes remain usable with JavaScript disabled",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "existing triangle and exact event persistence controls still calculate",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "surface controls render, switch topology and support keyboard",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "AI lab retains equal Dice counterexample and nondifferentiable event",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "four entrances, search, theme and source metadata are usable",
+      "project": "desktop",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: preliminaries/countability-choice/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: point-set/subspaces/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: preliminaries/groups-modules/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: computational/integer-homology/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: algebraic/cohomology/duality/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: ai/projects/topology-optimization/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "render Chinese mathematics and contain layout: math-check/",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route A: assessment, persisted progress and next lesson",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route B: assessment, persisted progress and next lesson",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "route C: assessment, persisted progress and next lesson",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "corrupt/unavailable storage does not block learning and reset is scoped",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "new chapter self-tests give two hints, wrong/correct reasons and reset",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "static learning routes remain usable with JavaScript disabled",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "existing triangle and exact event persistence controls still calculate",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "surface controls render, switch topology and support keyboard",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "AI lab retains equal Dice counterexample and nondifferentiable event",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    },
+    {
+      "name": "four entrances, search, theme and source metadata are usable",
+      "project": "mobile",
+      "status": "expected",
+      "attempts": [
+        "passed"
+      ]
+    }
+  ],
+  "scope": "Chromium desktop 1280x900 and mobile 390x844; local Pages prefix; no external CDN"
+}

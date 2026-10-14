@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "routes": [
+    {
+      "id": "A",
+      "slug": "beginner",
+      "title": "路线 A · 零基础入门",
+      "entry": "高中集合、实数和基本代数；不预设拓扑、群或程序设计。",
+      "questions": [
+        {
+          "question": "f⁻¹(U) 是什么？",
+          "options": [
+            "使 f(x) 属于 U 的所有定义域点",
+            "U 中的所有点",
+            "只有当 f 可逆才存在"
+          ],
+          "correct": 0,
+          "explanation": "逆像由属于关系定义，不要求可逆。回看 PRE1 的逆像例题。"
+        },
+        {
+          "question": "要否定“所有 x 都满足 P(x)”，需要什么？",
+          "options": [
+            "每个 x 都不满足",
+            "至少有一个 x 不满足",
+            "再给一个正例"
+          ],
+          "correct": 1,
+          "explanation": "全称命题被一个反例推翻；PRE2训练量词否定。"
+        },
+        {
+          "question": "若 d(x,y)<r，r−d(x,y) 有什么作用？",
+          "options": [
+            "一定等于 r",
+            "给出 y 周围仍留在开球内的正半径",
+            "说明所有闭球开放"
+          ],
+          "correct": 1,
+          "explanation": "用三角不等式证明 B(y,r−d(x,y)) 包含于 B(x,r)；PRE3和导论有全证。"
+        }
+      ],
+      "entryCodes": [],
+      "lessons": [
+        {
+          "code": "PRE1",
+          "path": "preliminaries/sets-maps-relations.md",
+          "title": "PRE1 · 集合、映射与等价类",
+          "hours": 3,
+          "goal": "用逆像处理映射"
+        },
+        {
+          "code": "PRE2",
+          "path": "preliminaries/proofs-counterexamples.md",
+          "title": "PRE2 · 量词、证明方法与反例构造",
+          "hours": 3,
+          "goal": "正确否定量词并写反例"
+        },
+        {
+          "code": "PRE3",
+          "path": "preliminaries/metric-spaces.md",
+          "title": "PRE3 · 度量空间：从距离到拓扑",
+          "hours": 4,
+          "goal": "证明开球开放"
+        },
+        {
+          "code": "spaces",
+          "path": "introduction/01-spaces.md",
+          "title": "01 · 从距离到拓扑",
+          "hours": 3,
+          "goal": "验证拓扑公理"
+        },
+        {
+          "code": "bases",
+          "path": "point-set/bases-subbases.md",
+          "title": "基础 A · 拓扑基与子基",
+          "hours": 3,
+          "goal": "用基检查开集"
+        },
+        {
+          "code": "PS1",
+          "path": "point-set/subspaces.md",
+          "title": "PS1 · 子空间拓扑与相对性质",
+          "hours": 4,
+          "goal": "区分相对开与环境开"
+        },
+        {
+          "code": "continuity",
+          "path": "point-set/02-continuity.md",
+          "title": "02 · 连续映射与紧致性",
+          "hours": 5,
+          "goal": "使用逆像定义连续与紧像定理"
+        },
+        {
+          "code": "connectedness",
+          "path": "point-set/connectedness.md",
+          "title": "基础 B · 连通性",
+          "hours": 4,
+          "goal": "区分连通与道路连通"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "slug": "advanced",
+      "title": "路线 B · 数学专业进阶",
+      "entry": "先完成路线 A；掌握线性代数与证明写作。PRE4/PRE5在本路线提供集合和整数代数桥梁；流形节另需多元微积分。",
+      "questions": [
+        {
+          "question": "商群 G/N 的群运算良定义通常需要什么？",
+          "options": [
+            "N 是任意子集",
+            "N 是正规子群",
+            "N 只要非空"
+          ],
+          "correct": 1,
+          "explanation": "一般群需正规性；阿贝尔群每个子群正规。PRE5给证明。"
+        },
+        {
+          "question": "整数链 Z ─2→ Z 的低维余核是什么？",
+          "options": [
+            "0",
+            "Z/2Z",
+            "实数一维空间"
+          ],
+          "correct": 1,
+          "explanation": "实数秩会丢失二阶挠；PRE5和CT1提供整数商的计算。"
+        },
+        {
+          "question": "覆盖空间分类能省掉局部道路连通和半局部单连通吗？",
+          "options": [
+            "总能",
+            "不能无条件删去",
+            "只需空间有界"
+          ],
+          "correct": 1,
+          "explanation": "C2的分类定理带这些标准假设，读证明前先核对对象。"
+        }
+      ],
+      "entryCodes": [
+        "PRE1",
+        "PRE2",
+        "PRE3",
+        "spaces",
+        "bases",
+        "PS1",
+        "continuity",
+        "connectedness"
+      ],
+      "lessons": [
+        {
+          "code": "PRE4",
+          "path": "preliminaries/countability-choice.md",
+          "title": "PRE4 · 可数性、选择与集合论工具",
+          "hours": 5,
+          "goal": "辨别选择公理依赖"
+        },
+        {
+          "code": "PRE5",
+          "path": "preliminaries/groups-modules.md",
+          "title": "PRE5 · 群、模与整数商",
+          "hours": 6,
+          "goal": "构造群与模的商"
+        },
+        {
+          "code": "quotient",
+          "path": "point-set/quotient-spaces.md",
+          "title": "基础 D · 商空间",
+          "hours": 4,
+          "goal": "使用商拓扑泛性质"
+        },
+        {
+          "code": "homotopy",
+          "path": "algebraic/homotopy-fundamental-group.md",
+          "title": "基础 C · 同伦与基本群",
+          "hours": 5,
+          "goal": "建立环路同伦类"
+        },
+        {
+          "code": "F1",
+          "path": "algebraic/fundamental-group/functor-basepoint.md",
+          "title": "F1 · 基点变换、函子性与形变收缩",
+          "hours": 4,
+          "goal": "处理基点与函子"
+        },
+        {
+          "code": "P1",
+          "path": "point-set/closure-nets.md",
+          "title": "P1 · 闭包、内部、边界与网",
+          "hours": 5,
+          "goal": "用闭包与网表达极限"
+        },
+        {
+          "code": "P2",
+          "path": "point-set/separation-countability.md",
+          "title": "P2 · 分离公理与可数性",
+          "hours": 5,
+          "goal": "核对分离与可数性假设"
+        },
+        {
+          "code": "P3",
+          "path": "point-set/products-sums.md",
+          "title": "P3 · 任意积、箱拓扑与拓扑和",
+          "hours": 5,
+          "goal": "理解积拓扑及其基"
+        },
+        {
+          "code": "P4",
+          "path": "point-set/compactness-metric.md",
+          "title": "P4 · 紧致性、有限交性质与度量判据",
+          "hours": 6,
+          "goal": "证明有限覆盖及Lebesgue数引理"
+        },
+        {
+          "code": "C1",
+          "path": "algebraic/covering/lifting-circle.md",
+          "title": "C1 · 覆盖映射、提升与圆周基本群",
+          "hours": 6,
+          "goal": "提升道路并计算圆周"
+        },
+        {
+          "code": "F2",
+          "path": "algebraic/fundamental-group/van-kampen.md",
+          "title": "F2 · van Kampen、图与胞腔表示",
+          "hours": 6,
+          "goal": "用粘合计算群"
+        },
+        {
+          "code": "C2",
+          "path": "algebraic/covering/classification.md",
+          "title": "C2 · 提升判据、万有覆盖与覆盖分类",
+          "hours": 6,
+          "goal": "核对覆盖分类假设"
+        },
+        {
+          "code": "linear-quotient",
+          "path": "algebraic/linear-algebra-primer.md",
+          "title": "代数预备 · 链群与线性商空间",
+          "hours": 4,
+          "goal": "理解核像与商空间"
+        },
+        {
+          "code": "homology",
+          "path": "algebraic/03-homology.md",
+          "title": "03 · 环、边界与同调",
+          "hours": 5,
+          "goal": "从链算同调"
+        },
+        {
+          "code": "H1",
+          "path": "algebraic/homology/singular-chains.md",
+          "title": "H1 · 整数奇异链与同伦不变性",
+          "hours": 6,
+          "goal": "区分奇异链和整数系数"
+        },
+        {
+          "code": "H2",
+          "path": "algebraic/homology/exact-excision.md",
+          "title": "H2 · 相对同调、切除与 Mayer–Vietoris",
+          "hours": 7,
+          "goal": "使用正合列时核对条件"
+        },
+        {
+          "code": "CT1",
+          "path": "computational/integer-homology.md",
+          "title": "CT1 · Smith 标准形与整数同调",
+          "hours": 7,
+          "goal": "保留挠并核对基变换"
+        },
+        {
+          "code": "H3",
+          "path": "algebraic/homology/cellular-coefficients.md",
+          "title": "H3 · 胞腔同调、挠与系数变换",
+          "hours": 7,
+          "goal": "应用有标记的胞腔与系数定理"
+        },
+        {
+          "code": "Q1",
+          "path": "algebraic/cohomology/cochains-products.md",
+          "title": "Q1 · 上链、泛系数与杯积环",
+          "hours": 7,
+          "goal": "理解杯积及系数"
+        },
+        {
+          "code": "Q2",
+          "path": "algebraic/cohomology/duality.md",
+          "title": "Q2 · 定向、帽积与 Poincaré 对偶",
+          "hours": 7,
+          "goal": "带着假设阅读对偶"
+        },
+        {
+          "code": "P5",
+          "path": "point-set/filters-tychonoff.md",
+          "title": "P5 · 滤子、超滤子与 Tychonoff 定理",
+          "hours": 6,
+          "goal": "辨别Tychonoff的选择公理依赖"
+        },
+        {
+          "code": "P6",
+          "path": "point-set/local-compactness.md",
+          "title": "P6 · 局部紧致、紧化与适当映射",
+          "hours": 6,
+          "goal": "建立局部紧致和紧化"
+        },
+        {
+          "code": "P7",
+          "path": "point-set/metrization-extension.md",
+          "title": "P7 · Urysohn 引理、Tietze 延拓与度量化",
+          "hours": 8,
+          "goal": "证明分离函数与度量化"
+        },
+        {
+          "code": "P9",
+          "path": "point-set/local-properties-partitions.md",
+          "title": "P9 · 局部连通、仿紧致与单位分解",
+          "hours": 7,
+          "goal": "建立局部性质及单位分解"
+        },
+        {
+          "code": "D1",
+          "path": "differential/manifolds-rank.md",
+          "title": "D1 · 光滑流形、切空间与秩定理",
+          "hours": 8,
+          "goal": "衔接流形图册与微分"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "slug": "computational",
+      "title": "路线 C · 计算与 AI 应用",
+      "entry": "先完成路线 A（或通过其诊断并独立完成阶段证明项目）；另需矩阵与基础 Python。下面是计算主线，不预设奇异同调、覆盖分类或整数胞腔定理。",
+      "questions": [
+        {
+          "question": "∂²=0 在同调定义中保证什么？",
+          "options": [
+            "每条链都为零",
+            "边界属于循环，可取 ker∂/im∂",
+            "空间必可缩"
+          ],
+          "correct": 1,
+          "explanation": "它使商空间合法，并不保证同调为零。回看同调初步。"
+        },
+        {
+          "question": "长度10⁻¹²的正持续条应怎样处理？",
+          "options": [
+            "核心保留，显示可另作提示",
+            "直接删除",
+            "把出生舍入成死亡"
+          ],
+          "correct": 0,
+          "explanation": "正短条可能改变Betti数，保留P0回归；显示容差不能修改计算对象。"
+        },
+        {
+          "question": "比较加入拓扑特征的模型，标准化和调参应使用哪里？",
+          "options": [
+            "整个数据集",
+            "训练集拟合、验证集调参，测试集留到最后",
+            "选测试分数最好的一轮"
+          ],
+          "correct": 1,
+          "explanation": "A2解释训练/验证/测试隔离；阶段项目公开固定协议与全部结果。"
+        }
+      ],
+      "entryCodes": [
+        "PRE1",
+        "PRE2",
+        "PRE3",
+        "spaces",
+        "bases",
+        "PS1",
+        "continuity",
+        "connectedness"
+      ],
+      "lessons": [
+        {
+          "code": "linear-quotient",
+          "path": "algebraic/linear-algebra-primer.md",
+          "title": "代数预备 · 链群与线性商空间",
+          "hours": 4,
+          "goal": "理解核/像/商维数"
+        },
+        {
+          "code": "homology",
+          "path": "algebraic/03-homology.md",
+          "title": "03 · 环、边界与同调",
+          "hours": 5,
+          "goal": "构造边界并算Betti"
+        },
+        {
+          "code": "K1",
+          "path": "computational/boundary-algorithms.md",
+          "title": "K1 · 有限复形、边界算法与可验证不变量",
+          "hours": 6,
+          "goal": "精确有限域计算与退化测试"
+        },
+        {
+          "code": "R1",
+          "path": "persistence/modules-reduction.md",
+          "title": "R1 · 持续模、区间与矩阵约化",
+          "hours": 6,
+          "goal": "区分配对定理和约化不变量"
+        },
+        {
+          "code": "R2",
+          "path": "persistence/stability.md",
+          "title": "R2 · 扰动、交错与稳定性范围",
+          "hours": 5,
+          "goal": "核对稳定性范围"
+        },
+        {
+          "code": "A1",
+          "path": "ai/features-learning.md",
+          "title": "A1 · 持续特征、稳定表示与可微边界",
+          "hours": 5,
+          "goal": "把持续图变成特征"
+        },
+        {
+          "code": "A2",
+          "path": "ai/evaluation-protocol.md",
+          "title": "A2 · 拓扑学习实验、基线与泛化证据",
+          "hours": 4,
+          "goal": "避免数据泄漏"
+        },
+        {
+          "code": "A3",
+          "path": "ai/topological-loss.md",
+          "title": "A3 · 拓扑损失：目标、梯度与约束的边界",
+          "hours": 6,
+          "goal": "构造可解释拓扑目标"
+        },
+        {
+          "code": "A4",
+          "path": "ai/segmentation-topology.md",
+          "title": "A4 · 图像分割：像素误差与拓扑错误",
+          "hours": 6,
+          "goal": "区分Dice与孔洞"
+        },
+        {
+          "code": "A8",
+          "path": "ai/differentiable-persistence.md",
+          "title": "A8 · 可微持续同调：局部导数与配对切换",
+          "hours": 7,
+          "goal": "处理局部梯度和配对切换"
+        }
+      ]
+    }
+  ]
+}

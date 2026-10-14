@@ -1,0 +1,10 @@
+{
+  "name": "topology-from-zero-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/test_*.mjs",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {"@playwright/test": "1.64.0"}
+}

@@ -1,0 +1,418 @@
+{
+  "schema": 1,
+  "scope": [
+    "H3",
+    "Q1",
+    "Q2",
+    "G1",
+    "R1",
+    "R2",
+    "A8"
+  ],
+  "references": {
+    "hatcher-cellular": {
+      "title": "Hatcher, Algebraic Topology (2002), §2.2 Cellular Homology",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
+    },
+    "hatcher-homology-uct": {
+      "title": "Hatcher, Algebraic Topology, §3.A Universal Coefficients for Homology",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
+    },
+    "hatcher-cohomology": {
+      "title": "Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
+    },
+    "hatcher-duality": {
+      "title": "Hatcher, Algebraic Topology, §3.3 Poincaré Duality",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
+    },
+    "hatcher-homotopy": {
+      "title": "Hatcher, Algebraic Topology, Chapter 4 Homotopy Theory",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
+    },
+    "hatcher-spectral": {
+      "title": "Hatcher, Spectral Sequences in Algebraic Topology, Chapter 1 §1",
+      "url": "https://pi.math.cornell.edu/~hatcher/SSAT/SSATpage.html"
+    },
+    "edelsbrunner-harer": {
+      "title": "Edelsbrunner & Harer, Computational Topology: An Introduction (2010), Chapter VII Persistence",
+      "url": "https://bookstore.ams.org/mbk-69/"
+    },
+    "structure-stability": {
+      "title": "Chazal, de Silva, Glisse & Oudot, The Structure and Stability of Persistence Modules (2016), algebraic stability",
+      "url": "https://arxiv.org/abs/1207.3674"
+    },
+    "topology-layer": {
+      "title": "Gabrielsson et al., A Topology Layer for Machine Learning, AISTATS 2020",
+      "url": "https://proceedings.mlr.press/v108/gabrielsson20a.html"
+    },
+    "optimization": {
+      "title": "Carrière et al., Optimizing persistent homology based functions, ICML 2021",
+      "url": "https://proceedings.mlr.press/v139/carriere21a.html"
+    }
+  },
+  "statements": [
+    {
+      "id": "H3.1",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-1",
+      "kind": "outline",
+      "dependencies": [],
+      "assumptions": "有限CW；整数系数；骨架相对群集中引理外引",
+      "obligation": "非正则CW骨架相对群的完整比较；不能只取附加球领圈",
+      "reference": "hatcher-cellular",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "H3.2",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-2",
+      "kind": "outline",
+      "dependencies": [],
+      "assumptions": "逐次有限生成自由整数链；任意阿贝尔系数G；PRE5、CT1",
+      "obligation": "自然Tor映射及交换图；分块计算只给非自然分裂",
+      "reference": "hatcher-homology-uct",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "H3.3",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-3",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "域上有限维链复形；有符号张量微分",
+      "obligation": "补空间选择；不据此宣称空间链比较已证",
+      "reference": "hatcher-homology-uct",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "H3.EZ",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-ez",
+      "kind": "external",
+      "dependencies": [],
+      "assumptions": "空间奇异链与张量链；采用标准Eilenberg–Zilber比较",
+      "obligation": "shuffle映射与链同伦未展开",
+      "reference": "hatcher-homology-uct",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q1.1",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "交换环系数；有序面；非负次数；边界平方零",
+      "obligation": "本批展开共享面相消；待人类复核符号",
+      "reference": "hatcher-cohomology",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q1.2",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-2",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "域上链复形；无限维延拓使用选择公理",
+      "obligation": "自然性来自评价；无限维选择依赖明示",
+      "reference": "hatcher-cohomology",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q1.3",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-3",
+      "kind": "external",
+      "dependencies": [
+        "H3.2"
+      ],
+      "assumptions": "有限生成自由整数链；任意阿贝尔系数G",
+      "obligation": "块计算给群分解；自然Ext嵌入未构造",
+      "reference": "hatcher-cohomology",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q1.commutativity",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-commutativity",
+      "kind": "external",
+      "dependencies": [
+        "Q1.1",
+        "H3.EZ"
+      ],
+      "assumptions": "上同调类上的分次交换；链级不严格交换",
+      "obligation": "cup-one链同伦及外积兼容性未展开",
+      "reference": "hatcher-cohomology",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q2.1",
+      "chapter": "Q2",
+      "path": "algebraic/cohomology/duality.md",
+      "anchor": "proof-q2-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "整数上链；p,n非负；过高次帽积为零；普通链的∂C0=0",
+      "obligation": "本批逐式删点计算并覆盖n=p端点",
+      "reference": "hatcher-duality",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q2.2",
+      "chapter": "Q2",
+      "path": "algebraic/cohomology/duality.md",
+      "anchor": "proof-q2-2",
+      "kind": "outline",
+      "dependencies": [
+        "H3.1",
+        "Q2.1"
+      ],
+      "assumptions": "闭、定向、有限组合三角剖分的n维PL流形",
+      "obligation": "对偶胞腔关联数符号、逐次重标号及奇异帽积比较未完成",
+      "reference": "hatcher-duality",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "Q2.euler",
+      "chapter": "Q2",
+      "path": "algebraic/cohomology/duality.md",
+      "anchor": "proof-q2-euler",
+      "kind": "complete",
+      "dependencies": [
+        "Q1.2",
+        "Q2.2"
+      ],
+      "assumptions": "奇数维闭定向有限PL流形；有理系数",
+      "obligation": "完整的条件推导；依赖未在教材全证的对偶",
+      "reference": "hatcher-duality",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "G1.1",
+      "chapter": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "anchor": "proof-g1-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "n≥2；带基点相对边界同伦；群结构承接基本群重参数论证",
+      "obligation": "两个拼接方向与交换关系；人类复核待办",
+      "reference": "hatcher-homotopy",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "G1.2",
+      "chapter": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "anchor": "proof-g1-2",
+      "kind": "outline",
+      "dependencies": [],
+      "assumptions": "有限递增、微分保持的过滤；r≥1；同调型指标",
+      "obligation": "下一页商分母的双包含、核像与边界项仍待展开",
+      "reference": "hatcher-spectral",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "G1.fibration-hurewicz",
+      "chapter": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "anchor": "proof-g1-fibration-hurewicz",
+      "kind": "external",
+      "dependencies": [],
+      "assumptions": "带基点Serre纤维化；Hurewicz需(n−1)连通CW且n≥2",
+      "obligation": "长正合列与Hurewicz完整证明未展开；低维为带基点集合",
+      "reference": "hatcher-homotopy",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "G1.serre",
+      "chapter": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "anchor": "proof-g1-serre",
+      "kind": "external",
+      "dependencies": [
+        "G1.2"
+      ],
+      "assumptions": "单连通CW基底；道路连通且CW同伦型的纤维；域系数",
+      "obligation": "几何构造与收敛外引；稳定页只给关联分次",
+      "reference": "hatcher-spectral",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "G1.hopf",
+      "chapter": "G1",
+      "path": "algebraic/graduate-tools.md",
+      "anchor": "proof-g1-hopf",
+      "kind": "complete",
+      "dependencies": [
+        "G1.fibration-hurewicz"
+      ],
+      "assumptions": "Hopf纤维化；胞腔逼近给π2(S3)=0是外引",
+      "obligation": "需胞腔逼近；不是从零构建的独立全证",
+      "reference": "hatcher-homotopy",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R1.pairing",
+      "chapter": "R1",
+      "path": "persistence/modules-reduction.md",
+      "anchor": "proof-r1-pairing",
+      "kind": "external",
+      "dependencies": [],
+      "assumptions": "域系数；有限维有限过滤；排序面先于上单形",
+      "obligation": "区间唯一分解与过滤相容基变换的配对证明未展开",
+      "reference": "edelsbrunner-harer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R1.1",
+      "chapter": "R1",
+      "path": "persistence/modules-reduction.md",
+      "anchor": "proof-r1-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "F2边界矩阵；仅向后加列；有限行列",
+      "obligation": "代数终止与证书全证；不等于配对定理",
+      "reference": "edelsbrunner-harer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R1.2",
+      "chapter": "R1",
+      "path": "persistence/modules-reduction.md",
+      "anchor": "proof-r1-2",
+      "kind": "complete",
+      "dependencies": [
+        "R1.pairing"
+      ],
+      "assumptions": "已给出区间直和分解；半开区间",
+      "obligation": "逐区间计数全证，分解本身外引",
+      "reference": "edelsbrunner-harer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R1.short-bars",
+      "chapter": "R1",
+      "path": "persistence/modules-reduction.md",
+      "anchor": "proof-r1-short-bars",
+      "kind": "complete",
+      "dependencies": [
+        "R1.2"
+      ],
+      "assumptions": "正长度条与真实参数尺度；零长度无存活参数",
+      "obligation": "保持P0 A/B回归；binary64不是实数精确算术",
+      "reference": "edelsbrunner-harer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R2.1",
+      "chapter": "R2",
+      "path": "persistence/stability.md",
+      "anchor": "proof-r2-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "固定标号同点数欧氏点云；每点扰动≤δ；半径尺度",
+      "obligation": "三角不等式与包含映射证明；有限精度需另说明",
+      "reference": "structure-stability",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R2.stability",
+      "chapter": "R2",
+      "path": "persistence/stability.md",
+      "anchor": "proof-r2-stability",
+      "kind": "external",
+      "dependencies": [
+        "R1.pairing"
+      ],
+      "assumptions": "有限构造、区间可分解的持续模；η交错",
+      "obligation": "匹配定理完整证明未展开",
+      "reference": "structure-stability",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R2.2",
+      "chapter": "R2",
+      "path": "persistence/stability.md",
+      "anchor": "proof-r2-2",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "条寿命严格大于2η；有限图存在最优匹配",
+      "obligation": "不允许由“无长条保证”推出删除短条",
+      "reference": "structure-stability",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "R2.3",
+      "chapter": "R2",
+      "path": "persistence/stability.md",
+      "anchor": "proof-r2-3",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "有限条的两个端点误差各≤η",
+      "obligation": "两个端点三角不等式",
+      "reference": "structure-stability",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "A8.3",
+      "chapter": "A8",
+      "path": "ai/differentiable-persistence.md",
+      "anchor": "proof-a8-3",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "固定有限复形；顶点值连续且θ0严格全序；固定确定性约化",
+      "obligation": "结构性等值保留；只给充分条件",
+      "reference": "topology-layer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "A8.4",
+      "chapter": "A8",
+      "path": "ai/differentiable-persistence.md",
+      "anchor": "proof-a8-4",
+      "kind": "complete",
+      "dependencies": [
+        "A8.3",
+        "R1.pairing"
+      ],
+      "assumptions": "C1输出；固定组合区域；正有限条；排名损失另需固定排名",
+      "obligation": "条件链式法则全证；一般配对、全局优化不在结论内",
+      "reference": "topology-layer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "A8.5",
+      "chapter": "A8",
+      "path": "ai/differentiable-persistence.md",
+      "anchor": "proof-a8-5",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "四顶点路径；q=(0,a,b,0)；0≤a,b≤1",
+      "obligation": "从分支过滤完整计算，含零值边界",
+      "reference": "topology-layer",
+      "review": "本批作者核对；待人类同行复核"
+    },
+    {
+      "id": "A8.6",
+      "chapter": "A8",
+      "path": "ai/differentiable-persistence.md",
+      "anchor": "proof-a8-6",
+      "kind": "complete",
+      "dependencies": [
+        "A8.5"
+      ],
+      "assumptions": "a=b=c在(0,1)内部；双侧偏导与右方向导数分开",
+      "obligation": "不能把中央差分极限当作梯度",
+      "reference": "optimization",
+      "review": "本批作者核对；待人类同行复核"
+    }
+  ]
+}

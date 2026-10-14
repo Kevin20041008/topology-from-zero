@@ -6,3 +6,8 @@ __pycache__/
 build/
 *.pyc
 .DS_Store
+node_modules/
+test-results/
+playwright-report/
+project-results-*/
+.venv-project/

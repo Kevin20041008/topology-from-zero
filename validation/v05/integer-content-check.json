@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "chapters": [
+    {
+      "path": "docs/preliminaries/groups-modules.md",
+      "sections": 12,
+      "executed_python_blocks": 1
+    },
+    {
+      "path": "docs/computational/integer-homology.md",
+      "sections": 12,
+      "executed_python_blocks": 1
+    }
+  ],
+  "svg": [
+    "docs/assets/pre5-integer-quotient.svg",
+    "docs/assets/ct1-kernel-coordinates.svg"
+  ]
+}

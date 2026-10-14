@@ -1,6 +1,6 @@
 # 研究生课程地图
 
-当前候选含51篇正文与51个分步自检。PRE1–PRE3及本批A3–A8采用十二项模板，共72题配套完整答案；导论另有六题完整解答。保留四项已有浏览器实验和四份Notebook，新增一页含三项AI交互实验。研究生深度体现为假设、证明、反例和适用边界，不代表全书已完成或高级定理已全部自包含证明。
+当前55篇正文与55个分步自检；13章采用十二项模板、共104题完整答案，导论另有6题。先选[学习路线](start/index.md)，再按本页进入专题。页面存在不等于完整证明或人类审阅完成，见[证明状态](project/proof-ledger.md)。
 
 ## 建议学习顺序
 
@@ -82,4 +82,10 @@
 
 
 !!! info "AI 增补：持续建设中"
-    新增A3–A8六章、48题完整答案与三项交互。当前候选51章；原有章节仍按各自审查义务升级。11部分88单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
+    新增A3–A8六章、48题完整答案与三项交互。当前55章；原有章节仍按各自审查义务升级。11部分89单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
+
+## v0.5补全与项目
+
+- [PRE4：可数性与选择](preliminaries/countability-choice.md)；[PS1：子空间](point-set/subspaces.md)。
+- [PRE5：群、模与整数商](preliminaries/groups-modules.md)；[CT1：整数同调与SNF](computational/integer-homology.md)。
+- [项目C：可复现网络优化](ai/projects/topology-optimization.md)，含固定协议、实际轨迹与失败案例。

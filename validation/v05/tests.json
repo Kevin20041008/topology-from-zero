@@ -1,0 +1,57 @@
+[
+  {
+    "name": "node",
+    "exit_code": 0,
+    "seconds": 0.33
+  },
+  {
+    "name": "integer",
+    "exit_code": 0,
+    "seconds": 0.16
+  },
+  {
+    "name": "integer-independent",
+    "exit_code": 0,
+    "seconds": 0.57
+  },
+  {
+    "name": "gudhi",
+    "exit_code": 0,
+    "seconds": 0.29
+  },
+  {
+    "name": "ai-gudhi",
+    "exit_code": 0,
+    "seconds": 0.3
+  },
+  {
+    "name": "ai-examples",
+    "exit_code": 0,
+    "seconds": 0.55
+  },
+  {
+    "name": "notebooks",
+    "exit_code": 0,
+    "seconds": 9.39
+  },
+  {
+    "name": "project-tests",
+    "exit_code": 0,
+    "seconds": 0.35
+  },
+  {
+    "name": "project-verify",
+    "exit_code": 0,
+    "seconds": 10.5
+  },
+  {
+    "name": "strict-build",
+    "exit_code": 0,
+    "seconds": 4.2
+  },
+  {
+    "name": "site",
+    "exit_code": 0,
+    "seconds": 30.76
+  }
+]

@@ -1,6 +1,6 @@
 # topology-from-zero · 从零开始的拓扑学
 
-中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**AI增补审阅候选：51篇正文及自检；新增A3–A8六章、48题完整答案和三项AI交互实验；保留已有实验与四份Notebook**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
+中文开放教材网站，采用 MkDocs Material、Markdown、MathJax、JavaScript/SVG/Three.js 与 Python/Jupyter Notebook。**55篇正文及自检、三条学习路线、整数同调实验与实际运行的轻量神经网络项目**。P0 短区间热修复通过 [PR #2](https://github.com/Kevin20041008/topology-from-zero/pull/2) 先行合并；教学与数值改进通过 [PR #1](https://github.com/Kevin20041008/topology-from-zero/pull/1) 审查发布。变更见 [CHANGELOG.md](CHANGELOG.md)，前置依赖与待审数学项见 [数学审查](docs/math-review.md)。
 
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
@@ -12,7 +12,7 @@
 
 新增基础 A（拓扑基与子基）、基础 B（连通性）、基础 C（同伦与基本群）、基础 D（商空间）与代数预备（链群与线性商空间）。原有章号与 URL 不变；建议按 01 → A → 02 → B → C 阅读，D 为粘合支线，代数预备 → 03 为有限计算支线。每篇新增章均含定义、严格证明、正反例、习题与参考书目；原八章均提供两级提示和按选项解释的即时反馈。
 
-八个方向按研究生深度组织；代数拓扑拆为基本群、覆盖、同调、上同调四单元，新增微分与几何拓扑。完整清单见 [课程地图](docs/curriculum.md)，逐章证明范围与引用边界见 [研究生审查台账](docs/graduate-review.md)。本候选版未发布，不声称全部深定理已自包含证明。
+八个方向按研究生深度组织；代数拓扑拆为基本群、覆盖、同调、上同调四单元，新增微分与几何拓扑。完整清单见 [课程地图](docs/curriculum.md)，逐章证明范围与引用边界见 [研究生审查台账](docs/graduate-review.md)。部署提交、Release标签与数学审查是不同状态，见[版本证据](docs/project/release-status.md)。部分深定理仍明确外引。
 
 ## 浏览器交互实验
 
@@ -86,4 +86,11 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 
 ## 长期建设与当前交付
 
-[总计划](docs/project/COURRICULUM_MASTER_PLAN.md)覆盖11部分88单元；本批细化A3–A8，包含48题完整解答、三项AI交互实验及独立对照。原长期主题包仍有未完成内容，未把全书标为完成。[实施状态](docs/project/IMPLEMENTATION_STATUS.md)包含下一批续作和未尽证明义务。[贡献规范](CONTRIBUTING.md)与[逐章记录](docs/project/reviews/index.md)是阶段验收依据。本批从 `main` 的 `e6e80cd` 创建独立分支，仅提交PR审阅，不合并、不发布。
+长期规划11部分89单元，已写55章，其中13章采用十二项模板、104道完整配套答案；导论另有6题，项目C另有8题。不以页面数宣称全书完成。v0.5以`f341101`为基线，通过独立PR审查，不自动发布。此前A3–A8已在PR #7合并并部署；审计时Release标签仍是v0.3，详见[版本证据](docs/project/release-status.md)。
+
+- [A 零基础](docs/start/beginner.md)、[B 数学专业](docs/start/advanced.md)、[C 计算与AI](docs/start/computational.md)：入口诊断、时间估计、连续导航、自评进度和阶段项目。
+- PRE4/PS1/PRE5/CT1：定义、完整局部证明、32题解答与原创图；整数算法记录精确`U A V = D`证书和独立SymPy对照。
+- [项目C](projects/topology-optimization/README.md)：实际训练NumPy MLP，20组完整结果；合成数据，不冒充医学任务或论文复现，公开错误先验的负结果。
+- [逐定理台账](docs/project/proof-ledger.md)：区分完整证明、外引与概要；没有人类全书审阅或形式化认证。
+
+完整验证入口和环境见[开发说明](docs/development.md)；本批测试及未尽义务见[V05-VALIDATION.md](V05-VALIDATION.md)。

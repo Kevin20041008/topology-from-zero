@@ -1,5 +1,7 @@
 import {graduateExercises} from './graduate-exercises.mjs';
 import {foundationsExercises} from './foundations-exercises.mjs';
+import {v05FoundationExercises} from './v05-foundation-exercises.mjs';
+import {v05IntegerExercises} from './v05-integer-exercises.mjs';
 import {aiExercises} from './ai-exercises.mjs';
 // Original formative exercises. Feedback explains the mathematical reason;
 // no learner responses are stored or sent to a server.
@@ -78,4 +80,4 @@ const originalExercises = {
   },
 };
 
-export const exercises = {...originalExercises, ...graduateExercises, ...foundationsExercises, ...aiExercises};
+export const exercises = {...originalExercises, ...graduateExercises, ...foundationsExercises, ...aiExercises, ...v05FoundationExercises, ...v05IntegerExercises};

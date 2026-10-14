@@ -18,3 +18,7 @@
 原42章的习题与两级提示仍在各章原位置。它们尚未全部扩到6–12题及完整答案，不能把提示页面视为全部题解已完成；逐章义务见[审查记录](../project/reviews/index.md)。
 
 核对答案时至少记录：用了哪些假设；每个存在对象如何选；反方向是否成立；是否有一个满足前提但推翻结论的例子。发现错误请在[数学问题模板](https://github.com/Kevin20041008/topology-from-zero/issues/new?template=math-issue.yml)附章代码、题号、自己的推导和具体失败步骤。
+
+## v0.5完整题解
+
+[PRE4](pre4-solutions.md) · [PS1](ps1-solutions.md) · [PRE5](pre5-solutions.md) · [CT1](ct1-solutions.md)：每章8题；[项目C](../ai/projects/topology-optimization.md)另含8题与展开答案。

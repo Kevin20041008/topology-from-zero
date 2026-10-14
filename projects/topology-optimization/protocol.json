@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "description": "Locked synthetic path experiment; validation is monitoring only, not selection. Test evaluated only after fixed final epoch.",
+  "vertices": 12,
+  "hidden": 24,
+  "epochs": 160,
+  "initialization_seeds": [11, 23, 37, 51, 71],
+  "learning_rate": 0.02,
+  "weights": [0.0, 1.0],
+  "threshold": 0.5,
+  "checkpoint_rule": "fixed_final_epoch",
+  "optimizer": "full-batch Adam beta1=0.9 beta2=0.999 epsilon=1e-8",
+  "bce_normalization": "mean over samples and vertices",
+  "topological_normalization": "mean over samples, sum squared positive finite H0 lifetimes per sample",
+  "essential_bars": "excluded, no finite death substitution",
+  "pairing_ties": "deterministic vertex-index branch, not a classical derivative",
+  "conditions": ["connected", "disconnected"],
+  "test_use": "final descriptive evaluation only; no hyperparameter tuning or seed selection"
+}
