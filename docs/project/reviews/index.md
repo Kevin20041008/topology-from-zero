@@ -64,3 +64,8 @@
 ## v0.5新批次
 
 [PRE4](PRE4.md) · [PS1](PS1.md) · [PRE5](PRE5.md) · [CT1](CT1.md) · [项目C](AI-PROJECT-C.md)。独立模型审查原始记录在仓库`validation/v05/`，不是人类签署。重要既有定理的局部状态见[证明台账](../proof-ledger.md)。
+
+
+## v0.6 质量复核
+
+[H3](H3.md)、[Q1](Q1.md)、[Q2](Q2.md)有新的逐项模型复核和24题答案；保留外引证明义务。[项目D](AI-PROJECT-D.md)记录真实二维训练、数学约定与复现限制。八课证明训练与人类参与材料见[审阅包](../HUMAN_REVIEW_PACKET.md)，当前未执行人类审阅或学习者研究。原始模型意见存于仓库 `validation/v06/`。

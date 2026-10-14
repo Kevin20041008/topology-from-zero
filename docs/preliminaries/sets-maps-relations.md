@@ -251,6 +251,12 @@ $$
 
 等价关系把一个集合划分成不交的类；商集将这些类作为新元素。映射能否从商集出发，取决于它是否在每类上常值，随后才讨论连续性、线性或其他结构。继续阅读[从距离到拓扑](../introduction/01-spaces.md)时，拓扑就是 $\mathcal P(X)$ 中一个满足集合运算公理的集合族；[连续映射](../point-set/02-continuity.md)与[商空间](../point-set/quotient-spaces.md)将直接使用本章证明的规则。
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**证明：f:X→Y 满射，当且仅当对每对 B,C⊆Y，f⁻¹(B)⊆f⁻¹(C) 蕴含 B⊆C。给出非满射时失败的明确见证，处理 X 或 Y 为空的情况。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 PRE1 三级证明训练](../exercises/proof-workshop.md#pre1)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 12. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000，Chapter 1 “Set Theory and Logic”。[MIT 18.901 阅读安排](https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/pages/readings/)将该章 §§1–2 用于逻辑基础，§§3–9 用于关系、基数与选择等预备主题。

@@ -119,8 +119,10 @@ nav:
           - 'A7 · 三维点云与形状学习': ai/point-cloud-learning.md
           - 'A8 · 可微持续同调': ai/differentiable-persistence.md
           - '项目 C · 可复现神经网络优化': ai/projects/topology-optimization.md
+          - '项目 D · 真实二维图像与拓扑损失': ai/projects/image-topology.md
       - 习题与解答:
           - 使用方法: exercises/index.md
+          - 八课证明工作坊: exercises/proof-workshop.md
           - PRE1完整解答: exercises/pre1-solutions.md
           - PRE2完整解答: exercises/pre2-solutions.md
           - PRE3完整解答: exercises/pre3-solutions.md
@@ -134,10 +136,14 @@ nav:
           - PS1完整解答: exercises/ps1-solutions.md
           - PRE5完整解答: exercises/pre5-solutions.md
           - CT1完整解答: exercises/ct1-solutions.md
+          - H3完整解答: exercises/h3-solutions.md
+          - Q1完整解答: exercises/q1-solutions.md
+          - Q2完整解答: exercises/q2-solutions.md
       - 参考书目: references.md
   - 交互实验:
       - 实验导读: labs/index.md
       - 基础实验台: labs/foundations.md
+      - 覆盖空间与道路提升: labs/covering-space.md
       - AI 拓扑实验: labs/ai-topology.md
       - 三角形的洞: labs/triangle.md
       - 点云与持续同调: labs/point-cloud.md
@@ -146,10 +152,13 @@ nav:
   - 开发者与审查:
       - 版本与部署证据: project/release-status.md
       - 定理证明依赖台账: project/proof-ledger.md
+      - H3/Q1/Q2 专项审查: project/H3-Q1-Q2-REVIEW.md
       - 完整课程总计划: project/COURRICULUM_MASTER_PLAN.md
       - 先修依赖图: project/PREREQUISITE_GRAPH.md
       - 实施状态与续作: project/IMPLEMENTATION_STATUS.md
       - 数学审查协议: project/MATH_REVIEW_PROTOCOL.md
+      - 人工数学审阅包: project/HUMAN_REVIEW_PACKET.md
+      - 学习者测试协议: project/LEARNER_STUDY.md
       - 逐章审查: project/reviews/index.md
       - M0审计证据: project/AUDIT_M0.md
       - M1独立模型复核: project/M1_REVIEW.md
@@ -161,6 +170,7 @@ nav:
       - 贡献与版权: contributing.md
 not_in_nav: |
   /project/reviews/*.md
+  /project/templates/*.md
 plugins:
   - search:
       lang: [zh, en]
@@ -186,6 +196,8 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/experiments.css
   - stylesheets/learning.css
+  - stylesheets/proof-training.css
+  - stylesheets/covering.css
 extra_javascript:
   - javascripts/mathjax.js
   - assets/vendor/mathjax/tex-svg.js
@@ -200,6 +212,10 @@ extra_javascript:
   - path: javascripts/learning-paths.mjs
     type: module
   - path: javascripts/build-info.mjs
+    type: module
+  - path: javascripts/proof-training-ui.mjs
+    type: module
+  - path: javascripts/covering-lab.mjs
     type: module
 validation:
   nav:

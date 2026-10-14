@@ -1,0 +1,2 @@
+PASS 3 finite Python examples, 3 twelve-section chapters, 24 solutions, and local lemma/dependency contracts
+Scope: finite examples and document consistency only; no automatic mathematical proof certification.

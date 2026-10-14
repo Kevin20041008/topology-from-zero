@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "tests": 11,
+  "binary_cubical_cases": 512,
+  "grayscale_h0_cases": 729,
+  "betti_threshold_checks": 3645,
+  "bernoulli_enumeration_cases": 16,
+  "pixel_derivative_checks": 31,
+  "network_derivative_checks": 19,
+  "real_images": 24,
+  "training_runs": 6,
+  "epochs_per_run": 100,
+  "human_review": false,
+  "files": {
+    "topology.py": "f1c1141e041c8d69ccbc8d5ef4a5ed5c6e22944c3e6ef3936c88e38bb5577056",
+    "model.py": "3e56211f7838e51a90a3b4a2471d76ef0b5d210ad7cef9e0cc28bbdb33cc3fca",
+    "data.py": "410f1ff1483100fff6aed5dfc7f8df49a16efc3bfbc373bce36b360e6ffc55b3",
+    "train.py": "f24a314324e486a5697a8ed525923e1cc3d8b00323940b28eca5f2b51296185e",
+    "verify.py": "e7171f8b48652fe893b06091f0e0bc50b362d55ed9e43f46cb67def9d6c682fe",
+    "test_project.py": "d3275db63d43660da695005d2a45a9fef7cc408e8fec5c20d384a381244a4493",
+    "protocol.json": "eb3c9fc5869e9c53db9aae2e0c5609fc4106dae2bbdd3857b116d431a7d3cefe",
+    "sources.json": "dc7a7866839e62cdc3d93f83b93610677b4134dc8a9ef8778c5c1f79e768f655"
+  },
+  "exact_rerun": {
+    "command": "python projects/image-topology/verify.py --rerun",
+    "status": "PASS",
+    "runs": 6,
+    "epochs_per_run": 100,
+    "final_parameters_trajectories_and_all_probabilities_equal": true,
+    "environment": {
+      "numpy": "2.5.2",
+      "platform": "Windows-11-10.0.26100-SP0",
+      "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+      "thread_variables": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      }
+    },
+    "scope": "Same recorded environment; not a cross-platform bitwise claim."
+  },
+  "content_checks": "validation/v06/image-content-checks.json",
+  "artifact_lf_migration": "validation/v06/artifact-lf-migration.json"
+}

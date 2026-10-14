@@ -1,0 +1,6 @@
+# Full local evidence used these already installed CPU packages.
+numpy==2.5.2
+Pillow==12.3.0
+scipy==1.17.1
+scikit-image==0.26.0
+# Plotting is optional; not needed by data preparation, training, tests or verify.

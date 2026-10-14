@@ -1,0 +1,95 @@
+[
+  {
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_ai_topology.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_cochain_identities.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_covering.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_curriculum.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_foundations.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_learning.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_proof_training.mjs",
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-v06-quality\\scripts\\test_topology.mjs"
+    ],
+    "exit_code": 0,
+    "log": "final-01.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/test_build_metadata.py"
+    ],
+    "exit_code": 0,
+    "log": "final-02.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/test_integer_homology.py"
+    ],
+    "exit_code": 0,
+    "log": "final-03.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_integer_independent.py"
+    ],
+    "exit_code": 0,
+    "log": "final-04.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_foundation_examples.py"
+    ],
+    "exit_code": 0,
+    "log": "final-05.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/course_inventory.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "final-06.txt"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/build_proof_workshop.mjs",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "final-07.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "-m",
+      "mkdocs",
+      "build",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "log": "final-08.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_site.py"
+    ],
+    "exit_code": 0,
+    "log": "final-09.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_algebra_chapter_examples.py"
+    ],
+    "exit_code": 0,
+    "log": "final-10.txt"
+  }
+]

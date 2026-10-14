@@ -1,0 +1,231 @@
+
+> test:browser
+> playwright test
+
+[WebServer] (node:32048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 68 tests using 2 workers
+
+(node:16776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35164) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: preliminaries/countability-choice/ (2.5s)
+  ok  1 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: point-set/subspaces/ (2.6s)
+  ok  3 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: preliminaries/groups-modules/ (2.3s)
+  ok  5 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/ (3.1s)
+  ok  4 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: computational/integer-homology/ (5.8s)
+  ok  6 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: algebraic/cohomology/duality/ (2.0s)
+  ok  7 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: ai/projects/topology-optimization/ (2.0s)
+  ok  8 [desktop] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: math-check/ (1.2s)
+  ok  9 [desktop] › tests\browser\course.spec.mjs:26:27 › route A: assessment, persisted progress and next lesson (6.6s)
+  ok 10 [desktop] › tests\browser\course.spec.mjs:26:27 › route B: assessment, persisted progress and next lesson (7.0s)
+  ok 12 [desktop] › tests\browser\course.spec.mjs:50:1 › corrupt/unavailable storage does not block learning and reset is scoped (2.5s)
+  ok 11 [desktop] › tests\browser\course.spec.mjs:26:27 › route C: assessment, persisted progress and next lesson (5.3s)
+  ok 14 [desktop] › tests\browser\course.spec.mjs:76:1 › static learning routes remain usable with JavaScript disabled (2.4s)
+  ok 15 [desktop] › tests\browser\course.spec.mjs:86:1 › existing triangle and exact event persistence controls still calculate (2.6s)
+  ok 16 [desktop] › tests\browser\course.spec.mjs:96:1 › surface controls render, switch topology and support keyboard (2.0s)
+  ok 17 [desktop] › tests\browser\course.spec.mjs:106:1 › AI lab retains equal Dice counterexample and nondifferentiable event (2.1s)
+  ok 18 [desktop] › tests\browser\course.spec.mjs:117:1 › four entrances, search, theme and source metadata are usable (3.9s)
+  ok 13 [desktop] › tests\browser\course.spec.mjs:60:1 › new chapter self-tests give two hints, wrong/correct reasons and reset (17.3s)
+  ok 20 [desktop] › tests\browser\proof-training.spec.mjs:30:1 › keyboard sorting preserves focus and reset leaves the independent draft alone (3.8s)
+  ok 21 [desktop] › tests\browser\proof-training.spec.mjs:41:1 › drafts are opt-in, stored as text, independently deletable, and not transmitted (7.4s)
+  ok 22 [desktop] › tests\browser\proof-training.spec.mjs:56:1 › corrupt or unavailable storage does not block exercises or falsely report saved drafts (4.0s)
+  ok 19 [desktop] › tests\browser\proof-training.spec.mjs:18:1 › all eight proof tasks diagnose errors and accept valid dependencies without certifying a free proof (24.5s)
+  ok 24 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: algebraic/homology/cellular-coefficients/ (2.8s)
+  ok 23 [desktop] › tests\browser\proof-training.spec.mjs:66:1 › all chapter links reach the new transfer task and no-JavaScript answers remain available (10.0s)
+  ok 25 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/h3-solutions/ (1.5s)
+  ok 26 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/q1-solutions/ (1.8s)
+  ok 27 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/q2-solutions/ (2.1s)
+  ok 29 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: labs/covering-space/ (3.1s)
+  ok 30 [desktop] › tests\browser\v06-quality.spec.mjs:17:1 › HTML provenance is static and a mismatched manifest cannot relabel the page (1.7s)
+  ok 28 [desktop] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: ai/projects/image-topology/ (6.4s)
+  ok 31 [desktop] › tests\browser\v06-quality.spec.mjs:28:1 › homepage count and all selected document identities match the built manifest (4.9s)
+  ok 33 [desktop] › tests\browser\v06-quality.spec.mjs:57:1 › pointer input produces a lifted path and never infers closure from displayed rounding (1.8s)
+  x  34 [desktop] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript (5.6s)
+(node:32612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 35 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: preliminaries/countability-choice/ (1.6s)
+  ok 36 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: point-set/subspaces/ (1.6s)
+  ok 37 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: preliminaries/groups-modules/ (1.6s)
+  ok 38 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: computational/integer-homology/ (3.0s)
+  ok 39 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/ (1.6s)
+  ok 40 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: algebraic/cohomology/duality/ (1.3s)
+  ok 41 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: ai/projects/topology-optimization/ (1.2s)
+  ok 42 [mobile] › tests\browser\course.spec.mjs:17:3 › render Chinese mathematics and contain layout: math-check/ (866ms)
+  ok 43 [mobile] › tests\browser\course.spec.mjs:26:27 › route A: assessment, persisted progress and next lesson (4.1s)
+  ok 44 [mobile] › tests\browser\course.spec.mjs:26:27 › route B: assessment, persisted progress and next lesson (4.3s)
+  ok 45 [mobile] › tests\browser\course.spec.mjs:26:27 › route C: assessment, persisted progress and next lesson (3.6s)
+  ok 46 [mobile] › tests\browser\course.spec.mjs:50:1 › corrupt/unavailable storage does not block learning and reset is scoped (1.5s)
+  x  32 [desktop] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure (45.5s)
+(node:12368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 48 [mobile] › tests\browser\course.spec.mjs:76:1 › static learning routes remain usable with JavaScript disabled (2.3s)
+  ok 47 [mobile] › tests\browser\course.spec.mjs:60:1 › new chapter self-tests give two hints, wrong/correct reasons and reset (11.5s)
+  ok 50 [mobile] › tests\browser\course.spec.mjs:96:1 › surface controls render, switch topology and support keyboard (1.9s)
+  ok 49 [mobile] › tests\browser\course.spec.mjs:86:1 › existing triangle and exact event persistence controls still calculate (2.5s)
+  ok 51 [mobile] › tests\browser\course.spec.mjs:106:1 › AI lab retains equal Dice counterexample and nondifferentiable event (1.5s)
+  ok 52 [mobile] › tests\browser\course.spec.mjs:117:1 › four entrances, search, theme and source metadata are usable (2.7s)
+  ok 54 [mobile] › tests\browser\proof-training.spec.mjs:30:1 › keyboard sorting preserves focus and reset leaves the independent draft alone (2.8s)
+  ok 55 [mobile] › tests\browser\proof-training.spec.mjs:41:1 › drafts are opt-in, stored as text, independently deletable, and not transmitted (4.3s)
+  ok 56 [mobile] › tests\browser\proof-training.spec.mjs:56:1 › corrupt or unavailable storage does not block exercises or falsely report saved drafts (2.7s)
+  ok 53 [mobile] › tests\browser\proof-training.spec.mjs:18:1 › all eight proof tasks diagnose errors and accept valid dependencies without certifying a free proof (19.2s)
+  ok 57 [mobile] › tests\browser\proof-training.spec.mjs:66:1 › all chapter links reach the new transfer task and no-JavaScript answers remain available (7.9s)
+  ok 59 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/h3-solutions/ (1.3s)
+  ok 58 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: algebraic/homology/cellular-coefficients/ (2.1s)
+  ok 60 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/q1-solutions/ (1.3s)
+  ok 61 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: exercises/q2-solutions/ (1.5s)
+  ok 63 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: labs/covering-space/ (2.2s)
+  ok 64 [mobile] › tests\browser\v06-quality.spec.mjs:17:1 › HTML provenance is static and a mismatched manifest cannot relabel the page (1.4s)
+  ok 62 [mobile] › tests\browser\v06-quality.spec.mjs:5:3 › v0.6 mathematics renders without errors: ai/projects/image-topology/ (5.3s)
+  ok 65 [mobile] › tests\browser\v06-quality.spec.mjs:28:1 › homepage count and all selected document identities match the built manifest (4.1s)
+  ok 67 [mobile] › tests\browser\v06-quality.spec.mjs:57:1 › pointer input produces a lifted path and never infers closure from displayed rounding (1.5s)
+  x  68 [mobile] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript (5.7s)
+  x  66 [mobile] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure (45.2s)
+
+
+  1) [desktop] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure
+
+    Test timeout of 45000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for getByLabel('初始提升层', { exact: true })
+
+
+      43 |   await page.getByRole('button',{name:'逆时针两圈',exact:true}).click();
+      44 |   await expect(out).toContainText('绕数 2');
+    > 45 |   await page.getByLabel('初始提升层',{exact:true}).selectOption('-1');
+         |                                               ^
+      46 |   await expect(out).toContainText('终点提升 1.00000');
+      47 |   await page.getByRole('button',{name:'顺时针一圈',exact:true}).click();
+      48 |   await expect(out).toContainText('绕数 -1');
+        at C:\Users\李佳明\Documents\Codex\2026-10-11\skill-installer-install-the-setup-docs\work\topology-v06-quality\tests\browser\v06-quality.spec.mjs:45:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: '可复现例子与反例', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: '可复现例子与反例', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: '可复现例子与反例', exact: true })
+
+
+      73 |   await expect(page.locator('[data-build-info]')).toContainText('本页构建');
+      74 |   await page.goto('http://127.0.0.1:8123/topology-from-zero/labs/covering-space/');
+    > 75 |   await expect(page.getByRole('heading',{name:'可复现例子与反例',exact:true})).toBeVisible();
+         |                                                                        ^
+      76 |   await context.close();
+      77 | });
+      78 |
+        at C:\Users\李佳明\Documents\Codex\2026-10-11\skill-installer-install-the-setup-docs\work\topology-v06-quality\tests\browser\v06-quality.spec.mjs:75:72
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure
+
+    Test timeout of 45000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for getByLabel('初始提升层', { exact: true })
+
+
+      43 |   await page.getByRole('button',{name:'逆时针两圈',exact:true}).click();
+      44 |   await expect(out).toContainText('绕数 2');
+    > 45 |   await page.getByLabel('初始提升层',{exact:true}).selectOption('-1');
+         |                                               ^
+      46 |   await expect(out).toContainText('终点提升 1.00000');
+      47 |   await page.getByRole('button',{name:'顺时针一圈',exact:true}).click();
+      48 |   await expect(out).toContainText('绕数 -1');
+        at C:\Users\李佳明\Documents\Codex\2026-10-11\skill-installer-install-the-setup-docs\work\topology-v06-quality\tests\browser\v06-quality.spec.mjs:45:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\v06-quality-covering-lift--6a7e7-anslation-and-exact-closure-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: '可复现例子与反例', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: '可复现例子与反例', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: '可复现例子与反例', exact: true })
+
+
+      73 |   await expect(page.locator('[data-build-info]')).toContainText('本页构建');
+      74 |   await page.goto('http://127.0.0.1:8123/topology-from-zero/labs/covering-space/');
+    > 75 |   await expect(page.getByRole('heading',{name:'可复现例子与反例',exact:true})).toBeVisible();
+         |                                                                        ^
+      76 |   await context.close();
+      77 | });
+      78 |
+        at C:\Users\李佳明\Documents\Codex\2026-10-11\skill-installer-install-the-setup-docs\work\topology-v06-quality\tests\browser\v06-quality.spec.mjs:75:72
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\v06-quality-source-label-a-da617-readable-without-JavaScript-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure
+    [desktop] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript
+    [mobile] › tests\browser\v06-quality.spec.mjs:40:1 › covering lift presets, keyboard, sheet translation and exact closure
+    [mobile] › tests\browser\v06-quality.spec.mjs:70:1 › source label and covering examples remain readable without JavaScript
+  64 passed (3.4m)

@@ -1,0 +1,896 @@
+{
+  "stats": {
+    "startTime": "2026-10-14T10:24:02.578Z",
+    "duration": 139257.105,
+    "expected": 68,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "render Chinese mathematics and contain layout: preliminaries/countability-choice/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2081,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: point-set/subspaces/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2284,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: preliminaries/groups-modules/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2188,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: computational/integer-homology/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6005,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2867,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: algebraic/cohomology/duality/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2165,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: ai/projects/topology-optimization/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1739,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: math-check/",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1268,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route A: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6507,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route B: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7232,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route C: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5563,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "corrupt/unavailable storage does not block learning and reset is scoped",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2734,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "new chapter self-tests give two hints, wrong/correct reasons and reset",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 16963,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "static learning routes remain usable with JavaScript disabled",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2468,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "existing triangle and exact event persistence controls still calculate",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2451,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "surface controls render, switch topology and support keyboard",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2210,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "AI lab retains equal Dice counterexample and nondifferentiable event",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1852,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "four entrances, search, theme and source metadata are usable",
+      "file": "course.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3472,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: preliminaries/countability-choice/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2281,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: point-set/subspaces/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2242,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: preliminaries/groups-modules/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2131,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: computational/integer-homology/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4002,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: algebraic/cohomology/cochains-products/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2144,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: algebraic/cohomology/duality/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1716,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: ai/projects/topology-optimization/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1568,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "render Chinese mathematics and contain layout: math-check/",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1240,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route A: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6370,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route B: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6753,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "route C: assessment, persisted progress and next lesson",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4936,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "corrupt/unavailable storage does not block learning and reset is scoped",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2225,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "new chapter self-tests give two hints, wrong/correct reasons and reset",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 13901,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "static learning routes remain usable with JavaScript disabled",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1883,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "existing triangle and exact event persistence controls still calculate",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2272,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "surface controls render, switch topology and support keyboard",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2163,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "AI lab retains equal Dice counterexample and nondifferentiable event",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1708,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "four entrances, search, theme and source metadata are usable",
+      "file": "course.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2772,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "all eight proof tasks diagnose errors and accept valid dependencies without certifying a free proof",
+      "file": "proof-training.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 23990,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "keyboard sorting preserves focus and reset leaves the independent draft alone",
+      "file": "proof-training.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3074,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "drafts are opt-in, stored as text, independently deletable, and not transmitted",
+      "file": "proof-training.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6461,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "corrupt or unavailable storage does not block exercises or falsely report saved drafts",
+      "file": "proof-training.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4331,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "all chapter links reach the new transfer task and no-JavaScript answers remain available",
+      "file": "proof-training.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 9557,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "all eight proof tasks diagnose errors and accept valid dependencies without certifying a free proof",
+      "file": "proof-training.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 18574,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "keyboard sorting preserves focus and reset leaves the independent draft alone",
+      "file": "proof-training.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2379,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "drafts are opt-in, stored as text, independently deletable, and not transmitted",
+      "file": "proof-training.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4507,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "corrupt or unavailable storage does not block exercises or falsely report saved drafts",
+      "file": "proof-training.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2679,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "all chapter links reach the new transfer task and no-JavaScript answers remain available",
+      "file": "proof-training.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7442,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: algebraic/homology/cellular-coefficients/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2352,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/h3-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1303,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/q1-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1427,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/q2-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1617,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: ai/projects/image-topology/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5654,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: labs/covering-space/",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2271,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "HTML provenance is static and a mismatched manifest cannot relabel the page",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1731,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "homepage count and all selected document identities match the built manifest",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4910,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "covering lift presets, keyboard, sheet translation and exact closure",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2269,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "pointer input produces a lifted path and never infers closure from displayed rounding",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2241,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "source label and covering examples remain readable without JavaScript",
+      "file": "v06-quality.spec.mjs",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 901,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: algebraic/homology/cellular-coefficients/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1931,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/h3-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1198,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/q1-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1448,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: exercises/q2-solutions/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1260,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: ai/projects/image-topology/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4241,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "v0.6 mathematics renders without errors: labs/covering-space/",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1761,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "HTML provenance is static and a mismatched manifest cannot relabel the page",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1310,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "homepage count and all selected document identities match the built manifest",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4214,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "covering lift presets, keyboard, sheet translation and exact closure",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2322,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "pointer input produces a lifted path and never infers closure from displayed rounding",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2050,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "title": "source label and covering examples remain readable without JavaScript",
+      "file": "v06-quality.spec.mjs",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1276,
+          "errors": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 研究生课程地图
 
-当前55篇正文与55个分步自检；13章采用十二项模板、共104题完整答案，导论另有6题。先选[学习路线](start/index.md)，再按本页进入专题。页面存在不等于完整证明或人类审阅完成，见[证明状态](project/proof-ledger.md)。
+当前{{ course.chapters }}篇正文与{{ course.self_checks }}个分步自检；{{ course.template_chapters }}章采用十二项模板、共{{ course.template_exercises }}题完整答案，导论另有6题。先选[学习路线](start/index.md)，再按本页进入专题。页面存在不等于完整证明或人类审阅完成，见[证明状态](project/proof-ledger.md)。
 
 ## 建议学习顺序
 
@@ -43,7 +43,7 @@
 | homology | [03 · 环、边界与同调](algebraic/03-homology.md) | linear-quotient |
 | H1 | [H1 · 整数奇异链与同伦不变性](algebraic/homology/singular-chains.md) | F1、linear-quotient |
 | H2 | [H2 · 相对同调、切除与 Mayer–Vietoris](algebraic/homology/exact-excision.md) | H1、P4 |
-| H3 | [H3 · 胞腔同调、挠与系数变换](algebraic/homology/cellular-coefficients.md) | H2、F2 |
+| H3 | [H3 · 胞腔同调、挠与系数变换](algebraic/homology/cellular-coefficients.md) | H2、F2、PRE5、CT1 |
 | Q1 | [Q1 · 上链、泛系数与杯积环](algebraic/cohomology/cochains-products.md) | H3 |
 | Q2 | [Q2 · 定向、帽积与 Poincaré 对偶](algebraic/cohomology/duality.md) | Q1 |
 | G1 | [G1 · 高阶同伦、纤维化与谱序列入口](algebraic/graduate-tools.md) | C2、Q2 |
@@ -82,10 +82,15 @@
 
 
 !!! info "AI 增补：持续建设中"
-    新增A3–A8六章、48题完整答案与三项交互。当前55章；原有章节仍按各自审查义务升级。11部分89单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
+    新增A3–A8六章、48题完整答案与三项交互。当前{{ course.chapters }}章；原有章节仍按各自审查义务升级。{{ course.planned_parts }}部分{{ course.planned_units }}单元是长期计划，不代表已完成。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
 
 ## v0.5补全与项目
 
 - [PRE4：可数性与选择](preliminaries/countability-choice.md)；[PS1：子空间](point-set/subspaces.md)。
 - [PRE5：群、模与整数商](preliminaries/groups-modules.md)；[CT1：整数同调与SNF](computational/integer-homology.md)。
 - [项目C：可复现网络优化](ai/projects/topology-optimization.md)，含固定协议、实际轨迹与失败案例。
+
+
+## v0.6 质量深化候选
+
+已有章节的数量不变。H3/Q1/Q2补自然映射、证明边界与24题完整解答；路线A加入[八课三级证明训练](exercises/proof-workshop.md)。[覆盖提升](labs/covering-space.md)将圆周路径连接到C1；[真实二维图像项目D](ai/projects/image-topology.md)公开固定协议、全部预测和负结果。人工审阅与学习者试用尚未执行，见[实施状态](project/IMPLEMENTATION_STATUS.md)。

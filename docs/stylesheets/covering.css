@@ -1,0 +1,6 @@
+.covering-views{display:grid;grid-template-columns:1fr 1.3fr;align-items:center;gap:1rem}
+.covering-views svg{width:100%;height:auto;min-width:0;color:var(--md-default-fg-color)}
+[data-cover-circle]{aspect-ratio:1;touch-action:none;cursor:crosshair}
+[data-cover-circle]:focus-visible{outline:3px solid var(--md-accent-fg-color);outline-offset:3px}
+[data-cover-error]{color:var(--md-typeset-a-color);min-height:1.5em}
+@media(max-width:600px){.covering-views{grid-template-columns:1fr}.covering-views svg{max-height:320px}}

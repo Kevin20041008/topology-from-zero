@@ -1,0 +1,12 @@
+.proof-training { margin-block: 1rem; border: 1px solid var(--md-default-fg-color--lighter); padding: .75rem; }
+.proof-training [data-proof-steps] { padding-left: 1.4rem; }
+.proof-training [data-proof-steps] li { margin-block: 1rem; }
+.proof-training .proof-controls { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+.proof-training button { padding: .35rem .6rem; margin-block: .3rem; white-space: normal; }
+.proof-training button:disabled { opacity: .5; cursor: default; }
+.proof-training textarea { display: block; width: 100%; min-height: 10rem; border: 1px solid var(--md-default-fg-color--light); padding: .5rem; color: var(--md-default-fg-color); background: var(--md-default-bg-color); font: inherit; resize: vertical; }
+.proof-training textarea:focus-visible, .proof-training button:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 2px; }
+.proof-training fieldset { margin-block: .75rem; border: 1px solid var(--md-default-fg-color--lighter); padding: .6rem; }
+.proof-training fieldset label { display: block; margin-block: .5rem; }
+.proof-training input { margin-right: .3rem; }
+.proof-training [role=status] { overflow-wrap: anywhere; }

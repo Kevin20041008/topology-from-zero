@@ -1,0 +1,177 @@
+{
+  "groups": [
+    {
+      "euler_weight": 0.0,
+      "runs": 3,
+      "dice": {
+        "mean": 0.9068128869153912,
+        "initialization_sample_sd": 0.007757200796512802,
+        "per_seed": [
+          0.9154713609007197,
+          0.9004968722850782,
+          0.9044704275603755
+        ]
+      },
+      "cldice": {
+        "mean": 0.9514006945845214,
+        "initialization_sample_sd": 0.005163414729263335,
+        "per_seed": [
+          0.9565884201439144,
+          0.9462619390159851,
+          0.9513517245936643
+        ]
+      },
+      "beta0_error": {
+        "mean": 2.9444444444444446,
+        "initialization_sample_sd": 1.0046189622236181,
+        "per_seed": [
+          2.0,
+          4.0,
+          2.8333333333333335
+        ]
+      },
+      "beta1_error": {
+        "mean": 1.2777777777777777,
+        "initialization_sample_sd": 0.09622504486493755,
+        "per_seed": [
+          1.1666666666666667,
+          1.3333333333333333,
+          1.3333333333333333
+        ]
+      },
+      "betti_exact": {
+        "mean": 0.16666666666666666,
+        "initialization_sample_sd": 0.16666666666666666,
+        "per_seed": [
+          0.3333333333333333,
+          0.0,
+          0.16666666666666666
+        ]
+      },
+      "connectivity_agreement": {
+        "mean": 1.0,
+        "initialization_sample_sd": 0.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "largest_component_fraction_error": {
+        "mean": 0.004139398490712847,
+        "initialization_sample_sd": 0.0010039938379869267,
+        "per_seed": [
+          0.005285156844688101,
+          0.0034134442588088254,
+          0.003719594368641615
+        ]
+      }
+    },
+    {
+      "euler_weight": 0.02,
+      "runs": 3,
+      "dice": {
+        "mean": 0.8612999191972861,
+        "initialization_sample_sd": 0.025726811193965263,
+        "per_seed": [
+          0.8907005312886591,
+          0.8429156179426728,
+          0.8502836083605265
+        ]
+      },
+      "cldice": {
+        "mean": 0.9179998887484185,
+        "initialization_sample_sd": 0.021251681417975975,
+        "per_seed": [
+          0.9422856448101317,
+          0.9028097984712015,
+          0.9089042229639226
+        ]
+      },
+      "beta0_error": {
+        "mean": 4.388888888888889,
+        "initialization_sample_sd": 0.6309898162000304,
+        "per_seed": [
+          4.833333333333333,
+          3.6666666666666665,
+          4.666666666666667
+        ]
+      },
+      "beta1_error": {
+        "mean": 1.3333333333333333,
+        "initialization_sample_sd": 0.16666666666666663,
+        "per_seed": [
+          1.1666666666666667,
+          1.5,
+          1.3333333333333333
+        ]
+      },
+      "betti_exact": {
+        "mean": 0.0,
+        "initialization_sample_sd": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "connectivity_agreement": {
+        "mean": 1.0,
+        "initialization_sample_sd": 0.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "largest_component_fraction_error": {
+        "mean": 0.006965533748082069,
+        "initialization_sample_sd": 0.002933589195512615,
+        "per_seed": [
+          0.003583514454431279,
+          0.008822087017734516,
+          0.008490999772080414
+        ]
+      }
+    }
+  ],
+  "paired_seed_differences": [
+    {
+      "seed": 11,
+      "euler_weight": 0.02,
+      "difference": "Euler model minus baseline",
+      "dice": -0.024770829612060563,
+      "cldice": -0.014302775333782769,
+      "beta0_error": 2.833333333333333,
+      "beta1_error": 0.0,
+      "betti_exact": -0.3333333333333333,
+      "connectivity_agreement": 0.0,
+      "largest_component_fraction_error": -0.0017016423902568218
+    },
+    {
+      "seed": 23,
+      "euler_weight": 0.02,
+      "difference": "Euler model minus baseline",
+      "dice": -0.057581254342405463,
+      "cldice": -0.043452140544783635,
+      "beta0_error": -0.3333333333333335,
+      "beta1_error": 0.16666666666666674,
+      "betti_exact": 0.0,
+      "connectivity_agreement": 0.0,
+      "largest_component_fraction_error": 0.005408642758925691
+    },
+    {
+      "seed": 37,
+      "euler_weight": 0.02,
+      "difference": "Euler model minus baseline",
+      "dice": -0.05418681919984902,
+      "cldice": -0.04244750162974176,
+      "beta0_error": 1.8333333333333335,
+      "beta1_error": 0.0,
+      "betti_exact": -0.16666666666666666,
+      "connectivity_agreement": 0.0,
+      "largest_component_fraction_error": 0.004771405403438799
+    }
+  ],
+  "scope": "Three initializations share SIX original test images. SD is initialization variation, not dataset generalization uncertainty."
+}

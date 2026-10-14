@@ -10,7 +10,7 @@ test('all course prerequisites resolve and form an acyclic learning graph', () =
   const byCode = new Map(chapters.map(c => [c.code, c]));
   assert.equal(byCode.size, chapters.length);
   assert.equal(new Set(chapters.map(c => c.path)).size, chapters.length);
-  assert.equal(chapters.length, 55); // 51 preserved chapters + PRE4, PS1, PRE5, CT2.
+  assert.equal(chapters.length, 55); // 51 preserved chapters + PRE4, PS1, PRE5, CT1.
   assert.equal(new Set(chapters.map(c => c.course)).size, 9);
   const active = new Set(), complete = new Set();
   function visit(code) {
@@ -58,7 +58,7 @@ test('the 89-unit master plan covers eleven parts without missing or cyclic prer
 
 test('new formal chapters have twelve sections, eight exercises, complete solution pages and review records',()=>{
   const additions=chapters.filter(c=>c.template===2);
-  assert.equal(additions.length,13);
+  assert.equal(additions.length,16);
   for(const chapter of additions) {
     const source=readFileSync(new URL(`../docs/${chapter.path}`,import.meta.url),'utf8');
     assert.deepEqual([...source.matchAll(/^## (\d+)\./gm)].map(x=>Number(x[1])),Array.from({length:12},(_,i)=>i+1));
