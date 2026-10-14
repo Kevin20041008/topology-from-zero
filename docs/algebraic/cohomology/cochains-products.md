@@ -18,17 +18,41 @@ $$
 
 ## 3. 定理与证明
 
+<div class="proof-status" id="proof-q1-1" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../../project/proof-ledger.md#proof-q1-1)
+</div>
+
 **命题 Q1.1。** $\delta^2=0$，并且
 
 $$
 \delta(\varphi\smile\psi)=\delta\varphi\smile\psi+(-1)^p\varphi\smile\delta\psi.
 $$
 
-**证明。** 第一式由 $\partial^2=0$。第二式在一个 $(p+q+1)$ 单形上展开交错面和：删除共享点之前的顶点给第一项，之后的给第二项；两次展开中跨越前后面分界的项出现两次，符号相反。其余项恰等于左式按删点位置划分的全部项。故循环的杯积仍为循环。若把闭上链 $\varphi$ 换为 $\varphi+\delta a$，杯积变化为 $\delta(a\smile\psi)$；若换第二个代表，变化为 $(-1)^p\delta(\varphi\smile b)$。所以杯积降到上同调，结合律由连续切取前、中、后三段顶点直接成立。$\square$
+**证明。** 第一式由 $\partial^2=0$。为核对第二式，设 $n=p+q+1$。$\delta\varphi\smile\psi$ 展开为
+
+$$
+\sum_{i=0}^{p+1}(-1)^i\varphi([v_0,\ldots,\widehat v_i,\ldots,v_{p+1}])\psi([v_{p+1},\ldots,v_n]).
+$$
+
+$(-1)^p\varphi\smile\delta\psi$ 展开为
+
+$$
+\sum_{i=p}^{n}(-1)^i\varphi([v_0,\ldots,v_p])\psi([v_p,\ldots,\widehat v_i,\ldots,v_n]).
+$$
+
+第一和的 $i=p+1$ 项与第二和的 $i=p$ 项系数相反、取值相同，恰好抵消。余下第一和的 $0\le i\le p$ 项与第二和的 $p+1\le i\le n$ 项，分别是 $\delta(\varphi\smile\psi)$ 在删除前段与后段顶点时的值；这穷尽所有 $n+1$ 个面。故循环的杯积仍为循环。若 $p\ge1$，把闭上链 $\varphi$ 换为 $\varphi+\delta a$，杯积变化为 $\delta(a\smile\psi)$；若 $q\ge1$，换第二个代表，变化为 $(-1)^p\delta(\varphi\smile b)$。所以杯积降到上同调，结合律由连续切取前、中、后三段顶点直接成立。$\square$
+
+<div class="proof-status" id="proof-q1-2" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../../project/proof-ledger.md#proof-q1-2)
+</div>
 
 **命题 Q1.2（域上的对偶）。** 对域 $k$ 上链复形，评价给自然同构 $H^n(\operatorname{Hom}(C,k))\cong\operatorname{Hom}(H_n(C),k)$。
 
-**证明。** 闭上链恰在 $B_n$ 上消失，因此限制到 $Z_n$ 给同调上的线性泛函。任一这样的泛函先定义在 $Z_n$ 上，再选补空间延拓到 $C_n$，故满射。若它在 $Z_n$ 上也零，则经 $C_n/Z_n\cong B_{n-1}$ 分解；延拓此泛函到 $C_{n-1}$ 得 $\varphi=\psi\partial=\delta\psi$，核正是余边界。$\square$
+**证明。** 闭上链恰在 $B_n$ 上消失，因此限制到 $Z_n$ 给同调上的线性泛函。任一这样的泛函先定义在 $Z_n$ 上，再选补空间延拓到 $C_n$，故满射。若它在 $Z_n$ 上也零，则经 $C_n/Z_n\cong B_{n-1}$ 分解；延拓此泛函到 $C_{n-1}$ 得 $\varphi=\psi\partial=\delta\psi$，核正是余边界。无限维时选基/延拓泛函使用选择公理；有限维只需有限选基。$\square$
+
+<div class="proof-status" id="proof-q1-3" markdown>
+**引用定理** · [依赖与审查义务](../../project/proof-ledger.md#proof-q1-3)
+</div>
 
 **命题 Q1.3（有限自由整数链的上同调泛系数）。**
 
@@ -38,7 +62,14 @@ $$
 
 其中 $\operatorname{Ext}(\mathbb Z/m,G)=G/mG$，自由项的 Ext 为零。
 
-**证明。** 使用 H3.2 的单项及二项块分解；$\operatorname{Hom}(-,G)$ 将 $\mathbb Z\xrightarrow m\mathbb Z$ 变成反向上链 $G\xrightarrow{m}G$，低次群为 $G[m]=\operatorname{Hom}(\mathbb Z/m,G)$，高次群为 $G/mG$。合并得到结论与非自然分裂；评价给右侧的自然映射。$\square$
+!!! warning "Q1.3 的自然短正合列是引用定理"
+    下面给出有限 Smith 块下的群分解计算；它并未构造自然的左端 Ext 嵌入及其交换图。完整自然性按 Hatcher §3.1 的上同调泛系数定理引用，不把非自然分裂冒充自然性证明。
+
+**分解计算（自然性未在这里证明）。** 使用 H3.2 的单项及二项块分解；$\operatorname{Hom}(-,G)$ 将 $\mathbb Z\xrightarrow m\mathbb Z$ 变成反向上链 $G\xrightarrow{m}G$，低次群为 $G[m]=\operatorname{Hom}(\mathbb Z/m,G)$，高次群为 $G/mG$。合并得到结论与非自然分裂；评价给右侧的自然映射。$\square$
+
+<div class="proof-status" id="proof-q1-commutativity" markdown>
+**引用定理** · [依赖与审查义务](../../project/proof-ledger.md#proof-q1-commutativity)
+</div>
 
 **引用定理（分次交换性）。** 在上同调上 $a\smile b=(-1)^{pq}b\smile a$。证明需要比较前后面对角近似的链同伦（可用 cup-one 操作），本章不把链级杯积误称为严格交换。空间乘积的杯积与外积的兼容性也采用标准 Eilenberg–Zilber 比较定理。
 

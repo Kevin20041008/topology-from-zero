@@ -1,6 +1,6 @@
 {
-  "version": "m6-ai-learning-batch-candidate",
-  "baseline": "e15c7ac44d243ddbac5f5de9f18864685cece07e",
+  "version": "v0.5-learning-quality",
+  "baseline": "f341101a686fcc3a8dd22d0587a29514a835cefd",
   "chapters": [
     {
       "path": "preliminaries/sets-maps-relations.md",
@@ -329,7 +329,8 @@
       "course": "algebraic",
       "prerequisites": [
         "F1",
-        "linear-quotient"
+        "linear-quotient",
+        "PRE5"
       ]
     },
     {
@@ -353,7 +354,8 @@
       "course": "algebraic",
       "prerequisites": [
         "H2",
-        "F2"
+        "F2",
+        "CT1"
       ]
     },
     {
@@ -516,8 +518,7 @@
       "code": "K1",
       "course": "computational",
       "prerequisites": [
-        "homology",
-        "H3"
+        "homology"
       ]
     },
     {
@@ -662,6 +663,70 @@
       "template": 2,
       "solutions": "exercises/a8-solutions.md",
       "review": "project/reviews/A8.md",
+      "exerciseCount": 8
+    },
+    {
+      "code": "PRE4",
+      "path": "preliminaries/countability-choice.md",
+      "title": "PRE4 · 可数性、选择与集合论工具",
+      "exercise": "pre4-countability-choice",
+      "level": "foundation",
+      "course": "preliminaries",
+      "prerequisites": [
+        "PRE1",
+        "PRE2"
+      ],
+      "template": 2,
+      "solutions": "exercises/pre4-solutions.md",
+      "review": "project/reviews/PRE4.md",
+      "exerciseCount": 8
+    },
+    {
+      "code": "PS1",
+      "path": "point-set/subspaces.md",
+      "title": "PS1 · 子空间拓扑与相对性质",
+      "exercise": "ps1-subspaces",
+      "level": "foundation",
+      "course": "point-set",
+      "prerequisites": [
+        "bases"
+      ],
+      "template": 2,
+      "solutions": "exercises/ps1-solutions.md",
+      "review": "project/reviews/PS1.md",
+      "exerciseCount": 8
+    },
+    {
+      "code": "PRE5",
+      "path": "preliminaries/groups-modules.md",
+      "title": "PRE5 · 群、模与整数商",
+      "exercise": "pre5-groups-modules",
+      "level": "foundation",
+      "course": "preliminaries",
+      "prerequisites": [
+        "PRE1",
+        "PRE2"
+      ],
+      "template": 2,
+      "solutions": "exercises/pre5-solutions.md",
+      "review": "project/reviews/PRE5.md",
+      "exerciseCount": 8
+    },
+    {
+      "code": "CT1",
+      "path": "computational/integer-homology.md",
+      "title": "CT1 · Smith 标准形与整数同调",
+      "exercise": "ct1-integer-homology",
+      "level": "graduate",
+      "course": "computational",
+      "prerequisites": [
+        "PRE5",
+        "linear-quotient",
+        "homology"
+      ],
+      "template": 2,
+      "solutions": "exercises/ct1-solutions.md",
+      "review": "project/reviews/CT1.md",
       "exerciseCount": 8
     }
   ],

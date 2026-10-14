@@ -16,9 +16,13 @@ $$
 \varphi\frown[v_0,\ldots,v_n]=\varphi([v_0,\ldots,v_p])[v_p,\ldots,v_n].
 $$
 
-对奇异链同样定义，线性延拓。
+取整数系数，$p,n\ge0$；当 $p>n$ 时帽积定义为零，普通链复形约定 $\partial C_0=0$。对奇异链用参数单形的有序面同样定义，线性延拓。顶维单形的链接记作空球面 $S^{-1}$。
 
 ## 3. 定理与证明
+
+<div class="proof-status" id="proof-q2-1" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../../project/proof-ledger.md#proof-q2-1)
+</div>
 
 **命题 Q2.1。** 对 $p$ 次上链和 $n$ 次链，
 
@@ -26,7 +30,26 @@ $$
 \partial(\varphi\frown c)=(-1)^p\bigl(\varphi\frown\partial c-(\delta\varphi)\frown c\bigr).
 $$
 
-**证明。** 展开单形边界，分成删除前 $p+1$ 个顶点和后部顶点的两组。前组与 $\delta\varphi$ 的展开相消，留下后面单形的交错边界，整体符号为 $(-1)^p$。因此闭上链帽上循环得到循环；改变任一代表只改变一个边界（使用此式及 $\delta\varphi=0$ 或 $\partial c=0$）。$\square$
+**证明。** 线性性允许只看有序单形 $\sigma=[v_0,\ldots,v_n]$。当 $n<p$ 时按过高次数约定三项都为零。当 $n=p$ 时三项都为零：左侧是零维链的边界，右侧两项的上链次数都超过所作用链的次数。设 $n>p$，记 $A=\varphi([v_0,\ldots,v_p])$，$B=[v_{p+1},\ldots,v_n]$。按删点位置写出
+
+$$
+\varphi\frown\partial\sigma=
+\sum_{i=0}^{p}(-1)^i\varphi([v_0,\ldots,\widehat v_i,\ldots,v_{p+1}])B
++\sum_{i=p+1}^{n}(-1)^i A[v_p,\ldots,\widehat v_i,\ldots,v_n],
+$$
+
+而 $(\delta\varphi)\frown\sigma$ 是第一和延伸至 $i=p+1$。相减后第一和仅剩被减去的最后一项，即 $(-1)^p AB$。再乘 $(-1)^p$，结果为
+
+$$
+A\left(B+\sum_{i=p+1}^{n}(-1)^{i-p}[v_p,\ldots,\widehat v_i,\ldots,v_n]\right)
+=A\partial[v_p,\ldots,v_n].
+$$
+
+这正是左侧。奇异链的面复合与这些顶点删除相容，因此逐单形同样成立。若 $\delta\varphi=0$ 且 $\partial c=0$，帽积是循环。将 $c$ 换为 $c+\partial b$，变化为 $(-1)^p\partial(\varphi\frown b)$；若 $p\ge1$，将 $\varphi$ 换为 $\varphi+\delta a$，变化为 $(-1)^p\partial(a\frown c)$。因此两种代表改变均给边界。$\square$
+
+<div class="proof-status" id="proof-q2-2" markdown>
+**证明概要 / Advanced Outline** · [依赖与审查义务](../../project/proof-ledger.md#proof-q2-2)
+</div>
 
 **定理 Q2.2（有限 PL 情形的对偶）。** 对闭、定向、有限组合三角剖分的 $n$ 维流形，
 
@@ -46,6 +69,10 @@ $$
 每个单形恰对应一个对偶胞腔，故 $\Phi$ 逐群同构。取同调并使用 H3.1 的胞腔计算，即得所述同构。（此处为条件推导/概要。）
 
 将对偶胞腔构造与奇异帽积 $a\mapsto a\frown[M]$ 精确比较，还需要单纯链到奇异链及对角近似的比较定理；这里同样作为引用。更一般的拓扑流形对偶、非紧情形的紧支撑上同调、带边界的 Poincaré–Lefschetz 对偶也作为后续引用定理，不能直接删除当前假设。
+
+<div class="proof-status" id="proof-q2-euler" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../../project/proof-ledger.md#proof-q2-euler)
+</div>
 
 **推论。** 闭定向奇数维有限 PL 流形的 Euler 示性数为零。
 **证明。** 改用 $\mathbb Q$，Q1 的对偶和 Q2.2 给 $b_p=b_{n-p}$。当 $n$ 奇数时配对项符号相反，$\sum(-1)^pb_p=0$。$\square$

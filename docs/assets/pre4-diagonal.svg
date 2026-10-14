@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" role="img" aria-labelledby="pre4-title pre4-desc">
+  <title id="pre4-title">自然数配对函数的对角线编号</title>
+  <desc id="pre4-desc">横坐标为n，纵坐标为m，四乘四窗口标出配对值。n加m等于二的对角线依次给出3、4、5。有限窗口只示意规则，覆盖性需要正文证明。</desc>
+  <rect width="850" height="520" rx="16" fill="#fff"/>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#172033">
+    <text x="40" y="44" font-size="24" font-weight="700">按 n + m 分层，每层编号连续</text>
+    <path d="M110 90V410H490" stroke="#64748b" fill="none" stroke-width="2"/>
+    <text x="495" y="415" font-size="20">n</text><text x="80" y="90" font-size="20">m</text>
+    <path d="M340 140L240 220L140 300" fill="none" stroke="#2563eb" stroke-width="18" opacity=".18"/>
+    <g font-size="18" text-anchor="middle">
+      <text x="140" y="438">0</text><text x="240" y="438">1</text><text x="340" y="438">2</text><text x="440" y="438">3</text>
+      <text x="87" y="146">0</text><text x="87" y="226">1</text><text x="87" y="306">2</text><text x="87" y="386">3</text>
+    </g>
+    <g fill="#eff6ff" stroke="#2563eb" stroke-width="2">
+      <circle cx="140" cy="140" r="22"/><circle cx="240" cy="140" r="22"/><circle cx="340" cy="140" r="22"/><circle cx="440" cy="140" r="22"/>
+      <circle cx="140" cy="220" r="22"/><circle cx="240" cy="220" r="22"/><circle cx="340" cy="220" r="22"/><circle cx="440" cy="220" r="22"/>
+      <circle cx="140" cy="300" r="22"/><circle cx="240" cy="300" r="22"/><circle cx="340" cy="300" r="22"/><circle cx="440" cy="300" r="22"/>
+      <circle cx="140" cy="380" r="22"/><circle cx="240" cy="380" r="22"/><circle cx="340" cy="380" r="22"/><circle cx="440" cy="380" r="22"/>
+    </g>
+    <g font-size="19" text-anchor="middle">
+      <text x="140" y="147">0</text><text x="240" y="147">1</text><text x="340" y="147">3</text><text x="440" y="147">6</text>
+      <text x="140" y="227">2</text><text x="240" y="227">4</text><text x="340" y="227">7</text><text x="440" y="227">11</text>
+      <text x="140" y="307">5</text><text x="240" y="307">8</text><text x="340" y="307">12</text><text x="440" y="307">17</text>
+      <text x="140" y="387">9</text><text x="240" y="387">13</text><text x="340" y="387">18</text><text x="440" y="387">24</text>
+    </g>
+    <text x="540" y="150" font-size="21" font-weight="600">高亮：n + m = 2</text>
+    <text x="540" y="194" font-size="18">(2, 0) → 3</text><text x="540" y="230" font-size="18">(1, 1) → 4</text><text x="540" y="266" font-size="18">(0, 2) → 5</text>
+    <text x="540" y="330" font-size="18">下一层从 6 开始。</text><text x="540" y="368" font-size="18">有限图不代替无限证明。</text>
+    <text x="40" y="485" font-size="19">第 s 层覆盖整数 Tₛ,…,Tₛ₊₁ − 1，其中 Tₛ = s(s + 1)/2。</text>
+  </g>
+</svg>

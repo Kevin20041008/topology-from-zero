@@ -50,3 +50,44 @@ macOS/Linux 用 `python3.12 -m venv .venv` 创建环境、`source .venv/bin/acti
 - 浏览器中访问[公式检查页](math-check.md)，验证最终 SVG 排版、搜索与明暗主题。
 
 `site/` 为可再生构建输出，已在 `.gitignore` 中忽略。`requirements.txt` 记录本次运行版本；添加依赖时同时维护 `requirements.in`，在新环境验证后更新锁定文件。
+
+## v0.5完整验证入口
+
+下面补充旧命令未包含的整数、学习路线、证明状态与浏览器检查。仍使用同一 MkDocs 框架；浏览器测试需要 Node.js 22+，仅构建教材无需 Node。
+
+```text
+python -m pip install -r requirements-validation.txt -r requirements-integer.txt
+npm ci
+npx playwright install chromium
+npm test
+python scripts/test_integer_homology.py
+python scripts/verify_integer_independent.py
+python scripts/verify_foundation_examples.py
+python scripts/verify_independent.py
+python scripts/verify_ai_independent.py
+python scripts/verify_ai_examples.py
+python scripts/verify_notebooks.py
+python -m mkdocs build --strict
+python scripts/verify_site.py
+npm run test:browser
+```
+
+Linux CI使用 `npx playwright install --with-deps chromium`。Playwright自动启动临时静态服务器8123，并以 `/topology-from-zero/` 前缀验证桌面1280px与手机390px；已有服务占用该端口应先处理。覆盖公式真实SVG渲染、页内无溢出、四个入口、搜索、主题、学习记录/无存储、无JavaScript回退、习题反馈、原三实验与AI实验。键盘和可访问名称的检查不等于完整WCAG认证，也未覆盖所有浏览器引擎。
+
+### 训练项目的独立环境
+
+站点科学计算环境与项目固定NumPy版本不同，推荐单独环境。记录环境为Python3.14.3/NumPy2.5.2；代码没有深度学习框架或GPU要求：
+
+```text
+python3.14 -m venv .venv-project
+# 激活后执行（Windows可用 py -3.14 创建环境）
+python -m pip install -r projects/topology-optimization/requirements.txt
+python projects/topology-optimization/test_project.py
+python projects/topology-optimization/verify.py --rerun
+python projects/topology-optimization/train.py --output project-results-local
+python projects/topology-optimization/verify.py --results project-results-local/raw-results.json --rerun
+```
+
+首次验证仓库已存结果，如跨平台浮点差异导致精确重跑失败，保留失败证据并按后两条命令另存本环境的完整结果；不要覆盖历史结果或放宽拓扑断言。CI也运行完整20组训练、再在同一环境精确重跑，并上传全部结果。构建与训练两个作业都通过才能进入主分支部署。
+
+构建钩子 `scripts/build_metadata.py` 输出 `build-info.json`；它记录构建源提交，不是数学认证或GitHub Release标签。发布现状见[版本证据](project/release-status.md)，长期续作见[实施状态](project/IMPLEMENTATION_STATUS.md)。

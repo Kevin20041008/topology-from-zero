@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 310" role="img" aria-labelledby="title desc">
+  <title id="title">整数陪集与非可逆的乘二映射</title>
+  <desc id="desc">从负六到六的整数按模六着色；下图整数乘二仅到达偶数，遗漏奇数。</desc>
+  <rect width="840" height="310" rx="12" fill="#f5f7fb"/>
+  <g font-family="sans-serif" fill="#172554" text-anchor="middle">
+    <text x="420" y="29" font-size="20">Z / 6Z：同色点相差六的整数倍</text>
+    <path d="M55 88H785" stroke="#52637a" stroke-width="2"/>
+    <g stroke="#fff" stroke-width="2">
+      <circle cx="60" cy="88" r="9" fill="#1d4ed8"/><circle cx="120" cy="88" r="9" fill="#b45309"/>
+      <circle cx="180" cy="88" r="9" fill="#047857"/><circle cx="240" cy="88" r="9" fill="#7e22ce"/>
+      <circle cx="300" cy="88" r="9" fill="#be123c"/><circle cx="360" cy="88" r="9" fill="#0e7490"/>
+      <circle cx="420" cy="88" r="9" fill="#1d4ed8"/><circle cx="480" cy="88" r="9" fill="#b45309"/>
+      <circle cx="540" cy="88" r="9" fill="#047857"/><circle cx="600" cy="88" r="9" fill="#7e22ce"/>
+      <circle cx="660" cy="88" r="9" fill="#be123c"/><circle cx="720" cy="88" r="9" fill="#0e7490"/>
+      <circle cx="780" cy="88" r="9" fill="#1d4ed8"/>
+    </g>
+    <g font-size="14">
+      <text x="60" y="115">−6</text><text x="120" y="115">−5</text><text x="180" y="115">−4</text>
+      <text x="240" y="115">−3</text><text x="300" y="115">−2</text><text x="360" y="115">−1</text>
+      <text x="420" y="115">0</text><text x="480" y="115">1</text><text x="540" y="115">2</text>
+      <text x="600" y="115">3</text><text x="660" y="115">4</text><text x="720" y="115">5</text><text x="780" y="115">6</text>
+    </g>
+    <path d="M60 70Q240 20 420 70M420 70Q600 20 780 70" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="240" y="60" font-size="14">+6</text><text x="600" y="60" font-size="14">+6</text>
+    <text x="420" y="165" font-size="18">×2 的像是 2Z：不是 Z 的自同构</text>
+    <path d="M210 220H630" stroke="#52637a" stroke-width="2"/>
+    <g stroke="#1d4ed8" stroke-width="3">
+      <circle cx="240" cy="220" r="8" fill="#1d4ed8"/><circle cx="300" cy="220" r="8" fill="#f5f7fb"/>
+      <circle cx="360" cy="220" r="8" fill="#1d4ed8"/><circle cx="420" cy="220" r="8" fill="#f5f7fb"/>
+      <circle cx="480" cy="220" r="8" fill="#1d4ed8"/><circle cx="540" cy="220" r="8" fill="#f5f7fb"/>
+      <circle cx="600" cy="220" r="8" fill="#1d4ed8"/>
+    </g>
+    <g font-size="14">
+      <text x="240" y="247">−2</text><text x="300" y="247">−1</text><text x="360" y="247">0</text>
+      <text x="420" y="247">1</text><text x="480" y="247">2</text><text x="540" y="247">3</text><text x="600" y="247">4</text>
+    </g>
+    <text x="420" y="283" font-size="14">实心：可达偶数　空心：遗漏奇数　图仅显示有限窗口</text>
+  </g>
+</svg>

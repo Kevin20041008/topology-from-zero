@@ -11,7 +11,7 @@ hide:
 
 <p class="lead">一条不断裂的路径，一个不能填满的环。<br>从这些朴素问题走向拓扑的语言，再用代码检验有限的例子。</p>
 
-[从预备知识开始 →](preliminaries/sets-maps-relations.md){ .md-button .md-button--primary }
+[选择学习路线 →](start/index.md){ .md-button .md-button--primary }
 [进入实验室](labs/index.md){ .md-button }
 
 </div>
@@ -20,7 +20,7 @@ hide:
 </div>
 </div>
 
-<div class="book-stats"><span><strong>11</strong> 规划部分</span><span><strong>51</strong> 已有正文</span><span><strong>07</strong> 浏览器交互实验</span><span><strong>04</strong> Python Notebook</span></div>
+<div class="book-stats"><span><strong>11</strong> 规划部分</span><span><strong>55</strong> 已有正文</span><span><strong>07</strong> 浏览器交互实验</span><span><strong>04</strong> Python Notebook</span></div>
 
 ## 动手改变一个空间
 
@@ -64,6 +64,15 @@ hide:
 </div>
 
 ## 学习路线图
+
+| 学习入口 | 连续学习与阶段目标 |
+| --- | --- |
+| [A · 零基础入门](start/beginner.md) | 8课，从集合到连续与连通，完成一份证明项目 |
+| [B · 数学专业进阶](start/advanced.md) | 补齐点集与整数代数桥梁，再进入覆盖、同调、上同调与流形 |
+| [C · 计算与 AI](start/computational.md) | 有限链、持续同调与实际神经网络训练；保留负结果 |
+
+各路线有预计学习时间、先修诊断、上一课/下一课和本机自评进度。正文状态与个人完成勾选分开。
+
 
 按[研究生课程地图](curriculum.md)学习八个方向。点集拓扑构成通用基础；代数拓扑拆分为基本群、覆盖、同调、上同调；微分与几何拓扑建立流形路线；计算 → 持续同调 → AI 构成独立实验路径。旧章节号与 URL 全部保留。
 
@@ -130,11 +139,11 @@ PL 范畴、紧曲面、结补空间与三维填充。
 
 原42篇正文按照“直观解释 → 严格定义 → 定理与证明 → 正例与反例 → 练习 → 参考书目”展开。PRE1–PRE3采用十二项完整模板，并提供独立题解。建议先独立完成习题，再展开提示。Notebook 中的计算只验证具体有限例子；证明负责一般结论。
 
-51 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
+55 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
 
-!!! info "教材进度 · M1基础批次1审阅候选"
-    已有 51 篇正文、四份已执行 Notebook；新增内容按研究生层次组织。深定理的引用边界及尚待独立复核的证明逐项列出，不将课程目录等同于全部自包含证明。当前分支需经 PR 审阅与检查后发布，详见[进度](progress.md)与[数学审查台账](graduate-review.md)。
+!!! info "教材进度与证据"
+    当前55篇正文，13章采用十二项模板；长期11部分89单元仍未全部完成。H3/Q2/G1等重要证明保留明确义务，见[逐定理台账](project/proof-ledger.md)。A3–A8已有线上版本；本批v0.5的提交与部署由[版本记录](project/release-status.md)区分。
 
+<div data-build-info>构建来源见版本记录；页面可访问不等于数学审查完成。</div>
 
-!!! info "AI 增补：持续建设中"
-    新增A3–A8六章、48题完整答案和三项AI交互；原有正文、基础实验台及Notebook保留。当前候选51章，11部分88单元仍是长期计划。见[实施状态](project/IMPLEMENTATION_STATUS.md)与[完整依赖图](project/PREREQUISITE_GRAPH.md)。
+[查看教材进度](progress.md) · [实际训练项目 C](ai/projects/topology-optimization.md) · [完整依赖图](project/PREREQUISITE_GRAPH.md)

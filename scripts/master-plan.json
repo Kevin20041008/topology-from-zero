@@ -45,12 +45,28 @@
       "part": "I",
       "milestone": 1,
       "prerequisites": [
+        "PRE1",
         "PRE2"
       ],
       "proof": "可数并；Cantor–Bernstein；Zorn的使用条件",
       "examples": "不可数幂集；选择依赖",
       "lab": "纯理论",
-      "existing": null
+      "existing": "preliminaries/countability-choice.md"
+    },
+    {
+      "code": "PRE5",
+      "part": "I",
+      "title": "群、模与整数商",
+      "prerequisites": [
+        "PRE1",
+        "PRE2"
+      ],
+      "proof": "正规商、第一同构定理、整数子群与挠",
+      "examples": "Z/m、非正规子群、非自由模",
+      "lab": "整数商图与CT2的精确计算桥梁",
+      "path": "preliminaries/groups-modules.md",
+      "milestone": 1,
+      "existing": "preliminaries/groups-modules.md"
     },
     {
       "code": "spaces",
@@ -89,7 +105,7 @@
       "proof": "子空间泛性质；连续限制",
       "examples": "半开区间的相对开集",
       "lab": "子空间有限例",
-      "existing": null
+      "existing": "point-set/subspaces.md"
     },
     {
       "code": "continuity",
@@ -403,13 +419,15 @@
       "part": "III",
       "milestone": 2,
       "prerequisites": [
-        "homotopy",
-        "linear-quotient"
+        "F1",
+        "linear-quotient",
+        "PRE5"
       ],
       "proof": "链映射；棱柱同伦；H0道路分支",
       "examples": "不可道路连通连通空间",
       "lab": "边界符号检查",
-      "existing": "algebraic/homology/singular-chains.md"
+      "existing": "algebraic/homology/singular-chains.md",
+      "path": "algebraic/homology/singular-chains.md"
     },
     {
       "code": "H2",
@@ -432,12 +450,14 @@
       "milestone": 2,
       "prerequisites": [
         "H2",
-        "F2"
+        "F2",
+        "CT1"
       ],
       "proof": "骨架相对群；有限生成阿贝尔群；SNF；Euler",
       "examples": "射影空间挠；环面",
       "lab": "整数矩阵与SNF",
-      "existing": "algebraic/homology/cellular-coefficients.md"
+      "existing": "algebraic/homology/cellular-coefficients.md",
+      "path": "algebraic/homology/cellular-coefficients.md"
     },
     {
       "code": "Q1",
@@ -908,13 +928,13 @@
       "part": "IX",
       "milestone": 5,
       "prerequisites": [
-        "homology",
-        "H3"
+        "homology"
       ],
       "proof": "数据结构；有限域消元；Betti与Euler；d²",
       "examples": "重复/退化点；二维骨架界限",
       "lab": "既有测试/GUDHI",
-      "existing": "computational/boundary-algorithms.md"
+      "existing": "computational/boundary-algorithms.md",
+      "path": "computational/boundary-algorithms.md"
     },
     {
       "code": "CT1",
@@ -922,13 +942,14 @@
       "part": "IX",
       "milestone": 5,
       "prerequisites": [
-        "K1",
-        "H3"
+        "PRE5",
+        "linear-quotient",
+        "homology"
       ],
       "proof": "立方边界符号；整除链；变基证书",
       "examples": "挠群；像素与前景/背景连通约定",
-      "lab": "边界/SNF计算器（待建）",
-      "existing": null
+      "lab": "整数SNF实验已实现；立方复形构造教学仍待建设",
+      "existing": "computational/integer-homology.md"
     },
     {
       "code": "CT2",

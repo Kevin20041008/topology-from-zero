@@ -1,0 +1,12 @@
+.md-nav[hidden] { display: none !important; }
+.route-sidebar { font-size: .68rem; padding: .5rem .6rem; }
+.route-sidebar ol { padding-left: 1.1rem; }
+.route-sidebar li { margin-block: .65rem; }
+.route-sidebar [aria-current="page"] { font-weight: 700; text-decoration: underline; }
+.route-sidebar button { padding: .4rem .6rem; white-space: normal; }
+[data-learning-route] input, [data-route-bar] input, [data-route-assessment] input { margin: .3rem .4rem .3rem 0; }
+[data-route-assessment] fieldset { border: 1px solid var(--md-default-fg-color--lighter); padding: .75rem; margin-block: 1rem; }
+[data-route-assessment] legend { font-weight: 700; }
+[data-route-assessment] label { display: inline-block; padding-block: .3rem; }
+[data-build-info] { font-size: .7rem; color: var(--md-default-fg-color--light); }
+.proof-status { font-size: .72rem; border-left: .15rem solid var(--md-primary-fg-color); padding: .4rem .6rem; margin-block: .6rem; }

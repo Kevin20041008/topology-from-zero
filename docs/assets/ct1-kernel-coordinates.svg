@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 365" role="img" aria-labelledby="title desc">
+  <title id="title">循环基坐标与原坐标不同</title>
+  <desc id="desc">整数核直线2x+y等于0上，生成元为负一二，边界为其三倍负三六。第二坐标为六而循环关系倍数为三。</desc>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#475569"/></marker></defs>
+  <rect width="800" height="365" rx="12" fill="#f5f7fb"/>
+  <g font-family="sans-serif" fill="#172554">
+    <text x="400" y="30" text-anchor="middle" font-size="20">先找整数循环基，再表达边界关系</text>
+    <path d="M70 300H360M300 325V53" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+    <text x="362" y="304">x</text><text x="307" y="57">y</text>
+    <path d="M318 336L178 56" stroke="#047857" stroke-width="3"/>
+    <g fill="#047857">
+      <circle cx="300" cy="300" r="6"/><circle cx="270" cy="240" r="6"/>
+      <circle cx="240" cy="180" r="6"/><circle cx="210" cy="120" r="8"/>
+    </g>
+    <g font-size="15">
+      <text x="310" y="320">0</text><text x="278" y="240">v = (−1, 2)</text>
+      <text x="248" y="180">2v</text><text x="222" y="116">B = 3v = (−3, 6)</text>
+      <text x="70" y="75">ker A：2x + y = 0</text>
+    </g>
+    <path d="M410 195H478" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="445" y="176" text-anchor="middle" font-size="15">V⁻¹</text>
+    <rect x="500" y="83" width="270" height="222" rx="10" fill="#e0e7ff" stroke="#a5b4fc"/>
+    <g text-anchor="middle">
+      <text x="635" y="117" font-size="18">循环坐标只有一个整数 t</text>
+      <text x="635" y="157" font-size="20">v ↔ 1　　B ↔ 3</text>
+      <text x="635" y="198" font-size="21">H = Z / 3Z</text>
+      <text x="635" y="240" font-size="16">三个类：[0]、[1]、[2]</text>
+      <text x="635" y="278" font-size="14">不能把原来的 y = 6 当成关系 6</text>
+    </g>
+    <text x="400" y="349" text-anchor="middle" font-size="14">精确核对：AV = (1, 0)，V⁻¹B = (0, 3)ᵀ，KR = B。</text>
+  </g>
+</svg>

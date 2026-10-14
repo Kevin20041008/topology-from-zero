@@ -14,13 +14,29 @@
 
 ## 3. 定理与证明
 
+<div class="proof-status" id="proof-r2-1" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../project/proof-ledger.md#proof-r2-1)
+</div>
+
 **命题 R2.1（半径尺度 Rips 扰动）。** 上述点云的 Rips 过滤按本站半径参数有 $\delta$ 交错。
 **证明。** 三角不等式给 $|\|x_i-x_j\|-\|y_i-y_j\||\le2\delta$。若 $X$ 的一条边在 $\epsilon$ 出现，即距离不超过 $2\epsilon$，则相同标号的 $Y$ 边在 $\epsilon+\delta$ 出现。对任意单形逐边应用，得到包含 $\mathrm{Rips}_\epsilon(X)\subset\mathrm{Rips}_{\epsilon+\delta}(Y)$；反向同理。两个顶点映射都是标号恒等，复合就是偏移包含，取同调即得交错。$\square$
 
+<div class="proof-status" id="proof-r2-stability" markdown>
+**引用定理** · [依赖与审查义务](../project/proof-ledger.md#proof-r2-stability)
+</div>
+
 **引用定理（代数稳定性）。** 对这里有限构造、区间可分解的持续模，$\eta$ 交错推出条形码瓶颈距离至多 $\eta$。这一步需要区间匹配定理，不由边长不等式单独推出。结合命题得 $d_B\le\delta$。若改用最大边长作为过滤参数，则界变成 $2\delta$；不得把两种尺度混用。
+
+<div class="proof-status" id="proof-r2-2" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../project/proof-ledger.md#proof-r2-2)
+</div>
 
 **命题 R2.2（长条存在保证）。** 若两个图的瓶颈距离至多 $\eta$，原图一条寿命严格大于 $2\eta$ 的条，在任何代价至多 $\eta$ 的匹配中都必须对应另一条非对角条。
 **证明。** 该条匹配到对角线的最小代价为半寿命，大于 $\eta$，故不允许。对应条的出生与死亡端点误差各不超过 $\eta$。对只知下确界的情形，可先使用任意 $\eta'>d_B$；有限条形码的最优匹配可达到下确界。$\square$
+
+<div class="proof-status" id="proof-r2-3" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../project/proof-ledger.md#proof-r2-3)
+</div>
 
 **命题 R2.3（有限条的寿命误差）。** 匹配端点误差至多 $\eta$ 时，寿命误差至多 $2\eta$。
 **证明。** $|(d-b)-(d'-b')|\le|d-d'|+|b-b'|\le2\eta$。$\square$

@@ -1,0 +1,3 @@
+# Optional independent reference for the exact integer teaching tools.
+# The implementation and unittest suite use Python's standard library only.
+sympy==1.14.0

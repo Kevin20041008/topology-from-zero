@@ -14,8 +14,16 @@
 
 ## 3. 定理与证明
 
+<div class="proof-status" id="proof-g1-1" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../project/proof-ledger.md#proof-g1-1)
+</div>
+
 **命题 G1.1。** $n\ge2$ 时 $\pi_n$ 是阿贝尔群。
 **证明。** 沿第一坐标和第二坐标拼接给两种运算，常值映射是共同单位。把方块分为四个小块可直接验证交换律的前提：$(a\circ b)*(c\circ d)=(a*c)\circ(b*d)$，参数重标定给端点固定同伦。于是 $a*b=(a\circ e)*(e\circ b)=(a*e)\circ(e*b)=a\circ b$，再用 $(e\circ a)*(b\circ e)$ 得 $a*b=b*a$。这是 Eckmann–Hilton 论证。$\square$
+
+<div class="proof-status" id="proof-g1-2" markdown>
+**证明概要 / Advanced Outline** · [依赖与审查义务](../project/proof-ledger.md#proof-g1-2)
+</div>
 
 **命题 G1.2（有限过滤构造）。** 令 $n=p+q$，$Z_r^p(C_n)=\{x\in F_pC_n:dx\in F_{p-r}C_{n-1}\}$。对 $r\ge1$ 定义
 
@@ -25,11 +33,26 @@ $$
 
 过滤超出范围按零或全体延拓，$Z_0^p=F_pC$。则 $[x]\mapsto[dx]$ 定义 $d_r$，且 $E_{r+1}=H(E_r,d_r)$；最终稳定页为过滤同调的关联分次群。
 
-**证明。** 分母第一项的微分落在 $F_{p-r}$ 并在目标成为边界型分母，第二项微分为零，故良定义且平方零。若 $d_r[x]=0$，写 $dx=u+dv$，其中 $u\in Z_{r-1}^{p-r-1}$、$v\in Z_{r-1}^{p-1}$；用同一页等价的 $x-v$ 代替 $x$ 后，其微分落在 $F_{p-r-1}$，即来自 $Z_{r+1}^p$。反过来这种代表显然在核中。模掉 $d_r$ 的像恰将分母扩大为 $Z_r^{p-1}+dZ_r^{p+r}$，得下一页公式。$r>N+1$ 时，分子为 $F_pC_n$ 中真循环，第二类分母为落在 $F_p$ 中的全部边界，第一类分母为 $F_{p-1}$ 中循环；商即 $F_pH_n/F_{p-1}H_n$。$\square$
+!!! warning "G1.2 证明概要与待审义务"
+    下面解释代表元和稳定页，但下一页分母的核像等式尚未逐双包含展开。本条标为证明概要；待补的是商映射的核、像及过滤延拓边界，不声称完整证明已通过独立审查。
+
+**证明概要。** 分母第一项的微分落在 $F_{p-r}$ 并在目标成为边界型分母，第二项微分为零，故良定义且平方零。若 $d_r[x]=0$，写 $dx=u+dv$，其中 $u\in Z_{r-1}^{p-r-1}$、$v\in Z_{r-1}^{p-1}$；用同一页等价的 $x-v$ 代替 $x$ 后，其微分落在 $F_{p-r-1}$，即来自 $Z_{r+1}^p$。反过来这种代表显然在核中。模掉 $d_r$ 的像恰将分母扩大为 $Z_r^{p-1}+dZ_r^{p+r}$，得下一页公式。$r>N+1$ 时，分子为 $F_pC_n$ 中真循环，第二类分母为落在 $F_p$ 中的全部边界，第一类分母为 $F_{p-1}$ 中循环；商即 $F_pH_n/F_{p-1}H_n$。$\square$
+
+<div class="proof-status" id="proof-g1-fibration-hurewicz" markdown>
+**引用定理** · [依赖与审查义务](../project/proof-ledger.md#proof-g1-fibration-hurewicz)
+</div>
 
 **引用定理与使用边界。** 带基点 Serre 纤维化有同伦长正合列，低维端项须作为带作用的带基点集合处理。若 CW 复形 $X$ 为 $(n-1)$ 连通且 $n\ge2$，Hurewicz 定理给 $\widetilde H_i(X;\mathbb Z)=0$（$i<n$）及 $\pi_n(X)\cong H_n(X;\mathbb Z)$。
 
+<div class="proof-status" id="proof-g1-serre" markdown>
+**引用定理** · [依赖与审查义务](../project/proof-ledger.md#proof-g1-serre)
+</div>
+
 这里使用如下明确的 Serre 同调谱序列版本：$F\to E\to B$ 为 Serre 纤维化，$B$ 是单连通 CW 复形，纤维 $F$ 道路连通且有 CW 同伦型，取域系数 $k$。存在第一象限谱序列 $E^2_{p,q}=H_p(B;H_q(F;k))$，收敛到 $H_{p+q}(E;k)$；单连通性使此处局部系数作用平凡。对每个总次数 $n$，稳定项给 $H_n(E;k)$ 有限过滤的关联分次项，不自动给出规范分裂。完整几何构造未在本教材展开；参考 [Hatcher, *Spectral Sequences in Algebraic Topology*, 第1章第1节](https://pi.math.cornell.edu/~hatcher/SSAT/SSATpage.html)。本章已写的是过滤的代数机制，不能据此宣称证明了这些几何定理或任意基空间下的一般收敛版本。
+
+<div class="proof-status" id="proof-g1-hopf" markdown>
+**完整证明（所列依赖下）** · [依赖与审查义务](../project/proof-ledger.md#proof-g1-hopf)
+</div>
 
 **条件推导。** 使用纤维化长正合列，Hopf 纤维化 $S^1\to S^3\to S^2$ 给 $\pi_2(S^2)\cong\pi_1(S^1)=\mathbb Z$：$\pi_2(S^3)=0$（由胞腔逼近定理），$\pi_1(S^3)=0$。这里纤维化长正合列和胞腔逼近均为明确引用；不能把这段应用误读为从零建立的独立证明。
 

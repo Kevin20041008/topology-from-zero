@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 460" role="img" aria-labelledby="ps1-title ps1-desc">
+  <title id="ps1-title">相对开集由环境开集与子空间相交得到</title>
+  <desc id="ps1-desc">子空间A为闭区间零到一。环境开集U为负一到二分之一。二者交集为左闭右开的零到二分之一，它在A内开而在实数中不开。</desc>
+  <rect width="850" height="460" rx="16" fill="#fff"/>
+  <g font-family="system-ui, 'Microsoft YaHei', sans-serif" fill="#172033">
+    <text x="35" y="42" font-size="24" font-weight="700">开集的判断必须指定环境</text>
+    <g stroke="#cbd5e1" stroke-width="2">
+      <path d="M120 120H740M120 230H740M120 340H740"/>
+      <path d="M160 82V368M400 82V368M520 82V368M640 82V368" stroke-dasharray="5 6"/>
+    </g>
+    <text x="35" y="105" font-size="19">A</text><text x="35" y="215" font-size="19">U</text><text x="20" y="325" font-size="19">A ∩ U</text>
+    <path d="M400 120H640" stroke="#64748b" stroke-width="10"/>
+    <path d="M160 230H520" stroke="#6366f1" stroke-width="10"/>
+    <path d="M400 340H520" stroke="#2563eb" stroke-width="10"/>
+    <g stroke-width="3">
+      <circle cx="400" cy="120" r="7" fill="#64748b" stroke="#64748b"/><circle cx="640" cy="120" r="7" fill="#64748b" stroke="#64748b"/>
+      <circle cx="160" cy="230" r="7" fill="#fff" stroke="#6366f1"/><circle cx="520" cy="230" r="7" fill="#fff" stroke="#6366f1"/>
+      <circle cx="400" cy="340" r="7" fill="#2563eb" stroke="#2563eb"/><circle cx="520" cy="340" r="7" fill="#fff" stroke="#2563eb"/>
+    </g>
+    <g font-size="18" text-anchor="middle"><text x="160" y="392">−1</text><text x="400" y="392">0</text><text x="520" y="392">1/2</text><text x="640" y="392">1</text></g>
+    <text x="560" y="165" font-size="18">A = [0, 1]</text><text x="560" y="250" font-size="18">U = (−1, 1/2)</text>
+    <text x="560" y="336" font-size="18">[0, 1/2) 在 A 中开</text>
+    <text x="35" y="435" font-size="18">0 的相对邻域只需包含 A 内的附近点；不要求包含负数。</text>
+  </g>
+</svg>

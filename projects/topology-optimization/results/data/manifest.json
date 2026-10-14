@@ -1,0 +1,38 @@
+[
+  {
+    "path": "connected-train.json",
+    "sha256_canonical": "38ecb95f31704eabe80e849e830efe2d73e10067404159cb2b17a9ccdcf6c4b9",
+    "samples": 96,
+    "seed": 7301
+  },
+  {
+    "path": "connected-validation.json",
+    "sha256_canonical": "ffb4314b7906a576c0af722c855fc5a16d3a3dbd69d8ff7a2b70df0c569d55a7",
+    "samples": 32,
+    "seed": 7302
+  },
+  {
+    "path": "connected-test.json",
+    "sha256_canonical": "69a70c50c84d60b4a46b028c93f618051819e3a06de0f7151e6ccd2b7b2131cd",
+    "samples": 64,
+    "seed": 7303
+  },
+  {
+    "path": "disconnected-train.json",
+    "sha256_canonical": "fe0815810794715698f3b52f974ef849d690a3dd2d48e1d640817d2d68d5c2d6",
+    "samples": 96,
+    "seed": 7401
+  },
+  {
+    "path": "disconnected-validation.json",
+    "sha256_canonical": "55fe49ebba62f02f1a95c2d44d8c13233efe2005c721bb616de363ba54264b5c",
+    "samples": 32,
+    "seed": 7402
+  },
+  {
+    "path": "disconnected-test.json",
+    "sha256_canonical": "50ef7cea38148a9c4b1dd78e3aff197fd5140901c8b08b9b598a49b41a27c276",
+    "samples": 64,
+    "seed": 7403
+  }
+]

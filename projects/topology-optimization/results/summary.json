@@ -1,0 +1,513 @@
+{
+  "groups": [
+    {
+      "condition": "connected",
+      "weight": 0.0,
+      "runs": 5,
+      "bce": {
+        "mean": 0.15663453057076507,
+        "sample_sd": 0.006393108883596738,
+        "per_seed": [
+          0.14755152893354764,
+          0.16015361405193076,
+          0.1644574429154371,
+          0.1570627581916171,
+          0.15394730876129273
+        ]
+      },
+      "topological_proxy": {
+        "mean": 0.010568809594236155,
+        "sample_sd": 0.003398686890654325,
+        "per_seed": [
+          0.011344098286981767,
+          0.0054446277926401745,
+          0.009140277189333086,
+          0.014012477761291423,
+          0.012902566940934328
+        ]
+      },
+      "dice": {
+        "mean": 0.9429535638134225,
+        "sample_sd": 0.002088624465631347,
+        "per_seed": [
+          0.9444729060767665,
+          0.9433647847250788,
+          0.939550932705925,
+          0.9447644267497208,
+          0.9426147688096218
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.9388020833333334,
+        "sample_sd": 0.001594719884624465,
+        "per_seed": [
+          0.9401041666666666,
+          0.9401041666666666,
+          0.9361979166666666,
+          0.9388020833333334,
+          0.9388020833333334
+        ]
+      },
+      "beta0_mae": {
+        "mean": 0.0375,
+        "sample_sd": 0.013975424859373685,
+        "per_seed": [
+          0.046875,
+          0.046875,
+          0.015625,
+          0.046875,
+          0.03125
+        ]
+      },
+      "beta0_accuracy": {
+        "mean": 0.9625,
+        "sample_sd": 0.013975424859373685,
+        "per_seed": [
+          0.953125,
+          0.953125,
+          0.984375,
+          0.953125,
+          0.96875
+        ]
+      },
+      "exact_mask_accuracy": {
+        "mean": 0.5125,
+        "sample_sd": 0.01307281291459493,
+        "per_seed": [
+          0.53125,
+          0.5,
+          0.5,
+          0.515625,
+          0.515625
+        ]
+      },
+      "pair_switches": [
+        996,
+        1107,
+        954,
+        931,
+        778
+      ]
+    },
+    {
+      "condition": "connected",
+      "weight": 1.0,
+      "runs": 5,
+      "bce": {
+        "mean": 0.1560302975805546,
+        "sample_sd": 0.006269944796496646,
+        "per_seed": [
+          0.15338223441384738,
+          0.1611464208920538,
+          0.1637921418686818,
+          0.1533122366449693,
+          0.14851845408322076
+        ]
+      },
+      "topological_proxy": {
+        "mean": 0.0036888775046864095,
+        "sample_sd": 0.002761950663669544,
+        "per_seed": [
+          0.0032680815725308473,
+          0.003246729935201936,
+          0.001448035903758037,
+          0.00842689702476398,
+          0.0020546430871772464
+        ]
+      },
+      "dice": {
+        "mean": 0.9440017746915966,
+        "sample_sd": 0.006978496032051327,
+        "per_seed": [
+          0.937468119685612,
+          0.9459542091895033,
+          0.9372457301685243,
+          0.9452894225872167,
+          0.9540513918271272
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.9395833333333334,
+        "sample_sd": 0.0069877124296868565,
+        "per_seed": [
+          0.93359375,
+          0.94140625,
+          0.93359375,
+          0.9388020833333334,
+          0.9505208333333334
+        ]
+      },
+      "beta0_mae": {
+        "mean": 0.021875,
+        "sample_sd": 0.00855816496101822,
+        "per_seed": [
+          0.03125,
+          0.015625,
+          0.015625,
+          0.015625,
+          0.03125
+        ]
+      },
+      "beta0_accuracy": {
+        "mean": 0.978125,
+        "sample_sd": 0.00855816496101822,
+        "per_seed": [
+          0.96875,
+          0.984375,
+          0.984375,
+          0.984375,
+          0.96875
+        ]
+      },
+      "exact_mask_accuracy": {
+        "mean": 0.528125,
+        "sample_sd": 0.05229125165837972,
+        "per_seed": [
+          0.5,
+          0.53125,
+          0.46875,
+          0.53125,
+          0.609375
+        ]
+      },
+      "pair_switches": [
+        870,
+        984,
+        668,
+        920,
+        684
+      ]
+    },
+    {
+      "condition": "disconnected",
+      "weight": 0.0,
+      "runs": 5,
+      "bce": {
+        "mean": 0.41948806227978014,
+        "sample_sd": 0.008651041803875806,
+        "per_seed": [
+          0.41006772186330903,
+          0.4289888064622515,
+          0.41644789810272487,
+          0.4136627233059198,
+          0.42827316166469537
+        ]
+      },
+      "topological_proxy": {
+        "mean": 0.7876157317048127,
+        "sample_sd": 0.010491594949528171,
+        "per_seed": [
+          0.7812967768120929,
+          0.7730453817852436,
+          0.7935329260220005,
+          0.7996280843188002,
+          0.7905754895859263
+        ]
+      },
+      "dice": {
+        "mean": 0.864197378907857,
+        "sample_sd": 0.006429619638427285,
+        "per_seed": [
+          0.8720367790910071,
+          0.8652937110887479,
+          0.8551144499903691,
+          0.8674483553619583,
+          0.861093599007202
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.8658854166666666,
+        "sample_sd": 0.006037512041338323,
+        "per_seed": [
+          0.8736979166666666,
+          0.8658854166666666,
+          0.859375,
+          0.8697916666666666,
+          0.8606770833333334
+        ]
+      },
+      "beta0_mae": {
+        "mean": 0.296875,
+        "sample_sd": 0.04555431167847891,
+        "per_seed": [
+          0.234375,
+          0.3125,
+          0.265625,
+          0.328125,
+          0.34375
+        ]
+      },
+      "beta0_accuracy": {
+        "mean": 0.703125,
+        "sample_sd": 0.04555431167847891,
+        "per_seed": [
+          0.765625,
+          0.6875,
+          0.734375,
+          0.671875,
+          0.65625
+        ]
+      },
+      "exact_mask_accuracy": {
+        "mean": 0.2,
+        "sample_sd": 0.03890593624371479,
+        "per_seed": [
+          0.265625,
+          0.1875,
+          0.171875,
+          0.203125,
+          0.171875
+        ]
+      },
+      "pair_switches": [
+        1310,
+        1466,
+        1252,
+        1194,
+        1179
+      ]
+    },
+    {
+      "condition": "disconnected",
+      "weight": 1.0,
+      "runs": 5,
+      "bce": {
+        "mean": 0.3250832211637076,
+        "sample_sd": 0.004519769088778426,
+        "per_seed": [
+          0.32406413437116055,
+          0.3311097101273542,
+          0.32494965239400075,
+          0.3186175840262408,
+          0.32667502489978156
+        ]
+      },
+      "topological_proxy": {
+        "mean": 0.06627814590961205,
+        "sample_sd": 0.008454400262266716,
+        "per_seed": [
+          0.05755481631197584,
+          0.07782722090012985,
+          0.07169324203479158,
+          0.06472199134825177,
+          0.05959345895291125
+        ]
+      },
+      "dice": {
+        "mean": 0.8546290219176249,
+        "sample_sd": 0.0029088234593649138,
+        "per_seed": [
+          0.8569918592436975,
+          0.854096128544658,
+          0.8563424805382527,
+          0.8559203459938753,
+          0.8497942952676409
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.85625,
+        "sample_sd": 0.004472803134718154,
+        "per_seed": [
+          0.8606770833333334,
+          0.8528645833333334,
+          0.8580729166666666,
+          0.859375,
+          0.8502604166666666
+        ]
+      },
+      "beta0_mae": {
+        "mean": 0.871875,
+        "sample_sd": 0.043357615392223776,
+        "per_seed": [
+          0.90625,
+          0.828125,
+          0.828125,
+          0.875,
+          0.921875
+        ]
+      },
+      "beta0_accuracy": {
+        "mean": 0.128125,
+        "sample_sd": 0.043357615392223776,
+        "per_seed": [
+          0.09375,
+          0.171875,
+          0.171875,
+          0.125,
+          0.078125
+        ]
+      },
+      "exact_mask_accuracy": {
+        "mean": 0.01875,
+        "sample_sd": 0.01307281291459493,
+        "per_seed": [
+          0.015625,
+          0.015625,
+          0.03125,
+          0.03125,
+          0.0
+        ]
+      },
+      "pair_switches": [
+        1753,
+        2180,
+        1814,
+        1753,
+        1701
+      ]
+    }
+  ],
+  "paired_deltas": [
+    {
+      "condition": "connected",
+      "seed": 11,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": 0.005830705480299736,
+        "topological_proxy": -0.00807601671445092,
+        "dice": -0.007004786391154538,
+        "pixel_accuracy": -0.00651041666666663,
+        "beta0_mae": -0.015625,
+        "beta0_accuracy": 0.015625,
+        "exact_mask_accuracy": -0.03125
+      }
+    },
+    {
+      "condition": "connected",
+      "seed": 23,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": 0.0009928068401230394,
+        "topological_proxy": -0.0021978978574382383,
+        "dice": 0.002589424464424561,
+        "pixel_accuracy": 0.0013020833333333703,
+        "beta0_mae": -0.03125,
+        "beta0_accuracy": 0.03125,
+        "exact_mask_accuracy": 0.03125
+      }
+    },
+    {
+      "condition": "connected",
+      "seed": 37,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.0006653010467553011,
+        "topological_proxy": -0.007692241285575049,
+        "dice": -0.002305202537400741,
+        "pixel_accuracy": -0.0026041666666666297,
+        "beta0_mae": 0.0,
+        "beta0_accuracy": 0.0,
+        "exact_mask_accuracy": -0.03125
+      }
+    },
+    {
+      "condition": "connected",
+      "seed": 51,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.003750521546647817,
+        "topological_proxy": -0.005585580736527443,
+        "dice": 0.0005249958374958785,
+        "pixel_accuracy": 0.0,
+        "beta0_mae": -0.03125,
+        "beta0_accuracy": 0.03125,
+        "exact_mask_accuracy": 0.015625
+      }
+    },
+    {
+      "condition": "connected",
+      "seed": 71,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.00542885467807197,
+        "topological_proxy": -0.010847923853757081,
+        "dice": 0.011436623017505365,
+        "pixel_accuracy": 0.01171875,
+        "beta0_mae": 0.0,
+        "beta0_accuracy": 0.0,
+        "exact_mask_accuracy": 0.09375
+      }
+    },
+    {
+      "condition": "disconnected",
+      "seed": 11,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.08600358749214848,
+        "topological_proxy": -0.723741960500117,
+        "dice": -0.015044919847309601,
+        "pixel_accuracy": -0.01302083333333326,
+        "beta0_mae": 0.671875,
+        "beta0_accuracy": -0.671875,
+        "exact_mask_accuracy": -0.25
+      }
+    },
+    {
+      "condition": "disconnected",
+      "seed": 23,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.09787909633489733,
+        "topological_proxy": -0.6952181608851138,
+        "dice": -0.011197582544089868,
+        "pixel_accuracy": -0.01302083333333326,
+        "beta0_mae": 0.515625,
+        "beta0_accuracy": -0.515625,
+        "exact_mask_accuracy": -0.171875
+      }
+    },
+    {
+      "condition": "disconnected",
+      "seed": 37,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.09149824570872411,
+        "topological_proxy": -0.721839683987209,
+        "dice": 0.001228030547883563,
+        "pixel_accuracy": -0.0013020833333333703,
+        "beta0_mae": 0.5625,
+        "beta0_accuracy": -0.5625,
+        "exact_mask_accuracy": -0.140625
+      }
+    },
+    {
+      "condition": "disconnected",
+      "seed": 51,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.095045139279679,
+        "topological_proxy": -0.7349060929705484,
+        "dice": -0.011528009368082959,
+        "pixel_accuracy": -0.01041666666666663,
+        "beta0_mae": 0.546875,
+        "beta0_accuracy": -0.546875,
+        "exact_mask_accuracy": -0.171875
+      }
+    },
+    {
+      "condition": "disconnected",
+      "seed": 71,
+      "weight": 1.0,
+      "delta_convention": "topology_minus_baseline",
+      "test_delta": {
+        "bce": -0.1015981367649138,
+        "topological_proxy": -0.730982030633015,
+        "dice": -0.011299303739561006,
+        "pixel_accuracy": -0.01041666666666674,
+        "beta0_mae": 0.578125,
+        "beta0_accuracy": -0.578125,
+        "exact_mask_accuracy": -0.171875
+      }
+    }
+  ],
+  "uncertainty_scope": "Sample SD across initialization seeds on the SAME fixed test set; not a confidence interval over independent datasets or patients."
+}

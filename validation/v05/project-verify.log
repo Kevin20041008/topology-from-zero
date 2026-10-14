@@ -1,0 +1,21 @@
+Exact rerun: connected 11 0.0
+Exact rerun: connected 11 1.0
+Exact rerun: connected 23 0.0
+Exact rerun: connected 23 1.0
+Exact rerun: connected 37 0.0
+Exact rerun: connected 37 1.0
+Exact rerun: connected 51 0.0
+Exact rerun: connected 51 1.0
+Exact rerun: connected 71 0.0
+Exact rerun: connected 71 1.0
+Exact rerun: disconnected 11 0.0
+Exact rerun: disconnected 11 1.0
+Exact rerun: disconnected 23 0.0
+Exact rerun: disconnected 23 1.0
+Exact rerun: disconnected 37 0.0
+Exact rerun: disconnected 37 1.0
+Exact rerun: disconnected 51 0.0
+Exact rerun: disconnected 51 1.0
+Exact rerun: disconnected 71 0.0
+Exact rerun: disconnected 71 1.0
+Verified saved data, hashes, all model metrics, raw predictions, protocol, and summary: 20 runs

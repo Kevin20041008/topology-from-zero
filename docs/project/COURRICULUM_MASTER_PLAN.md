@@ -8,7 +8,10 @@
 
 全书共同外部先修：实数完备性与初等代数；微分卷加多元分析、逆函数定理、ODE；同调卷先建设群/模/线性代数；统计与AI卷显式要求概率、优化与基本机器学习。各行“先修”是本站代码，完整有向图见 [知识依赖图](PREREQUISITE_GRAPH.md)。
 
-当前 AI 增补基于 `main` 的 `e6e80cd`；PR #3、#4、#6 内容已在该基线。A3–A8为本批实质正文，原82个计划节点保留并细化为88节点；AI1–AI5为较宽的长期主题包，其未完成目标继续保留。当前发布状态以[实施记录](IMPLEMENTATION_STATUS.md)为准。
+历史 AI 增补基于 `main` 的 `e6e80cd`；PR #3、#4、#6 内容已在该基线。A3–A8为本批实质正文，原82个计划节点保留并细化为88节点；AI1–AI5为较宽的长期主题包，其未完成目标继续保留。当前部署以[版本证据](release-status.md)为准。
+
+
+**v0.5更新（2026-10-14）：** 已有55章；长期规划89单元（新增PRE5整数代数桥梁）。PRE4、PS1、PRE5与CT1整数同调/SNF实际正文、32题答案及实验已写入本批；CT1主题包中的立方复形课程仍待建设。CT2保留原“离散Morse”编号，未冒用其完成状态。下面课程表的“已有”只表示有正文，不替代数学审查。
 
 ## 章节清单与教学产物
 
@@ -21,10 +24,11 @@
 | PRE1 · 集合、映射、关系与等价类<br>本批 Reviewed | 无 | 逆像布尔运算；等价关系与划分；商集泛性质 | 非单射像不保交；模3商集 | 有限映射穷举 |
 | PRE2 · 量词、证明方法与反例构造<br>本批 Reviewed | PRE1 | 逆否与否定；归纳；Cantor对角论证 | 逐点与一致的量词；有限验证误区 | 反例搜索与证明界限 |
 | PRE3 · 度量空间与收敛<br>本批 Reviewed | PRE1, PRE2 | 开球生成拓扑；序列连续判据；等价度量 | 离散度量；同拓扑不同完备性 | 度量公理与伪度量检查 |
-| PRE4 · 可数性、选择与集合论工具<br>待建设 | PRE2 | 可数并；Cantor–Bernstein；Zorn的使用条件 | 不可数幂集；选择依赖 | 纯理论 |
+| PRE4 · [可数性、选择与集合论工具](../preliminaries/countability-choice.md)<br>本批正文；审查见记录 | PRE1, PRE2 | 可数并；Cantor–Bernstein；Zorn的使用条件 | 不可数幂集；选择依赖 | 纯理论 |
+| PRE5 · [群、模与整数商](../preliminaries/groups-modules.md)<br>本批正文 | PRE1, PRE2 | 正规商；第一同构定理；整数子群；张量入口 | 非正规子群；挠与自由秩 | 整数商原创图与CT1计算 |
 | spaces · [拓扑空间、开闭集与邻域](../introduction/01-spaces.md)<br>已有·待升级 | PRE3 | 度量拓扑公理；有限交与任意并 | 离散/平凡拓扑；无限交反例 | 既有有限拓扑Notebook |
 | bases · [拓扑基与子基](../point-set/bases-subbases.md)<br>已有·待升级 | spaces | 基判据与生成拓扑 | 区间基；覆盖不构成基 | 三点最小拓扑生成（本批已实现） |
-| PS1 · 子空间拓扑与相对性质<br>待建设 | bases | 子空间泛性质；连续限制 | 半开区间的相对开集 | 子空间有限例 |
+| PS1 · [子空间拓扑与相对性质](../point-set/subspaces.md)<br>本批正文；审查见记录 | bases | 子空间泛性质；连续限制 | 半开区间的相对开集 | 子空间有限例 |
 | continuity · [连续映射与同胚](../point-set/02-continuity.md)<br>已有·待升级 | bases, PS1 | 逆像判据；复合连续；紧像定理 | 连续双射非同胚 | 既有自检 |
 | P1 · [闭包、内部、边界与网](../point-set/closure-nets.md)<br>已有·待升级 | continuity | 闭包邻域判据；网收敛判据 | 余可数拓扑非序列判据 | 纯理论 |
 | P2 · [分离公理与可数性](../point-set/separation-countability.md)<br>已有·待升级 | P1, PRE4 | T1/T2/T3/T4关系；第二可数蕴含可分 | Sorgenfrey可分非第二可数 | 蕴含关系自检 |
@@ -121,8 +125,8 @@
 
 | 单元/状态 | 先修 | 定理与证明目标 | 正例、反例与综合计算 | 实验或图解目标 |
 | --- | --- | --- | --- | --- |
-| K1 · [有限复形、边界算法与不变量](../computational/boundary-algorithms.md)<br>已有·待升级 | homology, H3 | 数据结构；有限域消元；Betti与Euler；d² | 重复/退化点；二维骨架界限 | 既有测试/GUDHI |
-| CT1 · 立方复形、整数同调与SNF<br>待建设 | K1, H3 | 立方边界符号；整除链；变基证书 | 挠群；像素与前景/背景连通约定 | 边界/SNF计算器（待建） |
+| K1 · [有限复形、边界算法与不变量](../computational/boundary-algorithms.md)<br>已有·待升级 | homology | 数据结构；有限域消元；Betti与Euler；d² | 重复/退化点；二维骨架界限 | 既有测试/GUDHI |
+| CT1 · [整数同调与SNF](../computational/integer-homology.md)<br>整数部分已写；立方复形仍待建 | PRE5, linear-quotient, homology | Smith整除链；核基与关系坐标；余核与Euler | 挠群；两次不相容换基反例 | 精确证书与SymPy独立对照 |
 | CT2 · 复形约化与离散Morse<br>待建设 | K1, D4 | 自由面对消；无环梯度匹配；临界链 | 错误闭环匹配 | 复形构造器/离散梯度 |
 | CT3 · Reeb图、Contour Tree与Mapper<br>待建设 | K1, connectedness | 商图定义；树假设；覆盖与聚类 | 有环Reeb图；Mapper参数依赖 | Reeb/Mapper实验 |
 | CT4 · 网格、重建与拓扑保持<br>待建设 | CT1, CT2, T1 | 链接条件；采样假设；网格修复限制 | 非流形边；位置焊接误区 | 网格Euler检查 |

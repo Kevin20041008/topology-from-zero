@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-14",
+  "main_sha": "f341101a686fcc3a8dd22d0587a29514a835cefd",
+  "release": {
+    "tag_name": "v0.3",
+    "html_url": "https://github.com/Kevin20041008/topology-from-zero/releases/tag/v0.3",
+    "published_at": "2026-10-11T16:48:30Z"
+  },
+  "pages": {
+    "html_url": "https://kevin20041008.github.io/topology-from-zero/",
+    "status": null,
+    "build_type": "workflow"
+  },
+  "main_runs": [
+    {
+      "id": 38226931978,
+      "head_sha": "f341101a686fcc3a8dd22d0587a29514a835cefd",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38226931978",
+      "updated_at": "2026-10-12T09:02:07Z"
+    },
+    {
+      "id": 38211160871,
+      "head_sha": "e6e80cd9fe35cef9cd65ad8cf212590c142109fc",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38211160871",
+      "updated_at": "2026-10-12T06:10:22Z"
+    },
+    {
+      "id": 38166382800,
+      "head_sha": "9b6cfbc479e35c7e0fb64722a1715ce7deab570a",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38166382800",
+      "updated_at": "2026-10-11T19:04:30Z"
+    }
+  ],
+  "open_prs": [],
+  "pr7": {
+    "number": 7,
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-12T08:58:46Z",
+    "merge_commit_sha": "f341101a686fcc3a8dd22d0587a29514a835cefd"
+  },
+  "live": [
+    {
+      "path": "",
+      "status": 200,
+      "sha256": "13f3a226380b1ae81fbedda149b69db4ef46c680d1a824a461f5634d5fe4d832",
+      "contains_candidate_wording": true
+    },
+    {
+      "path": "ai/topological-loss/",
+      "status": 200,
+      "sha256": "f9270aff6351d892d3286d77815ff9f03c6a18959f979f3a0982a985a9922b9d",
+      "contains_candidate_wording": true
+    },
+    {
+      "path": "ai/differentiable-persistence/",
+      "status": 200,
+      "sha256": "fd2215f78e5a25cc53dad662f7406bc0ec65301bf45f04739ff706062342ec9b",
+      "contains_candidate_wording": true
+    },
+    {
+      "path": "javascripts/topology-core.mjs",
+      "status": 200,
+      "sha256": "ffe2704283f0f3697fbcd8d114db641772836645b33c9706d9e1be46d248834c",
+      "matches_baseline_source": true,
+      "positive_lifetimes": true,
+      "old_cutoff": false,
+      "rounding_12": false
+    },
+    {
+      "path": "javascripts/ai-topology-core.mjs",
+      "status": 200,
+      "sha256": "3d4f5f74f1e75e936d79acbd29ca799d250a5d087ac9bd5ea0883bf27949941d",
+      "matches_baseline_source": true,
+      "note": "Imports the separately audited topology-core.mjs; not a second persistence reducer."
+    }
+  ]
+}
