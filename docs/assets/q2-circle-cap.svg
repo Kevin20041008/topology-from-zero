@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 300" role="img" aria-labelledby="title desc">
+  <title id="title">三边圆周的基本循环和帽积</title>
+  <desc id="desc">按顶点顺序零小于一小于二，循环为边零一加边一二减边零二。上链仅在边零一取一，帽积保留顶点一。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#1d4ed8"/></marker></defs>
+  <rect width="840" height="300" rx="12" fill="#f5f7fb"/>
+  <g font-family="sans-serif" fill="#172554" text-anchor="middle">
+    <text x="420" y="30" font-size="19">有序单纯链：c = e₀₁ + e₁₂ − e₀₂</text>
+    <g stroke="#1d4ed8" stroke-width="3" fill="none" marker-end="url(#arrow)">
+      <path d="M94 223L211 92"/><path d="M230 91L348 223"/><path d="M343 235H104"/>
+    </g>
+    <g fill="#1d4ed8"><circle cx="85" cy="235" r="7"/><circle cx="220" cy="80" r="7"/><circle cx="360" cy="235" r="7"/></g>
+    <g font-size="17"><text x="66" y="260">v₀</text><text x="220" y="66">v₁</text><text x="380" y="260">v₂</text><text x="129" y="147">e₀₁</text><text x="310" y="147">e₁₂</text><text x="223" y="263">−e₀₂</text></g>
+    <path d="M416 163H490" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="453" y="142" font-size="16">a ∩ c</text>
+    <circle cx="658" cy="162" r="10" fill="#047857"/><text x="658" y="195" font-size="20">v₁</text>
+    <text x="652" y="89" font-size="17">a(e₀₁) = 1</text><text x="652" y="116" font-size="17">a(e₁₂) = a(e₀₂) = 0</text>
+    <text x="652" y="247" font-size="16">读取前面，保留后端顶点</text>
+  </g>
+</svg>

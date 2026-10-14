@@ -8,6 +8,8 @@ import json
 
 from bs4 import BeautifulSoup
 from mkdocs.config import load_config
+from course_inventory import inventory
+from verify_deployment import compare_page
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
@@ -20,7 +22,13 @@ def main():
     html_paths = sorted(SITE.rglob("*.html"))
     assert len(html_paths) >= 64, "Missing expected graduate course pages"
     parsed = {path.resolve(): BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser") for path in html_paths}
+    manifest = json.loads((SITE / 'build-info.json').read_text(encoding='utf-8'))
+    assert manifest['counts'] == inventory()['counts'], 'Rendered course counts are stale'
+    assert manifest['inventory_sha256'] == inventory()['inventory_sha256']
     for path in html_paths:
+        html = path.read_text(encoding='utf-8')
+        assert not compare_page(html, manifest, manifest['commit'], require_clean=False), f'Build provenance mismatch: {path}'
+        assert '{{ course.' not in html, f'Unexpanded count: {path}'
         soup = parsed[path.resolve()]
         for element in soup.select("a[href], script[src], img[src], link[href]"):
             value = element.get("href", element.get("src", ""))
@@ -50,12 +58,12 @@ def main():
     # This inventory is captured from the published v0.2 commit, not from the
     # current build. Never regenerate it to accept a missing legacy URL/anchor.
     legacy_counts = []
-    for inventory in ["legacy_urls.json", "legacy_urls_v03.json"]:
-        legacy = json.loads((ROOT / "scripts" / inventory).read_text(encoding="utf-8"))
+    for legacy_inventory in ["legacy_urls.json", "legacy_urls_v03.json"]:
+        legacy = json.loads((ROOT / "scripts" / legacy_inventory).read_text(encoding="utf-8"))
         legacy_counts.append(len(legacy["pages"]))
         for url, anchors in legacy["pages"].items():
             old_path = (SITE / url / "index.html").resolve()
-            assert old_path in parsed, f"Removed legacy URL: {url} ({inventory})"
+            assert old_path in parsed, f"Removed legacy URL: {url} ({legacy_inventory})"
             ids = {element["id"] for element in parsed[old_path].select("[id]")}
             assert set(anchors) <= ids, f"Removed legacy anchors at {url}: {set(anchors) - ids}"
 

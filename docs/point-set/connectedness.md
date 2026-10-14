@@ -83,6 +83,12 @@ $$
 <div class="admonition question" data-exercise="connectedness"></div>
 <noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**设 A 是 X 的连通子集，且 A⊆B⊆cl_X(A)。证明 B 连通。处理 A=∅，并给出取消 B⊆cl_X(A) 后失败的反例。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 connectedness 三级证明训练](../exercises/proof-workshop.md#connectedness)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 连通空间、分支与道路连通性。

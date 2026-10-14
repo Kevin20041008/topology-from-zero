@@ -1,52 +1,72 @@
 # 逐定理证明与依赖台账
 
-本批覆盖 H3、Q1、Q2、G1、R1、R2、A8 的主要编号结论与显式引用，共28项。没有把它称作全书定理审计。其他章节仍以[逐章记录](reviews/index.md)为准，未进入此表不等于已验证。
+本批覆盖 H3、Q1、Q2、G1、R1、R2、A8 的主要编号结论与显式引用，共32项。没有把它称作全书定理审计。其他章节仍以[逐章记录](reviews/index.md)为准，未进入此表不等于已验证。
 
 “完整证明”描述本地论证的展开范围，**允许依赖已精确声明的外引**；它不表示形式化认证或人类签署。“引用定理”把完整证明责任交给文献；“证明概要”保留尚未展开的步骤；“待审”标记尚不能认可的陈述。每项都列假设、依赖与人工复核义务，构建测试只检查台账和页面一致。
 
-本批实际补全 Q1.1 杯积和 Q2.1 帽积的逐项符号计算，纠正 Q1.3 将块计算视作自然泛系数全证的表述；G1.2 明确下一页核像识别仍为概要。没有用测试替代 H3/Q2 的未尽证明。
+本批在 H3.0/H3.2 与 Q1.0/Q1.3 构造有限自由链的自然 Tor/Ext 序列及无自然分裂反例，补 Q2.3 帽积自然性；H3.1 的几何输入与 Q2.2 的对偶比较仍外引。Q2.euler 的代数推导完整，但继承对偶依赖。G1.2 的下一页核像识别仍为概要。没有用有限测试替代任何一般定理的证明。
 
-参考链接定位到真实书籍/论文入口；本批没有逐页读取这些原书，不虚报外部核查范围。原文证明与习题仍需独立人类复核。
+参考链接定位到真实书籍/论文入口；本批没有逐页读取这些原书，不虚报外部核查范围。H3/Q1/Q2 已由作者、根代理及非编写 review_foundations 模型逐式复核；其他条目按各自记录。全部内容仍需独立人类复核，不是形式化认证。
+
+## H3.0 {#proof-h3-0}
+
+[H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-0) · **完整证明（所列依赖下）**
+
+- 假设与基础：有限生成阿贝尔第一变量；有限自由表示；任意阿贝尔系数；PRE5 自由子群。
+- 依赖：本章定义与所列基础工具。
+- 审查范围/未尽义务：自由表示提升、提升无关性、表示无关性与双变量协变已证明；仅有限生成第一变量的本章范围。
+- 参考定位：[Hatcher, Algebraic Topology, §3.A Universal Coefficients for Homology](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## H3.1 {#proof-h3-1}
 
 [H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-1) · **证明概要 / Advanced Outline**
 
-- 假设与基础：有限CW；整数系数；骨架相对群集中引理外引。
+- 假设与基础：有限 CW；整数系数；非正则骨架对相对群集中引理外引。
 - 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：非正则CW骨架相对群的完整比较；不能只取附加球领圈。
+- 审查范围/未尽义务：接受外引引理后的长正合列推导完整，含 n=0；骨架对引理、附加映射度公式与一般无限 CW 比较仍未证明。
 - 参考定位：[Hatcher, Algebraic Topology (2002), §2.2 Cellular Homology](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## H3.2 {#proof-h3-2}
 
-[H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-2) · **证明概要 / Advanced Outline**
+[H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-2) · **完整证明（所列依赖下）**
 
-- 假设与基础：逐次有限生成自由整数链；任意阿贝尔系数G；PRE5、CT1。
-- 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：自然Tor映射及交换图；分块计算只给非自然分裂。
+- 假设与基础：非负有界且逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与张量商公式。
+- 依赖：[H3.0](#proof-h3-0)。
+- 审查范围/未尽义务：已构造 alpha/beta、正合性、分裂、对整数链映射和任意系数同态的交换图；剪切反例证明无自然分裂。待非编写及人类逐式复核。
 - 参考定位：[Hatcher, Algebraic Topology, §3.A Universal Coefficients for Homology](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## H3.3 {#proof-h3-3}
 
 [H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-3) · **完整证明（所列依赖下）**
 
-- 假设与基础：域上有限维链复形；有符号张量微分。
+- 假设与基础：域上有界、逐次有限维链；有符号张量微分。
 - 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：补空间选择；不据此宣称空间链比较已证。
+- 审查范围/未尽义务：两种可缩因子的收缩符号已展开，典范同构自然性已说明；不能由此直接套用无限维奇异链。
 - 参考定位：[Hatcher, Algebraic Topology, §3.A Universal Coefficients for Homology](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## H3.EZ {#proof-h3-ez}
 
 [H3 正文位置](../algebraic/homology/cellular-coefficients.md#proof-h3-ez) · **引用定理**
 
-- 假设与基础：空间奇异链与张量链；采用标准Eilenberg–Zilber比较。
+- 假设与基础：空间奇异链与张量链；标准 Eilenberg–Zilber 及空间域 Kunneth 比较。
 - 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：shuffle映射与链同伦未展开。
+- 审查范围/未尽义务：shuffle 映射、链同伦、一般空间链 Kunneth 与有限胞腔乘积比较仍外引。
 - 参考定位：[Hatcher, Algebraic Topology, §3.A Universal Coefficients for Homology](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
+
+## Q1.0 {#proof-q1-0}
+
+[Q1 正文位置](../algebraic/cohomology/cochains-products.md#proof-q1-0) · **完整证明（所列依赖下）**
+
+- 假设与基础：有限生成阿贝尔第一变量；有限自由表示；任意阿贝尔系数。
+- 依赖：[H3.0](#proof-h3-0)。
+- 审查范围/未尽义务：余核上的预合成、提升无关性和表示独立性已证明；一般导出函子理论不在本章范围。
+- 参考定位：[Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q1.1 {#proof-q1-1}
 
@@ -54,29 +74,39 @@
 
 - 假设与基础：交换环系数；有序面；非负次数；边界平方零。
 - 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：本批展开共享面相消；待人类复核符号。
+- 审查范围/未尽义务：杯积删面公式、代表元无关性、结合律及拉回自然性已展开；系数乘法自然性要求环同态。
 - 参考定位：[Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q1.2 {#proof-q1-2}
 
 [Q1 正文位置](../algebraic/cohomology/cochains-products.md#proof-q1-2) · **完整证明（所列依赖下）**
 
-- 假设与基础：域上链复形；无限维延拓使用选择公理。
+- 假设与基础：固定域 k 上链复形和 k 线性链映射；无限维延拓使用选择公理。
 - 依赖：本章定义与所列基础工具。
-- 审查范围/未尽义务：自然性来自评价；无限维选择依赖明示。
+- 审查范围/未尽义务：评价核像与反变交换方块已展开；不声称对任意环仍是无修正对偶。
 - 参考定位：[Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q1.3 {#proof-q1-3}
 
-[Q1 正文位置](../algebraic/cohomology/cochains-products.md#proof-q1-3) · **引用定理**
+[Q1 正文位置](../algebraic/cohomology/cochains-products.md#proof-q1-3) · **完整证明（所列依赖下）**
 
-- 假设与基础：有限生成自由整数链；任意阿贝尔系数G。
-- 依赖：[H3.2](#proof-h3-2)。
-- 审查范围/未尽义务：块计算给群分解；自然Ext嵌入未构造。
+- 假设与基础：非负有界、逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与直和投影。
+- 依赖：[Q1.0](#proof-q1-0)。
+- 审查范围/未尽义务：Ext 嵌入、评价、正合性、非自然分裂、链映射反变和系数同态协变均已构造；待非编写及人类复核。
 - 参考定位：[Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
+
+## Q1.cellular-comparison {#proof-q1-cellular-comparison}
+
+[Q1 正文位置](../algebraic/cohomology/cochains-products.md#proof-q1-cellular-comparison) · **引用定理**
+
+- 假设与基础：有限 CW；任意阿贝尔系数；胞腔上链与奇异上同调；胞腔映射下自然。
+- 依赖：[H3.1](#proof-h3-1)。
+- 审查范围/未尽义务：上链比较及评价兼容性未证明；一般连续映射还用胞腔逼近；单有同调群同构不够，杯积还需另行比较。
+- 参考定位：[Hatcher §3.1](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q1.commutativity {#proof-q1-commutativity}
 
@@ -86,7 +116,17 @@
 - 依赖：[Q1.1](#proof-q1-1)、[H3.EZ](#proof-h3-ez)。
 - 审查范围/未尽义务：cup-one链同伦及外积兼容性未展开。
 - 参考定位：[Hatcher, Algebraic Topology, §3.1 Cohomology Groups; §3.2 Cup Product](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
+
+## Q2.3 {#proof-q2-3}
+
+[Q2 正文位置](../algebraic/cohomology/duality.md#proof-q2-3) · **完整证明（所列依赖下）**
+
+- 假设与基础：连续映射 f:X→Y；整数奇异上链与链；非负次数；过高次帽积零。
+- 依赖：[Q2.1](#proof-q2-1)。
+- 审查范围/未尽义务：逐奇异单形计算和同调交换方块已展开；不要求 f 保持基本类。
+- 参考定位：[Hatcher, Algebraic Topology, §3.3 Poincaré Duality](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q2.1 {#proof-q2-1}
 
@@ -96,27 +136,27 @@
 - 依赖：本章定义与所列基础工具。
 - 审查范围/未尽义务：本批逐式删点计算并覆盖n=p端点。
 - 参考定位：[Hatcher, Algebraic Topology, §3.3 Poincaré Duality](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q2.2 {#proof-q2-2}
 
 [Q2 正文位置](../algebraic/cohomology/duality.md#proof-q2-2) · **证明概要 / Advanced Outline**
 
-- 假设与基础：闭、定向、有限组合三角剖分的n维PL流形。
+- 假设与基础：闭（紧且无边界）、定向、有限组合三角剖分的 n 维 PL 流形；整数系数；可有限多分量。
 - 依赖：[H3.1](#proof-h3-1)、[Q2.1](#proof-q2-1)。
-- 审查范围/未尽义务：对偶胞腔关联数符号、逐次重标号及奇异帽积比较未完成。
+- 审查范围/未尽义务：对偶胞腔关联数符号、逐次数重标号及到指定奇异帽积的比较未证明；已移除将未算符号当作成立链等式的表述。
 - 参考定位：[Hatcher, Algebraic Topology, §3.3 Poincaré Duality](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## Q2.euler {#proof-q2-euler}
 
 [Q2 正文位置](../algebraic/cohomology/duality.md#proof-q2-euler) · **完整证明（所列依赖下）**
 
-- 假设与基础：奇数维闭定向有限PL流形；有理系数。
-- 依赖：[Q1.2](#proof-q1-2)、[Q2.2](#proof-q2-2)。
-- 审查范围/未尽义务：完整的条件推导；依赖未在教材全证的对偶。
+- 假设与基础：奇数维闭定向有限 PL 流形；有限生成整数同调的自由秩。
+- 依赖：[Q1.3](#proof-q1-3)、[Q1.cellular-comparison](#proof-q1-cellular-comparison)、[Q2.2](#proof-q2-2)。
+- 审查范围/未尽义务：完整条件推导：UCT 的 Ext 仅贡献挠子，整数对偶配对自由秩；对偶本身外引，不是独立全证。
 - 参考定位：[Hatcher, Algebraic Topology, §3.3 Poincaré Duality](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html)。
-- 审查状态：本批作者核对；待人类同行复核。
+- 审查状态：2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证。
 
 ## G1.1 {#proof-g1-1}
 

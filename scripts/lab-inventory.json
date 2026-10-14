@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "counting_rule": "One named teaching experiment; the foundations workbench is one experiment with three controls. Proof workshops and Python projects are counted separately.",
+  "labs": [
+    {"id": "triangle", "path": "labs/triangle.md", "mount": "data-lab=\"triangle\""},
+    {"id": "point-cloud", "path": "labs/point-cloud.md", "mount": "data-lab=\"persistence\""},
+    {"id": "surfaces", "path": "labs/surfaces.md", "mount": "data-lab=\"surfaces\""},
+    {"id": "foundations", "path": "labs/foundations.md", "mount": "data-foundations-lab"},
+    {"id": "ai-loss", "path": "labs/ai-topology.md", "mount": "data-ai-lab=\"loss\""},
+    {"id": "ai-segmentation", "path": "labs/ai-topology.md", "mount": "data-ai-lab=\"segmentation\""},
+    {"id": "ai-differentiable", "path": "labs/ai-topology.md", "mount": "data-ai-lab=\"differentiable\""},
+    {"id": "covering", "path": "labs/covering-space.md", "mount": "data-covering-lab"}
+  ]
+}

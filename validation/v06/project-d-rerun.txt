@@ -1,0 +1,7 @@
+Exact rerun 11 0.0
+Exact rerun 11 0.02
+Exact rerun 23 0.0
+Exact rerun 23 0.02
+Exact rerun 37 0.0
+Exact rerun 37 0.02
+PASS: six runs, 24 real-image records, all probabilities/metrics/hashes; rerun=True

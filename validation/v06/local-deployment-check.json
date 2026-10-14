@@ -1,0 +1,157 @@
+[
+  {
+    "time_utc": "2026-10-14T10:28:51.804521+00:00",
+    "base_url": "http://127.0.0.1:8123/topology-from-zero/",
+    "expected_commit": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+    "pages": [
+      {
+        "path": "",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "curriculum/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/curriculum/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "start/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/start/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "computational/integer-homology/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/computational/integer-homology/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/homology/cellular-coefficients/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/algebraic/homology/cellular-coefficients/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/cohomology/cochains-products/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/algebraic/cohomology/cochains-products/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/cohomology/duality/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/algebraic/cohomology/duality/",
+          "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "exercises/proof-workshop/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/exercises/proof-workshop/",
+          "Date": "Wed, 14 Oct 2026 10:28:52 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "labs/covering-space/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/labs/covering-space/",
+          "Date": "Wed, 14 Oct 2026 10:28:52 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      },
+      {
+        "path": "ai/projects/image-topology/",
+        "headers": {
+          "final_url": "http://127.0.0.1:8123/topology-from-zero/ai/projects/image-topology/",
+          "Date": "Wed, 14 Oct 2026 10:28:52 GMT",
+          "Last-Modified": null,
+          "Cache-Control": null,
+          "Age": null,
+          "ETag": null
+        },
+        "failures": []
+      }
+    ],
+    "failures": [],
+    "manifest": {
+      "schema": 2,
+      "commit": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+      "dirty": true,
+      "build_kind": "local",
+      "workflow_url": null,
+      "review_status": "See chapter review records; no book-wide human peer review claimed.",
+      "counts": {
+        "chapters": 55,
+        "self_checks": 55,
+        "template_chapters": 16,
+        "template_exercises": 128,
+        "labs": 8,
+        "notebooks": 4,
+        "planned_parts": 11,
+        "planned_units": 89
+      },
+      "inventory_sha256": "aa355361b53c0c690d11b2419eb95c49018e7e94614b2152131791d8106df052"
+    },
+    "manifest_headers": {
+      "final_url": "http://127.0.0.1:8123/topology-from-zero/build-info.json",
+      "Date": "Wed, 14 Oct 2026 10:28:51 GMT",
+      "Last-Modified": null,
+      "Cache-Control": null,
+      "Age": null,
+      "ETag": null
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14",
+  "status": "PASS",
+  "chapter": "docs/ai/projects/image-topology.md",
+  "sections": 12,
+  "table_rows_exact_to_display_precision": [
+    "| BCE + 0.5 softDice | 0.906813（0.007757） | 0.951401（0.005163） | 2.944444（1.004619） | 1.277778（0.096225） |",
+    "| 基线 + 0.02 Euler | 0.861300（0.025727） | 0.918000（0.021252） | 4.388889（0.630990） | 1.333333（0.166667） |"
+  ],
+  "summary_equals_full_record": true,
+  "gradient_addition_terms_restored": true,
+  "candidate_branch_link_checked": true,
+  "svg_xml_parsed": [
+    "image-topology-examples.svg",
+    "image-topology-training.svg"
+  ],
+  "summary_sha256": "7533c0e522fbaac8062eed266581e64e1ff17b96e31eb9e0129dc1aad8aa48d5",
+  "human_review": false
+}

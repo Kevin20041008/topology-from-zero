@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-14T09:48:46.028881+00:00",
+  "main_sha": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+  "release": {
+    "tag_name": "v0.3",
+    "html_url": "https://github.com/Kevin20041008/topology-from-zero/releases/tag/v0.3",
+    "published_at": "2026-10-11T16:48:30Z"
+  },
+  "main_runs": [
+    {
+      "id": 38543305406,
+      "head_sha": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38543305406",
+      "updated_at": "2026-10-14T09:36:41Z"
+    },
+    {
+      "id": 38226931978,
+      "head_sha": "f341101a686fcc3a8dd22d0587a29514a835cefd",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38226931978",
+      "updated_at": "2026-10-12T09:02:07Z"
+    },
+    {
+      "id": 38211160871,
+      "head_sha": "e6e80cd9fe35cef9cd65ad8cf212590c142109fc",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38211160871",
+      "updated_at": "2026-10-12T06:10:22Z"
+    }
+  ],
+  "pr8": {
+    "number": 8,
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-14T09:34:09Z",
+    "merge_commit_sha": "9a562cad901b72407c9261e2f69d4dad790cfc6d"
+  },
+  "live": [
+    {
+      "path": "",
+      "status": 200,
+      "sha256": "4d6c51dc9f2528133134f9877eca1deb4af10fa162fcdb94e002c5f765723e57",
+      "headers": {
+        "ETag": "\"6acf4d23-12fe1\"",
+        "Last-Modified": "Wed, 14 Oct 2026 09:36:35 GMT",
+        "Age": "0",
+        "Cache-Control": "max-age=600",
+        "Date": "Wed, 14 Oct 2026 09:48:47 GMT"
+      },
+      "chapter_stat": [
+        "55"
+      ],
+      "embedded_commit": [],
+      "contains_v05_route": true
+    },
+    {
+      "path": "build-info.json",
+      "status": 200,
+      "sha256": "4257997047c65ac26a3d56645c444038ee5d867211ebe0d59ef051797ccda144",
+      "headers": {
+        "ETag": "\"6acf4d23-139\"",
+        "Last-Modified": "Wed, 14 Oct 2026 09:36:35 GMT",
+        "Age": "0",
+        "Cache-Control": "max-age=600",
+        "Date": "Wed, 14 Oct 2026 09:48:47 GMT"
+      },
+      "build_info": {
+        "schema": 1,
+        "commit": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+        "dirty": false,
+        "build_kind": "main-workflow",
+        "workflow_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38543305406",
+        "review_status": "See chapter review records; no book-wide human peer review claimed."
+      }
+    },
+    {
+      "path": "curriculum/",
+      "status": 200,
+      "sha256": "1a12ecb7c0182878dbb71d68b5fe5493e3be9c36046d6d2084a74329be3b145a",
+      "headers": {
+        "ETag": "\"6acf4d23-13e9a\"",
+        "Last-Modified": "Wed, 14 Oct 2026 09:36:35 GMT",
+        "Age": "0",
+        "Cache-Control": "max-age=600",
+        "Date": "Wed, 14 Oct 2026 09:48:47 GMT"
+      },
+      "chapter_stat": [],
+      "embedded_commit": [],
+      "contains_v05_route": true
+    },
+    {
+      "path": "start/",
+      "status": 200,
+      "sha256": "eea7cf6d81494e604240f3d38dae41549053aed2c53cbfb6dbc2966b0b615774",
+      "headers": {
+        "ETag": "\"6acf4d23-10d22\"",
+        "Last-Modified": "Wed, 14 Oct 2026 09:36:35 GMT",
+        "Age": "0",
+        "Cache-Control": "max-age=600",
+        "Date": "Wed, 14 Oct 2026 09:48:47 GMT"
+      },
+      "chapter_stat": [],
+      "embedded_commit": [],
+      "contains_v05_route": false
+    },
+    {
+      "path": "computational/integer-homology/",
+      "status": 200,
+      "sha256": "2963e8faf165ad24a81530a3df422ee96be64a61119c047e066a0b301c0771f0",
+      "headers": {
+        "ETag": "\"6acf4d23-1b1c5\"",
+        "Last-Modified": "Wed, 14 Oct 2026 09:36:35 GMT",
+        "Age": "0",
+        "Cache-Control": "max-age=600",
+        "Date": "Wed, 14 Oct 2026 09:48:47 GMT"
+      },
+      "chapter_stat": [],
+      "embedded_commit": [],
+      "contains_v05_route": true
+    }
+  ]
+}

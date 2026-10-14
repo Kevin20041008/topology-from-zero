@@ -1,0 +1,24 @@
+{
+  "reason": "Pin LF text bytes so Git checkout does not invalidate provenance. Data and train writers now emit LF on all platforms.",
+  "same_six_runs_parameters_trajectories_metrics_and_prediction_hashes": true,
+  "old_source_sha256": {
+    "data.py": "7e3d7be4496694f08c2f79f5ea711eaec0439bd576475fadce056a7b7a3e83e5",
+    "model.py": "3e56211f7838e51a90a3b4a2471d76ef0b5d210ad7cef9e0cc28bbdb33cc3fca",
+    "protocol.json": "eb3c9fc5869e9c53db9aae2e0c5609fc4106dae2bbdd3857b116d431a7d3cefe",
+    "sources.json": "6b5a3857c4bbfcac696e19651f86c6c9b64a6a1f18c7d420ce8373d1a4011cde",
+    "topology.py": "f1c1141e041c8d69ccbc8d5ef4a5ed5c6e22944c3e6ef3936c88e38bb5577056",
+    "train.py": "64f46e0829d0d43d67cedcfcbe52a55c67973eb350ae9cd6f60526a206fbc2fe"
+  },
+  "new_source_sha256": {
+    "data.py": "410f1ff1483100fff6aed5dfc7f8df49a16efc3bfbc373bce36b360e6ffc55b3",
+    "model.py": "3e56211f7838e51a90a3b4a2471d76ef0b5d210ad7cef9e0cc28bbdb33cc3fca",
+    "protocol.json": "eb3c9fc5869e9c53db9aae2e0c5609fc4106dae2bbdd3857b116d431a7d3cefe",
+    "sources.json": "dc7a7866839e62cdc3d93f83b93610677b4134dc8a9ef8778c5c1f79e768f655",
+    "topology.py": "f1c1141e041c8d69ccbc8d5ef4a5ed5c6e22944c3e6ef3936c88e38bb5577056",
+    "train.py": "f24a314324e486a5697a8ed525923e1cc3d8b00323940b28eca5f2b51296185e"
+  },
+  "old_manifest_sha256": "82a675776a4b587085d9ab83eb7ebd3f10c03459c4b044e3f179e7742f1d76ff",
+  "new_manifest_sha256": "bfffffc80417ed764fe5f34568394ef0fd7e5ec92126733600ad3ed4c3ab126e",
+  "old_runtime_seconds": 28.565508499974385,
+  "new_runtime_seconds": 31.69655039999634
+}

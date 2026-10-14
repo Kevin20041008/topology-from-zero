@@ -219,6 +219,12 @@ $$
 <div class="admonition question" data-exercise="spaces"></div>
 <noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**设 Y 带拓扑 σ，f:X→Y 是集合映射。证明 τf={f⁻¹(V):V∈σ} 是 X 上的拓扑。再证明：若 σ=P(Y)，则 τf 离散当且仅当 f 单射。不借用后续连续性定理。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 spaces 三级证明训练](../exercises/proof-workshop.md#spaces)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 可进一步阅读拓扑空间、拓扑基与度量拓扑部分。

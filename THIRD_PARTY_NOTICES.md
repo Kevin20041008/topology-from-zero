@@ -21,3 +21,8 @@ Source: https://registry.npmjs.org/three/-/three-0.170.0.tgz
 SHA-256:
 - `three.module.js`: `ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb`
 - `LICENSE`: `4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454`
+
+
+## BBBC039v1 course subset
+
+Project D contains derived grayscale images and binary annotations from BBBC039v1, released under CC0 by its contributors. The official source, license observation, archive and per-image checksums, fixed original-image splits, and topology-changing preprocessing are documented in [projects/image-topology/DATA_LICENSE.md](projects/image-topology/DATA_LICENSE.md) and the data manifest. These data keep their CC0 status; original course prose/code licenses do not replace it. This is not an endorsed BBBC benchmark or a reproduction of the source paper.

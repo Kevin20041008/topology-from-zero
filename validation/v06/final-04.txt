@@ -1,0 +1,2 @@
+PASS SymPy 1.14.0: 186 Smith forms and 120 integer chain complexes; all exact certificates hold
+{"kernel_basis_regression": {"free_rank": 0, "torsion": [3]}, "RP2_H1": {"free_rank": 0, "torsion": [2]}, "RP2_H2": {"free_rank": 0, "torsion": []}, "Klein_H1": {"free_rank": 1, "torsion": [2]}}

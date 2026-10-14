@@ -355,8 +355,13 @@
       "prerequisites": [
         "H2",
         "F2",
-        "CT1"
-      ]
+        "CT1",
+        "PRE5"
+      ],
+      "template": 2,
+      "exerciseCount": 8,
+      "review": "project/reviews/H3.md",
+      "solutions": "exercises/h3-solutions.md"
     },
     {
       "path": "algebraic/cohomology/cochains-products.md",
@@ -367,7 +372,11 @@
       "course": "algebraic",
       "prerequisites": [
         "H3"
-      ]
+      ],
+      "template": 2,
+      "exerciseCount": 8,
+      "review": "project/reviews/Q1.md",
+      "solutions": "exercises/q1-solutions.md"
     },
     {
       "path": "algebraic/cohomology/duality.md",
@@ -378,7 +387,11 @@
       "course": "algebraic",
       "prerequisites": [
         "Q1"
-      ]
+      ],
+      "template": 2,
+      "exerciseCount": 8,
+      "review": "project/reviews/Q2.md",
+      "solutions": "exercises/q2-solutions.md"
     },
     {
       "path": "algebraic/graduate-tools.md",

@@ -20,7 +20,7 @@ hide:
 </div>
 </div>
 
-<div class="book-stats"><span><strong>11</strong> 规划部分</span><span><strong>55</strong> 已有正文</span><span><strong>07</strong> 浏览器交互实验</span><span><strong>04</strong> Python Notebook</span></div>
+<div class="book-stats"><span><strong>{{ course.planned_parts }}</strong> 规划部分</span><span><strong>{{ course.chapters }}</strong> 已有正文</span><span><strong>{{ course.labs }}</strong> 浏览器交互实验</span><span><strong>{{ course.notebooks }}</strong> Python Notebook</span></div>
 
 ## 动手改变一个空间
 
@@ -28,6 +28,7 @@ hide:
 [点云与 Barcode](labs/point-cloud.md){ .md-button }
 [旋转三维曲面](labs/surfaces.md){ .md-button }
 [AI 拓扑实验](labs/ai-topology.md){ .md-button }
+[覆盖与道路提升](labs/covering-space.md){ .md-button }
 
 切换一个面、改变观察尺度，或转动一张曲面。AI 实验进一步比较损失、分割孔洞和不可微位置；浏览器探索与下面的严格定义、证明以及 Python Notebook 相互补充。
 
@@ -71,7 +72,7 @@ hide:
 | [B · 数学专业进阶](start/advanced.md) | 补齐点集与整数代数桥梁，再进入覆盖、同调、上同调与流形 |
 | [C · 计算与 AI](start/computational.md) | 有限链、持续同调与实际神经网络训练；保留负结果 |
 
-各路线有预计学习时间、先修诊断、上一课/下一课和本机自评进度。正文状态与个人完成勾选分开。
+各路线有预计学习时间、先修诊断、上一课/下一课和本机自评进度。路线A另有[八课三级证明训练](exercises/proof-workshop.md)：理解目标、补齐理由、独立迁移。正文状态与个人完成勾选分开。
 
 
 按[研究生课程地图](curriculum.md)学习八个方向。点集拓扑构成通用基础；代数拓扑拆分为基本群、覆盖、同调、上同调；微分与几何拓扑建立流形路线；计算 → 持续同调 → AI 构成独立实验路径。旧章节号与 URL 全部保留。
@@ -139,11 +140,14 @@ PL 范畴、紧曲面、结补空间与三维填充。
 
 原42篇正文按照“直观解释 → 严格定义 → 定理与证明 → 正例与反例 → 练习 → 参考书目”展开。PRE1–PRE3采用十二项完整模板，并提供独立题解。建议先独立完成习题，再展开提示。Notebook 中的计算只验证具体有限例子；证明负责一般结论。
 
-55 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
+{{ course.chapters }} 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
 
 !!! info "教材进度与证据"
-    当前55篇正文，13章采用十二项模板；长期11部分89单元仍未全部完成。H3/Q2/G1等重要证明保留明确义务，见[逐定理台账](project/proof-ledger.md)。A3–A8已有线上版本；本批v0.5的提交与部署由[版本记录](project/release-status.md)区分。
+    当前{{ course.chapters }}篇正文，{{ course.template_chapters }}章采用十二项模板；长期{{ course.planned_parts }}部分{{ course.planned_units }}单元仍未全部完成。H3/Q2/G1等重要证明保留明确义务，见[逐定理台账](project/proof-ledger.md)。A3–A8已有线上版本；各批次提交与部署由[版本记录](project/release-status.md)区分。
 
 <div data-build-info>构建来源见版本记录；页面可访问不等于数学审查完成。</div>
 
 [查看教材进度](progress.md) · [实际训练项目 C](ai/projects/topology-optimization.md) · [完整依赖图](project/PREREQUISITE_GRAPH.md)
+
+
+[真实二维图像项目 D](ai/projects/image-topology.md)提供固定小样本细胞图分割与完整负结果：期望Euler约束在该协议下未改善指标。项目C保留合成机制验证，项目D检验真实数据上的限制。

@@ -172,6 +172,12 @@ for n in range(len(A) + 1):
 
 子空间拓扑由与环境开集取交得到，保持了映入连续性的精确含义。相对闭包可直接与子空间取交，内部和边界则要考虑子空间中的补集；限制与缩陪域连续性由同一逆像公式统一解释。这些工具是后续连通子集、紧致子集、嵌入和商空间比较的基础。
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**仍设 A 在 X 稠密、U 在 X 开。证明 cl_X(A∩U)=cl_X(U)。给出取消 U 开后等式失败的例子。两侧闭包均在 X 取，不是在 U 中。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 PS1 三级证明训练](../exercises/proof-workshop.md#ps1)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 12. 参考书目
 
 - James R. Munkres, *Topology*, 第 2 版，第 2 章 §16 “The Subspace Topology”、§17 “Closed Sets and Limit Points”、§18 “Continuous Functions”。[MIT 18.901 阅读安排](https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/pages/readings/)提供相关主题定位。

@@ -87,6 +87,12 @@ $$
 <div class="admonition question" data-exercise="continuity"></div>
 <noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**有限闭集粘合：设 X=A∪B，A、B 在 X 中闭。连续 f:A→Y、g:B→Y 在 A∩B 相等。证明逐块定义的 h:X→Y 连续；Y 不要求 Hausdorff。再以 R 的单点闭覆盖和一个不连续函数说明不能无条件改成无限闭覆盖。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 continuity 三级证明训练](../exercises/proof-workshop.md#continuity)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 连续函数、紧致空间与分离公理部分。

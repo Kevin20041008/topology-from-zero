@@ -91,3 +91,39 @@ python projects/topology-optimization/verify.py --results project-results-local/
 首次验证仓库已存结果，如跨平台浮点差异导致精确重跑失败，保留失败证据并按后两条命令另存本环境的完整结果；不要覆盖历史结果或放宽拓扑断言。CI也运行完整20组训练、再在同一环境精确重跑，并上传全部结果。构建与训练两个作业都通过才能进入主分支部署。
 
 构建钩子 `scripts/build_metadata.py` 输出 `build-info.json`；它记录构建源提交，不是数学认证或GitHub Release标签。发布现状见[版本证据](project/release-status.md)，长期续作见[实施状态](project/IMPLEMENTATION_STATUS.md)。
+
+
+## v0.6 新验收入口
+
+正式章节/Notebook/实验清单是当前统计的来源。修改清单后运行 `python scripts/course_inventory.py` 同步README；构建钩子自动展开页面的计数。CI用 `--check` 拒绝旧摘要。证明工作坊从同一题库生成：修改后运行 `node scripts/build_proof_workshop.mjs`，CI核对 `--check`。
+
+```sh
+npm ci
+npm test
+python scripts/test_build_metadata.py
+python scripts/verify_algebra_chapter_examples.py
+python scripts/course_inventory.py --check
+node scripts/build_proof_workshop.mjs --check
+python -m mkdocs build --strict
+python scripts/verify_site.py
+npx playwright install chromium
+npm run test:browser
+```
+
+以上与原整数、GUDHI、AI正文及Notebook验证共同执行，不替代原检查。项目D使用独立Python3.14环境及 `projects/image-topology/requirements.txt`，运行：
+
+```sh
+python projects/image-topology/test_project.py
+python projects/image-topology/train.py --output project-results-image-ci
+python projects/image-topology/verify.py --results project-results-image-ci/results.json --rerun
+```
+
+这会训练3种子×2目标，核对本平台完整记录。预处理的CC0数据已含在仓库；下载原始归档复查请见项目README。不同BLAS不保证与提交的Windows存档逐位一致，不能用放宽拓扑断言来处理这种差异。
+
+主分支部署成功后由 `verify_deployment.py` 检查普通公开URL的逐页SHA和清单；PR不部署。若需手工核查已部署提交：
+
+```sh
+python scripts/verify_deployment.py --base-url https://kevin20041008.github.io/topology-from-zero/ --expected ACTUAL_DEPLOYED_SHA --attempts 16 --interval 45
+```
+
+替换为实际部署SHA；旧版网站没有逐页元数据时应报告失败，不能假称具备新检查。局部构建可用 `--allow-dirty`，正式部署检查不得使用该开关。证据保存在指定 `--output` JSON；构建身份不等于数学证明认证。

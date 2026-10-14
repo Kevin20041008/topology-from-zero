@@ -241,6 +241,12 @@ $$
 
 接下来可读[拓扑空间导论](../introduction/01-spaces.md)与[拓扑基、子基及子空间](../point-set/bases-subbases.md)，把开球例子推广为一般生成规则；关于完备化和 Baire 定理的后续课程见[完备化与范畴](../point-set/completion-baire.md)。推广时始终检查证明究竟用了距离、可数邻域，还是仅用了拓扑公理。
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**给任意 A⊆X 及 r>0，令 Uᵣ(A)={x∈X:存在 a∈A 使 d(x,a)<r}。不直接引用“开球的任意并开放”，逐点证明 Uᵣ(A) 开放；处理 A=∅。说明把 < 改为 ≤ 后集合不一定开放。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 PRE3 三级证明训练](../exercises/proof-workshop.md#pre3)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 12. 参考书目
 
 - James R. Munkres, *Topology*, 2nd ed., Prentice Hall, 2000，§20 “The Metric Topology”、§21 “The Metric Topology (continued)”。章节定位可由 [MIT 18.901 阅读表](https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/pages/readings/)核对。该核验针对目录与课程阅读安排，不表示已逐页核读原书。书名和目录另经出版方 Pearson 目录核对。

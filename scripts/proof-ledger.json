@@ -53,28 +53,42 @@
   },
   "statements": [
     {
+      "id": "H3.0",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-0",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "有限生成阿贝尔第一变量；有限自由表示；任意阿贝尔系数；PRE5 自由子群",
+      "obligation": "自由表示提升、提升无关性、表示无关性与双变量协变已证明；仅有限生成第一变量的本章范围",
+      "reference": "hatcher-homology-uct",
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
       "id": "H3.1",
       "chapter": "H3",
       "path": "algebraic/homology/cellular-coefficients.md",
       "anchor": "proof-h3-1",
       "kind": "outline",
       "dependencies": [],
-      "assumptions": "有限CW；整数系数；骨架相对群集中引理外引",
-      "obligation": "非正则CW骨架相对群的完整比较；不能只取附加球领圈",
+      "assumptions": "有限 CW；整数系数；非正则骨架对相对群集中引理外引",
+      "obligation": "接受外引引理后的长正合列推导完整，含 n=0；骨架对引理、附加映射度公式与一般无限 CW 比较仍未证明",
       "reference": "hatcher-cellular",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "H3.2",
       "chapter": "H3",
       "path": "algebraic/homology/cellular-coefficients.md",
       "anchor": "proof-h3-2",
-      "kind": "outline",
-      "dependencies": [],
-      "assumptions": "逐次有限生成自由整数链；任意阿贝尔系数G；PRE5、CT1",
-      "obligation": "自然Tor映射及交换图；分块计算只给非自然分裂",
+      "kind": "complete",
+      "dependencies": [
+        "H3.0"
+      ],
+      "assumptions": "非负有界且逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与张量商公式",
+      "obligation": "已构造 alpha/beta、正合性、分裂、对整数链映射和任意系数同态的交换图；剪切反例证明无自然分裂。待非编写及人类逐式复核",
       "reference": "hatcher-homology-uct",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "H3.3",
@@ -83,10 +97,10 @@
       "anchor": "proof-h3-3",
       "kind": "complete",
       "dependencies": [],
-      "assumptions": "域上有限维链复形；有符号张量微分",
-      "obligation": "补空间选择；不据此宣称空间链比较已证",
+      "assumptions": "域上有界、逐次有限维链；有符号张量微分",
+      "obligation": "两种可缩因子的收缩符号已展开，典范同构自然性已说明；不能由此直接套用无限维奇异链",
       "reference": "hatcher-homology-uct",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "H3.EZ",
@@ -95,10 +109,24 @@
       "anchor": "proof-h3-ez",
       "kind": "external",
       "dependencies": [],
-      "assumptions": "空间奇异链与张量链；采用标准Eilenberg–Zilber比较",
-      "obligation": "shuffle映射与链同伦未展开",
+      "assumptions": "空间奇异链与张量链；标准 Eilenberg–Zilber 及空间域 Kunneth 比较",
+      "obligation": "shuffle 映射、链同伦、一般空间链 Kunneth 与有限胞腔乘积比较仍外引",
       "reference": "hatcher-homology-uct",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "Q1.0",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-0",
+      "kind": "complete",
+      "dependencies": [
+        "H3.0"
+      ],
+      "assumptions": "有限生成阿贝尔第一变量；有限自由表示；任意阿贝尔系数",
+      "obligation": "余核上的预合成、提升无关性和表示独立性已证明；一般导出函子理论不在本章范围",
+      "reference": "hatcher-cohomology",
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q1.1",
@@ -108,9 +136,9 @@
       "kind": "complete",
       "dependencies": [],
       "assumptions": "交换环系数；有序面；非负次数；边界平方零",
-      "obligation": "本批展开共享面相消；待人类复核符号",
+      "obligation": "杯积删面公式、代表元无关性、结合律及拉回自然性已展开；系数乘法自然性要求环同态",
       "reference": "hatcher-cohomology",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q1.2",
@@ -119,24 +147,38 @@
       "anchor": "proof-q1-2",
       "kind": "complete",
       "dependencies": [],
-      "assumptions": "域上链复形；无限维延拓使用选择公理",
-      "obligation": "自然性来自评价；无限维选择依赖明示",
+      "assumptions": "固定域 k 上链复形和 k 线性链映射；无限维延拓使用选择公理",
+      "obligation": "评价核像与反变交换方块已展开；不声称对任意环仍是无修正对偶",
       "reference": "hatcher-cohomology",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q1.3",
       "chapter": "Q1",
       "path": "algebraic/cohomology/cochains-products.md",
       "anchor": "proof-q1-3",
+      "kind": "complete",
+      "dependencies": [
+        "Q1.0"
+      ],
+      "assumptions": "非负有界、逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与直和投影",
+      "obligation": "Ext 嵌入、评价、正合性、非自然分裂、链映射反变和系数同态协变均已构造；待非编写及人类复核",
+      "reference": "hatcher-cohomology",
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "Q1.cellular-comparison",
+      "chapter": "Q1",
+      "path": "algebraic/cohomology/cochains-products.md",
+      "anchor": "proof-q1-cellular-comparison",
       "kind": "external",
       "dependencies": [
-        "H3.2"
+        "H3.1"
       ],
-      "assumptions": "有限生成自由整数链；任意阿贝尔系数G",
-      "obligation": "块计算给群分解；自然Ext嵌入未构造",
+      "assumptions": "有限 CW；任意阿贝尔系数；胞腔上链与奇异上同调；胞腔映射下自然",
+      "obligation": "上链比较及评价兼容性未证明；一般连续映射还用胞腔逼近；单有同调群同构不够，杯积还需另行比较",
       "reference": "hatcher-cohomology",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q1.commutativity",
@@ -151,7 +193,21 @@
       "assumptions": "上同调类上的分次交换；链级不严格交换",
       "obligation": "cup-one链同伦及外积兼容性未展开",
       "reference": "hatcher-cohomology",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "Q2.3",
+      "chapter": "Q2",
+      "path": "algebraic/cohomology/duality.md",
+      "anchor": "proof-q2-3",
+      "kind": "complete",
+      "dependencies": [
+        "Q2.1"
+      ],
+      "assumptions": "连续映射 f:X→Y；整数奇异上链与链；非负次数；过高次帽积零",
+      "obligation": "逐奇异单形计算和同调交换方块已展开；不要求 f 保持基本类",
+      "reference": "hatcher-duality",
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q2.1",
@@ -163,7 +219,7 @@
       "assumptions": "整数上链；p,n非负；过高次帽积为零；普通链的∂C0=0",
       "obligation": "本批逐式删点计算并覆盖n=p端点",
       "reference": "hatcher-duality",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q2.2",
@@ -175,10 +231,10 @@
         "H3.1",
         "Q2.1"
       ],
-      "assumptions": "闭、定向、有限组合三角剖分的n维PL流形",
-      "obligation": "对偶胞腔关联数符号、逐次重标号及奇异帽积比较未完成",
+      "assumptions": "闭（紧且无边界）、定向、有限组合三角剖分的 n 维 PL 流形；整数系数；可有限多分量",
+      "obligation": "对偶胞腔关联数符号、逐次数重标号及到指定奇异帽积的比较未证明；已移除将未算符号当作成立链等式的表述",
       "reference": "hatcher-duality",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "Q2.euler",
@@ -187,13 +243,14 @@
       "anchor": "proof-q2-euler",
       "kind": "complete",
       "dependencies": [
-        "Q1.2",
+        "Q1.3",
+        "Q1.cellular-comparison",
         "Q2.2"
       ],
-      "assumptions": "奇数维闭定向有限PL流形；有理系数",
-      "obligation": "完整的条件推导；依赖未在教材全证的对偶",
+      "assumptions": "奇数维闭定向有限 PL 流形；有限生成整数同调的自由秩",
+      "obligation": "完整条件推导：UCT 的 Ext 仅贡献挠子，整数对偶配对自由秩；对偶本身外引，不是独立全证",
       "reference": "hatcher-duality",
-      "review": "本批作者核对；待人类同行复核"
+      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "G1.1",

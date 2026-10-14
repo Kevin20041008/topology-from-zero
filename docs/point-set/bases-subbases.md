@@ -91,6 +91,12 @@ $$
 <div class="admonition question" data-exercise="bases"></div>
 <noscript>即时反馈需启用 JavaScript；正文练习和提示仍可直接阅读。</noscript>
 
+## 证明训练：从理解到独立迁移
+
+**新增迁移任务（保留原有习题）。**证明所有有理端点开区间 (p,q)（p,q∈Q，p<q）构成 R 通常拓扑的一组基。先验证覆盖与局部交，再证明拓扑相同；解释为何不要求被覆盖的点 x 为有理数。
+
+请先写出目标、量词顺序与假设，再独立论证。[进入 bases 三级证明训练](../exercises/proof-workshop.md#bases)，可检查引导步骤的依赖，并查看分步提示、自核量规和完整论证。自由证明不由系统自动判真；无需保存或上传草稿。
+
 ## 6. 参考书目
 
 - James R. Munkres. *Topology*, 2nd ed. Prentice Hall, 2000. 基、子基、子空间与有限积拓扑。

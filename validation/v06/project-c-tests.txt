@@ -1,0 +1,13 @@
+test_exhaustive_pairing_and_thresholds (__main__.ProjectTests.test_exhaustive_pairing_and_thresholds) ... ok
+test_full_network_gradient (__main__.ProjectTests.test_full_network_gradient) ... ok
+test_invalid_inputs (__main__.ProjectTests.test_invalid_inputs) ... ok
+test_nonsmooth_tie_policy (__main__.ProjectTests.test_nonsmooth_tie_policy) ... ok
+test_real_training_smoke_is_reproducible (__main__.ProjectTests.test_real_training_smoke_is_reproducible) ... ok
+test_short_intervals_and_underflow (__main__.ProjectTests.test_short_intervals_and_underflow) ... ok
+test_split_ids_and_target_topology (__main__.ProjectTests.test_split_ids_and_target_topology) ... ok
+test_vertex_gradient_away_from_ties (__main__.ProjectTests.test_vertex_gradient_away_from_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.085s
+
+OK

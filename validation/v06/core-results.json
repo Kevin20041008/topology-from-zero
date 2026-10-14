@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_independent.py"
+    ],
+    "exit_code": 0,
+    "log": "core-01.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_ai_independent.py"
+    ],
+    "exit_code": 0,
+    "log": "core-02.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_ai_examples.py"
+    ],
+    "exit_code": 0,
+    "log": "core-03.txt"
+  },
+  {
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_notebooks.py"
+    ],
+    "exit_code": 0,
+    "log": "core-04.txt"
+  }
+]

@@ -1,6 +1,6 @@
 # 教材进度
 
-当前55篇正文、55自检、四份Notebook；13章采用十二项模板，配套104题完整答案。新增PRE4、PS1、PRE5与CT1整数同调，以及三条连续路线和实际运行的神经网络项目C。长期11部分89单元尚未全部完成；线上提交与Release标签请读[版本证据](project/release-status.md)，数学审查另见[逐定理台账](project/proof-ledger.md)。
+当前{{ course.chapters }}篇正文、{{ course.self_checks }}自检、{{ course.notebooks }}份Notebook；{{ course.template_chapters }}章采用十二项模板，配套{{ course.template_exercises }}题完整答案。新增PRE4、PS1、PRE5与CT1整数同调，以及三条连续路线和实际运行的神经网络项目C。长期{{ course.planned_parts }}部分{{ course.planned_units }}单元尚未全部完成；线上提交与Release标签请读[版本证据](project/release-status.md)，数学审查另见[逐定理台账](project/proof-ledger.md)。
 
 | 方向 | 现有正文范围 | 深化与审查边界 |
 | --- | --- | --- |
@@ -12,7 +12,7 @@
 | 几何拓扑 | 4 篇：PL、曲面、结、三维粘合 | 全局分类、几何化与高维手术未完整证明 |
 | 计算拓扑 | 2 篇及 Notebook 02–03、精确SNF CLI | 有限算法；无大规模性能基准 |
 | 持续同调 | 2 篇及已有交互实验 | 分解/配对、代数稳定性引用 |
-| 拓扑与 AI | 8 篇、Notebook 04 及三项新交互 | 新增损失、分割、医学、高阶网络、点云与微分；有实际合成网络训练；无真实临床或论文复现结论 |
+| 拓扑与 AI | 8 篇、Notebook 04 及三项新交互 | 新增损失、分割、医学、高阶网络、点云与微分；有实际合成网络训练和BBBC039真实二维图像实验；无临床或论文复现结论 |
 
 ## 示范章节的完成标准
 
@@ -25,3 +25,8 @@
 
 !!! info "本批补全范围"
     PRE4/PS1/PRE5/CT1提供32题论证式答案与审查记录；项目C提供固定种子、数据、环境、测试预测和20组结果，包含错误拓扑先验的失败案例。CT1主题包里的立方复形及CT2离散Morse仍待建设。
+
+
+## 当前质量批次
+
+H3/Q1/Q2提供24题论证答案，Tor/Ext自然映射已本地展开；对偶胞腔比较等仍外引。路线A八课支持三级证明训练；排序检查不自动证明自由文本正确。新增覆盖空间交互与[项目D](ai/projects/image-topology.md)。部署、人工审阅、学习者试用分别记录，不以代码通过宣称完成后两者。
