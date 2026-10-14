@@ -43,6 +43,9 @@ def plot(path, output):
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output, metadata={"Date": None})
+    # Matplotlib emits trailing spaces in SVG paths; keep generated diffs clean.
+    if output.suffix.lower() == '.svg':
+        output.write_text('\n'.join(line.rstrip() for line in output.read_text(encoding='utf-8').splitlines()) + '\n', encoding='utf-8', newline='\n')
     fig.savefig(ROOT / "results" / "trajectories.png", dpi=130)
     plt.close(fig)
     print(output)
