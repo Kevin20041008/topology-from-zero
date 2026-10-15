@@ -127,3 +127,15 @@ python scripts/verify_deployment.py --base-url https://kevin20041008.github.io/t
 ```
 
 替换为实际部署SHA；旧版网站没有逐页元数据时应报告失败，不能假称具备新检查。局部构建可用 `--allow-dirty`，正式部署检查不得使用该开关。证据保存在指定 `--output` JSON；构建身份不等于数学证明认证。
+
+## H2/H3 同调续补验收
+
+更新证明台账机器源后运行 `python scripts/build_proof_ledger.py`，CI以 `--check` 校验页面同步。新增实验只用标准库，不修改网站依赖：
+
+```text
+python scripts/build_proof_ledger.py --check
+python scripts/test_subdivision_chains.py
+python scripts/verify_homology_content.py
+```
+
+它们随原有全量检查执行。细分实验只处理实仿射空间中的有理顶点和整数链，保留重复有序元组；精确测试不证明任意连续奇异链的小链定理。新增浏览器验收覆盖H2/H3图、公式、旧锚点和题解导航。

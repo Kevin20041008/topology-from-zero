@@ -1,6 +1,7 @@
 {
   "schema": 1,
   "scope": [
+    "H2",
     "H3",
     "Q1",
     "Q2",
@@ -49,9 +50,110 @@
     "optimization": {
       "title": "Carrière et al., Optimizing persistent homology based functions, ICML 2021",
       "url": "https://proceedings.mlr.press/v139/carriere21a.html"
+    },
+    "hatcher-excision": {
+      "title": "Hatcher, Algebraic Topology (2002), §2.1 Relative Homology, Excision and Mayer–Vietoris",
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
     }
   },
   "statements": [
+    {
+      "id": "H2.1",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-1",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "逐次短正合的阿贝尔链复形；整数奇异链与相对链为应用",
+      "obligation": "连接映射选择无关、三处核像相等及交换链映射下自然性完整展开",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.5",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-5",
+      "kind": "complete",
+      "dependencies": [],
+      "assumptions": "实仿射空间中的增广有序元组链；不取定向或退化商；整数系数",
+      "obligation": "首点作锥及负一次空元组；恒等式覆盖零次，重复顶点不能任意删除",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.6",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-6",
+      "kind": "complete",
+      "dependencies": [
+        "H2.5"
+      ],
+      "assumptions": "增广仿射链；奇异单形从标准参数单形推前",
+      "obligation": "Sd/T递归、仿射自然性、面相容及支撑均展开；一般连续映射不要求仿射",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.7",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-7",
+      "kind": "complete",
+      "dependencies": [
+        "H2.6"
+      ],
+      "assumptions": "有限链；参数单形上的有限开覆盖；P4紧致Lebesgue数",
+      "obligation": "参数域网格缩小与逐链有限N已证明；不声称任意连续像具有同一缩小比或存在全局统一N",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.2",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-2",
+      "kind": "complete",
+      "dependencies": [
+        "H2.6",
+        "H2.7"
+      ],
+      "assumptions": "任意拓扑空间的开覆盖；任意子空间A；小链相对商",
+      "obligation": "普通及相对同调满射、单射分别给出代表；保留非零相对循环边界项",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.3",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-3",
+      "kind": "complete",
+      "dependencies": [
+        "H2.6",
+        "H2.7"
+      ],
+      "assumptions": "任意空间对(X,A)；Z的X闭包包含于A的X内部",
+      "obligation": "D=C(A)+C(X\\Z)及商复形识别；用细分与支撑证明相对满射、单射",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H2.4",
+      "chapter": "H2",
+      "path": "algebraic/homology/exact-excision.md",
+      "anchor": "proof-h2-4",
+      "kind": "complete",
+      "dependencies": [
+        "H2.1",
+        "H2.2"
+      ],
+      "assumptions": "有序开覆盖X=U并V；整数系数；约化版保留负一次",
+      "obligation": "链短正合列、连接符号、覆盖交换取负和自然性全证；空交集不删负一次项；球面与盘对由此计算",
+      "reference": "hatcher-excision",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
     {
       "id": "H3.0",
       "chapter": "H3",
@@ -65,16 +167,69 @@
       "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
+      "id": "H3.4",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-4",
+      "kind": "complete",
+      "dependencies": [
+        "H2.1",
+        "H2.3",
+        "H2.4"
+      ],
+      "assumptions": "有限Hausdorff CW的相邻骨架；特征圆盘边界可非单射",
+      "obligation": "整圆盘径向同伦经紧商下降、邻域收缩、切除、实际特征生成元比较全证；含r=0/1、无胞腔和空空间",
+      "reference": "hatcher-cellular",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
       "id": "H3.1",
       "chapter": "H3",
       "path": "algebraic/homology/cellular-coefficients.md",
       "anchor": "proof-h3-1",
-      "kind": "outline",
-      "dependencies": [],
-      "assumptions": "有限 CW；整数系数；非正则骨架对相对群集中引理外引",
-      "obligation": "接受外引引理后的长正合列推导完整，含 n=0；骨架对引理、附加映射度公式与一般无限 CW 比较仍未证明",
+      "kind": "complete",
+      "dependencies": [
+        "H3.4",
+        "H2.1"
+      ],
+      "assumptions": "有限Hausdorff CW复形，可非正则；整数系数；映射为胞腔映射",
+      "obligation": "骨架长正合列、零次和顶骨架、胞腔映射自然性已完整证明；一般连续映射的胞腔逼近与无限CW未证明",
       "reference": "hatcher-cellular",
-      "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H3.5",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-5",
+      "kind": "complete",
+      "dependencies": [
+        "H3.4",
+        "H2.1"
+      ],
+      "assumptions": "有限CW已选胞腔定向；n≥2度公式与n=1端点公式分开",
+      "obligation": "塌缩到目标球面的相对坐标识别、连接自然性给附加度；变向行列符号已说明",
+      "reference": "hatcher-cellular",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
+    },
+    {
+      "id": "H3.6",
+      "chapter": "H3",
+      "path": "algebraic/homology/cellular-coefficients.md",
+      "anchor": "proof-h3-6",
+      "kind": "complete",
+      "dependencies": [
+        "H3.1",
+        "H3.4",
+        "H3.5",
+        "H2.2",
+        "H2.3",
+        "H2.4"
+      ],
+      "assumptions": "有限Hausdorff CW；任意阿贝尔系数G；胞腔映射与系数同态",
+      "obligation": "逐度分裂链短正合列、带系数Sd/T及球盘计算、g特征生成元和m·g边界全证；没有把整数同调同构直接张量",
+      "reference": "hatcher-cellular",
+      "review": "2026-10-15 作者、根代理与非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
     {
       "id": "H3.2",
@@ -86,7 +241,7 @@
         "H3.0"
       ],
       "assumptions": "非负有界且逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与张量商公式",
-      "obligation": "已构造 alpha/beta、正合性、分裂、对整数链映射和任意系数同态的交换图；剪切反例证明无自然分裂。待非编写及人类逐式复核",
+      "obligation": "已构造 alpha/beta、正合性、分裂、对整数链映射和任意系数同态的交换图；剪切反例证明无自然分裂。非编写模型已复核，仍待人类逐式审阅",
       "reference": "hatcher-homology-uct",
       "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },
@@ -162,7 +317,7 @@
         "Q1.0"
       ],
       "assumptions": "非负有界、逐次有限秩自由整数链；任意阿贝尔系数 G；PRE5 自由子群与直和投影",
-      "obligation": "Ext 嵌入、评价、正合性、非自然分裂、链映射反变和系数同态协变均已构造；待非编写及人类复核",
+      "obligation": "Ext 嵌入、评价、正合性、非自然分裂、链映射反变和系数同态协变均已构造；非编写模型已复核，仍待人类审阅",
       "reference": "hatcher-cohomology",
       "review": "2026-10-14 作者、根代理及非编写 review_foundations 模型逐式复核；尚无人类同行签署或形式化验证"
     },

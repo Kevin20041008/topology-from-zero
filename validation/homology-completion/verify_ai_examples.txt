@@ -1,0 +1,8 @@
+PASS topological-loss: 1 Python block(s), all assertions passed
+PASS medical-topology: 1 Python block(s), all assertions passed
+PASS higher-order-networks: 1 Python block(s), all assertions passed
+Exact finite checks passed; no neural model was trained.
+PASS point-cloud-learning: 1 Python block(s), all assertions passed
+Fixed correspondence, radius convention, finite checks passed.
+PASS differentiable-persistence: 1 Python block(s), all assertions passed
+1.0000999999998372 0.0 0.5000499999999186

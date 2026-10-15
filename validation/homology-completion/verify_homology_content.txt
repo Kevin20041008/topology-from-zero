@@ -1,0 +1,3 @@
+PASS H2 executable example, 12 sections/8 answers/7 legacy anchors, 2 SVG contracts
+PASS H3: 11 signed attachment degrees and exact graph kernels/orientation changes
+Scope: finite examples and document consistency; general proofs remain separately reviewed.

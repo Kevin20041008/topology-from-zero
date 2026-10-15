@@ -61,8 +61,8 @@
 | linear-quotient · [自由群组、链群与商空间预备](../algebraic/linear-algebra-primer.md)<br>已有·待升级 | PRE1, PRE2 | 自由阿贝尔群；核像秩；商维数 | Z与域系数区别 | 既有模2链实验 |
 | homology · [有向单纯形与单纯同调](../algebraic/03-homology.md)<br>已有·待升级 | linear-quotient | 整数交错边界平方零；循环模边界 | 三角边界与填面；Betti | 既有三角形实验 |
 | H1 · [奇异链、函子性与同伦不变性](../algebraic/homology/singular-chains.md)<br>已有·待升级 | homotopy, linear-quotient | 链映射；棱柱同伦；H0道路分支 | 不可道路连通连通空间 | 边界符号检查 |
-| H2 · [相对同调、切除与长正合列](../algebraic/homology/exact-excision.md)<br>已有·待升级 | H1, P4 | 连接映射；细分小链；Mayer–Vietoris | 球面对合；不满足切除条件 | 链短正合列 |
-| H3 · [CW复形、胞腔同调与整数计算](../algebraic/homology/cellular-coefficients.md)<br>已有·待升级 | H2, F2 | 骨架相对群；有限生成阿贝尔群；SNF；Euler | 射影空间挠；环面 | 整数矩阵与SNF |
+| H2 · [相对同调、切除与长正合列](../algebraic/homology/exact-excision.md)<br>十二节·8题·模型复核 | H1, P4 | 连接映射；细分小链；Mayer–Vietoris | 球面对合；不满足切除条件 | 链短正合列 |
+| H3 · [CW复形、胞腔同调与整数计算](../algebraic/homology/cellular-coefficients.md)<br>有限CW比较全证·12题·乘积外引 | H2, F2 | 骨架相对群；有限生成阿贝尔群；SNF；Euler | 射影空间挠；环面 | 整数矩阵与SNF |
 | Q1 · [上链、泛系数与杯积](../algebraic/cohomology/cochains-products.md)<br>已有·待升级 | H3 | 反变函子；UCT假设；杯积Leibniz | 同Betti不同杯积环 | 既有Notebook03 |
 | Q2 · [定向与Poincaré对偶](../algebraic/cohomology/duality.md)<br>已有·待升级 | Q1 | 闭定向流形对偶；PL符号需逐式复核 | 非定向与边界反例 | 对偶胞腔图 |
 | AT2 · Künneth、系数与Tor/Ext<br>待建设 | H3, Q1 | PID有限自由版本；非自然分裂边界 | RP2整数/模2；乘积挠 | 逐矩阵系数比较 |

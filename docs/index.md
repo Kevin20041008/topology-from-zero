@@ -143,7 +143,7 @@ PL 范畴、紧曲面、结补空间与三维填充。
 {{ course.chapters }} 篇正文都提供一个有两级提示的即时自检。选择后点击“检查答案”会给出针对该选项的解释，可以重新作答；答案只在本页处理，不上传、不计分。书面习题仍需自己完成证明。进入第三章前可先学代数预备；想理解曲面粘合可在第二章之后学习基础 D。
 
 !!! info "教材进度与证据"
-    当前{{ course.chapters }}篇正文，{{ course.template_chapters }}章采用十二项模板；长期{{ course.planned_parts }}部分{{ course.planned_units }}单元仍未全部完成。H3/Q2/G1等重要证明保留明确义务，见[逐定理台账](project/proof-ledger.md)。A3–A8已有线上版本；各批次提交与部署由[版本记录](project/release-status.md)区分。
+    当前{{ course.chapters }}篇正文，{{ course.template_chapters }}章采用十二项模板；长期{{ course.planned_parts }}部分{{ course.planned_units }}单元仍未全部完成。H3空间乘积、Q1上链比较、Q2对偶及G1等证明保留明确义务，见[逐定理台账](project/proof-ledger.md)。A3–A8已有线上版本；各批次提交与部署由[版本记录](project/release-status.md)区分。
 
 <div data-build-info>构建来源见版本记录；页面可访问不等于数学审查完成。</div>
 

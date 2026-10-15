@@ -1,0 +1,23 @@
+[
+  {
+    "name": "project-c-tests",
+    "command": [
+      "C:/Python314/python.exe",
+      "projects/topology-optimization/test_project.py"
+    ],
+    "start_utc": "2026-10-15T12:07:17.709323+00:00",
+    "exit_code": 0,
+    "log": "project-c-tests.txt"
+  },
+  {
+    "name": "project-c-rerun",
+    "command": [
+      "C:/Python314/python.exe",
+      "projects/topology-optimization/verify.py",
+      "--rerun"
+    ],
+    "start_utc": "2026-10-15T12:07:18.423052+00:00",
+    "exit_code": 0,
+    "log": "project-c-rerun.txt"
+  }
+]

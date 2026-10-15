@@ -4,18 +4,18 @@
 
 ## 已核实的线上状态
 
-以下为 **2026-10-14 09:48:46 UTC（北京时间17:48:46）的远端快照**，不把它写成永久有效的“最新版本”。
+以下为 **2026-10-15 11:44:03 UTC（北京时间19:44:03）的只读远端快照**。这不是永久有效的“最新版本”。
 
 | 事项 | 证据 |
-| --- | --- |
-| GitHub 主分支 | `9a562cad901b72407c9261e2f69d4dad790cfc6d`；[PR #8](https://github.com/Kevin20041008/topology-from-zero/pull/8) 已合并 |
-| Pages 部署 | [工作流 38543305406](https://github.com/Kevin20041008/topology-from-zero/actions/runs/38543305406) 成功；线上 `build-info.json` 指向同一提交 |
-| 页面观察 | 首页已经返回55篇正文；课程索引、学习路线和整数同调页均HTTP 200，Last-Modified均为09:36:35 UTC |
-| 缓存观察 | 响应为 `Cache-Control: max-age=600`；本次未复现旧51章首页，无法据此确定先前不一致的原因 |
-| GitHub Release | 当时最新标签仍为 [v0.3](https://github.com/Kevin20041008/topology-from-zero/releases/tag/v0.3)，标签不是网站正文范围的计数 |
-| 数学审查 | 有模型检查与有限计算证据；全书尚无人类同行签署或形式化验证 |
+|---|---|
+| GitHub主分支 | `7580d391a78a2df42a428a0d3fbd3dde57dbae4b`；[PR #9](https://github.com/Kevin20041008/topology-from-zero/pull/9) 已由维护者于2026-10-14 12:12:27 UTC合并 |
+| Pages部署 | [工作流38562088381](https://github.com/Kevin20041008/topology-from-zero/actions/runs/38562088381) 成功；线上manifest指向同一提交，dirty=false |
+| 页面一致性 | 首页、课程索引、学习入口、CT1、H3/Q1/Q2、证明工作坊、覆盖实验、项目D共10个普通URL均通过；逐页SHA、页面身份、清单摘要一致 |
+| 在线清单 | 55篇正文、16章十二项模板、128题、8项浏览器实验、4份Notebook；这是快照的已部署清单 |
+| 响应记录 | Last-Modified为2026-10-14 12:17:33 GMT；本次检查没有发现旧首页混入，不对其他CDN地区作全局保证 |
+| 数学审查 | 模型复核和有限验证不等于全书人类同行签署；新同调补全分支尚未发布 |
 
-原始证据位于仓库 `validation/v06/release-audit-before.json`。v0.5旧实现仅从独立JSON显示版本；因此当时的观察并不能证明每一份HTML都来自该提交。本批补上下面的逐页检查。历史审计保留在 `validation/v05/` 与[实施状态](IMPLEMENTATION_STATUS.md)，历史“未发布”不用于描述今日线上状态。
+原始证据在仓库 `validation/homology-completion/release-audit.json`、`live-baseline-check.json`。历史v0.5/v0.6审计保留，不重写过去的观测。当前分支扩充H2/H3后，源码清单为{{ course.template_chapters }}章模板、{{ course.template_exercises }}题；未以它冒充上述线上快照。
 
 ## 本页如何记录版本
 
@@ -31,4 +31,4 @@
 
 检查最多尝试16次，间隔45秒，覆盖已观察到的10分钟缓存周期；每次保存响应头和不一致原因。超过窗口仍失败则工作流失败，保留 `deployment-consistency` 证据，不自动回滚或重发版本。对不同CDN地区的缓存状态仍不能作全球保证。
 
-本批是 **v0.6质量升级候选**，不自动合并、打标签或发布。现有线上v0.5成功与候选版的本地/PR验证必须分别阅读。代码通过也不替代[定理依赖台账](proof-ledger.md)、[人工审阅包](HUMAN_REVIEW_PACKET.md)与[学习者测试](LEARNER_STUDY.md)。
+本批是 **H2/H3同调证明补全候选**，不自动合并、打标签或发布。已部署v0.6与本批本地/PR验证分别记录。代码通过也不替代[定理依赖台账](proof-ledger.md)、[人工审阅包](HUMAN_REVIEW_PACKET.md)与[学习者测试](LEARNER_STUDY.md)。

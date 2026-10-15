@@ -43,7 +43,7 @@ test('diagnostic answers distinguish unanswered and wrong, retain actual mathema
 });
 test('focused theorem ledger resolves references, source anchors, dependencies and every numbered claim',()=>{
   const ledger=json('./proof-ledger.json'),by=new Map(ledger.statements.map(s=>[s.id,s]));
-  assert.equal(by.size,32);assert.equal(ledger.scope.length,7);
+  assert.equal(by.size,42);assert.equal(ledger.scope.length,8);
   const active=new Set(),done=new Set();
   function visit(id){assert.ok(by.has(id),id);assert.ok(!active.has(id),id);if(done.has(id))return;active.add(id);by.get(id).dependencies.forEach(visit);active.delete(id);done.add(id);}
   const index=readFileSync(new URL('../docs/project/proof-ledger.md',import.meta.url),'utf8');
@@ -60,8 +60,8 @@ test('focused theorem ledger resolves references, source anchors, dependencies a
       const id=claim[1]==='Q2.4'?'Q2.euler':claim[1];assert.ok(by.has(id),claim[1]);
     }
   }
-  for(const id of ['H3.1','Q2.2','G1.2'])assert.equal(by.get(id).kind,'outline');
-  for(const id of ['H3.0','H3.2','Q1.0','Q1.3','Q2.3'])assert.equal(by.get(id).kind,'complete');
+  for(const id of ['Q2.2','G1.2'])assert.equal(by.get(id).kind,'outline');
+  for(const id of ['H2.1','H2.2','H2.3','H2.4','H2.5','H2.6','H2.7','H3.0','H3.1','H3.2','H3.4','H3.5','H3.6','Q1.0','Q1.3','Q2.3'])assert.equal(by.get(id).kind,'complete');
   assert.equal(by.get('Q1.cellular-comparison').kind,'external');
   assert.ok(by.get('H3.2').dependencies.includes('H3.0'));
   assert.ok(by.get('Q1.3').dependencies.includes('Q1.0'));assert.ok(by.get('A8.4').dependencies.includes('R1.pairing'));

@@ -1,0 +1,30 @@
+H2 exact affine-chain regression log
+Date UTC: 2026-10-15T11:49:11.778732+00:00
+Python: 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]
+Platform: Windows-11-10.0.26100-SP0
+Command: python scripts/test_subdivision_chains.py
+SHA256 scripts/subdivision_chains.py: fd3d0c91aa68229c502b94afb0d4f14c67796d600fed46e20e36f7754850c409
+SHA256 scripts/test_subdivision_chains.py: 826ade3f03bb7cf39a74a4d72f35d86d04f387efaf4cd5b0c89efbedacf30341
+
+Exact Fraction / Z coefficients; no floating tolerance.
+Coverage: 120 ordered small simplices; standard dimensions 0..4;
+16 affine maps including rank-zero; repeats through 5 (1D), 3 (2D), 2 (3D).
+test_affine_naturality_including_rank_zero_and_dimension_zero (__main__.SubdivisionTests.test_affine_naturality_including_rank_zero_and_dimension_zero) ... ok
+test_augmentation_and_cone_identity_including_vertices (__main__.SubdivisionTests.test_augmentation_and_cone_identity_including_vertices) ... ok
+test_direct_flags_standard_dimensions_zero_through_four (__main__.SubdivisionTests.test_direct_flags_standard_dimensions_zero_through_four) ... ok
+test_exact_input_contract_zero_groups_and_cancellation (__main__.SubdivisionTests.test_exact_input_contract_zero_groups_and_cancellation) ... ok
+test_exact_mesh_contraction_and_repeated_subdivision (__main__.SubdivisionTests.test_exact_mesh_contraction_and_repeated_subdivision) ... ok
+test_exhaustive_120_ordered_small_simplices (__main__.SubdivisionTests.test_exhaustive_120_ordered_small_simplices) ... ok
+test_finite_chains_uniform_mesh_and_iterated_homotopy (__main__.SubdivisionTests.test_finite_chains_uniform_mesh_and_iterated_homotopy) ... ok
+test_order_is_not_an_orientation_quotient (__main__.SubdivisionTests.test_order_is_not_an_orientation_quotient) ... ok
+test_repeated_vertices_are_not_discarded (__main__.SubdivisionTests.test_repeated_vertices_are_not_discarded) ... ok
+test_support_stays_inside_original_simplex (__main__.SubdivisionTests.test_support_stays_inside_original_simplex) ... ok
+test_triangle_residual_is_an_explicit_cycle (__main__.SubdivisionTests.test_triangle_residual_is_an_explicit_cycle) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.255s
+
+OK
+
+Exit code: 0
+Wall time seconds: 3.531774
