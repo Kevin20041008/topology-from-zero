@@ -1,0 +1,14 @@
+test_big_integers_do_not_pass_through_float (__main__.IntegerTests.test_big_integers_do_not_pass_through_float) ... ok
+test_circle_triangle_and_disjoint_vertices (__main__.IntegerTests.test_circle_triangle_and_disjoint_vertices) ... ok
+test_cleared_rational_vectors_need_not_span_integer_kernel (__main__.IntegerTests.test_cleared_rational_vectors_need_not_span_integer_kernel) ... ok
+test_exact_input_contract_and_zero_shapes (__main__.IntegerTests.test_exact_input_contract_and_zero_shapes) ... ok
+test_invalid_chain_and_nonunimodular_inverse_rejected (__main__.IntegerTests.test_invalid_chain_and_nonunimodular_inverse_rejected) ... ok
+test_kernel_basis_transform_regression (__main__.IntegerTests.test_kernel_basis_transform_regression) ... ok
+test_seeded_smith_certificates (__main__.IntegerTests.test_seeded_smith_certificates) ... ok
+test_smith_zero_rectangular_signed_and_divisibility (__main__.IntegerTests.test_smith_zero_rectangular_signed_and_divisibility) ... ok
+test_torsion_cw_examples_and_zero_chain (__main__.IntegerTests.test_torsion_cw_examples_and_zero_chain) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.031s
+
+OK

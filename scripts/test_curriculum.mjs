@@ -56,14 +56,15 @@ test('the 89-unit master plan covers eleven parts without missing or cyclic prer
   for(const c of chapters) assert.ok(byCode.has(c.code));
 });
 
-test('new formal chapters have twelve sections, eight exercises, complete solution pages and review records',()=>{
+test('new formal chapters have twelve sections, declared exercises, complete solution pages and review records',()=>{
   const additions=chapters.filter(c=>c.template===2);
-  assert.equal(additions.length,16);
+  assert.equal(additions.length,17);
   for(const chapter of additions) {
     const source=readFileSync(new URL(`../docs/${chapter.path}`,import.meta.url),'utf8');
     assert.deepEqual([...source.matchAll(/^## (\d+)\./gm)].map(x=>Number(x[1])),Array.from({length:12},(_,i)=>i+1));
+    assert.equal(chapter.exerciseCount, chapter.code==='H3' ? 12 : 8);
     const exercises=source.split(/^## 9\./m)[1].split(/^## 10\./m)[0];
-    assert.deepEqual([...exercises.matchAll(/^(\d+)\. /gm)].map(x=>Number(x[1])),[1,2,3,4,5,6,7,8]);
+    assert.deepEqual([...exercises.matchAll(/^(\d+)\. /gm)].map(x=>Number(x[1])),Array.from({length:chapter.exerciseCount},(_,i)=>i+1));
     const solutions=readFileSync(new URL(`../docs/${chapter.solutions}`,import.meta.url),'utf8');
     const solutionNumbers=[...solutions.matchAll(/^## (?:第 |题 )?(\d+)(?: 题)?[.：]/gm)].map(m=>Number(m[1]));
     assert.deepEqual(solutionNumbers,Array.from({length:chapter.exerciseCount},(_,i)=>i+1));

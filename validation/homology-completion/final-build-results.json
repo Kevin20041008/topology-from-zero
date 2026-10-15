@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-10-15T12:15:34.797530+00:00",
+  "command": "python -m mkdocs build --strict",
+  "exit_code": 0,
+  "log": "build.txt",
+  "reason": "Final status-text synchronization after main browser suite; H2/H3 and laboratory sources unchanged."
+}

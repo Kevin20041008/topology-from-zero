@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-15T12:15:34.797530+00:00",
+  "normalization": "UTF-8 text with LF newlines; hashes identify reviewed artifacts, not mathematical certification",
+  "base": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+  "files": {
+    "docs/algebraic/homology/exact-excision.md": "fef1975811d455f386068c3b9c944a8416be9f2dc81612be992f162924926eb6",
+    "docs/algebraic/homology/cellular-coefficients.md": "54709ae49c904d4af3a15ce15851c3d60f2e0b16b3326e7c2aa833b966ec2969",
+    "docs/exercises/h2-solutions.md": "bd2aa08141752dbd748e720d87cfceae2d8b7497bdfbcd9e7ca62f61c35e093d",
+    "docs/exercises/h3-solutions.md": "6d827023af8d6902d43ef067daa13dc8103d823ce0d7eab1385fc374af5adbde",
+    "docs/assets/h2-subdivision.svg": "c5bfde0f8faf4b59bc0b7e78ef9b1dd2a66691ca6f49345fd10f15564e79db70",
+    "docs/assets/h3-attachment-excision.svg": "5bdb358c26a088ec249f1351c651f194378e59521a6bbe4397dfc9080d75802b",
+    "scripts/subdivision_chains.py": "fd3d0c91aa68229c502b94afb0d4f14c67796d600fed46e20e36f7754850c409",
+    "scripts/test_subdivision_chains.py": "826ade3f03bb7cf39a74a4d72f35d86d04f387efaf4cd5b0c89efbedacf30341",
+    "scripts/verify_homology_content.py": "d806be7168df42898061e72bfdc7dfc1865b3bbf3127c0a5a2241f639db29d92",
+    "scripts/proof-ledger.json": "96d818b4bb5352506831b20e343db01421c0c3491566294ace5c0869d11feeeb"
+  }
+}

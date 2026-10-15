@@ -1,6 +1,6 @@
 {
-  "version": "v0.5-learning-quality",
-  "baseline": "f341101a686fcc3a8dd22d0587a29514a835cefd",
+  "version": "homology-proof-completion",
+  "baseline": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
   "chapters": [
     {
       "path": "preliminaries/sets-maps-relations.md",
@@ -343,7 +343,11 @@
       "prerequisites": [
         "H1",
         "P4"
-      ]
+      ],
+      "template": 2,
+      "solutions": "exercises/h2-solutions.md",
+      "review": "project/reviews/H2.md",
+      "exerciseCount": 8
     },
     {
       "path": "algebraic/homology/cellular-coefficients.md",
@@ -359,7 +363,7 @@
         "PRE5"
       ],
       "template": 2,
-      "exerciseCount": 8,
+      "exerciseCount": 12,
       "review": "project/reviews/H3.md",
       "solutions": "exercises/h3-solutions.md"
     },

@@ -22,3 +22,7 @@
 ## v0.5完整题解
 
 [PRE4](pre4-solutions.md) · [PS1](ps1-solutions.md) · [PRE5](pre5-solutions.md) · [CT1](ct1-solutions.md)：每章8题；[项目C](../ai/projects/topology-optimization.md)另含8题与展开答案。
+
+## 同调证明训练
+
+[H2八题](h2-solutions.md)练习相对循环、连接符号、细分支撑、相对单射和假设反例；[H3十二题](h3-solutions.md)进一步练习非正则附加、改系数、任意整数附加度、图的自然映射及定向变换。先在正文使用两级提示，再独立写论证，最后对照完整答案。

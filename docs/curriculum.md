@@ -73,7 +73,7 @@
 | 范围 | 本版证明与计算 | 明确引用或后续深化 |
 | --- | --- | --- |
 | 点集 | 网、紧致等价、Tychonoff、Urysohn、完备化、Baire、单位分解、Arzelà–Ascoli | Zorn 等集合/分析先修；Stone；更广集合拓扑专题 |
-| 代数 | 覆盖分类、van Kampen、奇异链、切除、有限胞腔与系数的条件推导、杯积、PL对偶概要 | Eilenberg–Zilber、杯积分次交换性、一般流形对偶、Hurewicz/Serre 几何构造 |
+| 代数 | 覆盖分类、van Kampen、奇异链、切除、有限非正则CW比较与任意阿贝尔系数、有限自由链UCT、杯积、PL对偶概要 | 无限CW、胞腔逼近、上链比较、Eilenberg–Zilber、杯积分次交换性、一般流形对偶、Hurewicz/Serre 几何构造 |
 | 微分 | 常秩与正则原像、参数横截推导、Stokes、同伦算子、Morse 不等式、球面线丛计算 | Sard、Whitney、de Rham 全局比较、Morse 引理/柄附加、一般特征类 |
 | 几何 | 链接充分判据、曲面不变量、三叶结非平凡、Dehn 填充群与同调 | 曲面分类的边词规约、Wirtinger 几何证明、三维分解/几何化与高维手术 |
 | 计算/AI | 有限边界证书、精确端点语义、半径交错界、景观稳定性、固定测试误差界、两份新计算实验 | 完整持续分解/配对与代数稳定性证明、大规模性能及真实任务泛化 |
@@ -91,6 +91,10 @@
 - [项目C：可复现网络优化](ai/projects/topology-optimization.md)，含固定协议、实际轨迹与失败案例。
 
 
-## v0.6 质量深化候选
+## v0.6 质量深化（已部署批次）
 
 已有章节的数量不变。H3/Q1/Q2补自然映射、证明边界与24题完整解答；路线A加入[八课三级证明训练](exercises/proof-workshop.md)。[覆盖提升](labs/covering-space.md)将圆周路径连接到C1；[真实二维图像项目D](ai/projects/image-topology.md)公开固定协议、全部预测和负结果。人工审阅与学习者试用尚未执行，见[实施状态](project/IMPLEMENTATION_STATUS.md)。
+
+## 同调证明补全（当前审查分支）
+
+[H2](algebraic/homology/exact-excision.md)从有序仿射锥展开细分、小链、切除与 Mayer–Vietoris，提供八题完整答案；[H3](algebraic/homology/cellular-coefficients.md)补有限非正则 CW 的比较、附加度及任意阿贝尔系数，扩至十二题。先由 H2 计算球面和盘对，再进入 H3，避免证明循环。本批尚未发布，模型复核范围与剩余外引见[证明台账](project/proof-ledger.md)。

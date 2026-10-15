@@ -5,7 +5,7 @@
 [在线教材](https://kevin20041008.github.io/topology-from-zero/) · [GitHub 仓库](https://github.com/Kevin20041008/topology-from-zero) · [部署状态](https://github.com/Kevin20041008/topology-from-zero/actions/workflows/pages.yml)
 
 <!-- course-counts:start -->
-当前清单：**55 篇正文、55 个章节自检、8 项浏览器实验、4 份 Notebook**。16 章采用十二项模板，包含 128 道配套题解；项目课程与证明工作坊另计。长期规划 11 部分、89 单元，数量不代表证明或人类审查完成。
+当前清单：**55 篇正文、55 个章节自检、8 项浏览器实验、4 份 Notebook**。17 章采用十二项模板，包含 140 道配套题解；项目课程与证明工作坊另计。长期规划 11 部分、89 单元，数量不代表证明或人类审查完成。
 <!-- course-counts:end -->
 
 ## 已有内容
@@ -90,7 +90,7 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 
 ## 长期建设与当前交付
 
-当前正文与练习数量由上方清单自动生成。v0.5 已经由 PR #8 合并部署；本工作分支为 v0.6 质量升级候选，不等于线上版本。最新可核查快照见[版本证据](docs/project/release-status.md)。
+当前正文与练习数量由上方清单自动生成。v0.6 已经由维护者通过 PR #9 合并部署；本工作分支补齐 H2/H3 同调证明，尚未合并或发布。最新可核查快照见[版本证据](docs/project/release-status.md)。
 
 - [A 零基础](docs/start/beginner.md)、[B 数学专业](docs/start/advanced.md)、[C 计算与AI](docs/start/computational.md)：入口诊断、时间估计、连续导航、自评进度和阶段项目。
 - PRE4/PS1/PRE5/CT1：定义、完整局部证明、32题解答与原创图；整数算法记录精确`U A V = D`证书和独立SymPy对照。
@@ -100,12 +100,19 @@ JavaScript 测试覆盖退化/随机点云、尺度与等距变换、持续区�
 完整验证入口和环境见[开发说明](docs/development.md)；v0.5历史测试及当时未尽义务见[V05-VALIDATION.md](V05-VALIDATION.md)。
 
 
-## v0.6 质量升级候选
+## v0.6 已部署内容（历史批次）
 
 - H3/Q1/Q2：有限链自然Tor/Ext序列、帽积自然性、24题解答，保持外引与完整证明的界限。
 - 路线A：[八课三级证明训练](docs/exercises/proof-workshop.md)，排序反馈与自由证明自核分开。
 - [覆盖提升实验](docs/labs/covering-space.md)：短弧模型、整层变化、绕数与采样歧义。
 - [真实二维图像项目D](projects/image-topology/README.md)：许可明确的BBBC039、固定六组训练、完整负结果。
-- 每页静态SHA、自动课程清单和部署后普通URL一致性检查；未将候选版自动发布。
+- 每页静态SHA、自动课程清单和部署后普通URL一致性检查；本批审计确认已部署提交 `7580d39`。
 
 全量证据和剩余义务见 [V06-VALIDATION.md](V06-VALIDATION.md)。[人工数学审阅](docs/project/HUMAN_REVIEW_PACKET.md)和[学习者试用](docs/project/LEARNER_STUDY.md)只有可执行材料，尚未招募或执行。
+
+## 同调证明补全（待审分支）
+
+- [H2](docs/algebraic/homology/exact-excision.md)：从仿射锥、细分同伦到相对切除、Mayer–Vietoris、球面与盘对；八题完整答案及原创图。
+- [H3](docs/algebraic/homology/cellular-coefficients.md)：有限非正则CW的骨架相对群、胞腔比较、附加度、任意阿贝尔系数；扩充到十二题。
+- [精确细分实验](scripts/subdivision_chains.py)：保留退化有序单形，以整数及有理数核查链恒等式；有限实验不能替代一般证明。
+- 台账记录42项结论，新增正文模型复核和有限检查证据见 [HOMOLOGY-COMPLETION-VALIDATION.md](HOMOLOGY-COMPLETION-VALIDATION.md)。全书与人类同行审查尚未完成。

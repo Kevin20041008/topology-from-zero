@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">有序三角形的重心细分与嵌套面旗标</title>
+  <desc id="desc">三角形被三个边中点及重心分为六个小三角形。每个生成元按重心、边中点、原顶点排列，系数正负交替。网格界发生在参数单形，不是任意连续像的固定缩小率。</desc>
+  <rect width="960" height="420" rx="12" fill="#f5f7fb"/>
+  <g font-family="sans-serif" fill="#172554" text-anchor="middle">
+    <text x="250" y="30" font-size="20">Sd[v₀,v₁,v₂]：六个有序单形</text>
+    <text x="720" y="30" font-size="20">一个嵌套面旗标</text>
+    <g stroke="#52637a" stroke-width="1.7">
+      <path d="M250 240L325 200L250 80Z" fill="#dbeafe"/>
+      <path d="M250 240L325 200L400 320Z" fill="#e0e7ff"/>
+      <path d="M250 240L175 200L250 80Z" fill="#ede9fe"/>
+      <path d="M250 240L175 200L100 320Z" fill="#d1fae5"/>
+      <path d="M250 240L250 320L400 320Z" fill="#cffafe"/>
+      <path d="M250 240L250 320L100 320Z" fill="#fef3c7"/>
+    </g>
+    <g font-size="22"><text x="277" y="182">+</text><text x="326" y="263">−</text><text x="222" y="182">−</text><text x="174" y="263">+</text><text x="301" y="303">+</text><text x="199" y="303">−</text></g>
+    <g fill="#1d4ed8"><circle cx="100" cy="320" r="5"/><circle cx="400" cy="320" r="5"/><circle cx="250" cy="80" r="5"/><circle cx="325" cy="200" r="5"/><circle cx="175" cy="200" r="5"/><circle cx="250" cy="320" r="5"/></g>
+    <circle cx="250" cy="240" r="6" fill="#047857"/>
+    <g font-size="17"><text x="84" y="344">v₀</text><text x="416" y="344">v₁</text><text x="250" y="63">v₂</text><text x="354" y="199">m₁₂</text><text x="144" y="199">m₀₂</text><text x="250" y="347">m₀₁</text><text x="266" y="239">b</text></g>
+    <text x="250" y="380" font-size="16">符号对应 [b, mᵢⱼ, vₖ] 的有序表示</text>
+    <path d="M480 60V374" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="720" y="92" font-size="19">{2} ⊂ {1,2} ⊂ {0,1,2}</text>
+    <text x="720" y="141" font-size="17">取各面重心，再按大面到小面排列</text>
+    <text x="720" y="186" font-size="25" fill="#1d4ed8">[b, m₁₂, v₂]</text>
+    <text x="720" y="217" font-size="17">这一项的整数系数为 +1</text>
+    <text x="720" y="271" font-size="19">‖b − v₂‖ ≤ (2/3) diam(Δ²)</text>
+    <text x="720" y="313" font-size="16">每对旗标顶点都是嵌套面重心</text>
+    <text x="720" y="341" font-size="16">凸包内点间距 ≤ 最大顶点间距</text>
+    <text x="720" y="380" font-size="16">先在参数单形细分，再经 σ 推到 X</text>
+  </g>
+</svg>

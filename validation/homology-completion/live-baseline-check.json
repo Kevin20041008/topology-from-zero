@@ -1,0 +1,157 @@
+[
+  {
+    "time_utc": "2026-10-15T11:54:59.836863+00:00",
+    "base_url": "https://kevin20041008.github.io/topology-from-zero/",
+    "expected_commit": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+    "pages": [
+      {
+        "path": "",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/",
+          "Date": "Thu, 15 Oct 2026 11:55:03 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-13f01\""
+        },
+        "failures": []
+      },
+      {
+        "path": "curriculum/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/curriculum/",
+          "Date": "Thu, 15 Oct 2026 11:55:04 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-14ff0\""
+        },
+        "failures": []
+      },
+      {
+        "path": "start/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/start/",
+          "Date": "Thu, 15 Oct 2026 11:55:04 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-11aa3\""
+        },
+        "failures": []
+      },
+      {
+        "path": "computational/integer-homology/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/computational/integer-homology/",
+          "Date": "Thu, 15 Oct 2026 11:55:05 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-1bf80\""
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/homology/cellular-coefficients/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/algebraic/homology/cellular-coefficients/",
+          "Date": "Thu, 15 Oct 2026 11:55:06 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-19b90\""
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/cohomology/cochains-products/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/algebraic/cohomology/cochains-products/",
+          "Date": "Thu, 15 Oct 2026 11:55:06 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-1a14b\""
+        },
+        "failures": []
+      },
+      {
+        "path": "algebraic/cohomology/duality/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/algebraic/cohomology/duality/",
+          "Date": "Thu, 15 Oct 2026 11:55:07 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-18aca\""
+        },
+        "failures": []
+      },
+      {
+        "path": "exercises/proof-workshop/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/exercises/proof-workshop/",
+          "Date": "Thu, 15 Oct 2026 11:55:08 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-2158f\""
+        },
+        "failures": []
+      },
+      {
+        "path": "labs/covering-space/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/labs/covering-space/",
+          "Date": "Thu, 15 Oct 2026 11:55:08 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-146f9\""
+        },
+        "failures": []
+      },
+      {
+        "path": "ai/projects/image-topology/",
+        "headers": {
+          "final_url": "https://kevin20041008.github.io/topology-from-zero/ai/projects/image-topology/",
+          "Date": "Thu, 15 Oct 2026 11:55:09 GMT",
+          "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+          "Cache-Control": "max-age=600",
+          "Age": "0",
+          "ETag": "\"6acf72dd-1a2eb\""
+        },
+        "failures": []
+      }
+    ],
+    "failures": [],
+    "manifest": {
+      "schema": 2,
+      "commit": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+      "dirty": false,
+      "build_kind": "main-workflow",
+      "workflow_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38562088381",
+      "review_status": "See chapter review records; no book-wide human peer review claimed.",
+      "counts": {
+        "chapters": 55,
+        "self_checks": 55,
+        "template_chapters": 16,
+        "template_exercises": 128,
+        "labs": 8,
+        "notebooks": 4,
+        "planned_parts": 11,
+        "planned_units": 89
+      },
+      "inventory_sha256": "aa355361b53c0c690d11b2419eb95c49018e7e94614b2152131791d8106df052"
+    },
+    "manifest_headers": {
+      "final_url": "https://kevin20041008.github.io/topology-from-zero/build-info.json",
+      "Date": "Thu, 15 Oct 2026 11:55:02 GMT",
+      "Last-Modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+      "Cache-Control": "max-age=600",
+      "Age": "0",
+      "ETag": "\"6acf72dd-261\""
+    }
+  }
+]

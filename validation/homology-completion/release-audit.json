@@ -1,0 +1,56 @@
+{
+  "time_utc": "2026-10-15T11:44:03.932567+00:00",
+  "main": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+  "pr9": {
+    "merged": true,
+    "merged_at": "2026-10-14T12:12:27Z",
+    "merge_commit_sha": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b"
+  },
+  "runs": [
+    {
+      "id": 38562088381,
+      "head_sha": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38562088381"
+    },
+    {
+      "id": 38543305406,
+      "head_sha": "9a562cad901b72407c9261e2f69d4dad790cfc6d",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38543305406"
+    }
+  ],
+  "live": {
+    "url": "https://kevin20041008.github.io/topology-from-zero/build-info.json",
+    "status": 200,
+    "last_modified": "Wed, 14 Oct 2026 12:17:33 GMT",
+    "manifest": {
+      "schema": 2,
+      "commit": "7580d391a78a2df42a428a0d3fbd3dde57dbae4b",
+      "dirty": false,
+      "build_kind": "main-workflow",
+      "workflow_url": "https://github.com/Kevin20041008/topology-from-zero/actions/runs/38562088381",
+      "review_status": "See chapter review records; no book-wide human peer review claimed.",
+      "counts": {
+        "chapters": 55,
+        "self_checks": 55,
+        "template_chapters": 16,
+        "template_exercises": 128,
+        "labs": 8,
+        "notebooks": 4,
+        "planned_parts": 11,
+        "planned_units": 89
+      },
+      "inventory_sha256": "aa355361b53c0c690d11b2419eb95c49018e7e94614b2152131791d8106df052"
+    }
+  },
+  "hatcher": {
+    "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
+    "status": 200,
+    "last_modified": "Sun, 17 Mar 2024 19:25:19 GMT",
+    "bytes": 5068,
+    "scope": "Author book landing page only; no page-by-page text audit claimed."
+  }
+}

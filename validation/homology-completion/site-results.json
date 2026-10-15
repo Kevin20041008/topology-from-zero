@@ -1,0 +1,25 @@
+[
+  {
+    "name": "build",
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "-m",
+      "mkdocs",
+      "build",
+      "--strict"
+    ],
+    "start_utc": "2026-10-15T12:13:29.093814+00:00",
+    "exit_code": 0,
+    "log": "build.txt"
+  },
+  {
+    "name": "site",
+    "command": [
+      "C:\\Users\\李佳明\\Documents\\Codex\\2026-10-11\\skill-installer-install-the-setup-docs\\work\\topology-venv\\Scripts\\python.exe",
+      "scripts/verify_site.py"
+    ],
+    "start_utc": "2026-10-15T12:13:35.184136+00:00",
+    "exit_code": 0,
+    "log": "site.txt"
+  }
+]

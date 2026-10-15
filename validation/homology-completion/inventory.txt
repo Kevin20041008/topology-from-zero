@@ -1,0 +1,1 @@
+{"counts": {"chapters": 55, "self_checks": 55, "template_chapters": 17, "template_exercises": 140, "labs": 8, "notebooks": 4, "planned_parts": 11, "planned_units": 89}, "inventory_sha256": "47f36c9edbe84aa2c91e048807a0e22e54a8436a410b6bd44448adbdb6a36261"}

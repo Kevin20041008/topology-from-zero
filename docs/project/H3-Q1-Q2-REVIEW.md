@@ -1,4 +1,6 @@
-# H3、Q1、Q2 · v0.6 证明与教学修订范围
+# H3、Q1、Q2 · 证明与教学修订范围
+
+2026-10-15 续补：H2 的几何链工具现已展开，H3.4/H3.1/H3.5/H3.6 完成有限非正则 CW 比较与任意阿贝尔系数版本。H3增至12题；Q1/Q2仍各8题。下表按当前正文更新，v0.6原始证据保留。
 
 本批将“能计算抽象群”与“构造自然映射”分开，实际补写有限自由链的 Tor、Ext 泛系数证明，而不是只调整状态词。三个旧页面 URL、全部原有 `proof-*` 锚点及自检键保留。尚未完成整本教材，也没有人类同行签署或形式化验证。
 
@@ -6,7 +8,7 @@
 
 | 章节 | 新增实质内容 | 明确保留的外引 |
 |---|---|---|
-| [H3](../algebraic/homology/cellular-coefficients.md) | 自由表示的 Tor 函子；自然同调 UCT；无自然分裂反例；完整有符号张量收缩；八题与答案 | 非正则 CW 骨架对引理、附加度、Eilenberg–Zilber、空间 Künneth |
+| [H3](../algebraic/homology/cellular-coefficients.md) | 自由表示的 Tor 函子；自然同调 UCT；无自然分裂反例；完整有符号张量收缩；有限非正则CW骨架比较、附加度与改系数；十二题与答案 | 无限CW、胞腔逼近、Eilenberg–Zilber、空间 Künneth |
 | [Q1](../algebraic/cohomology/cochains-products.md) | Ext 的余核函子；自然上同调 UCT；评价方块；无自然分裂；杯积拉回；八题与答案 | 胞腔上链—奇异上同调与自然性；分次交换；外积比较 |
 | [Q2](../algebraic/cohomology/duality.md) | 帽积自然性；三边圆周整数计算与原创 SVG；有挠情形 Euler 推导；八题与答案 | 对偶胞腔符号与次数重标号；奇异帽积比较；非退化交叉配对 |
 

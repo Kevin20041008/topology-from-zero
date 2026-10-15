@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">附加圆盘中的环带同伦与骨架切除</title>
+<desc id="desc">左侧附加前圆盘内，半径大于二分之一的环带沿径向到边界；中间说明同伦固定边界所以尊重识别；右侧删除骨架后，得到开圆盘与开环带的空间对。边界可以自我识别。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#ad501f"/></marker></defs>
+<rect width="900" height="360" rx="12" fill="#faf7ef"/>
+<g font-family="sans-serif" fill="#253d37" text-anchor="middle">
+<text x="150" y="34" font-size="19">附加前的闭圆盘</text>
+<circle cx="150" cy="163" r="93" fill="#d4e8df" stroke="#286f59" stroke-width="3"/>
+<circle cx="150" cy="163" r="46.5" fill="#faf7ef" stroke="#286f59" stroke-dasharray="5 4"/>
+<g stroke="#ad501f" stroke-width="2.5" marker-end="url(#arrow)"><path d="M208 163H239"/><path d="M150 105V75"/><path d="M92 163H61"/><path d="M150 221V251"/></g>
+<text x="150" y="168" font-size="16">ρ ≤ 1/2</text><text x="150" y="284" font-size="17">边界在所有时刻固定</text>
+<path d="M275 163H356" stroke="#ad501f" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="450" y="98" font-size="19">N 强缩到骨架 A</text>
+<text x="450" y="140" font-size="16">先证明同伦尊重商关系</text>
+<text x="450" y="179" font-size="16">H(Y,A) ≅ H(Y,N)</text>
+<text x="450" y="215" font-size="16">再用切除删去 A</text>
+<path d="M555 163H626" stroke="#ad501f" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="750" y="34" font-size="19">删除骨架后的空间对</text>
+<circle cx="750" cy="163" r="93" fill="#d4e8df" stroke="#286f59" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="750" cy="163" r="46.5" fill="#faf7ef" stroke="#286f59" stroke-dasharray="5 4"/>
+<text x="750" y="168" font-size="18">开球 B</text><text x="750" y="232" font-size="16">环带 L</text>
+<text x="750" y="284" font-size="17">外边界不在 B 中</text>
+<text x="450" y="331" font-size="16">示意图不假设粘合后的胞腔边界仍是一条嵌入圆周。</text>
+</g></svg>
